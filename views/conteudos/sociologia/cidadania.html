@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Cidadania - Saphius</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/views/conteudos/sociologia/sociologia.css">
+</head>
+<body>
+    <div class="app-container">
+        <aside class="sidebar">
+            <div class="sidebar-logo"><h2>Saphius</h2></div>
+            <ul class="sidebar-menu">
+                <li><a href="/dashboard"><span class="icon"></span> <span>Dashboard</span></a></li>
+                <li><a href="/conteudos"><span class="icon"></span> <span>Conteúdos</span></a></li>
+                <li><a href="/trilha"><span class="icon"></span> <span>Trilha de estudos</span></a></li>
+                <li><a href="/bemestar"><span class="icon"></span> <span>Bem-estar</span></a></li>
+                <li><a href="/perfil"><span class="icon"></span> <span>Perfil</span></a></li>
+                <li><a href="/configuracoes"><span class="icon"></span> <span>Configurações</span></a></li>
+                <li><a href="/ajuda"><span class="icon"></span> <span>Ajuda</span></a></li>
+                <li><a href="/sair"><span class="icon"></span> <span>Sair</span></a></li>
+            </ul>
+        </aside>
+
+        <main class="main-content">
+            <div class="container">
+                <a href="/sociologia" class="voltar">Voltar para Sociologia</a>
+
+                <h1 style="text-align:center; font-size:2.5em; color:#2e7d32;">Cidadania</h1>
+                <p style="color:#666; text-align:center; font-size:1.1em;">Direitos e deveres, Participação política, Democracia e cidadania no Brasil</p>
+
+                <div class="abas-navegacao" style="margin:25px 0;">
+                    <button class="aba-btn active" onclick="trocarAba(this, 'conteudo')">Conteúdo</button>
+                    <button class="aba-btn" onclick="trocarAba(this, 'exercicios')">Exercícios</button>
+                    <button class="aba-btn" onclick="trocarAba(this, 'resumo')">Resumo</button>
+                    <button class="aba-btn" onclick="trocarAba(this, 'simulado')">Simulado</button>
+                </div>
+
+                <div id="conteudo" class="aba-conteudo active">
+
+                    <div class="explicacao-detalhada">
+                        <h3>O que é Cidadania?</h3>
+                        <p>
+                            A <strong>Cidadania</strong> é o conjunto de <strong>direitos</strong> e <strong>deveres</strong> que 
+                            um cidadão possui em uma sociedade. Ela envolve a participação ativa na vida política, 
+                            econômica e social do país. A cidadania plena é alcançada quando o indivíduo usufrui de 
+                            <strong>direitos civis</strong>, <strong>políticos</strong> e <strong>sociais</strong>.
+                        </p>
+                        <div class="enem-dica">
+                            <strong>DICA ENEM:</strong>
+                            <p>Cidadania é um tema recorrente no ENEM, especialmente em questões que envolvem 
+                            <strong>direitos humanos</strong>, <strong>participação política</strong> e 
+                            <strong>democracia</strong>. É essencial entender a diferença entre direitos civis, políticos e sociais.</p>
+                        </div>
+                    </div>
+
+                    <div class="explicacao-detalhada">
+                        <h3>Tipos de Direitos</h3>
+                        <ul>
+                            <li><strong>Direitos Civis:</strong> Liberdade individual, igualdade perante a lei, direito à vida, à propriedade, à liberdade de expressão e religiosa.</li>
+                            <li><strong>Direitos Políticos:</strong> Direito de votar e ser votado, participação em partidos políticos, organização de movimentos sociais.</li>
+                            <li><strong>Direitos Sociais:</strong> Saúde, educação, trabalho, moradia, lazer, previdência social, assistência aos necessitados.</li>
+                        </ul>
+                        <p>
+                            <strong>Evolução dos direitos:</strong>
+                            <ul>
+                                <li><strong>1ª geração:</strong> Direitos civis e políticos (século XVIII).</li>
+                                <li><strong>2ª geração:</strong> Direitos sociais, econômicos e culturais (século XX).</li>
+                                <li><strong>3ª geração:</strong> Direitos difusos (meio ambiente, paz, desenvolvimento).</li>
+                            </ul>
+                        </p>
+                    </div>
+
+                    <div class="explicacao-detalhada">
+                        <h3>Cidadania no Brasil</h3>
+                        <p>
+                            A cidadania no Brasil tem uma trajetória marcada por avanços e retrocessos:
+                        </p>
+                        <ul>
+                            <li><strong>Período Colonial (1500-1822):</strong> Ausência de cidadania, com exclusão de indígenas, negros e mulheres.</li>
+                            <li><strong>Império (1822-1889):</strong> Cidadania restrita a homens livres e proprietários.</li>
+                            <li><strong>República Velha (1889-1930):</strong> Voto restrito a alfabetizados, exclusão de analfabetos, mulheres e militares.</li>
+                            <li><strong>Era Vargas (1930-1945):</strong> Criação de direitos trabalhistas (CLT) e expansão da cidadania social.</li>
+                            <li><strong>Constituição de 1988:</strong> Marco da redemocratização e da garantia de direitos sociais, políticos e civis.</li>
+                        </ul>
+                        <div class="enem-dica">
+                            <strong>DICA ENEM:</strong>
+                            <p>A Constituição de 1988 é chamada de <strong>"Constituição Cidadã"</strong> por garantir amplos direitos sociais e políticos. O ENEM cobra a importância desse marco.</p>
+                        </div>
+                    </div>
+
+                    <div class="explicacao-detalhada">
+                        <h3>Participação Política e Democracia</h3>
+                        <p>
+                            A participação política é um dos pilares da cidadania e da democracia. Ela pode ocorrer de várias formas:
+                        </p>
+                        <ul>
+                            <li><strong>Voto:</strong> Principal forma de participação política, garantindo a representação popular.</li>
+                            <li><strong>Conselhos municipais:</strong> Espaços de participação popular na gestão pública.</li>
+                            <li><strong>Orçamento participativo:</strong> Participação dos cidadãos na definição do orçamento municipal.</li>
+                            <li><strong>Movimentos sociais:</strong> Organização da sociedade para lutar por direitos e transformações.</li>
+                            <li><strong>Plebiscitos e referendos:</strong> Consulta popular sobre temas específicos.</li>
+                        </ul>
+                        <div class="enem-dica">
+                            <strong>DICA ENEM:</strong>
+                            <p>O ENEM cobra a <strong>participação política</strong> como um elemento essencial da democracia e da cidadania.</p>
+                        </div>
+                    </div>
+
+                    <div class="explicacao-detalhada">
+                        <h3>Desafios da Cidadania no Brasil</h3>
+                        <ul>
+                            <li><strong>Desigualdade social:</strong> Grande parte da população ainda não tem acesso pleno a direitos.</li>
+                            <li><strong>Violência:</strong> A violência urbana e rural limita o exercício da cidadania.</li>
+                            <li><strong>Corrupção:</strong> Desvio de recursos públicos prejudica a implementação de políticas sociais.</li>
+                            <li><strong>Exclusão digital:</strong> Falta de acesso à internet e tecnologias limita a participação política e social.</li>
+                            <li><strong>Desigualdade regional:</strong> Diferenças entre regiões no acesso a serviços básicos.</li>
+                        </ul>
+                    </div>
+
+                    <div class="dica-saphius">
+                        <h3>Dica Saphius</h3>
+                        <p>
+                            Relacione os <strong>direitos civis, políticos e sociais</strong> com a <strong>cidadania plena</strong>.
+                            Lembre-se: <strong>"Cidadania = Direitos + Deveres + Participação"</strong>.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- ===== EXERCÍCIOS (15 QUESTÕES) ===== -->
+                <div id="exercicios" class="aba-conteudo">
+                    <h2 style="color:#2e7d32;"> Exercícios - Cidadania</h2>
+                    <p style="color:#666;">15 questões (5 Fáceis, 5 Médias, 5 Difíceis)</p>
+
+                    <!-- 5 FÁCEIS -->
+                    <div class="exercicio-facil">
+                        <span class="badge">FÁCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>1.</strong> O que é cidadania?</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q1"> a) Conjunto de direitos e deveres</label>
+                            <label><input type="radio" name="q1"> b) Apenas direitos</label>
+                            <label><input type="radio" name="q1"> c) Apenas deveres</label>
+                            <label><input type="radio" name="q1"> d) Participação política</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: A) Conjunto de direitos e deveres</strong></p>
+                            <p><strong>Explicação:</strong> Cidadania é o conjunto de direitos e deveres que um cidadão possui em uma sociedade.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-facil">
+                        <span class="badge">FÁCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>2.</strong> Os direitos civis incluem:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q2"> a) Liberdade individual</label>
+                            <label><input type="radio" name="q2"> b) Direito à saúde</label>
+                            <label><input type="radio" name="q2"> c) Direito à educação</label>
+                            <label><input type="radio" name="q2"> d) Direito ao trabalho</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: A) Liberdade individual</strong></p>
+                            <p><strong>Explicação:</strong> Os direitos civis incluem a liberdade individual, a igualdade perante a lei e o direito à propriedade.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-facil">
+                        <span class="badge">FÁCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>3.</strong> O direito de votar e ser votado é um direito:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q3"> a) Civil</label>
+                            <label><input type="radio" name="q3"> b) Político</label>
+                            <label><input type="radio" name="q3"> c) Social</label>
+                            <label><input type="radio" name="q3"> d) Econômico</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: B) Político</strong></p>
+                            <p><strong>Explicação:</strong> O direito de votar e ser votado é um direito político, que garante a participação na vida política do país.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-facil">
+                        <span class="badge">FÁCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>4.</strong> A Constituição de 1988 é importante para a cidadania porque:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q4"> a) Garantiu direitos sociais</label>
+                            <label><input type="radio" name="q4"> b) Reduziu a desigualdade</label>
+                            <label><input type="radio" name="q4"> c) Aumentou a violência</label>
+                            <label><input type="radio" name="q4"> d) Criou a ditadura</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: A) Garantiu direitos sociais</strong></p>
+                            <p><strong>Explicação:</strong> A Constituição de 1988 garantiu direitos sociais, como saúde, educação, trabalho e moradia.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-facil">
+                        <span class="badge">FÁCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>5.</strong> A participação política é um dos pilares da:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q5"> a) Ditadura</label>
+                            <label><input type="radio" name="q5"> b) Democracia</label>
+                            <label><input type="radio" name="q5"> c) Monarquia</label>
+                            <label><input type="radio" name="q5"> d) Aristocracia</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: B) Democracia</strong></p>
+                            <p><strong>Explicação:</strong> A participação política é um dos pilares da democracia, garantindo que o povo exerça o poder.</p>
+                        </div>
+                    </div>
+
+                    <!-- 5 MÉDIAS -->
+                    <div class="exercicio-medio">
+                        <span class="badge">MÉDIO</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>6.</strong> (ENEM) A cidadania plena é alcançada quando o cidadão:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q6"> a) Tem apenas direitos civis</label>
+                            <label><input type="radio" name="q6"> b) Usufrui de direitos civis, políticos e sociais</label>
+                            <label><input type="radio" name="q6"> c) Tem apenas direitos políticos</label>
+                            <label><input type="radio" name="q6"> d) Não tem deveres</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: B) Usufrui de direitos civis, políticos e sociais</strong></p>
+                            <p><strong>Explicação:</strong> A cidadania plena envolve direitos civis (liberdade), políticos (voto) e sociais (saúde, educação).</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-medio">
+                        <span class="badge">MÉDIO</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>7.</strong> (ENEM) A democracia brasileira é baseada na:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q7"> a) Participação popular</label>
+                            <label><input type="radio" name="q7"> b) Centralização do poder</label>
+                            <label><input type="radio" name="q7"> c) Exclusão social</label>
+                            <label><input type="radio" name="q7"> d) Autoritarismo</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: A) Participação popular</strong></p>
+                            <p><strong>Explicação:</strong> A democracia brasileira é baseada na participação popular, com eleições livres e representação política.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-medio">
+                        <span class="badge">MÉDIO</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>8.</strong> (ENEM) O orçamento participativo é um exemplo de:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q8"> a) Democracia representativa</label>
+                            <label><input type="radio" name="q8"> b) Democracia participativa</label>
+                            <label><input type="radio" name="q8"> c) Autocracia</label>
+                            <label><input type="radio" name="q8"> d) Oligarquia</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: B) Democracia participativa</strong></p>
+                            <p><strong>Explicação:</strong> O orçamento participativo é um exemplo de democracia participativa, onde os cidadãos influenciam as decisões orçamentárias.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-medio">
+                        <span class="badge">MÉDIO</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>9.</strong> (ENEM) A falta de acesso a serviços básicos prejudica a cidadania porque:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q9"> a) Limita os direitos sociais</label>
+                            <label><input type="radio" name="q9"> b) Aumenta a participação política</label>
+                            <label><input type="radio" name="q9"> c) Melhora a qualidade de vida</label>
+                            <label><input type="radio" name="q9"> d) Reduz a desigualdade</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: A) Limita os direitos sociais</strong></p>
+                            <p><strong>Explicação:</strong> A falta de acesso a serviços básicos limita os direitos sociais e a cidadania.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-medio">
+                        <span class="badge">MÉDIO</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>10.</strong> (ENEM) A cidadania no Brasil é um desafio porque:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q10"> a) Todos os direitos são garantidos</label>
+                            <label><input type="radio" name="q10"> b) Há desigualdade e exclusão social</label>
+                            <label><input type="radio" name="q10"> c) A participação política é intensa</label>
+                            <label><input type="radio" name="q10"> d) A democracia é plena</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: B) Há desigualdade e exclusão social</strong></p>
+                            <p><strong>Explicação:</strong> A cidadania no Brasil é um desafio devido à desigualdade social, exclusão e falta de acesso a direitos básicos.</p>
+                        </div>
+                    </div>
+
+                    <!-- 5 DIFÍCEIS -->
+                    <div class="exercicio-dificil">
+                        <span class="badge">DIFÍCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>11.</strong> (ENEM) A cidadania ativa envolve:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q11"> a) Apenas o voto</label>
+                            <label><input type="radio" name="q11"> b) Participação em movimentos sociais e política</label>
+                            <label><input type="radio" name="q11"> c) Aceitação passiva das leis</label>
+                            <label><input type="radio" name="q11"> d) Isolamento social</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: B) Participação em movimentos sociais e política</strong></p>
+                            <p><strong>Explicação:</strong> A cidadania ativa envolve participação em movimentos sociais, política e organização da sociedade.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-dificil">
+                        <span class="badge">DIFÍCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>12.</strong> (ENEM) A Constituição de 1988 é chamada de "Constituição Cidadã" porque:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q12"> a) Estabeleceu a ditadura</label>
+                            <label><input type="radio" name="q12"> b) Garantiu amplos direitos sociais e políticos</label>
+                            <label><input type="radio" name="q12"> c) Reduziu os direitos trabalhistas</label>
+                            <label><input type="radio" name="q12"> d) Criou a censura</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: B) Garantiu amplos direitos sociais e políticos</strong></p>
+                            <p><strong>Explicação:</strong> A Constituição de 1988 é chamada de "Constituição Cidadã" por garantir amplos direitos sociais e políticos.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-dificil">
+                        <span class="badge">DIFÍCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>13.</strong> (ENEM) A cidadania plena exige que o cidadão:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q13"> a) Conheça seus direitos e deveres</label>
+                            <label><input type="radio" name="q13"> b) Cumpra apenas seus deveres</label>
+                            <label><input type="radio" name="q13"> c) Exija apenas seus direitos</label>
+                            <label><input type="radio" name="q13"> d) Ignore as leis</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: A) Conheça seus direitos e deveres</strong></p>
+                            <p><strong>Explicação:</strong> A cidadania plena exige que o cidadão conheça seus direitos e deveres para exercê-los plenamente.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-dificil">
+                        <span class="badge">DIFÍCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>14.</strong> (ENEM) Os conselhos municipais são espaços de:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q14"> a) Participação popular</label>
+                            <label><input type="radio" name="q14"> b) Concentração de poder</label>
+                            <label><input type="radio" name="q14"> c) Exclusão social</label>
+                            <label><input type="radio" name="q14"> d) Autoritarismo</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: A) Participação popular</strong></p>
+                            <p><strong>Explicação:</strong> Os conselhos municipais são espaços de participação popular na gestão pública.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-dificil">
+                        <span class="badge">DIFÍCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>15.</strong> (ENEM) A cidadania é fundamental para a democracia porque:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q15"> a) Garante a participação dos cidadãos</label>
+                            <label><input type="radio" name="q15"> b) Limita os direitos individuais</label>
+                            <label><input type="radio" name="q15"> c) Centraliza o poder</label>
+                            <label><input type="radio" name="q15"> d) Reduz a participação popular</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: A) Garante a participação dos cidadãos</strong></p>
+                            <p><strong>Explicação:</strong> A cidadania é fundamental para a democracia porque garante a participação dos cidadãos e o controle social.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ===== RESUMO ===== -->
+                <div id="resumo" class="aba-conteudo">
+                    <div class="resumo-principal">
+                        <h2 class="resumo-titulo">Resumo - Cidadania</h2>
+                        <p class="resumo-subtitulo">Principais pontos para memorizar</p>
+
+                        <div class="resumo-grid">
+                            <div class="resumo-card-item">
+                                <h3>Direitos Civis</h3>
+                                <p>Liberdade individual, igualdade, propriedade</p>
+                                <span class="resumo-tag">Direitos Pessoais</span>
+                            </div>
+                            <div class="resumo-card-item">
+                                <h3>Direitos Políticos</h3>
+                                <p>Voto, participação, partidos</p>
+                                <span class="resumo-tag">Participação</span>
+                            </div>
+                            <div class="resumo-card-item">
+                                <h3>Direitos Sociais</h3>
+                                <p>Saúde, educação, trabalho, moradia</p>
+                                <span class="resumo-tag">Bem-estar</span>
+                            </div>
+                            <div class="resumo-card-item">
+                                <h3>Constituição de 1988</h3>
+                                <p>"Constituição Cidadã"</p>
+                                <span class="resumo-tag">Direitos Garantidos</span>
+                            </div>
+                            <div class="resumo-card-item">
+                                <h3>Democracia</h3>
+                                <p>Participação popular</p>
+                                <span class="resumo-tag">Poder do Povo</span>
+                            </div>
+                            <div class="resumo-card-item">
+                                <h3>Desafios</h3>
+                                <p>Desigualdade, exclusão, violência</p>
+                                <span class="resumo-tag">Cidadania Incompleta</span>
+                            </div>
+                        </div>
+
+                        <div class="resumo-dica-final">
+                            <h4>Dica Saphius</h4>
+                            <p>Memorize: <strong>"Civis + Políticos + Sociais = Cidadania"</strong></p>
+                        </div>
+
+                        <div class="resumo-dica-enem">
+                            <h4>Dica ENEM</h4>
+                            <p>Atenção para os termos <strong>"Constituição Cidadã"</strong>, <strong>"Participação Popular"</strong> e <strong>"Direitos Sociais"</strong>.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="simulado" class="aba-conteudo">
+                    <h2 style="color:#2e7d32;">Simulado - Cidadania</h2>
+                    <p style="color:#666;">Teste seus conhecimentos com questões estilo ENEM</p>
+                    <div class="simulado-card">
+                        <div style="display:flex; gap:20px; flex-wrap:wrap; justify-content:center; margin-bottom:15px;">
+                            <span><strong>15 questões</strong></span>
+                            <span><strong>20 minutos</strong></span>
+                            <span><strong>Nível: Fácil a Difícil</strong></span>
+                        </div>
+                        <p style="color:#555; margin-bottom:15px;">As questões são as mesmas da aba "Exercícios" acima.</p>
+                        <button class="btn-principal" onclick="alert(' Simulado iniciado! Responda todas as 15 questões acima na aba Exercícios.')">
+                            Iniciar simulado
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+    </div>
+
+    <script>
+    function trocarAba(botao, abaId) {
+        document.querySelectorAll('.aba-btn').forEach(b => b.classList.remove('active'));
+        botao.classList.add('active');
+
+        document.querySelectorAll('.aba-conteudo').forEach(c => c.classList.remove('active'));
+        document.getElementById(abaId).classList.add('active');
+    }
+
+    function mostrarResposta(botao) {
+        const exercicioDiv = botao.closest('.exercicio-facil, .exercicio-medio, .exercicio-dificil');
+        const respostaDiv = exercicioDiv.querySelector('.resposta-explicada');
+
+        if (respostaDiv.style.display === 'block') {
+            respostaDiv.style.display = 'none';
+            botao.textContent = 'Ver explicação';
+        } else {
+            respostaDiv.style.display = 'block';
+            botao.textContent = 'Ocultar explicação';
+        }
+    }
+
+    document.querySelectorAll('.exercicio-alternativas input[type="radio"]').forEach(input => {
+        input.addEventListener('change', verificarAtividade);
+    });
+
+    async function verificarAtividade() {
+        const questoes = document.querySelectorAll('.exercicio-alternativas');
+        const respondidas = document.querySelectorAll(
+            '.exercicio-alternativas input[type="radio"]:checked'
+        );
+
+        if (respondidas.length === questoes.length) {
+            try {
+                await fetch('/api/trilha/concluir', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        materia: 'sociologia',
+                        topico: 'cidadania'
+                    })
+                });
+
+                alert('Atividade concluída! Seu progresso na Trilha de Estudos foi atualizado.');
+            } catch (erro) {
+                console.error('Erro ao atualizar progresso:', erro);
+            }
+        }
+    }
+</script>
+
+</body>
+</html>

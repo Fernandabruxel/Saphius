@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Política - Saphius</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/views/conteudos/filosofia/filosofia.css">
+</head>
+<body>
+    <div class="app-container">
+        <aside class="sidebar">
+            <div class="sidebar-logo"><h2>Saphius</h2></div>
+            <ul class="sidebar-menu">
+                <li><a href="/dashboard"><span class="icon"></span> <span>Dashboard</span></a></li>
+                <li><a href="/conteudos"><span class="icon"></span> <span>Conteúdos</span></a></li>
+                <li><a href="/trilha"><span class="icon"></span> <span>Trilha de estudos</span></a></li>
+                <li><a href="/bemestar"><span class="icon"></span> <span>Bem-estar</span></a></li>
+                <li><a href="/perfil"><span class="icon"></span> <span>Perfil</span></a></li>
+                <li><a href="/configuracoes"><span class="icon"></span> <span>Configurações</span></a></li>
+                <li><a href="/ajuda"><span class="icon"></span> <span>Ajuda</span></a></li>
+                <li><a href="/sair"><span class="icon"></span> <span>Sair</span></a></li>
+            </ul>
+        </aside>
+
+        <main class="main-content">
+            <div class="container">
+                <a href="/filosofia" class="voltar">Voltar para Filosofia</a>
+
+                <h1 style="text-align:center; font-size:2.5em; color:#2e7d32;">Política</h1>
+                <p style="color:#666; text-align:center; font-size:1.1em;">Democracia, Poder, Justiça, Participação política</p>
+
+                <div class="abas-navegacao" style="margin:25px 0;">
+                    <button class="aba-btn active" onclick="trocarAba(this, 'conteudo')">Conteúdo</button>
+                    <button class="aba-btn" onclick="trocarAba(this, 'exercicios')">Exercícios</button>
+                    <button class="aba-btn" onclick="trocarAba(this, 'resumo')">Resumo</button>
+                    <button class="aba-btn" onclick="trocarAba(this, 'simulado')">Simulado</button>
+                </div>
+
+                <div id="conteudo" class="aba-conteudo active">
+
+                    <div class="explicacao-detalhada">
+                        <h3>O que é Política?</h3>
+                        <p>
+                            A <strong>Política</strong> é a atividade humana relacionada ao exercício do <strong>poder</strong>, 
+                            à <strong>organização da sociedade</strong> e à busca pelo <strong>bem comum</strong>. 
+                            Ela envolve questões como <strong>democracia</strong>, <strong>justiça</strong>, 
+                            <strong>participação política</strong> e <strong>direitos humanos</strong>. A política pode ser entendida como a arte de governar e administrar a cidade (pólis).
+                        </p>
+                        <div class="enem-dica">
+                            <strong>DICA ENEM:</strong>
+                            <p>Política é um tema recorrente no ENEM, especialmente em questões que envolvem 
+                            <strong>cidadania</strong>, <strong>participação popular</strong> e <strong>organização do Estado</strong>.</p>
+                        </div>
+                    </div>
+
+                    <div class="explicacao-detalhada">
+                        <h3>Principais Conceitos Políticos</h3>
+                        <ul>
+                            <li><strong>Democracia:</strong> Governo do povo, onde o poder emana do povo e é exercido em seu nome. Pode ser direta (participação popular) ou representativa (eleição de representantes).</li>
+                            <li><strong>Poder:</strong> Capacidade de influenciar ou controlar o comportamento dos outros, individualmente ou em grupos.</li>
+                            <li><strong>Justiça:</strong> Princípio de dar a cada um o que lhe é devido, garantindo igualdade e equidade.</li>
+                            <li><strong>Cidadania:</strong> Conjunto de direitos e deveres de um cidadão, essencial para a participação na vida política.</li>
+                            <li><strong>Participação política:</strong> Envolvimento dos cidadãos nas decisões políticas, seja por meio do voto, de movimentos sociais ou de organizações.</li>
+                        </ul>
+                        <div class="enem-dica">
+                            <strong>DICA ENEM:</strong>
+                            <p>O ENEM cobra os conceitos de <strong>democracia</strong>, <strong>cidadania</strong> e <strong>participação política</strong>.</p>
+                        </div>
+                    </div>
+
+                    <div class="explicacao-detalhada">
+                        <h3>Pensadores Políticos</h3>
+                        <ul>
+                            <li><strong>Platão (428-348 a.C.):</strong> A política deve ser exercida por filósofos (governantes sábios), que buscam o bem comum. A república ideal é aquela em que os filósofos governam.</li>
+                            <li><strong>Maquiavel (1469-1527):</strong> O poder é o centro da política; o governante deve ser pragmático e fazer o que for necessário para manter o poder. É o pai do realismo político.</li>
+                            <li><strong>Rousseau (1712-1778):</strong> O poder emana do povo; a vontade geral é a base da democracia. O Contrato Social estabelece a soberania popular.</li>
+                            <li><strong>Montesquieu (1689-1755):</strong> Divisão dos poderes (Executivo, Legislativo e Judiciário) para evitar o abuso de poder. Influenciou a organização do Estado moderno.</li>
+                            <li><strong>Locke (1632-1704):</strong> Os direitos naturais (vida, liberdade e propriedade) são a base do Estado. O governo deve proteger esses direitos.</li>
+                        </ul>
+                        <div class="enem-dica">
+                            <strong>DICA ENEM:</strong>
+                            <p>O ENEM cobra os principais pensadores políticos, como <strong>Platão</strong>, <strong>Maquiavel</strong>, <strong>Rousseau</strong> e <strong>Montesquieu</strong>.</p>
+                        </div>
+                    </div>
+
+                    <div class="explicacao-detalhada">
+                        <h3>Democracia e Participação Política</h3>
+                        <p>
+                            A democracia é o regime político em que o poder é exercido pelo povo. As principais formas são:
+                        </p>
+                        <ul>
+                            <li><strong>Democracia direta:</strong> Os cidadãos participam diretamente das decisões políticas (ex: plebiscitos, referendos).</li>
+                            <li><strong>Democracia representativa:</strong> Os cidadãos elegem representantes para tomar decisões em seu nome.</li>
+                            <li><strong>Democracia participativa:</strong> Combina elementos de democracia direta e representativa, com participação em conselhos e orçamentos participativos.</li>
+                        </ul>
+                        <div class="enem-dica">
+                            <strong>DICA ENEM:</strong>
+                            <p>O ENEM cobra as <strong>formas de democracia</strong> e a <strong>participação política</strong> como elementos essenciais da cidadania.</p>
+                        </div>
+                    </div>
+
+                    <div class="dica-saphius">
+                        <h3>Dica Saphius</h3>
+                        <p>
+                            Entenda os conceitos de <strong>democracia</strong> e <strong>cidadania</strong> para responder questões sobre política no ENEM. Memorize: <strong>"Democracia + Poder + Cidadania + Justiça = Política"</strong>.
+                        </p>
+                    </div>
+                </div>
+
+                <div id="exercicios" class="aba-conteudo">
+                    <h2 style="color:#2e7d32;">Exercícios - Política</h2>
+                    <p style="color:#666;">15 questões (5 Fáceis, 5 Médias, 5 Difíceis)</p>
+
+                    <!-- 5 FÁCEIS -->
+                    <div class="exercicio-facil">
+                        <span class="badge">FÁCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>1.</strong> O que é democracia?</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q1"> a) Governo de um só</label>
+                            <label><input type="radio" name="q1"> b) Governo do povo</label>
+                            <label><input type="radio" name="q1"> c) Governo dos ricos</label>
+                            <label><input type="radio" name="q1"> d) Governo dos militares</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: B) Governo do povo</strong></p>
+                            <p><strong>Explicação:</strong> Democracia é o governo do povo, onde o poder emana da vontade popular.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-facil">
+                        <span class="badge">FÁCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>2.</strong> Quem defendeu a divisão dos poderes?</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q2"> a) Platão</label>
+                            <label><input type="radio" name="q2"> b) Maquiavel</label>
+                            <label><input type="radio" name="q2"> c) Montesquieu</label>
+                            <label><input type="radio" name="q2"> d) Rousseau</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: C) Montesquieu</strong></p>
+                            <p><strong>Explicação:</strong> Montesquieu defendeu a divisão dos poderes em Executivo, Legislativo e Judiciário.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-facil">
+                        <span class="badge">FÁCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>3.</strong> O que é cidadania?</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q3"> a) Conjunto de direitos e deveres</label>
+                            <label><input type="radio" name="q3"> b) Apenas direitos</label>
+                            <label><input type="radio" name="q3"> c) Apenas deveres</label>
+                            <label><input type="radio" name="q3"> d) Participação política</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: A) Conjunto de direitos e deveres</strong></p>
+                            <p><strong>Explicação:</strong> Cidadania é o conjunto de direitos e deveres de um cidadão.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-facil">
+                        <span class="badge">FÁCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>4.</strong> Para Platão, quem deve governar?</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q4"> a) Os militares</label>
+                            <label><input type="radio" name="q4"> b) Os filósofos</label>
+                            <label><input type="radio" name="q4"> c) Os ricos</label>
+                            <label><input type="radio" name="q4"> d) O povo</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: B) Os filósofos</strong></p>
+                            <p><strong>Explicação:</strong> Platão defendia que os filósofos (governantes sábios) deveriam governar.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-facil">
+                        <span class="badge">FÁCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>5.</strong> Rousseau defendia que o poder emana de:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q5"> a) Deus</label>
+                            <label><input type="radio" name="q5"> b) O povo</label>
+                            <label><input type="radio" name="q5"> c) O rei</label>
+                            <label><input type="radio" name="q5"> d) Os militares</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: B) O povo</strong></p>
+                            <p><strong>Explicação:</strong> Rousseau defendia que o poder emana do povo, e a vontade geral é a base da democracia.</p>
+                        </div>
+                    </div>
+
+                    <!-- 5 MÉDIAS -->
+                    <div class="exercicio-medio">
+                        <span class="badge">MÉDIO</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>6.</strong> (ENEM) A divisão dos poderes é importante porque:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q6"> a) Concentra o poder</label>
+                            <label><input type="radio" name="q6"> b) Evita o abuso de poder</label>
+                            <label><input type="radio" name="q6"> c) Aumenta a corrupção</label>
+                            <label><input type="radio" name="q6"> d) Diminui a participação popular</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: B) Evita o abuso de poder</strong></p>
+                            <p><strong>Explicação:</strong> A divisão dos poderes impede que um único poder se torne absoluto, evitando o abuso de poder.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-medio">
+                        <span class="badge">MÉDIO</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>7.</strong> (ENEM) A democracia é caracterizada pela:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q7"> a) Participação popular</label>
+                            <label><input type="radio" name="q7"> b) Centralização do poder</label>
+                            <label><input type="radio" name="q7"> c) Exclusão social</label>
+                            <label><input type="radio" name="q7"> d) Autoritarismo</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: A) Participação popular</strong></p>
+                            <p><strong>Explicação:</strong> A democracia é caracterizada pela participação popular e pela soberania do povo.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-medio">
+                        <span class="badge">MÉDIO</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>8.</strong> (ENEM) O conceito de "vontade geral" de Rousseau defende que:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q8"> a) O interesse individual é mais importante</label>
+                            <label><input type="radio" name="q8"> b) O bem comum deve prevalecer sobre os interesses individuais</label>
+                            <label><input type="radio" name="q8"> c) A vontade do rei é a lei</label>
+                            <label><input type="radio" name="q8"> d) Os militares devem governar</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: B) O bem comum deve prevalecer sobre os interesses individuais</strong></p>
+                            <p><strong>Explicação:</strong> Rousseau defendia que a vontade geral representa o bem comum e deve prevalecer sobre os interesses individuais.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-medio">
+                        <span class="badge">MÉDIO</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>9.</strong> (ENEM) Maquiavel, em "O Príncipe", defende que o governante deve:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q9"> a) Ser bondoso sempre</label>
+                            <label><input type="radio" name="q9"> b) Ser pragmático e fazer o que for necessário para manter o poder</label>
+                            <label><input type="radio" name="q9"> c) Ignorar a política</label>
+                            <label><input type="radio" name="q9"> d) Agir apenas com a razão</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: B) Ser pragmático e fazer o que for necessário para manter o poder</strong></p>
+                            <p><strong>Explicação:</strong> Maquiavel defendia que o governante deve ser pragmático e fazer o que for necessário para manter o poder.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-medio">
+                        <span class="badge">MÉDIO</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>10.</strong> (ENEM) A participação política é essencial na democracia porque:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q10"> a) Permite que o povo influencie as decisões</label>
+                            <label><input type="radio" name="q10"> b) Concentra o poder</label>
+                            <label><input type="radio" name="q10"> c) Exclui os cidadãos</label>
+                            <label><input type="radio" name="q10"> d) Beneficia apenas os governantes</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: A) Permite que o povo influencie as decisões</strong></p>
+                            <p><strong>Explicação:</strong> A participação política permite que o povo influencie as decisões e exerça a cidadania.</p>
+                        </div>
+                    </div>
+
+                    <!-- 5 DIFÍCEIS -->
+                    <div class="exercicio-dificil">
+                        <span class="badge">DIFÍCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>11.</strong> (ENEM) O conceito de "poder" em Maquiavel está relacionado a:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q11"> a) Justiça e equidade</label>
+                            <label><input type="radio" name="q11"> b) Capacidade de influenciar o comportamento dos outros</label>
+                            <label><input type="radio" name="q11"> c) Participação popular</label>
+                            <label><input type="radio" name="q11"> d) Igualdade social</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: B) Capacidade de influenciar o comportamento dos outros</strong></p>
+                            <p><strong>Explicação:</strong> Para Maquiavel, o poder é a capacidade de influenciar ou controlar o comportamento dos outros.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-dificil">
+                        <span class="badge">DIFÍCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>12.</strong> (ENEM) A democracia moderna se baseia no princípio de que:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q12"> a) O poder é hereditário</label>
+                            <label><input type="radio" name="q12"> b) O poder emana do povo</label>
+                            <label><input type="radio" name="q12"> c) O poder é divino</label>
+                            <label><input type="radio" name="q12"> d) O poder é militar</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: B) O poder emana do povo</strong></p>
+                            <p><strong>Explicação:</strong> A democracia moderna se baseia no princípio de que o poder emana do povo e é exercido em seu nome.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-dificil">
+                        <span class="badge">DIFÍCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>13.</strong> (ENEM) O conceito de cidadania está relacionado com:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q13"> a) Apenas direitos políticos</label>
+                            <label><input type="radio" name="q13"> b) Direitos civis, políticos e sociais</label>
+                            <label><input type="radio" name="q13"> c) Apenas deveres</label>
+                            <label><input type="radio" name="q13"> d) Exclusão social</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: B) Direitos civis, políticos e sociais</strong></p>
+                            <p><strong>Explicação:</strong> A cidadania envolve direitos civis, políticos e sociais, garantindo a participação plena na sociedade.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-dificil">
+                        <span class="badge">DIFÍCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>14.</strong> (ENEM) A teoria do contrato social de Rousseau defende que:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q14"> a) Os indivíduos devem se submeter ao rei</label>
+                            <label><input type="radio" name="q14"> b) Os indivíduos abrem mão de parte de sua liberdade em troca de segurança e bem comum</label>
+                            <label><input type="radio" name="q14"> c) A sociedade deve ser governada pelos militares</label>
+                            <label><input type="radio" name="q14"> d) O poder deve ser centralizado</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: B) Os indivíduos abrem mão de parte de sua liberdade em troca de segurança e bem comum</strong></p>
+                            <p><strong>Explicação:</strong> Rousseau defende que os indivíduos abrem mão de parte de sua liberdade em troca de segurança e bem comum.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-dificil">
+                        <span class="badge">DIFÍCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>15.</strong> (ENEM) A justiça social é um conceito fundamental para a política porque:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q15"> a) Beneficia apenas os ricos</label>
+                            <label><input type="radio" name="q15"> b) Garante a igualdade de oportunidades</label>
+                            <label><input type="radio" name="q15"> c) Exclui os pobres</label>
+                            <label><input type="radio" name="q15"> d) Ignora os direitos humanos</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: B) Garante a igualdade de oportunidades</strong></p>
+                            <p><strong>Explicação:</strong> A justiça social garante a igualdade de oportunidades e a distribuição equitativa de recursos.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="resumo" class="aba-conteudo">
+                    <div class="resumo-principal">
+                        <h2 class="resumo-titulo">Resumo - Política</h2>
+                        <p class="resumo-subtitulo">Principais pontos para memorizar</p>
+
+                        <div class="resumo-grid">
+                            <div class="resumo-card-item">
+                                <h3>Democracia</h3>
+                                <p>Governo do povo</p>
+                                <span class="resumo-tag">Participação Popular</span>
+                            </div>
+                            <div class="resumo-card-item">
+                                <h3>Poder</h3>
+                                <p>Capacidade de influenciar</p>
+                                <span class="resumo-tag">Maquiavel</span>
+                            </div>
+                            <div class="resumo-card-item">
+                                <h3>Cidadania</h3>
+                                <p>Direitos e deveres</p>
+                                <span class="resumo-tag">Direitos Civis, Políticos e Sociais</span>
+                            </div>
+                            <div class="resumo-card-item">
+                                <h3>Divisão dos Poderes</h3>
+                                <p>Montesquieu</p>
+                                <span class="resumo-tag">Executivo, Legislativo, Judiciário</span>
+                            </div>
+                            <div class="resumo-card-item">
+                                <h3>Vontade Geral</h3>
+                                <p>Rousseau - Bem comum</p>
+                                <span class="resumo-tag">Contrato Social</span>
+                            </div>
+                            <div class="resumo-card-item">
+                                <h3>Justiça</h3>
+                                <p>Igualdade de oportunidades</p>
+                                <span class="resumo-tag">Distribuição Equitativa</span>
+                            </div>
+                        </div>
+
+                        <div class="resumo-dica-final">
+                            <h4>Dica Saphius</h4>
+                            <p>Memorize: <strong>"Democracia + Poder + Cidadania + Justiça = Política"</strong></p>
+                        </div>
+
+                        <div class="resumo-dica-enem">
+                            <h4>Dica ENEM</h4>
+                            <p>Atenção para os termos <strong>"Contrato Social"</strong>, <strong>"Divisão dos Poderes"</strong> e <strong>"Vontade Geral"</strong>.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="simulado" class="aba-conteudo">
+                    <h2 style="color:#2e7d32;">Simulado - Política</h2>
+                    <p style="color:#666;">Teste seus conhecimentos com questões estilo ENEM</p>
+                    <div class="simulado-card">
+                        <div style="display:flex; gap:20px; flex-wrap:wrap; justify-content:center; margin-bottom:15px;">
+                            <span><strong>15 questões</strong></span>
+                            <span><strong>20 minutos</strong></span>
+                            <span><strong>Nível: Fácil a Difícil</strong></span>
+                        </div>
+                        <p style="color:#555; margin-bottom:15px;">As questões são as mesmas da aba "Exercícios" acima.</p>
+                        <button class="btn-principal" onclick="alert('Simulado iniciado! Responda todas as 15 questões acima na aba Exercícios.')">
+                            Iniciar simulado
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script>
+    function trocarAba(botao, abaId) {
+        document.querySelectorAll('.aba-btn').forEach(b => b.classList.remove('active'));
+        botao.classList.add('active');
+
+        document.querySelectorAll('.aba-conteudo').forEach(c => c.classList.remove('active'));
+        document.getElementById(abaId).classList.add('active');
+    }
+
+    function mostrarResposta(botao) {
+        const exercicioDiv = botao.closest('.exercicio-facil, .exercicio-medio, .exercicio-dificil');
+        const respostaDiv = exercicioDiv.querySelector('.resposta-explicada');
+
+        if (respostaDiv.style.display === 'block') {
+            respostaDiv.style.display = 'none';
+            botao.textContent = 'Ver explicação';
+        } else {
+            respostaDiv.style.display = 'block';
+            botao.textContent = 'Ocultar explicação';
+        }
+    }
+
+    document.querySelectorAll('.exercicio-alternativas input[type="radio"]').forEach(input => {
+        input.addEventListener('change', verificarAtividade);
+    });
+
+    async function verificarAtividade() {
+        const questoes = document.querySelectorAll('.exercicio-alternativas');
+        const respondidas = document.querySelectorAll(
+            '.exercicio-alternativas input[type="radio"]:checked'
+        );
+
+        if (respondidas.length === questoes.length) {
+            try {
+                await fetch('/api/trilha/concluir', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        materia: 'filosofia',
+                        topico: 'politica'
+                    })
+                });
+
+                alert('Atividade concluída! Seu progresso na Trilha de Estudos foi atualizado.');
+            } catch (erro) {
+                console.error('Erro ao atualizar progresso:', erro);
+            }
+        }
+    }
+</script>
+
+</body>
+</html>

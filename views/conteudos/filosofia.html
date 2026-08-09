@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filosofia - Saphius</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="app-container">
+        <aside class="sidebar">
+            <div class="sidebar-logo"><h2>Saphius</h2></div>
+            <ul class="sidebar-menu">
+                <li><a href="/dashboard"><span class="icon"></span> <span>Dashboard</span></a></li>
+                <li><a href="/conteudos"><span class="icon"></span> <span>Conteúdos</span></a></li>
+                <li><a href="/trilha"><span class="icon"></span> <span>Trilha de estudos</span></a></li>
+                <li><a href="/bemestar"><span class="icon"></span> <span>Bem-estar</span></a></li>
+                <li><a href="/perfil"><span class="icon"></span> <span>Perfil</span></a></li>
+                <li><a href="/configuracoes"><span class="icon"></span> <span>Configurações</span></a></li>
+                <li><a href="/ajuda"><span class="icon"></span> <span>Ajuda</span></a></li>
+                <li><a href="/sair"><span class="icon"></span> <span>Sair</span></a></li>
+            </ul>
+        </aside>
+
+        <main class="main-content">
+            <div class="container filosofia-container">
+                <div class="filosofia-header">
+                    <h1>Filosofia</h1>
+                    <p>Ética - Política - Filosofia clássica - Pensadores</p>
+                    <p class="descricao">Explore os conteúdos, assista às aulas, pratique com exercícios e teste seus conhecimentos para o ENEM.</p>
+                </div>
+
+                <div class="abas-navegacao">
+                    <button class="aba-btn active" onclick="trocarAba(this, 'conteudos')">Conteúdos</button>
+                    <button class="aba-btn" onclick="trocarAba(this, 'exercicios')">Exercícios</button>
+                    <button class="aba-btn" onclick="trocarAba(this, 'resumos')">Resumos</button>
+                    <button class="aba-btn" onclick="trocarAba(this, 'simulados')">Simulados</button>
+                </div>
+
+                <!-- ===== ABA CONTEÚDOS ===== -->
+                <div id="conteudos" class="aba-conteudo active">
+                    <h2>Conteúdos</h2>
+                    <p class="aba-subtitle">Selecione um tópico para estudar:</p>
+                    <div class="topicos-lista">
+                        <a href="/filosofia/etica" class="topico-item">
+                            <div class="topico-numero">1</div>
+                            <div class="topico-info">
+                                <h3>Ética</h3>
+                                <p>Conceitos de ética e moral, Dilemas éticos, Teorias éticas</p>
+                            </div>
+                            <span class="topico-status">Estudar</span>
+                        </a>
+                        <a href="/filosofia/politica" class="topico-item">
+                            <div class="topico-numero">2</div>
+                            <div class="topico-info">
+                                <h3>Política</h3>
+                                <p>Democracia, Poder, Justiça, Participação política, Filosofia política</p>
+                            </div>
+                            <span class="topico-status">Estudar</span>
+                        </a>
+                        <a href="/filosofia/classica" class="topico-item">
+                            <div class="topico-numero">3</div>
+                            <div class="topico-info">
+                                <h3>Filosofia Clássica</h3>
+                                <p>Platão (Mito da Caverna), Aristóteles (Lógica, Ética), Sócrates</p>
+                            </div>
+                            <span class="topico-status">Estudar</span>
+                        </a>
+                        <a href="/filosofia/modernos" class="topico-item">
+                            <div class="topico-numero">4</div>
+                            <div class="topico-info">
+                                <h3>Pensadores Modernos</h3>
+                                <p>Descartes (Racionalismo), Kant (Crítica da Razão), Rousseau (Contrato Social)</p>
+                            </div>
+                            <span class="topico-status">Estudar</span>
+                        </a>
+                        <a href="/filosofia/contemporanea" class="topico-item">
+                            <div class="topico-numero">5</div>
+                            <div class="topico-info">
+                                <h3>Filosofia Contemporânea</h3>
+                                <p>Existencialismo (Sartre), Fenomenologia, Filosofia da ciência</p>
+                            </div>
+                            <span class="topico-status">Estudar</span>
+                        </a>
+                        <a href="/filosofia/enem" class="topico-item">
+                            <div class="topico-numero">6</div>
+                            <div class="topico-info">
+                                <h3>Filosofia no ENEM</h3>
+                                <p>Temas e questões filosóficas que aparecem na prova do ENEM</p>
+                            </div>
+                            <span class="topico-status">Estudar</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- ===== ABA EXERCÍCIOS ===== -->
+                <div id="exercicios" class="aba-conteudo">
+                    <h2>Exercícios</h2>
+                    <p class="aba-subtitle">Pratique com exercícios sobre Filosofia</p>
+                    <div class="topicos-lista">
+                        <a href="/filosofia/etica" class="topico-item">
+                            <div class="topico-numero">1</div>
+                            <div class="topico-info">
+                                <h3>Exercícios - Ética</h3>
+                                <p>Questões sobre conceitos éticos e teorias</p>
+                            </div>
+                            <span class="topico-status">Praticar</span>
+                        </a>
+                        <a href="/filosofia/politica" class="topico-item">
+                            <div class="topico-numero">2</div>
+                            <div class="topico-info">
+                                <h3>Exercícios - Política</h3>
+                                <p>Questões sobre democracia e poder</p>
+                            </div>
+                            <span class="topico-status">Praticar</span>
+                        </a>
+                        <a href="/filosofia/classica" class="topico-item">
+                            <div class="topico-numero">3</div>
+                            <div class="topico-info">
+                                <h3>Exercícios - Filosofia Clássica</h3>
+                                <p>Questões sobre Platão e Aristóteles</p>
+                            </div>
+                            <span class="topico-status">Praticar</span>
+                        </a>
+                        <a href="/filosofia/modernos" class="topico-item">
+                            <div class="topico-numero">4</div>
+                            <div class="topico-info">
+                                <h3>Exercícios - Pensadores Modernos</h3>
+                                <p>Questões sobre Descartes e Kant</p>
+                            </div>
+                            <span class="topico-status">Praticar</span>
+                        </a>
+                        <a href="/filosofia/contemporanea" class="topico-item">
+                            <div class="topico-numero">5</div>
+                            <div class="topico-info">
+                                <h3>Exercícios - Filosofia Contemporânea</h3>
+                                <p>Questões sobre Existencialismo</p>
+                            </div>
+                            <span class="topico-status">Praticar</span>
+                        </a>
+                        <a href="/filosofia/enem" class="topico-item">
+                            <div class="topico-numero">6</div>
+                            <div class="topico-info">
+                                <h3>Exercícios - Filosofia no ENEM</h3>
+                                <p>Questões estilo ENEM</p>
+                            </div>
+                            <span class="topico-status">Praticar</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- ===== ABA RESUMOS ===== -->
+                <div id="resumos" class="aba-conteudo">
+                    <h2>Resumos</h2>
+                    <p class="aba-subtitle">Resumos dos principais tópicos de Filosofia</p>
+                    <div class="topicos-lista">
+                        <a href="/filosofia/etica" class="topico-item">
+                            <div class="topico-numero">1</div>
+                            <div class="topico-info">
+                                <h3>Resumo - Ética</h3>
+                                <p>Principais pontos sobre teorias éticas</p>
+                            </div>
+                            <span class="topico-status">Ver resumo</span>
+                        </a>
+                        <a href="/filosofia/politica" class="topico-item">
+                            <div class="topico-numero">2</div>
+                            <div class="topico-info">
+                                <h3>Resumo - Política</h3>
+                                <p>Principais pontos sobre democracia</p>
+                            </div>
+                            <span class="topico-status">Ver resumo</span>
+                        </a>
+                        <a href="/filosofia/classica" class="topico-item">
+                            <div class="topico-numero">3</div>
+                            <div class="topico-info">
+                                <h3>Resumo - Filosofia Clássica</h3>
+                                <p>Principais pontos sobre Platão e Aristóteles</p>
+                            </div>
+                            <span class="topico-status">Ver resumo</span>
+                        </a>
+                        <a href="/filosofia/modernos" class="topico-item">
+                            <div class="topico-numero">4</div>
+                            <div class="topico-info">
+                                <h3>Resumo - Pensadores Modernos</h3>
+                                <p>Principais pontos sobre Descartes e Kant</p>
+                            </div>
+                            <span class="topico-status">Ver resumo</span>
+                        </a>
+                        <a href="/filosofia/contemporanea" class="topico-item">
+                            <div class="topico-numero">5</div>
+                            <div class="topico-info">
+                                <h3>Resumo - Filosofia Contemporânea</h3>
+                                <p>Principais pontos sobre Existencialismo</p>
+                            </div>
+                            <span class="topico-status">Ver resumo</span>
+                        </a>
+                        <a href="/filosofia/enem" class="topico-item">
+                            <div class="topico-numero">6</div>
+                            <div class="topico-info">
+                                <h3>Resumo - Filosofia no ENEM</h3>
+                                <p>Principais pontos para a prova</p>
+                            </div>
+                            <span class="topico-status">Ver resumo</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- ===== ABA SIMULADOS ===== -->
+                <div id="simulados" class="aba-conteudo">
+                    <h2>Simulados</h2>
+                    <p class="aba-subtitle">Teste seus conhecimentos com simulados estilo ENEM</p>
+                    <div class="topicos-lista">
+                        <a href="/filosofia/etica" class="topico-item">
+                            <div class="topico-numero">1</div>
+                            <div class="topico-info">
+                                <h3>Simulado - Ética</h3>
+                                <p>10 questões estilo ENEM</p>
+                            </div>
+                            <span class="topico-status">Iniciar</span>
+                        </a>
+                        <a href="/filosofia/politica" class="topico-item">
+                            <div class="topico-numero">2</div>
+                            <div class="topico-info">
+                                <h3>Simulado - Política</h3>
+                                <p>10 questões estilo ENEM</p>
+                            </div>
+                            <span class="topico-status">Iniciar</span>
+                        </a>
+                        <a href="/filosofia/classica" class="topico-item">
+                            <div class="topico-numero">3</div>
+                            <div class="topico-info">
+                                <h3>Simulado - Filosofia Clássica</h3>
+                                <p>10 questões estilo ENEM</p>
+                            </div>
+                            <span class="topico-status">Iniciar</span>
+                        </a>
+                        <a href="/filosofia/modernos" class="topico-item">
+                            <div class="topico-numero">4</div>
+                            <div class="topico-info">
+                                <h3>Simulado - Pensadores Modernos</h3>
+                                <p>10 questões estilo ENEM</p>
+                            </div>
+                            <span class="topico-status">Iniciar</span>
+                        </a>
+                        <a href="/filosofia/contemporanea" class="topico-item">
+                            <div class="topico-numero">5</div>
+                            <div class="topico-info">
+                                <h3>Simulado - Filosofia Contemporânea</h3>
+                                <p>10 questões estilo ENEM</p>
+                            </div>
+                            <span class="topico-status">Iniciar</span>
+                        </a>
+                        <a href="/filosofia/enem" class="topico-item">
+                            <div class="topico-numero">6</div>
+                            <div class="topico-info">
+                                <h3>Simulado - Filosofia no ENEM</h3>
+                                <p>10 questões estilo ENEM</p>
+                            </div>
+                            <span class="topico-status">Iniciar</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="dica-saphius">
+                    <h3>Dica Saphius</h3>
+                    <p>Estude os conteúdos, faça os exercícios e teste seus conhecimentos nos simulados.</p>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        function trocarAba(botao, abaId) {
+            document.querySelectorAll('.aba-btn').forEach(b => b.classList.remove('active'));
+            botao.classList.add('active');
+            document.querySelectorAll('.aba-conteudo').forEach(c => c.classList.remove('active'));
+            document.getElementById(abaId).classList.add('active');
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Movimentos Sociais - Saphius</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/views/conteudos/sociologia/sociologia.css">
+</head>
+<body>
+    <div class="app-container">
+        <aside class="sidebar">
+            <div class="sidebar-logo"><h2>Saphius</h2></div>
+            <ul class="sidebar-menu">
+                <li><a href="/dashboard"><span class="icon"></span> <span>Dashboard</span></a></li>
+                <li><a href="/conteudos"><span class="icon"></span> <span>Conteúdos</span></a></li>
+                <li><a href="/trilha"><span class="icon"></span> <span>Trilha de estudos</span></a></li>
+                <li><a href="/bemestar"><span class="icon"></span> <span>Bem-estar</span></a></li>
+                <li><a href="/perfil"><span class="icon"></span> <span>Perfil</span></a></li>
+                <li><a href="/configuracoes"><span class="icon"></span> <span>Configurações</span></a></li>
+                <li><a href="/ajuda"><span class="icon"></span> <span>Ajuda</span></a></li>
+                <li><a href="/sair"><span class="icon"></span> <span>Sair</span></a></li>
+            </ul>
+        </aside>
+
+        <main class="main-content">
+            <div class="container">
+                <a href="/sociologia" class="voltar">Voltar para Sociologia</a>
+
+                <h1 style="text-align:center; font-size:2.5em; color:#2e7d32;">Movimentos Sociais</h1>
+                <p style="color:#666; text-align:center; font-size:1.1em;">Movimentos populares, Organização social, Lutas e conquistas no Brasil</p>
+
+                <div class="abas-navegacao" style="margin:25px 0;">
+                    <button class="aba-btn active" onclick="trocarAba(this, 'conteudo')">Conteúdo</button>
+                    <button class="aba-btn" onclick="trocarAba(this, 'exercicios')">Exercícios</button>
+                    <button class="aba-btn" onclick="trocarAba(this, 'resumo')">Resumo</button>
+                    <button class="aba-btn" onclick="trocarAba(this, 'simulado')">Simulado</button>
+                </div>
+
+                <div id="conteudo" class="aba-conteudo active">
+
+                    <div class="explicacao-detalhada">
+                        <h3>O que são Movimentos Sociais?</h3>
+                        <p>
+                            Os <strong>movimentos sociais</strong> são ações coletivas organizadas por grupos da sociedade 
+                            com o objetivo de promover <strong>transformações sociais</strong>, políticas ou culturais. 
+                            Eles são fundamentais para a <strong>democracia</strong> e para a <strong>conquista de direitos</strong>.
+                        </p>
+                        <div class="enem-dica">
+                            <strong>DICA ENEM:</strong>
+                            <p>Movimentos sociais é um tema recorrente no ENEM, especialmente em questões sobre 
+                            <strong>cidadania</strong>, <strong>participação popular</strong> e 
+                            <strong>conquistas históricas</strong>.</p>
+                        </div>
+                    </div>
+
+                    <div class="explicacao-detalhada">
+                        <h3>Tipos de Movimentos Sociais</h3>
+                        <ul>
+                            <li><strong>Movimentos populares:</strong> Organizados pela população em busca de melhores condições de vida, como o Movimento dos Sem Teto (MST) e o Movimento dos Atingidos por Barragens (MAB).</li>
+                            <li><strong>Movimentos trabalhistas:</strong> Lutas dos trabalhadores por direitos e melhores condições de trabalho, como sindicatos e greves.</li>
+                            <li><strong>Movimentos identitários:</strong> Baseados em identidades como raça, gênero, orientação sexual, como o movimento feminista, o movimento negro e o movimento LGBTQIA+.</li>
+                            <li><strong>Movimentos ambientalistas:</strong> Defesa do meio ambiente e da sustentabilidade, como Greenpeace e WWF.</li>
+                            <li><strong>Movimentos estudantis:</strong> Organizados por estudantes por melhorias na educação.</li>
+                        </ul>
+                        <div class="enem-dica">
+                            <strong>DICA ENEM:</strong>
+                            <p>O ENEM cobra a diferença entre os tipos de movimentos sociais e suas conquistas.</p>
+                        </div>
+                    </div>
+
+                    <div class="explicacao-detalhada">
+                        <h3>Principais Movimentos Sociais no Brasil</h3>
+                        <ul>
+                            <li><strong>MST (Movimento dos Trabalhadores Rurais sem Terra):</strong> Luta pela reforma agrária e pela distribuição de terras. Fundado em 1984, é um dos maiores movimentos sociais da América Latina.</li>
+                            <li><strong>Movimento Feminista:</strong> Luta pelos direitos das mulheres e igualdade de gênero. Conquistas: voto feminino (1932), Lei Maria da Penha (2006), participação política.</li>
+                            <li><strong>Movimento Negro:</strong> Combate ao racismo e valorização da cultura afro-brasileira. Conquistas: Estatuto da Igualdade Racial (2010), cotas raciais.</li>
+                            <li><strong>Movimento LGBTQIA+:</strong> Luta pelos direitos da comunidade LGBTQIA+. Conquistas: união civil homoafetiva (2011), criminalização da homofobia (2019).</li>
+                            <li><strong>Movimento Ambientalista:</strong> Defesa do meio ambiente e combate ao desmatamento. Conquistas: Código Florestal, criação de unidades de conservação.</li>
+                            <li><strong>Movimento dos Atingidos por Barragens (MAB):</strong> Luta por indenização e direitos das populações afetadas por hidrelétricas.</li>
+                        </ul>
+                        <div class="enem-dica">
+                            <strong>DICA ENEM:</strong>
+                            <p>O ENEM cobra os principais movimentos sociais do Brasil e suas conquistas históricas.</p>
+                        </div>
+                    </div>
+
+                    <div class="explicacao-detalhada">
+                        <h3>Conquistas dos Movimentos Sociais</h3>
+                        <ul>
+                            <li><strong>Constituição de 1988:</strong> Garantia de direitos sociais e políticos, influenciada por movimentos sociais.</li>
+                            <li><strong>Lei Maria da Penha (2006):</strong> Combate à violência doméstica contra a mulher, resultado da luta do movimento feminista.</li>
+                            <li><strong>Estatuto da Igualdade Racial (2010):</strong> Combate ao racismo, resultado da luta do movimento negro.</li>
+                            <li><strong>União civil homoafetiva (2011):</strong> Reconhecimento dos direitos da comunidade LGBTQIA+.</li>
+                            <li><strong>Lei de Cotas (2012):</strong> Reserva de vagas para negros e indígenas em universidades públicas.</li>
+                            <li><strong>Código Florestal (2012):</strong> Proteção ambiental, resultado da luta do movimento ambientalista.</li>
+                        </ul>
+                        <div class="enem-dica">
+                            <strong>DICA ENEM:</strong>
+                            <p>Relacione os <strong>movimentos sociais</strong> com as <strong>conquistas históricas</strong> para responder questões sobre o tema.</p>
+                        </div>
+                    </div>
+
+                    <div class="explicacao-detalhada">
+                        <h3>Desafios dos Movimentos Sociais</h3>
+                        <ul>
+                            <li><strong>Repressão:</strong> Perseguição a líderes e ativistas, violência no campo e nas cidades.</li>
+                            <li><strong>Falta de recursos:</strong> Dificuldade de financiamento e apoio institucional.</li>
+                            <li><strong>Fragmentação:</strong> Dispersão de pautas e falta de unidade entre os movimentos.</li>
+                            <li><strong>Desigualdade:</strong> A luta por direitos enfrenta resistência de setores conservadores.</li>
+                            <li><strong>Desinformação:</strong> Falta de conhecimento da população sobre os objetivos dos movimentos.</li>
+                        </ul>
+                    </div>
+
+                    <div class="dica-saphius">
+                        <h3>Dica Saphius</h3>
+                        <p>
+                            Relacione os <strong>movimentos sociais</strong> com as <strong>conquistas históricas</strong> para responder questões sobre o tema. Memorize: <strong>"MST + Feminista + Negro + LGBTQIA+ + Ambientalista = Movimentos Sociais no Brasil"</strong>.
+                        </p>
+                    </div>
+                </div>
+
+                <div id="exercicios" class="aba-conteudo">
+                    <h2 style="color:#2e7d32;"> Exercícios - Movimentos Sociais</h2>
+                    <p style="color:#666;">15 questões (5 Fáceis, 5 Médias, 5 Difíceis)</p>
+
+                    <!-- 5 FÁCEIS -->
+                    <div class="exercicio-facil">
+                        <span class="badge">FÁCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>1.</strong> Os movimentos sociais são:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q1"> a) Ações coletivas por transformações sociais</label>
+                            <label><input type="radio" name="q1"> b) Ações individuais</label>
+                            <label><input type="radio" name="q1"> c) Ações governamentais</label>
+                            <label><input type="radio" name="q1"> d) Ações empresariais</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: A) Ações coletivas por transformações sociais</strong></p>
+                            <p><strong>Explicação:</strong> Movimentos sociais são ações coletivas organizadas para promover transformações sociais.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-facil">
+                        <span class="badge">FÁCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>2.</strong> O MST luta pela:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q2"> a) Reforma agrária</label>
+                            <label><input type="radio" name="q2"> b) Igualdade de gênero</label>
+                            <label><input type="radio" name="q2"> c) Combate ao racismo</label>
+                            <label><input type="radio" name="q2"> d) Defesa do meio ambiente</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: A) Reforma agrária</strong></p>
+                            <p><strong>Explicação:</strong> O MST (Movimento dos Trabalhadores Rurais sem Terra) luta pela reforma agrária.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-facil">
+                        <span class="badge">FÁCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>3.</strong> A Lei Maria da Penha é uma conquista do:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q3"> a) Movimento Feminista</label>
+                            <label><input type="radio" name="q3"> b) Movimento Negro</label>
+                            <label><input type="radio" name="q3"> c) MST</label>
+                            <label><input type="radio" name="q3"> d) Movimento Ambientalista</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: A) Movimento Feminista</strong></p>
+                            <p><strong>Explicação:</strong> A Lei Maria da Penha é uma conquista do movimento feminista no combate à violência doméstica.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-facil">
+                        <span class="badge">FÁCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>4.</strong> O movimento LGBTQIA+ luta por:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q4"> a) Direitos da comunidade LGBTQIA+</label>
+                            <label><input type="radio" name="q4"> b) Reforma agrária</label>
+                            <label><input type="radio" name="q4"> c) Defesa do meio ambiente</label>
+                            <label><input type="radio" name="q4"> d) Igualdade racial</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: A) Direitos da comunidade LGBTQIA+</strong></p>
+                            <p><strong>Explicação:</strong> O movimento LGBTQIA+ luta pelos direitos da comunidade LGBTQIA+.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-facil">
+                        <span class="badge">FÁCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>5.</strong> O movimento ambientalista defende a:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q5"> a) Preservação do meio ambiente</label>
+                            <label><input type="radio" name="q5"> b) Reforma agrária</label>
+                            <label><input type="radio" name="q5"> c) Igualdade racial</label>
+                            <label><input type="radio" name="q5"> d) Direitos trabalhistas</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: A) Preservação do meio ambiente</strong></p>
+                            <p><strong>Explicação:</strong> O movimento ambientalista defende a preservação do meio ambiente e a sustentabilidade.</p>
+                        </div>
+                    </div>
+
+                    <!-- 5 MÉDIAS -->
+                    <div class="exercicio-medio">
+                        <span class="badge">MÉDIO</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>6.</strong> (ENEM) Os movimentos sociais são importantes para a democracia porque:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q6"> a) Substituem as eleições</label>
+                            <label><input type="radio" name="q6"> b) Ampliam a participação popular</label>
+                            <label><input type="radio" name="q6"> c) Centralizam o poder</label>
+                            <label><input type="radio" name="q6"> d) Excluem os cidadãos</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: B) Ampliam a participação popular</strong></p>
+                            <p><strong>Explicação:</strong> Os movimentos sociais ampliam a participação popular e a cidadania.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-medio">
+                        <span class="badge">MÉDIO</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>7.</strong> (ENEM) O movimento negro no Brasil luta contra:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q7"> a) O racismo</label>
+                            <label><input type="radio" name="q7"> b) A desigualdade de gênero</label>
+                            <label><input type="radio" name="q7"> c) O desmatamento</label>
+                            <label><input type="radio" name="q7"> d) A reforma agrária</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: A) O racismo</strong></p>
+                            <p><strong>Explicação:</strong> O movimento negro luta contra o racismo e pela valorização da cultura afro-brasileira.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-medio">
+                        <span class="badge">MÉDIO</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>8.</strong> (ENEM) A Constituição de 1988 foi influenciada por movimentos sociais que defendiam:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q8"> a) A ditadura</label>
+                            <label><input type="radio" name="q8"> b) Direitos sociais e políticos</label>
+                            <label><input type="radio" name="q8"> c) A censura</label>
+                            <label><input type="radio" name="q8"> d) A centralização do poder</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: B) Direitos sociais e políticos</strong></p>
+                            <p><strong>Explicação:</strong> A Constituição de 1988 foi influenciada por movimentos sociais que defendiam direitos sociais e políticos.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-medio">
+                        <span class="badge">MÉDIO</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>9.</strong> (ENEM) A união civil homoafetiva é uma conquista do movimento:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q9"> a) Feminista</label>
+                            <label><input type="radio" name="q9"> b) LGBTQIA+</label>
+                            <label><input type="radio" name="q9"> c) Negro</label>
+                            <label><input type="radio" name="q9"> d) Ambientalista</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: B) LGBTQIA+</strong></p>
+                            <p><strong>Explicação:</strong> A união civil homoafetiva é uma conquista do movimento LGBTQIA+.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-medio">
+                        <span class="badge">MÉDIO</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>10.</strong> (ENEM) O MST é um movimento social que luta pela:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q10"> a) Reforma agrária</label>
+                            <label><input type="radio" name="q10"> b) Igualdade de gênero</label>
+                            <label><input type="radio" name="q10"> c) Defesa do meio ambiente</label>
+                            <label><input type="radio" name="q10"> d) Combate ao racismo</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: A) Reforma agrária</strong></p>
+                            <p><strong>Explicação:</strong> O MST luta pela reforma agrária e pela distribuição de terras.</p>
+                        </div>
+                    </div>
+
+                    <!-- 5 DIFÍCEIS -->
+                    <div class="exercicio-dificil">
+                        <span class="badge">DIFÍCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>11.</strong> (ENEM) Os movimentos sociais são fundamentais para a cidadania porque:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q11"> a) Substituem o Estado</label>
+                            <label><input type="radio" name="q11"> b) Cobram direitos e fiscalizam o poder público</label>
+                            <label><input type="radio" name="q11"> c) Centralizam as decisões políticas</label>
+                            <label><input type="radio" name="q11"> d) Ignoram as leis</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: B) Cobram direitos e fiscalizam o poder público</strong></p>
+                            <p><strong>Explicação:</strong> Movimentos sociais cobram direitos e fiscalizam o poder público.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-dificil">
+                        <span class="badge">DIFÍCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>12.</strong> (ENEM) O Estatuto da Igualdade Racial é uma conquista do movimento:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q12"> a) Feminista</label>
+                            <label><input type="radio" name="q12"> b) Negro</label>
+                            <label><input type="radio" name="q12"> c) LGBTQIA+</label>
+                            <label><input type="radio" name="q12"> d) Ambientalista</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: B) Negro</strong></p>
+                            <p><strong>Explicação:</strong> O Estatuto da Igualdade Racial é uma conquista do movimento negro.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-dificil">
+                        <span class="badge">DIFÍCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>13.</strong> (ENEM) A luta do movimento feminista no Brasil resultou em:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q13"> a) Voto feminino</label>
+                            <label><input type="radio" name="q13"> b) Lei Maria da Penha</label>
+                            <label><input type="radio" name="q13"> c) União civil homoafetiva</label>
+                            <label><input type="radio" name="q13"> d) Todas as alternativas estão corretas</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: D) Todas as alternativas estão corretas</strong></p>
+                            <p><strong>Explicação:</strong> O movimento feminista conquistou o voto feminino, a Lei Maria da Penha e outros direitos.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-dificil">
+                        <span class="badge">DIFÍCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>14.</strong> (ENEM) O movimento ambientalista no Brasil atua contra:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q14"> a) O desmatamento da Amazônia</label>
+                            <label><input type="radio" name="q14"> b) A reforma agrária</label>
+                            <label><input type="radio" name="q14"> c) A igualdade racial</label>
+                            <label><input type="radio" name="q14"> d) A ditadura</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: A) O desmatamento da Amazônia</strong></p>
+                            <p><strong>Explicação:</strong> O movimento ambientalista atua contra o desmatamento da Amazônia e a degradação ambiental.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-dificil">
+                        <span class="badge">DIFÍCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>15.</strong> (ENEM) Os movimentos sociais são importantes para a construção da cidadania porque:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q15"> a) Centralizam o poder</label>
+                            <label><input type="radio" name="q15"> b) Ampliam a participação política</label>
+                            <label><input type="radio" name="q15"> c) Substituem o Estado</label>
+                            <label><input type="radio" name="q15"> d) Ignoram os direitos</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: B) Ampliam a participação política</strong></p>
+                            <p><strong>Explicação:</strong> Movimentos sociais ampliam a participação política e fortalecem a cidadania.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="resumo" class="aba-conteudo">
+                    <div class="resumo-principal">
+                        <h2 class="resumo-titulo">Resumo - Movimentos Sociais</h2>
+                        <p class="resumo-subtitulo">Principais pontos para memorizar</p>
+
+                        <div class="resumo-grid">
+                            <div class="resumo-card-item">
+                                <h3>Movimentos Sociais</h3>
+                                <p>Ações coletivas por transformações</p>
+                                <span class="resumo-tag">Participação</span>
+                            </div>
+                            <div class="resumo-card-item">
+                                <h3>MST</h3>
+                                <p>Reforma agrária</p>
+                                <span class="resumo-tag">Terra</span>
+                            </div>
+                            <div class="resumo-card-item">
+                                <h3>Feminista</h3>
+                                <p>Lei Maria da Penha, voto feminino</p>
+                                <span class="resumo-tag">Igualdade</span>
+                            </div>
+                            <div class="resumo-card-item">
+                                <h3>Movimento Negro</h3>
+                                <p>Estatuto da Igualdade Racial</p>
+                                <span class="resumo-tag">Racismo</span>
+                            </div>
+                            <div class="resumo-card-item">
+                                <h3>LGBTQIA+</h3>
+                                <p>União civil homoafetiva</p>
+                                <span class="resumo-tag">Diversidade</span>
+                            </div>
+                            <div class="resumo-card-item">
+                                <h3>Ambientalista</h3>
+                                <p>Preservação da Amazônia</p>
+                                <span class="resumo-tag">Sustentabilidade</span>
+                            </div>
+                        </div>
+
+                        <div class="resumo-dica-final">
+                            <h4>Dica Saphius</h4>
+                            <p>Memorize: <strong>"MST + Feminista + Negro + LGBTQIA+ + Ambientalista = Movimentos Sociais no Brasil"</strong></p>
+                        </div>
+
+                        <div class="resumo-dica-enem">
+                            <h4>Dica ENEM</h4>
+                            <p>Atenção para os termos <strong>"Reforma Agrária"</strong>, <strong>"Lei Maria da Penha"</strong> e <strong>"Igualdade Racial"</strong>.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="simulado" class="aba-conteudo">
+                    <h2 style="color:#2e7d32;">Simulado - Movimentos Sociais</h2>
+                    <p style="color:#666;">Teste seus conhecimentos com questões estilo ENEM</p>
+                    <div class="simulado-card">
+                        <div style="display:flex; gap:20px; flex-wrap:wrap; justify-content:center; margin-bottom:15px;">
+                            <span><strong>15 questões</strong></span>
+                            <span><strong>20 minutos</strong></span>
+                            <span><strong>Nível: Fácil a Difícil</strong></span>
+                        </div>
+                        <p style="color:#555; margin-bottom:15px;">As questões são as mesmas da aba "Exercícios" acima.</p>
+                        <button class="btn-principal" onclick="alert(' Simulado iniciado! Responda todas as 15 questões acima na aba Exercícios.')">
+                            Iniciar simulado
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script>
+    function trocarAba(botao, abaId) {
+        document.querySelectorAll('.aba-btn').forEach(b => b.classList.remove('active'));
+        botao.classList.add('active');
+
+        document.querySelectorAll('.aba-conteudo').forEach(c => c.classList.remove('active'));
+        document.getElementById(abaId).classList.add('active');
+    }
+
+    function mostrarResposta(botao) {
+        const exercicioDiv = botao.closest('.exercicio-facil, .exercicio-medio, .exercicio-dificil');
+        const respostaDiv = exercicioDiv.querySelector('.resposta-explicada');
+
+        if (respostaDiv.style.display === 'block') {
+            respostaDiv.style.display = 'none';
+            botao.textContent = 'Ver explicação';
+        } else {
+            respostaDiv.style.display = 'block';
+            botao.textContent = 'Ocultar explicação';
+        }
+    }
+
+    document.querySelectorAll('.exercicio-alternativas input[type="radio"]').forEach(input => {
+        input.addEventListener('change', verificarAtividade);
+    });
+
+    async function verificarAtividade() {
+        const questoes = document.querySelectorAll('.exercicio-alternativas');
+        const respondidas = document.querySelectorAll(
+            '.exercicio-alternativas input[type="radio"]:checked'
+        );
+
+        if (respondidas.length === questoes.length) {
+            try {
+                await fetch('/api/trilha/concluir', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        materia: 'sociologia',
+                        topico: 'movimentos-sociais'
+                    })
+                });
+
+                alert('Atividade concluída! Seu progresso na Trilha de Estudos foi atualizado.');
+            } catch (erro) {
+                console.error('Erro ao atualizar progresso:', erro);
+            }
+        }
+    }
+</script>
+
+</body>
+</html>

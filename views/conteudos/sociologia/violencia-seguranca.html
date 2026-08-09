@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Violência e Segurança - Saphius</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/views/conteudos/sociologia/sociologia.css">
+</head>
+<body>
+    <div class="app-container">
+        <aside class="sidebar">
+            <div class="sidebar-logo"><h2>Saphius</h2></div>
+            <ul class="sidebar-menu">
+                <li><a href="/dashboard"><span class="icon"></span> <span>Dashboard</span></a></li>
+                <li><a href="/conteudos"><span class="icon"></span> <span>Conteúdos</span></a></li>
+                <li><a href="/trilha"><span class="icon"></span> <span>Trilha de estudos</span></a></li>
+                <li><a href="/bemestar"><span class="icon"></span> <span>Bem-estar</span></a></li>
+                <li><a href="/perfil"><span class="icon"></span> <span>Perfil</span></a></li>
+                <li><a href="/configuracoes"><span class="icon"></span> <span>Configurações</span></a></li>
+                <li><a href="/ajuda"><span class="icon"></span> <span>Ajuda</span></a></li>
+                <li><a href="/sair"><span class="icon"></span> <span>Sair</span></a></li>
+            </ul>
+        </aside>
+
+        <main class="main-content">
+            <div class="container">
+                <a href="/sociologia" class="voltar">Voltar para Sociologia</a>
+
+                <h1 style="text-align:center; font-size:2.5em; color:#2e7d32;">Violência e Segurança</h1>
+                <p style="color:#666; text-align:center; font-size:1.1em;">Questões de segurança, Direitos humanos, Violência no Brasil</p>
+
+                <div class="abas-navegacao" style="margin:25px 0;">
+                    <button class="aba-btn active" onclick="trocarAba(this, 'conteudo')">Conteúdo</button>
+                    <button class="aba-btn" onclick="trocarAba(this, 'exercicios')">Exercícios</button>
+                    <button class="aba-btn" onclick="trocarAba(this, 'resumo')">Resumo</button>
+                    <button class="aba-btn" onclick="trocarAba(this, 'simulado')">Simulado</button>
+                </div>
+
+                <div id="conteudo" class="aba-conteudo active">
+
+                    <div class="explicacao-detalhada">
+                        <h3>O que é Violência?</h3>
+                        <p>
+                            A <strong>violência</strong> é o uso intencional da força física ou psicológica contra si mesmo, 
+                            contra outras pessoas ou contra grupos, que resulta em lesões, morte, danos psicológicos ou 
+                            privação de direitos. No Brasil, a violência é um dos principais problemas sociais, afetando 
+                            especialmente as populações mais vulneráveis.
+                        </p>
+                        <div class="enem-dica">
+                            <strong>DICA ENEM:</strong>
+                            <p>Violência e segurança é um tema recorrente no ENEM, especialmente em questões sobre 
+                            <strong>direitos humanos</strong>, <strong>segurança pública</strong> e 
+                            <strong>desigualdade</strong>.</p>
+                        </div>
+                    </div>
+
+                    <div class="explicacao-detalhada">
+                        <h3>Tipos de Violência</h3>
+                        <ul>
+                            <li><strong>Violência física:</strong> Agressões corporais, lesões, homicídios, tortura.</li>
+                            <li><strong>Violência psicológica:</strong> Ameaças, humilhações, intimidação, assédio moral.</li>
+                            <li><strong>Violência sexual:</strong> Abuso sexual, estupro, assédio sexual.</li>
+                            <li><strong>Violência simbólica:</strong> Discriminação, preconceito, exclusão social, racismo, sexismo.</li>
+                            <li><strong>Violência estrutural:</strong> Violência gerada pela desigualdade social, pobreza e exclusão.</li>
+                            <li><strong>Violência policial:</strong> Uso excessivo de força por agentes de segurança.</li>
+                        </ul>
+                        <div class="enem-dica">
+                            <strong>DICA ENEM:</strong>
+                            <p>O ENEM cobra os diferentes tipos de violência e seus impactos na sociedade.</p>
+                        </div>
+                    </div>
+
+                    <div class="explicacao-detalhada">
+                        <h3>Causas da Violência no Brasil</h3>
+                        <ul>
+                            <li><strong>Desigualdade social:</strong> Pobreza, falta de oportunidades e exclusão social geram violência.</li>
+                            <li><strong>Impuniidade:</strong> Falta de punição para crimes, o que incentiva a criminalidade.</li>
+                            <li><strong>Tráfico de drogas:</strong> Conflitos entre facções e disputas por territórios.</li>
+                            <li><strong>Falta de políticas públicas:</strong> Investimento insuficiente em educação, saúde e segurança.</li>
+                            <li><strong>Cultura da violência:</strong> Normalização da violência na sociedade e na mídia.</li>
+                            <li><strong>Desarmamento:</strong> Facilidade de acesso a armas de fogo.</li>
+                        </ul>
+                        <div class="enem-dica">
+                            <strong>DICA ENEM:</strong>
+                            <p>O ENEM cobra as <strong>causas da violência</strong> no Brasil, relacionando com a desigualdade social.</p>
+                        </div>
+                    </div>
+
+                    <div class="explicacao-detalhada">
+                        <h3>Segurança Pública e Direitos Humanos</h3>
+                        <ul>
+                            <li><strong>Segurança pública:</strong> Conjunto de políticas de prevenção e combate à violência, responsabilidade do Estado.</li>
+                            <li><strong>Direitos humanos:</strong> Proteção dos direitos fundamentais, como vida, liberdade e integridade física.</li>
+                            <li><strong>Polícia:</strong> Papel na manutenção da ordem e na proteção dos cidadãos, mas também sujeita a críticas por violência.</li>
+                            <li><strong>Justiça:</strong> Sistema judicial para punir crimes e garantir os direitos dos cidadãos.</li>
+                            <li><strong>Presídios:</strong> Sistema carcerário superlotado e com condições degradantes, que gera mais violência.</li>
+                            <li><strong>Políticas de prevenção:</strong> Educação, geração de emprego, programas sociais e culturais.</li>
+                        </ul>
+                        <div class="enem-dica">
+                            <strong>DICA ENEM:</strong>
+                            <p>O ENEM cobra a relação entre <strong>segurança pública</strong> e <strong>direitos humanos</strong>.</p>
+                        </div>
+                    </div>
+
+                    <div class="explicacao-detalhada">
+                        <h3>Consequências da Violência</h3>
+                        <ul>
+                            <li><strong>Perda de vidas:</strong> Homicídios e mortes violentas, especialmente entre jovens negros.</li>
+                            <li><strong>Traumas psicológicos:</strong> Danos emocionais e mentais para as vítimas.</li>
+                            <li><strong>Desigualdade:</strong> A violência afeta mais os pobres e as periferias.</li>
+                            <li><strong>Fuga de investimentos:</strong> A violência afasta investimentos e prejudica a economia.</li>
+                            <li><strong>Desconfiança nas instituições:</strong> Perda de confiança na polícia e no sistema judiciário.</li>
+                        </ul>
+                    </div>
+
+                    <div class="dica-saphius">
+                        <h3>Dica Saphius</h3>
+                        <p>
+                            Entenda a relação entre <strong>violência</strong> e <strong>desigualdade social</strong> para responder questões sobre o tema. Memorize: <strong>"Violência + Segurança + Direitos Humanos + Desigualdade = Desafio Social"</strong>.
+                        </p>
+                    </div>
+                </div>
+
+                <div id="exercicios" class="aba-conteudo">
+                    <h2 style="color:#2e7d32;">Exercícios - Violência e Segurança</h2>
+                    <p style="color:#666;">15 questões (5 Fáceis, 5 Médias, 5 Difíceis)</p>
+
+                    <!-- 5 FÁCEIS -->
+                    <div class="exercicio-facil">
+                        <span class="badge">FÁCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>1.</strong> A violência física é caracterizada por:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q1"> a) Agressões corporais</label>
+                            <label><input type="radio" name="q1"> b) Ameaças</label>
+                            <label><input type="radio" name="q1"> c) Discriminação</label>
+                            <label><input type="radio" name="q1"> d) Exclusão social</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: A) Agressões corporais</strong></p>
+                            <p><strong>Explicação:</strong> A violência física envolve agressões corporais e lesões.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-facil">
+                        <span class="badge">FÁCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>2.</strong> A violência psicológica inclui:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q2"> a) Homicídios</label>
+                            <label><input type="radio" name="q2"> b) Ameaças e humilhações</label>
+                            <label><input type="radio" name="q2"> c) Agressões físicas</label>
+                            <label><input type="radio" name="q2"> d) Assaltos</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: B) Ameaças e humilhações</strong></p>
+                            <p><strong>Explicação:</strong> A violência psicológica inclui ameaças, humilhações e intimidação.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-facil">
+                        <span class="badge">FÁCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>3.</strong> O tráfico de drogas é uma das causas da violência no Brasil porque:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q3"> a) Gera conflitos entre facções</label>
+                            <label><input type="radio" name="q3"> b) Reduz a criminalidade</label>
+                            <label><input type="radio" name="q3"> c) Aumenta a segurança</label>
+                            <label><input type="radio" name="q3"> d) Promove a paz</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: A) Gera conflitos entre facções</strong></p>
+                            <p><strong>Explicação:</strong> O tráfico de drogas gera conflitos entre facções e aumenta a violência.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-facil">
+                        <span class="badge">FÁCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>4.</strong> A segurança pública é responsabilidade do:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q4"> a) Estado</label>
+                            <label><input type="radio" name="q4"> b) Cidadão</label>
+                            <label><input type="radio" name="q4"> c) Empresa</label>
+                            <label><input type="radio" name="q4"> d) Igreja</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: A) Estado</strong></p>
+                            <p><strong>Explicação:</strong> A segurança pública é uma responsabilidade do Estado.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-facil">
+                        <span class="badge">FÁCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>5.</strong> Os direitos humanos são importantes para a segurança porque:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q5"> a) Protegem os cidadãos</label>
+                            <label><input type="radio" name="q5"> b) Aumentam a violência</label>
+                            <label><input type="radio" name="q5"> c) Reduzem a justiça</label>
+                            <label><input type="radio" name="q5"> d) Ignoram os direitos</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: A) Protegem os cidadãos</strong></p>
+                            <p><strong>Explicação:</strong> Os direitos humanos protegem os cidadãos e garantem a dignidade.</p>
+                        </div>
+                    </div>
+
+                    <!-- 5 MÉDIAS -->
+                    <div class="exercicio-medio">
+                        <span class="badge">MÉDIO</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>6.</strong> (ENEM) A violência no Brasil está relacionada à:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q6"> a) Igualdade social</label>
+                            <label><input type="radio" name="q6"> b) Desigualdade social</label>
+                            <label><input type="radio" name="q6"> c) Justiça social</label>
+                            <label><input type="radio" name="q6"> d) Desenvolvimento econômico</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: B) Desigualdade social</strong></p>
+                            <p><strong>Explicação:</strong> A violência no Brasil está relacionada à desigualdade social e à pobreza.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-medio">
+                        <span class="badge">MÉDIO</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>7.</strong> (ENEM) A impunidade é um fator que contribui para a violência porque:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q7"> a) Punição exemplar</label>
+                            <label><input type="radio" name="q7"> b) Falta de punição para crimes</label>
+                            <label><input type="radio" name="q7"> c) Justiça eficiente</label>
+                            <label><input type="radio" name="q7"> d) Políticas públicas eficazes</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: B) Falta de punição para crimes</strong></p>
+                            <p><strong>Explicação:</strong> A impunidade contribui para a violência porque os criminosos não são punidos.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-medio">
+                        <span class="badge">MÉDIO</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>8.</strong> (ENEM) A violência simbólica se manifesta por meio de:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q8"> a) Agressões físicas</label>
+                            <label><input type="radio" name="q8"> b) Discriminação e preconceito</label>
+                            <label><input type="radio" name="q8"> c) Homicídios</label>
+                            <label><input type="radio" name="q8"> d) Roubos</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: B) Discriminação e preconceito</strong></p>
+                            <p><strong>Explicação:</strong> A violência simbólica se manifesta por meio de discriminação e preconceito.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-medio">
+                        <span class="badge">MÉDIO</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>9.</strong> (ENEM) A segurança pública no Brasil enfrenta desafios como:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q9"> a) Redução da criminalidade</label>
+                            <label><input type="radio" name="q9"> b) Falta de investimento em políticas de prevenção</label>
+                            <label><input type="radio" name="q9"> c) Aumento da justiça</label>
+                            <label><input type="radio" name="q9"> d) Combate eficiente ao tráfico</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: B) Falta de investimento em políticas de prevenção</strong></p>
+                            <p><strong>Explicação:</strong> A falta de investimento em políticas de prevenção é um desafio para a segurança pública.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-medio">
+                        <span class="badge">MÉDIO</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>10.</strong> (ENEM) A violência sexual é uma violação dos:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q10"> a) Direitos humanos</label>
+                            <label><input type="radio" name="q10"> b) Direitos trabalhistas</label>
+                            <label><input type="radio" name="q10"> c) Direitos políticos</label>
+                            <label><input type="radio" name="q10"> d) Direitos civis</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: A) Direitos humanos</strong></p>
+                            <p><strong>Explicação:</strong> A violência sexual é uma violação dos direitos humanos.</p>
+                        </div>
+                    </div>
+
+                    <!-- 5 DIFÍCEIS -->
+                    <div class="exercicio-dificil">
+                        <span class="badge">DIFÍCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>11.</strong> (ENEM) A relação entre violência e desigualdade social é explicada porque:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q11"> a) A desigualdade gera exclusão e conflitos</label>
+                            <label><input type="radio" name="q11"> b) A desigualdade reduz a criminalidade</label>
+                            <label><input type="radio" name="q11"> c) A desigualdade promove a paz</label>
+                            <label><input type="radio" name="q11"> d) A desigualdade aumenta a segurança</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: A) A desigualdade gera exclusão e conflitos</strong></p>
+                            <p><strong>Explicação:</strong> A desigualdade social gera exclusão e conflitos, aumentando a violência.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-dificil">
+                        <span class="badge">DIFÍCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>12.</strong> (ENEM) O combate à violência no Brasil exige políticas que:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q12"> a) Aumentem a repressão policial</label>
+                            <label><input type="radio" name="q12"> b) Reduzam a desigualdade e invistam em educação</label>
+                            <label><input type="radio" name="q12"> c) Ignorem os direitos humanos</label>
+                            <label><input type="radio" name="q12"> d) Centralizem o poder</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: B) Reduzam a desigualdade e invistam em educação</strong></p>
+                            <p><strong>Explicação:</strong> O combate à violência exige redução da desigualdade e investimento em educação.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-dificil">
+                        <span class="badge">DIFÍCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>13.</strong> (ENEM) A violência estrutural é aquela que:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q13"> a) É praticada por indivíduos</label>
+                            <label><input type="radio" name="q13"> b) Está incorporada nas instituições sociais</label>
+                            <label><input type="radio" name="q13"> c) É física</label>
+                            <label><input type="radio" name="q13"> d) É psicológica</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: B) Está incorporada nas instituições sociais</strong></p>
+                            <p><strong>Explicação:</strong> A violência estrutural está incorporada nas instituições e na organização social.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-dificil">
+                        <span class="badge">DIFÍCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>14.</strong> (ENEM) A segurança pública é um direito fundamental garantido pela:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q14"> a) Constituição de 1988</label>
+                            <label><input type="radio" name="q14"> b) Lei Maria da Penha</label>
+                            <label><input type="radio" name="q14"> c) CLT</label>
+                            <label><input type="radio" name="q14"> d) Estatuto da Igualdade Racial</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: A) Constituição de 1988</strong></p>
+                            <p><strong>Explicação:</strong> A segurança pública é um direito fundamental garantido pela Constituição de 1988.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-dificil">
+                        <span class="badge">DIFÍCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>15.</strong> (ENEM) A violência no Brasil é um problema complexo que exige:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q15"> a) Soluções unilaterais</label>
+                            <label><input type="radio" name="q15"> b) Políticas integradas e participação social</label>
+                            <label><input type="radio" name="q15"> c) Aumento da repressão</label>
+                            <label><input type="radio" name="q15"> d) Redução dos direitos humanos</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: B) Políticas integradas e participação social</strong></p>
+                            <p><strong>Explicação:</strong> A violência exige políticas integradas e participação social para ser combatida.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="resumo" class="aba-conteudo">
+                    <div class="resumo-principal">
+                        <h2 class="resumo-titulo">Resumo - Violência e Segurança</h2>
+                        <p class="resumo-subtitulo">Principais pontos para memorizar</p>
+
+                        <div class="resumo-grid">
+                            <div class="resumo-card-item">
+                                <h3>Tipos de Violência</h3>
+                                <p>Física, psicológica, sexual, simbólica, estrutural</p>
+                                <span class="resumo-tag">Violência</span>
+                            </div>
+                            <div class="resumo-card-item">
+                                <h3>Causas</h3>
+                                <p>Desigualdade, impunidade, tráfico</p>
+                                <span class="resumo-tag">Causas</span>
+                            </div>
+                            <div class="resumo-card-item">
+                                <h3>Segurança Pública</h3>
+                                <p>Estado, polícia, justiça</p>
+                                <span class="resumo-tag">Segurança</span>
+                            </div>
+                            <div class="resumo-card-item">
+                                <h3>Direitos Humanos</h3>
+                                <p>Proteção dos direitos fundamentais</p>
+                                <span class="resumo-tag">Direitos</span>
+                            </div>
+                            <div class="resumo-card-item">
+                                <h3>Desigualdade</h3>
+                                <p>Relação com a violência</p>
+                                <span class="resumo-tag">Exclusão</span>
+                            </div>
+                            <div class="resumo-card-item">
+                                <h3>Políticas Públicas</h3>
+                                <p>Prevenção e combate</p>
+                                <span class="resumo-tag">Políticas</span>
+                            </div>
+                        </div>
+
+                        <div class="resumo-dica-final">
+                            <h4>Dica Saphius</h4>
+                            <p>Memorize: <strong>"Violência + Segurança + Direitos Humanos + Desigualdade = Desafio Social"</strong></p>
+                        </div>
+
+                        <div class="resumo-dica-enem">
+                            <h4>Dica ENEM</h4>
+                            <p>Atenção para os termos <strong>"Segurança Pública"</strong>, <strong>"Direitos Humanos"</strong> e <strong>"Violência Estrutural"</strong>.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="simulado" class="aba-conteudo">
+                    <h2 style="color:#2e7d32;">Simulado - Violência e Segurança</h2>
+                    <p style="color:#666;">Teste seus conhecimentos com questões estilo ENEM</p>
+                    <div class="simulado-card">
+                        <div style="display:flex; gap:20px; flex-wrap:wrap; justify-content:center; margin-bottom:15px;">
+                            <span><strong>15 questões</strong></span>
+                            <span><strong>20 minutos</strong></span>
+                            <span><strong>Nível: Fácil a Difícil</strong></span>
+                        </div>
+                        <p style="color:#555; margin-bottom:15px;">As questões são as mesmas da aba "Exercícios" acima.</p>
+                        <button class="btn-principal" onclick="alert(' Simulado iniciado! Responda todas as 15 questões acima na aba Exercícios.')">
+                            Iniciar simulado
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script>
+    function trocarAba(botao, abaId) {
+        document.querySelectorAll('.aba-btn').forEach(b => b.classList.remove('active'));
+        botao.classList.add('active');
+
+        document.querySelectorAll('.aba-conteudo').forEach(c => c.classList.remove('active'));
+        document.getElementById(abaId).classList.add('active');
+    }
+
+    function mostrarResposta(botao) {
+        const exercicioDiv = botao.closest('.exercicio-facil, .exercicio-medio, .exercicio-dificil');
+        const respostaDiv = exercicioDiv.querySelector('.resposta-explicada');
+
+        if (respostaDiv.style.display === 'block') {
+            respostaDiv.style.display = 'none';
+            botao.textContent = 'Ver explicação';
+        } else {
+            respostaDiv.style.display = 'block';
+            botao.textContent = 'Ocultar explicação';
+        }
+    }
+
+    document.querySelectorAll('.exercicio-alternativas input[type="radio"]').forEach(input => {
+        input.addEventListener('change', verificarAtividade);
+    });
+
+    async function verificarAtividade() {
+        const questoes = document.querySelectorAll('.exercicio-alternativas');
+        const respondidas = document.querySelectorAll(
+            '.exercicio-alternativas input[type="radio"]:checked'
+        );
+
+        if (respondidas.length === questoes.length) {
+            try {
+                await fetch('/api/trilha/concluir', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        materia: 'sociologia',
+                        topico: 'violencia-seguranca'
+                    })
+                });
+
+                alert('Atividade concluída! Seu progresso na Trilha de Estudos foi atualizado.');
+            } catch (erro) {
+                console.error('Erro ao atualizar progresso:', erro);
+            }
+        }
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bem-estar - Saphius</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Menu Lateral -->
+        <aside class="sidebar">
+            <div class="sidebar-logo">
+                <h2>Saphius</h2>
+            </div>
+            <ul class="sidebar-menu">
+                <li><a href="/dashboard"><span class="icon"></span> <span>Dashboard</span></a></li>
+                <li><a href="/conteudos"><span class="icon"></span> <span>Conteúdos</span></a></li>
+                <li><a href="/trilha"><span class="icon"></span> <span>Trilha de estudos</span></a></li>
+                <li><a href="/bemestar" class="active"><span class="icon"></span> <span>Bem-estar</span></a></li>
+                <li><a href="/perfil"><span class="icon"></span> <span>Perfil</span></a></li>
+                <li><a href="/configuracoes"><span class="icon"></span> <span>Configurações</span></a></li>
+                <li><a href="/ajuda"><span class="icon"></span> <span>Ajuda</span></a></li>
+                <li><a href="/sair"><span class="icon"></span> <span>Sair</span></a></li>
+            </ul>
+        </aside>
+
+        <!-- Conteúdo Principal -->
+        <main class="main-content">
+            <div class="container bemestar-container">
+                <div class="bemestar-header">
+                    <h1>Bem-estar e Foco</h1>
+                    <p>Dicas para organização, concentração e controle da ansiedade nos estudos</p>
+                </div>
+
+                <!-- Chat com IA -->
+                <div class="chat-container">
+                    <div class="chat-messages" id="chatMessages">
+                        <div class="message-ia">
+                            <div>
+                                <div class="message-bubble">
+                                    Olá! <br>
+                                    Sou a IA de apoio emocional da Saphius.<br>
+                                    Como você está se sentindo hoje?
+                                </div>
+                                <div class="message-time" id="timeNow"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Sugestões rápidas -->
+                    <div class="sugestoes">
+                        <button class="sugestao-btn" onclick="enviarSugestao('Estou ansioso para a prova')">Ansioso para prova</button>
+                        <button class="sugestao-btn" onclick="enviarSugestao('Estou cansado de estudar')">Cansado de estudar</button>
+                        <button class="sugestao-btn" onclick="enviarSugestao('Estou desmotivado')">Desmotivado</button>
+                        <button class="sugestao-btn" onclick="enviarSugestao('Não consigo me concentrar')">Dificuldade de foco</button>
+                    </div>
+
+                    <!-- Input area -->
+                    <div class="chat-input-area">
+                        <input type="text" id="mensagemInput" placeholder="Digite sua mensagem..." onkeypress="if(event.key==='Enter') enviarMensagem()">
+                        <button onclick="enviarMensagem()">Enviar</button>
+                    </div>
+                </div>
+
+                <!-- Dicas rápidas -->
+                <div class="dicas-card">
+                    <h3>Dicas rápidas para seus estudos</h3>
+                    <ul>
+                        <li>Estude 50 minutos e descanse 10</li>
+                        <li>Beba água regularmente</li>
+                        <li>Durma pelo menos 7 horas por noite</li>
+                        <li>Faça pequenas metas diárias</li>
+                        <li>Pratique exercícios físicos</li>
+                        <li>Mantenha o ambiente organizado</li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        let mensagemEnviando = false;
+
+        function getCurrentTime() {
+            const now = new Date();
+            return now.toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' });
+        }
+
+        document.getElementById('timeNow').innerHTML = getCurrentTime();
+
+        function addMessage(text, isUser) {
+            const chatMessages = document.getElementById('chatMessages');
+            const messageDiv = document.createElement('div');
+            messageDiv.className = isUser ? 'message-user' : 'message-ia';
+            const time = getCurrentTime();
+            messageDiv.innerHTML = `
+                <div>
+                    <div class="message-bubble">${text}</div>
+                    <div class="message-time">${time}</div>
+                </div>
+            `;
+            chatMessages.appendChild(messageDiv);
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+        }
+
+        function showTypingIndicator() {
+            const chatMessages = document.getElementById('chatMessages');
+            const typingDiv = document.createElement('div');
+            typingDiv.className = 'message-ia';
+            typingDiv.id = 'typingIndicator';
+            typingDiv.innerHTML = `
+                <div>
+                    <div class="message-bubble">Digitando<span>...</span></div>
+                </div>
+            `;
+            chatMessages.appendChild(typingDiv);
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+        }
+
+        function removeTypingIndicator() {
+            const indicator = document.getElementById('typingIndicator');
+            if (indicator) indicator.remove();
+        }
+
+        async function enviarMensagem() {
+            if (mensagemEnviando) return;
+            const input = document.getElementById('mensagemInput');
+            const mensagem = input.value.trim();
+            if (!mensagem) return;
+            mensagemEnviando = true;
+            addMessage(mensagem, true);
+            input.value = '';
+            showTypingIndicator();
+            try {
+                const response = await fetch('/api/ia-apoio', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ mensagem: mensagem })
+                });
+                const data = await response.json();
+                removeTypingIndicator();
+                addMessage(data.resposta, false);
+            } catch (error) {
+                removeTypingIndicator();
+                addMessage('Desculpe, estou com dificuldades técnicas. Tente novamente!', false);
+            }
+            mensagemEnviando = false;
+        }
+
+        function enviarSugestao(texto) {
+            document.getElementById('mensagemInput').value = texto;
+            enviarMensagem();
+        }
+    </script>
+</body>
+</html>

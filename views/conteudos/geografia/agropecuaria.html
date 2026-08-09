@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Agropecuária - Saphius</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/views/conteudos/geografia/geografia.css">
+</head>
+<body>
+    <div class="app-container">
+        <aside class="sidebar">
+            <div class="sidebar-logo"><h2>Saphius</h2></div>
+            <ul class="sidebar-menu">
+                <li><a href="/dashboard"><span class="icon"></span> <span>Dashboard</span></a></li>
+                <li><a href="/conteudos"><span class="icon"></span> <span>Conteúdos</span></a></li>
+                <li><a href="/trilha"><span class="icon"></span> <span>Trilha de estudos</span></a></li>
+                <li><a href="/bemestar"><span class="icon"></span> <span>Bem-estar</span></a></li>
+                <li><a href="/perfil"><span class="icon"></span> <span>Perfil</span></a></li>
+                <li><a href="/configuracoes"><span class="icon"></span> <span>Configurações</span></a></li>
+                <li><a href="/ajuda"><span class="icon"></span> <span>Ajuda</span></a></li>
+                <li><a href="/sair"><span class="icon"></span> <span>Sair</span></a></li>
+            </ul>
+        </aside>
+
+        <main class="main-content">
+            <div class="container">
+                <a href="/geografia" class="voltar"> Voltar para Geografia</a>
+
+                <h1 style="text-align:center; font-size:2.5em; color:#2e7d32;">Agropecuária</h1>
+                <p style="color:#666; text-align:center; font-size:1.1em;">Produção agrícola no Brasil, Reforma agrária, Desmatamento e impactos</p>
+
+                <div class="abas-navegacao" style="margin:25px 0;">
+                    <button class="aba-btn active" onclick="trocarAba(this, 'conteudo')">Conteúdo</button>
+                    <button class="aba-btn" onclick="trocarAba(this, 'exercicios')">Exercícios</button>
+                    <button class="aba-btn" onclick="trocarAba(this, 'resumo')">Resumo</button>
+                    <button class="aba-btn" onclick="trocarAba(this, 'simulado')">Simulado</button>
+                </div>
+
+                <div id="conteudo" class="aba-conteudo active">
+
+                    <div class="explicacao-detalhada">
+                        <h3>O que é Agropecuária?</h3>
+                        <p>
+                            A <strong>agropecuária</strong> é a atividade econômica que envolve a <strong>agricultura</strong> 
+                            (cultivo de plantas) e a <strong>pecuária</strong> (criação de animais). O Brasil é um dos 
+                            maiores produtores agropecuários do mundo, com destaque para a <strong>soja</strong>, 
+                            o <strong>milho</strong>, a <strong>carne bovina</strong>, o <strong>açúcar</strong> e o <strong>café</strong>.
+                        </p>
+                        <div class="enem-dica">
+                            <strong>DICA ENEM:</strong>
+                            <p>A agropecuária é um tema recorrente no ENEM, relacionado com a 
+                            <strong>economia</strong>, o <strong>meio ambiente</strong> e a 
+                            <strong>distribuição de terras</strong>.</p>
+                        </div>
+                    </div>
+
+                    <div class="explicacao-detalhada">
+                        <h3>1. Produção Agrícola no Brasil</h3>
+                        <p>
+                            O Brasil é um dos maiores produtores agrícolas do mundo. Os principais produtos são:
+                        </p>
+                        <ul>
+                            <li><strong>Soja:</strong> Principal produto de exportação, cultivado no Centro-Oeste e Sul. O Brasil é o maior produtor mundial de soja.</li>
+                            <li><strong>Milho:</strong> Cultivado em várias regiões, principalmente no Sul e Sudeste.</li>
+                            <li><strong>Cana-de-açúcar:</strong> Produzida principalmente no Nordeste e Sudeste, para produção de açúcar e etanol.</li>
+                            <li><strong>Café:</strong> Tradicional produto brasileiro, cultivado em Minas Gerais, São Paulo e Espírito Santo.</li>
+                            <li><strong>Laranja:</strong> Principal produtor mundial, com destaque para o estado de São Paulo.</li>
+                            <li><strong>Arroz e feijão:</strong> Cultivados em várias regiões, importantes para a alimentação básica.</li>
+                        </ul>
+                        <p>
+                            <strong>Características da agricultura brasileira:</strong>
+                            <ul>
+                                <li><strong>Agricultura moderna:</strong> Uso de tecnologia, mecanização e insumos.</li>
+                                <li><strong>Agricultura familiar:</strong> Responsável por grande parte da produção de alimentos.</li>
+                                <li><strong>Exportação:</strong> Grande parte da produção é destinada à exportação.</li>
+                            </ul>
+                        </p>
+                        <div class="enem-dica">
+                            <strong>DICA ENEM:</strong>
+                            <p>O ENEM cobra a <strong>produção agrícola</strong> brasileira, relacionando com a 
+                            <strong>economia</strong> e a <strong>exportação</strong>.</p>
+                        </div>
+                    </div>
+
+                    <div class="explicacao-detalhada">
+                        <h3>2. Pecuária Brasileira</h3>
+                        <p>
+                            A pecuária é uma atividade importante no Brasil, com destaque para:
+                        </p>
+                        <ul>
+                            <li><strong>Bovinocultura:</strong> Criação de gado para carne e leite, concentrada no Centro-Oeste e Sul. O Brasil é o maior exportador de carne bovina do mundo.</li>
+                            <li><strong>Suinocultura:</strong> Criação de porcos, no Sul e Sudeste.</li>
+                            <li><strong>Avicultura:</strong> Criação de aves, no Sul e Sudeste, com destaque para a produção de frangos e ovos.</li>
+                            <li><strong>Pecuária extensiva:</strong> Criação de gado em grandes áreas de pastagem, com baixa produtividade.</li>
+                            <li><strong>Pecuária intensiva:</strong> Criação confinada, com alta produtividade e tecnologia.</li>
+                        </ul>
+                        <p>
+                            <strong>Impactos da pecuária:</strong>
+                            <ul>
+                                <li><strong>Desmatamento:</strong> Abertura de pastagens, especialmente na Amazônia.</li>
+                                <li><strong>Emissões de gases:</strong> Metano produzido pelo gado.</li>
+                                <li><strong>Uso de água:</strong> Consumo elevado de água na produção animal.</li>
+                            </ul>
+                        </p>
+                        <div class="enem-dica">
+                            <strong>DICA ENEM:</strong>
+                            <p>O ENEM cobra a <strong>pecuária</strong> como uma atividade econômica que impacta 
+                            o <strong>meio ambiente</strong> e a <strong>ocupação do território</strong>.</p>
+                        </div>
+                    </div>
+
+                    <div class="explicacao-detalhada">
+                        <h3>3. Reforma Agrária</h3>
+                        <p>
+                            A <strong>reforma agrária</strong> é a redistribuição de terras para promover a 
+                            <strong>justiça social</strong> e o <strong>desenvolvimento rural</strong>. No Brasil, 
+                            a concentração de terras é um dos principais problemas históricos.
+                        </p>
+                        <ul>
+                            <li><strong>Latifúndios:</strong> Grandes propriedades com baixa produtividade e alta concentração de terras.</li>
+                            <li><strong>Minifúndios:</strong> Pequenas propriedades que não garantem a subsistência das famílias.</li>
+                            <li><strong>Movimento dos Sem Terra (MST):</strong> Movimento social que luta pela reforma agrária e pela distribuição de terras.</li>
+                            <li><strong>Assentamentos:</strong> Áreas destinadas à reforma agrária, onde famílias recebem terras para cultivar.</li>
+                        </ul>
+                        <p>
+                            <strong>Desafios da reforma agrária:</strong>
+                            <ul>
+                                <li><strong>Conflitos no campo:</strong> Disputas por terra entre fazendeiros, indígenas e quilombolas.</li>
+                                <li><strong>Violência no campo:</strong> Assassinatos de líderes e ativistas.</li>
+                                <li><strong>Falta de infraestrutura:</strong> Assistência técnica, crédito e transporte.</li>
+                            </ul>
+                        </p>
+                        <div class="enem-dica">
+                            <strong>DICA ENEM:</strong>
+                            <p>O ENEM cobra a <strong>reforma agrária</strong> como um tema social e político, 
+                            relacionando com a <strong>desigualdade</strong> e a <strong>cidadania</strong>.</p>
+                        </div>
+                    </div>
+
+                    <div class="explicacao-detalhada">
+                        <h3>4. Desmatamento e Impactos Ambientais da Agropecuária</h3>
+                        <p>
+                            A agropecuária é uma das principais causas do <strong>desmatamento</strong> no Brasil, 
+                            especialmente na <strong>Amazônia</strong> e no <strong>Cerrado</strong>.
+                        </p>
+                        <ul>
+                            <li><strong>Expansão agropecuária:</strong> Abertura de áreas para pastagens e cultivo de soja.</li>
+                            <li><strong>Impactos ambientais:</strong> Perda de biodiversidade, emissão de gases de efeito estufa, degradação do solo.</li>
+                            <li><strong>Conflitos:</strong> Disputas por terra entre fazendeiros, indígenas e quilombolas.</li>
+                            <li><strong>Preservação:</strong> Código Florestal e áreas de preservação permanente (APP).</li>
+                        </ul>
+                        <p>
+                            <strong>Medidas para reduzir o impacto:</strong>
+                            <ul>
+                                <li><strong>Agricultura sustentável:</strong> Integração lavoura-pecuária-floresta (ILPF).</li>
+                                <li><strong>Preservação de áreas verdes:</strong> Criação de unidades de conservação.</li>
+                                <li><strong>Combate ao desmatamento:</strong> Fiscalização e monitoramento por satélite.</li>
+                            </ul>
+                        </p>
+                        <div class="enem-dica">
+                            <strong>DICA ENEM:</strong>
+                            <p>O ENEM cobra os <strong>impactos ambientais</strong> da agropecuária, relacionando 
+                            com a <strong>sustentabilidade</strong> e a <strong>preservação</strong>.</p>
+                        </div>
+                    </div>
+
+                    <div class="dica-saphius">
+                        <h3>Dica Saphius</h3>
+                        <p>
+                            Memorize: <strong>"Agricultura + Pecuária + Reforma Agrária + Desmatamento = Agropecuária"</strong>.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- ===== EXERCÍCIOS (15 QUESTÕES) ===== -->
+                <div id="exercicios" class="aba-conteudo">
+                    <h2 style="color:#2e7d32;"> Exercícios - Agropecuária</h2>
+                    <p style="color:#666;">15 questões (5 Fáceis, 5 Médias, 5 Difíceis)</p>
+
+                    <!-- 5 FÁCEIS -->
+                    <div class="exercicio-facil">
+                        <span class="badge">FÁCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>1.</strong> O principal produto agrícola de exportação do Brasil é:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q1"> a) Milho</label>
+                            <label><input type="radio" name="q1"> b) Soja</label>
+                            <label><input type="radio" name="q1"> c) Cana-de-açúcar</label>
+                            <label><input type="radio" name="q1"> d) Café</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: B) Soja</strong></p>
+                            <p><strong>Explicação:</strong> A soja é o principal produto agrícola de exportação do Brasil, com produção concentrada no Centro-Oeste.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-facil">
+                        <span class="badge">FÁCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>2.</strong> A pecuária brasileira é caracterizada principalmente por:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q2"> a) Criação de aves</label>
+                            <label><input type="radio" name="q2"> b) Bovinocultura</label>
+                            <label><input type="radio" name="q2"> c) Suinocultura</label>
+                            <label><input type="radio" name="q2"> d) Criação de ovinos</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: B) Bovinocultura</strong></p>
+                            <p><strong>Explicação:</strong> A bovinocultura (criação de gado) é a principal atividade pecuária do Brasil, com destaque para a produção de carne e leite.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-facil">
+                        <span class="badge">FÁCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>3.</strong> O que é reforma agrária?</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q3"> a) Distribuição de terras para promover justiça social</label>
+                            <label><input type="radio" name="q3"> b) Aumento da concentração de terras</label>
+                            <label><input type="radio" name="q3"> c) Privatização de terras públicas</label>
+                            <label><input type="radio" name="q3"> d) Criação de latifúndios</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: A) Distribuição de terras para promover justiça social</strong></p>
+                            <p><strong>Explicação:</strong> A reforma agrária busca redistribuir terras para promover justiça social e desenvolvimento rural.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-facil">
+                        <span class="badge">FÁCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>4.</strong> O desmatamento na Amazônia é causado principalmente por:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q4"> a) Expansão agropecuária</label>
+                            <label><input type="radio" name="q4"> b) Urbanização</label>
+                            <label><input type="radio" name="q4"> c) Mineração</label>
+                            <label><input type="radio" name="q4"> d) Turismo</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: A) Expansão agropecuária</strong></p>
+                            <p><strong>Explicação:</strong> A expansão agropecuária, especialmente para pastagens e soja, é a principal causa do desmatamento na Amazônia.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-facil">
+                        <span class="badge">FÁCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>5.</strong> A cana-de-açúcar é cultivada principalmente no:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q5"> a) Centro-Oeste</label>
+                            <label><input type="radio" name="q5"> b) Sudeste e Nordeste</label>
+                            <label><input type="radio" name="q5"> c) Sul</label>
+                            <label><input type="radio" name="q5"> d) Norte</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: B) Sudeste e Nordeste</strong></p>
+                            <p><strong>Explicação:</strong> A cana-de-açúcar é cultivada principalmente no Sudeste (São Paulo) e no Nordeste, para produção de açúcar e etanol.</p>
+                        </div>
+                    </div>
+
+                    <!-- 5 MÉDIAS -->
+                    <div class="exercicio-medio">
+                        <span class="badge">MÉDIO</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>6.</strong> (ENEM) A agropecuária brasileira é caracterizada pela:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q6"> a) Predominância de pequenas propriedades</label>
+                            <label><input type="radio" name="q6"> b) Concentração de terras e exportação de commodities</label>
+                            <label><input type="radio" name="q6"> c) Agricultura familiar predominante</label>
+                            <label><input type="radio" name="q6"> d) Baixa produtividade</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: B) Concentração de terras e exportação de commodities</strong></p>
+                            <p><strong>Explicação:</strong> A agropecuária brasileira é marcada pela concentração de terras (latifúndios) e pela exportação de commodities (soja, carne, açúcar).</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-medio">
+                        <span class="badge">MÉDIO</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>7.</strong> (ENEM) A reforma agrária é importante porque:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q7"> a) Aumenta a concentração de terras</label>
+                            <label><input type="radio" name="q7"> b) Promove a justiça social e o desenvolvimento rural</label>
+                            <label><input type="radio" name="q7"> c) Reduz a produtividade agrícola</label>
+                            <label><input type="radio" name="q7"> d) Incentiva o êxodo rural</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: B) Promove a justiça social e o desenvolvimento rural</strong></p>
+                            <p><strong>Explicação:</strong> A reforma agrária promove justiça social e desenvolvimento rural, distribuindo terras para agricultores.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-medio">
+                        <span class="badge">MÉDIO</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>8.</strong> (ENEM) O desmatamento causado pela agropecuária impacta o meio ambiente porque:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q8"> a) Aumenta a biodiversidade</label>
+                            <label><input type="radio" name="q8"> b) Reduz as emissões de gases</label>
+                            <label><input type="radio" name="q8"> c) Contribui para o aquecimento global</label>
+                            <label><input type="radio" name="q8"> d) Preserva os recursos naturais</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: C) Contribui para o aquecimento global</strong></p>
+                            <p><strong>Explicação:</strong> O desmatamento contribui para o aquecimento global ao liberar CO₂ e reduzir a absorção de gases pelas florestas.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-medio">
+                        <span class="badge">MÉDIO</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>9.</strong> (ENEM) A pecuária intensiva é caracterizada por:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q9"> a) Criação extensiva em grandes áreas</label>
+                            <label><input type="radio" name="q9"> b) Criação confinada com alta produtividade</label>
+                            <label><input type="radio" name="q9"> c) Baixa produtividade</label>
+                            <label><input type="radio" name="q9"> d) Criação sem uso de tecnologia</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: B) Criação confinada com alta produtividade</strong></p>
+                            <p><strong>Explicação:</strong> A pecuária intensiva utiliza confinamento, tecnologia e ração para aumentar a produtividade.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-medio">
+                        <span class="badge">MÉDIO</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>10.</strong> (ENEM) O agronegócio brasileiro é importante para a economia porque:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q10"> a) Gera empregos e exportações</label>
+                            <label><input type="radio" name="q10"> b) Aumenta a desigualdade</label>
+                            <label><input type="radio" name="q10"> c) Reduz a produção de alimentos</label>
+                            <label><input type="radio" name="q10"> d) Causa desmatamento</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: A) Gera empregos e exportações</strong></p>
+                            <p><strong>Explicação:</strong> O agronegócio gera empregos, movimenta a economia e é responsável por grande parte das exportações brasileiras.</p>
+                        </div>
+                    </div>
+
+                    <!-- 5 DIFÍCEIS -->
+                    <div class="exercicio-dificil">
+                        <span class="badge">DIFÍCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>11.</strong> (ENEM) A concentração de terras no Brasil é um problema histórico que está relacionado com:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q11"> a) Distribuição igualitária de terras</label>
+                            <label><input type="radio" name="q11"> b) Herança colonial e latifúndios</label>
+                            <label><input type="radio" name="q11"> c) Reforma agrária bem-sucedida</label>
+                            <label><input type="radio" name="q11"> d) Agricultura familiar</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: B) Herança colonial e latifúndios</strong></p>
+                            <p><strong>Explicação:</strong> A concentração de terras no Brasil é uma herança colonial, com a presença de latifúndios (grandes propriedades) e concentração de poder.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-dificil">
+                        <span class="badge">DIFÍCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>12.</strong> (ENEM) A agricultura familiar é importante porque:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q12"> a) Gera a maior parte dos alimentos consumidos no Brasil</label>
+                            <label><input type="radio" name="q12"> b) É voltada para exportação</label>
+                            <label><input type="radio" name="q12"> c) Utiliza grandes extensões de terra</label>
+                            <label><input type="radio" name="q12"> d) Causa desmatamento</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: A) Gera a maior parte dos alimentos consumidos no Brasil</strong></p>
+                            <p><strong>Explicação:</strong> A agricultura familiar é responsável pela maior parte dos alimentos consumidos no Brasil, como arroz, feijão, mandioca e hortaliças.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-dificil">
+                        <span class="badge">DIFÍCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>13.</strong> (ENEM) O desmatamento na Amazônia está associado à expansão da:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q13"> a) Pecuária e soja</label>
+                            <label><input type="radio" name="q13"> b) Agricultura familiar</label>
+                            <label><input type="radio" name="q13"> c) Reforma agrária</label>
+                            <label><input type="radio" name="q13"> d) Silvicultura</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: A) Pecuária e soja</strong></p>
+                            <p><strong>Explicação:</strong> O desmatamento na Amazônia está associado à expansão da pecuária e da soja, que abrem áreas para pastagens e cultivo.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-dificil">
+                        <span class="badge">DIFÍCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>14.</strong> (ENEM) O Código Florestal brasileiro estabelece:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q14"> a) Áreas de preservação permanente</label>
+                            <label><input type="radio" name="q14"> b) Liberação do desmatamento</label>
+                            <label><input type="radio" name="q14"> c) Redução das áreas protegidas</label>
+                            <label><input type="radio" name="q14"> d) Aumento da concentração de terras</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: A) Áreas de preservação permanente</strong></p>
+                            <p><strong>Explicação:</strong> O Código Florestal estabelece áreas de preservação permanente (APP) e reserva legal, protegendo os recursos naturais.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-dificil">
+                        <span class="badge">DIFÍCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>15.</strong> (ENEM) A agropecuária brasileira enfrenta desafios como:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q15"> a) Desmatamento e conflitos por terra</label>
+                            <label><input type="radio" name="q15"> b) Distribuição igualitária de terras</label>
+                            <label><input type="radio" name="q15"> c) Baixa produtividade</label>
+                            <label><input type="radio" name="q15"> d) Falta de exportações</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: A) Desmatamento e conflitos por terra</strong></p>
+                            <p><strong>Explicação:</strong> A agropecuária brasileira enfrenta desafios como desmatamento, conflitos por terra (fazendeiros, indígenas, quilombolas) e violência no campo.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ===== RESUMO ===== -->
+                <div id="resumo" class="aba-conteudo">
+                    <div class="resumo-principal">
+                        <h2 class="resumo-titulo">Resumo - Agropecuária</h2>
+                        <p class="resumo-subtitulo">Principais pontos para memorizar</p>
+
+                        <div class="resumo-grid">
+                            <div class="resumo-card-item">
+                                <h3>Agricultura</h3>
+                                <p>Soja, milho, cana-de-açúcar, café</p>
+                                <span class="resumo-tag">Exportação</span>
+                            </div>
+
+                            <div class="resumo-card-item">
+                                <h3>Pecuária</h3>
+                                <p>Bovinocultura, suinocultura, avicultura</p>
+                                <span class="resumo-tag">Carne e Leite</span>
+                            </div>
+
+                            <div class="resumo-card-item">
+                                <h3>Reforma Agrária</h3>
+                                <p>Distribuição de terras, MST</p>
+                                <span class="resumo-tag">Justiça Social</span>
+                            </div>
+
+                            <div class="resumo-card-item">
+                                <h3>Desmatamento</h3>
+                                <p>Amazônia, Cerrado, impactos ambientais</p>
+                                <span class="resumo-tag">Sustentabilidade</span>
+                            </div>
+
+                            <div class="resumo-card-item">
+                                <h3>Agronegócio</h3>
+                                <p>Exportações, empregos, tecnologia</p>
+                                <span class="resumo-tag">Economia</span>
+                            </div>
+
+                            <div class="resumo-card-item">
+                                <h3>Agricultura Familiar</h3>
+                                <p>Produção de alimentos, sustentabilidade</p>
+                                <span class="resumo-tag">Segurança Alimentar</span>
+                            </div>
+                        </div>
+
+                        <div class="resumo-dica-final">
+                            <h4>Dica Saphius</h4>
+                            <p>Memorize: <strong>"Agricultura + Pecuária + Reforma Agrária + Desmatamento = Agropecuária"</strong></p>
+                        </div>
+
+                        <div class="resumo-dica-enem">
+                            <h4>Dica ENEM</h4>
+                            <p>Atenção para os termos <strong>"Agronegócio"</strong>, <strong>"Latifúndio"</strong> e <strong>"Código Florestal"</strong>.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="simulado" class="aba-conteudo">
+                    <h2 style="color:#2e7d32;">Simulado - Agropecuária</h2>
+                    <p style="color:#666;">Teste seus conhecimentos com questões estilo ENEM</p>
+
+                    <div class="simulado-card">
+                        <div style="display:flex; gap:20px; flex-wrap:wrap; justify-content:center; margin-bottom:15px;">
+                            <span><strong>15 questões</strong></span>
+                            <span><strong>20 minutos</strong></span>
+                            <span><strong>Nível: Fácil a Difícil</strong></span>
+                        </div>
+                        <p style="color:#555; margin-bottom:15px;">As questões são as mesmas da aba "Exercícios" acima.</p>
+                        <button class="btn-principal" onclick="alert(' Simulado iniciado! Responda todas as 15 questões acima na aba Exercícios.')">
+                            Iniciar simulado
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+    </div>
+
+    <script>
+    function trocarAba(botao, abaId) {
+        document.querySelectorAll('.aba-btn').forEach(b => b.classList.remove('active'));
+        botao.classList.add('active');
+
+        document.querySelectorAll('.aba-conteudo').forEach(c => c.classList.remove('active'));
+        document.getElementById(abaId).classList.add('active');
+    }
+
+    function mostrarResposta(botao) {
+        const exercicioDiv = botao.closest('.exercicio-facil, .exercicio-medio, .exercicio-dificil');
+        const respostaDiv = exercicioDiv.querySelector('.resposta-explicada');
+
+        if (respostaDiv.style.display === 'block') {
+            respostaDiv.style.display = 'none';
+            botao.textContent = 'Ver explicação';
+        } else {
+            respostaDiv.style.display = 'block';
+            botao.textContent = 'Ocultar explicação';
+        }
+    }
+
+    document.querySelectorAll('.exercicio-alternativas input[type="radio"]').forEach(input => {
+        input.addEventListener('change', verificarAtividade);
+    });
+
+    async function verificarAtividade() {
+        const questoes = document.querySelectorAll('.exercicio-alternativas');
+        const respondidas = document.querySelectorAll(
+            '.exercicio-alternativas input[type="radio"]:checked'
+        );
+
+        if (respondidas.length === questoes.length) {
+            try {
+                await fetch('/api/trilha/concluir', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        materia: 'geografia',
+                        topico: 'agropecuaria'
+                    })
+                });
+
+                alert('Atividade concluída! Seu progresso na Trilha de Estudos foi atualizado.');
+            } catch (erro) {
+                console.error('Erro ao atualizar progresso:', erro);
+            }
+        }
+    }
+</script>
+</body>
+</html>

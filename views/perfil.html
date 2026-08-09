@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Perfil - Saphius</title>
+    <link rel="stylesheet" href="/style.css">
+    <style>
+        .perfil-container{max-width:800px;margin:0 auto}
+        .perfil-header{text-align:center;margin-bottom:30px}
+        .perfil-header h1{color:#2e7d32;font-size:2em}
+        .perfil-header p{color:#666}
+        .mensagem-sucesso{background:#f0fdf4;border:1px solid #86efac;color:#16a34a;padding:12px 16px;border-radius:12px;margin-bottom:20px;font-size:.9em;display:none;align-items:center;gap:8px;animation:slideDown 0.3s ease}
+        .mensagem-erro{background:#fef3f2;border:1px solid #fecaca;color:#dc2626;padding:12px 16px;border-radius:12px;margin-bottom:20px;font-size:.9em;display:none;align-items:center;gap:8px;animation:slideDown 0.3s ease}
+        @keyframes slideDown{from{opacity:0;transform:translateY(-10px)}to{opacity:1;transform:translateY(0)}}
+        .perfil-card{background:#f8f9fa;border-radius:20px;padding:30px;margin-bottom:25px;border:1px solid #e8f5e9}
+        .perfil-card h3{color:#2e7d32;margin-bottom:20px;display:flex;align-items:center;gap:10px}
+        .avatar-icon{font-size:80px;text-align:center;display:block;margin-bottom:20px}
+        .perfil-field{display:flex;align-items:center;padding:14px 0;border-bottom:1px solid #e8f5e9;gap:15px;flex-wrap:wrap}
+        .perfil-field:last-child{border-bottom:none}
+        .perfil-field .label{font-weight:600;color:#555;min-width:150px;flex-shrink:0}
+        .perfil-field .value{color:#333;flex:1;word-break:break-word}
+        .value-input{flex:1;padding:8px 12px;border:2px solid #ddd;border-radius:8px;font-size:.95em;background:#fff;min-width:200px;display:none}
+        .value-input:focus{border-color:#4caf50;outline:none}
+        .edit-btn{background:#4caf50;color:#fff;border:none;padding:6px 18px;border-radius:20px;cursor:pointer;font-size:.8em;white-space:nowrap;transition:all 0.3s}
+        .edit-btn:hover{background:#388e3c}
+        .save-btn{background:#2e7d32;color:#fff;border:none;padding:6px 18px;border-radius:20px;cursor:pointer;font-size:.8em;white-space:nowrap;transition:all 0.3s}
+        .save-btn:hover{background:#1b5e20}
+        .cancel-btn{background:#9e9e9e;color:#fff;border:none;padding:6px 18px;border-radius:20px;cursor:pointer;font-size:.8em;white-space:nowrap;transition:all 0.3s}
+        .cancel-btn:hover{background:#757575}
+        .edit-actions{display:none;gap:8px}
+        .perfil-field.editing .value{display:none}
+        .perfil-field.editing .value-input{display:block}
+        .perfil-field.editing .edit-btn{display:none}
+        .perfil-field.editing .edit-actions{display:flex}
+        .perfil-actions{display:flex;gap:15px;justify-content:center;margin-top:20px}
+        .btn-action{padding:12px 30px;border-radius:25px;border:none;cursor:pointer;font-weight:600}
+        .btn-secondary-action{background:#e8f5e9;color:#2e7d32}
+        .btn-secondary-action:hover{background:#c8e6c9}
+        .erro-carregamento{color:#dc2626;font-size:.9em;padding:5px 0;display:none}
+    </style>
+</head>
+<body>
+    <div class="app-container">
+        <aside class="sidebar">
+            <div class="sidebar-logo"><h2> Saphius</h2></div>
+            <ul class="sidebar-menu">
+                <li><a href="/dashboard"><span class="icon"></span><span>Dashboard</span></a></li>
+                <li><a href="/conteudos"><span class="icon"></span><span>Conteúdos</span></a></li>
+                <li><a href="/trilha"><span class="icon"></span><span>Trilha de estudos</span></a></li>
+                <li><a href="/bemestar"><span class="icon"></span><span>Bem-estar</span></a></li>
+                <li><a href="/perfil" class="active"><span class="icon"></span><span>Perfil</span></a></li>
+                <li><a href="/configuracoes"><span class="icon"></span><span>Configurações</span></a></li>
+                <li><a href="/ajuda"><span class="icon"></span><span>Ajuda</span></a></li>
+                <li><a href="/sair"><span class="icon"></span><span>Sair</span></a></li>
+            </ul>
+        </aside>
+
+        <main class="main-content">
+            <div class="container perfil-container">
+
+                <div class="perfil-header">
+                    <h1> Meu Perfil</h1>
+                    <p>Gerencie suas informações pessoais</p>
+                </div>
+
+                <div id="mensagemSucesso" class="mensagem-sucesso">
+                     Perfil atualizado com sucesso!
+                </div>
+
+                <div id="mensagemErro" class="mensagem-erro">
+                     Erro ao atualizar perfil. Tente novamente!
+                </div>
+
+                <div id="erroCarregamento" class="erro-carregamento">
+                     Erro ao carregar perfil. Recarregue a página.
+                </div>
+
+                <div class="perfil-card">
+                    <span class="avatar-icon"></span>
+                    <h3> Informações Pessoais</h3>
+
+                    <!-- NOME - APENAS LEITURA -->
+                    <div class="perfil-field" style="opacity:0.8;">
+                        <span class="label">Nome:</span>
+                        <span class="value" id="nomeValue">Carregando...</span>
+                        <span style="font-size:.8em;color:#888;">(não editável)</span>
+                    </div>
+
+                    <!-- EMAIL - APENAS LEITURA -->
+                    <div class="perfil-field" style="opacity:0.7;">
+                        <span class="label">Email:</span>
+                        <span class="value" id="emailValue">Carregando...</span>
+                        <span style="font-size:.8em;color:#888;">(não editável)</span>
+                    </div>
+
+                    <!-- ANO ESCOLAR - EDITÁVEL -->
+                    <div class="perfil-field" id="campo-ano_escolar">
+                        <span class="label">Ano escolar:</span>
+                        <span class="value" id="anoEscolarValue">Não definido</span>
+                        <input type="text" class="value-input" id="anoEscolarInput" placeholder="Ex: 3º ano do Ensino Médio">
+                        <button type="button" class="edit-btn" onclick="editarCampo('ano_escolar')"> Editar</button>
+                        <div class="edit-actions">
+                            <button type="button" class="save-btn" onclick="salvarCampo('ano_escolar')"> Salvar</button>
+                            <button type="button" class="cancel-btn" onclick="cancelarEdicao('ano_escolar')"> Cancelar</button>
+                        </div>
+                    </div>
+
+                    <!-- META DE FACULDADE - EDITÁVEL -->
+                    <div class="perfil-field" id="campo-objetivo_estudo">
+                        <span class="label">Meta de faculdade:</span>
+                        <span class="value" id="objetivoValue">Não definida</span>
+                        <input type="text" class="value-input" id="objetivoInput" placeholder="Ex: Passar em Medicina">
+                        <button type="button" class="edit-btn" onclick="editarCampo('objetivo_estudo')"> Editar</button>
+                        <div class="edit-actions">
+                            <button type="button" class="save-btn" onclick="salvarCampo('objetivo_estudo')"> Salvar</button>
+                            <button type="button" class="cancel-btn" onclick="cancelarEdicao('objetivo_estudo')"> Cancelar</button>
+                        </div>
+                    </div>
+
+                    <!-- DATA DE CADASTRO - APENAS LEITURA -->
+                    <div class="perfil-field" style="opacity:0.7;">
+                        <span class="label">Data de cadastro:</span>
+                        <span class="value" id="dataCadastroValue">Carregando...</span>
+                    </div>
+
+                </div>
+
+                <div class="perfil-actions">
+                    <button class="btn-action btn-secondary-action" onclick="location.href='/dashboard'">← Voltar</button>
+                </div>
+
+            </div>
+        </main>
+    </div>
+
+    <script>
+        let campoEditando = null;
+        let valorOriginal = '';
+
+        // ===== CARREGAR PERFIL =====
+        async function carregarPerfil() {
+            try {
+                const response = await fetch('/api/perfil', {
+                    method: 'GET',
+                    credentials: 'same-origin',
+                    headers: { 'Accept': 'application/json' }
+                });
+
+                if (!response.ok) {
+                    throw new Error(`Erro HTTP: ${response.status}`);
+                }
+
+                const data = await response.json();
+
+                if (data.erro) {
+                    throw new Error(data.erro);
+                }
+
+                // NOME
+                document.getElementById('nomeValue').textContent = data.nome || 'Não definido';
+
+                // EMAIL
+                document.getElementById('emailValue').textContent = data.email || 'Não definido';
+
+                // ANO ESCOLAR
+                const ano = data.ano_escolar || '';
+                document.getElementById('anoEscolarValue').textContent = ano || 'Não definido';
+                document.getElementById('anoEscolarInput').value = ano;
+
+                // META DE FACULDADE
+                const objetivo = data.objetivo_estudo || '';
+                document.getElementById('objetivoValue').textContent = objetivo || 'Não definida';
+                document.getElementById('objetivoInput').value = objetivo;
+
+                // DATA DE CADASTRO
+                if (data.data_cadastro) {
+                    const dataObj = new Date(data.data_cadastro);
+                    document.getElementById('dataCadastroValue').textContent = dataObj.toLocaleDateString('pt-BR');
+                } else {
+                    document.getElementById('dataCadastroValue').textContent = 'Não disponível';
+                }
+
+            } catch (error) {
+                console.error('Erro no perfil:', error);
+                document.getElementById('nomeValue').textContent = 'Erro ao carregar';
+                document.getElementById('emailValue').textContent = 'Erro ao carregar';
+                document.getElementById('anoEscolarValue').textContent = 'Erro ao carregar';
+                document.getElementById('objetivoValue').textContent = 'Erro ao carregar';
+                document.getElementById('dataCadastroValue').textContent = 'Não disponível';
+                document.getElementById('erroCarregamento').style.display = 'block';
+            }
+        }
+
+        // ===== EDITAR CAMPO =====
+        function editarCampo(campo) {
+            if (campoEditando && campoEditando !== campo) {
+                cancelarEdicao(campoEditando);
+            }
+
+            const campoDiv = document.getElementById(`campo-${campo}`);
+            const input = document.getElementById(campo === 'ano_escolar' ? 'anoEscolarInput' : 'objetivoInput');
+            const valueSpan = document.getElementById(campo === 'ano_escolar' ? 'anoEscolarValue' : 'objetivoValue');
+
+            valorOriginal = valueSpan.textContent === 'Não definido' || valueSpan.textContent === 'Não definida' ? '' : valueSpan.textContent;
+
+            campoDiv.classList.add('editing');
+            input.value = valorOriginal;
+            input.focus();
+            input.select();
+
+            campoEditando = campo;
+
+            input.onkeydown = function(e) {
+                if (e.key === 'Enter') {
+                    e.preventDefault();
+                    salvarCampo(campo);
+                }
+                if (e.key === 'Escape') {
+                    e.preventDefault();
+                    cancelarEdicao(campo);
+                }
+            };
+        }
+
+        // ===== SALVAR CAMPO =====
+        async function salvarCampo(campo) {
+            const input = document.getElementById(campo === 'ano_escolar' ? 'anoEscolarInput' : 'objetivoInput');
+            const valueSpan = document.getElementById(campo === 'ano_escolar' ? 'anoEscolarValue' : 'objetivoValue');
+            const campoDiv = document.getElementById(`campo-${campo}`);
+
+            const novoValor = input.value.trim();
+
+            if (!novoValor) {
+                alert('⚠️ Preencha o campo antes de salvar.');
+                return;
+            }
+
+            if (novoValor === valorOriginal) {
+                campoDiv.classList.remove('editing');
+                campoEditando = null;
+                return;
+            }
+
+            const botoes = campoDiv.querySelectorAll('button');
+            botoes.forEach(b => b.disabled = true);
+
+            try {
+                const response = await fetch('/api/perfil', {
+                    method: 'POST',
+                    credentials: 'same-origin',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Accept': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        campo: campo,
+                        valor: novoValor
+                    })
+                });
+
+                const data = await response.json();
+
+                if (!response.ok || data.erro) {
+                    throw new Error(data.erro || 'Erro ao salvar');
+                }
+
+                valueSpan.textContent = data.valor || novoValor;
+                input.value = data.valor || novoValor;
+
+                campoDiv.classList.remove('editing');
+                campoEditando = null;
+
+                mostrarSucesso();
+
+            } catch (error) {
+                console.error('Erro ao salvar:', error);
+                mostrarErro();
+                valueSpan.textContent = valorOriginal || (campo === 'ano_escolar' ? 'Não definido' : 'Não definida');
+            } finally {
+                botoes.forEach(b => b.disabled = false);
+            }
+        }
+
+        // ===== CANCELAR EDIÇÃO =====
+        function cancelarEdicao(campo) {
+            const campoDiv = document.getElementById(`campo-${campo}`);
+            const valueSpan = document.getElementById(campo === 'ano_escolar' ? 'anoEscolarValue' : 'objetivoValue');
+
+            valueSpan.textContent = valorOriginal || (campo === 'ano_escolar' ? 'Não definido' : 'Não definida');
+            campoDiv.classList.remove('editing');
+            campoEditando = null;
+        }
+
+        // ===== MENSAGENS =====
+        function mostrarSucesso() {
+            const msg = document.getElementById('mensagemSucesso');
+            msg.style.display = 'flex';
+            setTimeout(() => { msg.style.display = 'none'; }, 3000);
+        }
+
+        function mostrarErro() {
+            const msg = document.getElementById('mensagemErro');
+            msg.style.display = 'flex';
+            setTimeout(() => { msg.style.display = 'none'; }, 4000);
+        }
+
+        // ===== INICIAR =====
+        carregarPerfil();
+    </script>
+
+</body>
+</html>

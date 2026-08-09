@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Era Vargas - Saphius</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/views/conteudos/historia/historia.css">
+</head>
+<body>
+    <div class="app-container">
+        <aside class="sidebar">
+            <div class="sidebar-logo"><h2>Saphius</h2></div>
+            <ul class="sidebar-menu">
+                <li><a href="/dashboard"><span class="icon"></span> <span>Dashboard</span></a></li>
+                <li><a href="/conteudos"><span class="icon"></span> <span>Conteúdos</span></a></li>
+                <li><a href="/trilha"><span class="icon"></span> <span>Trilha de estudos</span></a></li>
+                <li><a href="/bemestar"><span class="icon"></span> <span>Bem-estar</span></a></li>
+                <li><a href="/perfil"><span class="icon"></span> <span>Perfil</span></a></li>
+                <li><a href="/configuracoes"><span class="icon"></span> <span>Configurações</span></a></li>
+                <li><a href="/ajuda"><span class="icon"></span> <span>Ajuda</span></a></li>
+                <li><a href="/sair"><span class="icon"></span> <span>Sair</span></a></li>
+            </ul>
+        </aside>
+
+        <main class="main-content">
+            <div class="container">
+                <a href="/historia" class="voltar"> Voltar para História</a>
+
+                <h1 style="text-align:center; font-size:2.5em; color:#2e7d32;">Era Vargas (1930-1945)</h1>
+                <p style="color:#666; text-align:center; font-size:1.1em;">Governo Provisório, Estado Novo, trabalhismo e industrialização</p>
+
+                <!-- ABAS -->
+                <div class="abas-navegacao" style="margin:25px 0;">
+                    <button class="aba-btn active" onclick="trocarAba(this, 'conteudo')">Conteúdo</button>
+                    <button class="aba-btn" onclick="trocarAba(this, 'exercicios')">Exercícios</button>
+                    <button class="aba-btn" onclick="trocarAba(this, 'resumo')">Resumo</button>
+                    <button class="aba-btn" onclick="trocarAba(this, 'simulado')">Simulado</button>
+                </div>
+
+                <!-- ===== CONTEÚDO ===== -->
+                <div id="conteudo" class="aba-conteudo active">
+
+                    <!-- INTRODUÇÃO -->
+                    <div class="explicacao-detalhada">
+                        <h3>Introdução: O que foi a Era Vargas?</h3>
+                        <p>
+                            A <strong>Era Vargas</strong> foi o período de 15 anos em que <strong>Getúlio Vargas</strong> governou o Brasil, 
+                            de <span class="data-destaque">1930 a 1945</span>. Este período é um dos mais importantes da história 
+                            do Brasil, marcado por profundas transformações políticas, econômicas e sociais.
+                        </p>
+                        <p>
+                            Vargas chegou ao poder através da <strong>Revolução de 1930</strong>, que pôs fim à República Velha, 
+                            e governou em três fases distintas: <strong>Governo Provisório (1930-1934)</strong>, 
+                            <strong>Governo Constitucional (1934-1937)</strong> e <strong>Estado Novo (1937-1945)</strong>.
+                        </p>
+                        <div class="enem-dica">
+                            <strong>DICA ENEM:</strong>
+                            <p>A Era Vargas é um dos temas mais cobrados no ENEM. Questões sobre o trabalhismo, 
+                            a industrialização e o Estado Novo aparecem com frequência. Entender a transição da 
+                            República Velha para a Era Vargas é fundamental.</p>
+                        </div>
+                    </div>
+
+                    <!-- LINHA DO TEMPO -->
+                    <div style="margin:30px 0;">
+                        <h2 style="color:#2e7d32;">Linha do Tempo - Era Vargas</h2>
+                        <div class="linha-tempo-detailed">
+                            <div class="evento">
+                                <span class="ano">1930</span>
+                                <div class="descricao">
+                                    <strong>Revolução de 1930</strong> — Getúlio Vargas assume o poder, 
+                                    pondo fim à República Velha.
+                                </div>
+                            </div>
+                            <div class="evento">
+                                <span class="ano">1930-1934</span>
+                                <div class="descricao">
+                                    <strong>Governo Provisório</strong> — Vargas governa por decreto, 
+                                    centralizando o poder e iniciando reformas.
+                                </div>
+                            </div>
+                            <div class="evento">
+                                <span class="ano">1932</span>
+                                <div class="descricao">
+                                    <strong>Revolução Constitucionalista</strong> — Revolta em São Paulo 
+                                    contra o governo provisório de Vargas.
+                                </div>
+                            </div>
+                            <div class="evento">
+                                <span class="ano">1934</span>
+                                <div class="descricao">
+                                    <strong>Constituição de 1934</strong> — Primeira constituição da Era Vargas, 
+                                    com avanços sociais e trabalhistas.
+                                </div>
+                            </div>
+                            <div class="evento">
+                                <span class="ano">1935</span>
+                                <div class="descricao">
+                                    <strong>Intentona Comunista</strong> — Levante militar comunista 
+                                    que foi duramente reprimido por Vargas.
+                                </div>
+                            </div>
+                            <div class="evento">
+                                <span class="ano">1937</span>
+                                <div class="descricao">
+                                    <strong>Estado Novo</strong> — Vargas fecha o Congresso e instaura 
+                                    uma ditadura, o Estado Novo.
+                                </div>
+                            </div>
+                            <div class="evento">
+                                <span class="ano">1942</span>
+                                <div class="descricao">
+                                    <strong>Entrada na Segunda Guerra</strong> — Brasil declara guerra 
+                                    à Alemanha e envia soldados para a Itália (FEB).
+                                </div>
+                            </div>
+                            <div class="evento">
+                                <span class="ano">1945</span>
+                                <div class="descricao">
+                                    <strong>Fim do Estado Novo</strong> — Vargas é deposto por um golpe militar, 
+                                    encerrando a Era Vargas.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SEÇÃO 1 -->
+                    <div class="explicacao-detalhada">
+                        <h3>1. A Revolução de 1930 e o Governo Provisório (1930-1934)</h3>
+                        <p>
+                            A <strong>Revolução de 1930</strong> foi um movimento armado liderado por Getúlio Vargas 
+                            que derrubou o presidente Washington Luís e impediu a posse de Júlio Prestes. 
+                            Vargas assumiu o poder como <strong>chefe do governo provisório</strong>.
+                        </p>
+                        <p>
+                            <strong>Características do Governo Provisório:</strong>
+                            <ul>
+                                <li>Vargas governou por <strong>decretos</strong>, sem a participação do Congresso.</li>
+                                <li>Centralização do poder no governo federal.</li>
+                                <li>Nomeação de <strong>interventores</strong> para governar os estados.</li>
+                                <li>Início da <strong>industrialização</strong> com incentivo à produção nacional.</li>
+                                <li>Criação de <strong>leis trabalhistas</strong> e previdenciárias.</li>
+                            </ul>
+                        </p>
+                        <div class="enem-dica">
+                            <strong>DICA ENEM:</strong>
+                            <p>A Revolução de 1930 é um marco da transição da República Oligárquica para 
+                            a Era Vargas. O ENEM costuma cobrar as mudanças políticas e sociais desse período.</p>
+                        </div>
+                    </div>
+
+                    <!-- SEÇÃO 2 -->
+                    <div class="explicacao-detalhada">
+                        <h3>2. A Revolução Constitucionalista de 1932</h3>
+                        <p>
+                            A <strong>Revolução Constitucionalista</strong> foi um movimento armado em São Paulo 
+                            contra o governo provisório de Vargas. Os paulistas exigiam uma <strong>nova constituição</strong> 
+                            e a <strong>autonomia</strong> do estado.
+                        </p>
+                        <p>
+                            <strong>Características:</strong>
+                            <ul>
+                                <li>Movimento liderado pela elite paulista e pela classe média.</li>
+                                <li>Contou com o apoio de outros estados, mas foi derrotado por Vargas.</li>
+                                <li>Consequência: Vargas convocou uma <strong>Assembleia Constituinte</strong>.</li>
+                            </ul>
+                        </p>
+                        <div class="revolta-card">
+                            <h4>Revolução Constitucionalista (1932)</h4>
+                            <p>
+                                <strong>Líderes:</strong> Elite paulista<br>
+                                <strong>Local:</strong> São Paulo<br>
+                                <strong>Contexto:</strong> Insatisfação com a centralização do poder de Vargas.<br>
+                                <strong>Desfecho:</strong> Derrota do movimento, mas Vargas convocou a Assembleia Constituinte.
+                            </p>
+                            <div class="enem-dica" style="margin-top:10px;">
+                                <strong>DICA ENEM:</strong>
+                                <p>A Revolução Constitucionalista é importante para entender a <strong>tensão entre 
+                                centralização e autonomia</strong> dos estados durante a Era Vargas.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SEÇÃO 3 -->
+                    <div class="explicacao-detalhada">
+                        <h3>3. A Constituição de 1934</h3>
+                        <p>
+                            A <strong>Constituição de 1934</strong> foi a primeira constituição da Era Vargas. 
+                            Ela trouxe avanços importantes, como a <strong>legislação trabalhista</strong> e os 
+                            <strong>direitos sociais</strong>.
+                        </p>
+                        <p>
+                            <strong>Principais pontos:</strong>
+                            <ul>
+                                <li>Criação da <strong>Justiça Eleitoral</strong>.</li>
+                                <li>Garantia do <strong>voto secreto</strong> e do <strong>voto feminino</strong>.</li>
+                                <li>Estabelecimento de <strong>direitos trabalhistas</strong> (jornada de 8 horas, férias remuneradas).</li>
+                                <li>Previdência social para os trabalhadores.</li>
+                            </ul>
+                        </p>
+                        <div class="enem-dica">
+                            <strong>DICA ENEM:</strong>
+                            <p>A Constituição de 1934 é um marco dos <strong>direitos sociais</strong> no Brasil. 
+                            O ENEM cobra questões sobre a evolução dos direitos trabalhistas.</p>
+                        </div>
+                    </div>
+
+                    <!-- SEÇÃO 4 -->
+                    <div class="explicacao-detalhada">
+                        <h3>4. A Intentona Comunista (1935)</h3>
+                        <p>
+                            A <strong>Intentona Comunista</strong> foi um levante militar liderado pelo 
+                            <strong>Partido Comunista Brasileiro (PCB)</strong> contra o governo de Vargas.
+                        </p>
+                        <p>
+                            <strong>Características:</strong>
+                            <ul>
+                                <li>Movimento ocorreu em <span class="data-destaque">novembro de 1935</span>.</li>
+                                <li>Liderado por Luís Carlos Prestes.</li>
+                                <li>Foi duramente reprimido por Vargas, que usou o episódio para justificar o endurecimento do regime.</li>
+                                <li>Resultou na <strong>cassação de direitos</strong> e na perseguição aos comunistas.</li>
+                            </ul>
+                        </p>
+                        <div class="revolta-card">
+                            <h4>Intentona Comunista (1935)</h4>
+                            <p>
+                                <strong>Líder:</strong> Luís Carlos Prestes<br>
+                                <strong>Local:</strong> Rio de Janeiro, Natal e Recife<br>
+                                <strong>Contexto:</strong> Tentativa de revolução comunista contra o governo Vargas.<br>
+                                <strong>Desfecho:</strong> Repressão violenta e perseguição aos comunistas.
+                            </p>
+                            <div class="enem-dica" style="margin-top:10px;">
+                                <strong>DICA ENEM:</strong>
+                                <p>A Intentona Comunista foi usada por Vargas para justificar o <strong>Estado Novo</strong> 
+                                e a centralização do poder.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SEÇÃO 5 -->
+                    <div class="explicacao-detalhada">
+                        <h3>5. O Estado Novo (1937-1945)</h3>
+                        <p>
+                            O <strong>Estado Novo</strong> foi o período mais autoritário da Era Vargas. 
+                            Em <span class="data-destaque">10 de novembro de 1937</span>, Vargas fechou o Congresso 
+                            e instaurou uma ditadura, inspirada no modelo fascista europeu.
+                        </p>
+                        <p>
+                            <strong>Características do Estado Novo:</strong>
+                            <ul>
+                                <li>Fechamento do <strong>Congresso Nacional</strong>.</li>
+                                <li>Fim dos <strong>partidos políticos</strong>.</li>
+                                <li>Criação do <strong>Departamento de Imprensa e Propaganda (DIP)</strong> — censura.</li>
+                                <li>Centralização do poder nas mãos de Vargas.</li>
+                                <li>Incentivo à <strong>industrialização</strong> (criação da CSN - Companhia Siderúrgica Nacional).</li>
+                                <li>Entrada do Brasil na <strong>Segunda Guerra Mundial</strong> (1942).</li>
+                            </ul>
+                        </p>
+                        <div class="enem-dica">
+                            <strong>DICA ENEM:</strong>
+                            <p>O Estado Novo é comparado ao fascismo europeu. O ENEM cobra a 
+                            <strong>centralização do poder</strong> e a <strong>propaganda política</strong> do período.</p>
+                        </div>
+                    </div>
+
+                    <!-- SEÇÃO 6 -->
+                    <div class="explicacao-detalhada">
+                        <h3>6. O Trabalhismo e a Industrialização</h3>
+                        <p>
+                            Uma das principais marcas da Era Vargas foi o <strong>trabalhismo</strong> — 
+                            a criação de leis que protegiam os trabalhadores e a valorização da classe operária.
+                        </p>
+                        <p>
+                            <strong>Principais conquistas trabalhistas:</strong>
+                            <ul>
+                                <li>Criação da <strong>Justiça do Trabalho</strong>.</li>
+                                <li>Estabelecimento do <strong>salário mínimo</strong>.</li>
+                                <li>Jornada de <strong>8 horas de trabalho</strong>.</li>
+                                <li><strong>Férias remuneradas</strong> e <strong>13º salário</strong>.</li>
+                                <li>Consolidação das <strong>Leis Trabalhistas (CLT)</strong> em 1943.</li>
+                            </ul>
+                        </p>
+                        <p>
+                            <strong>Industrialização:</strong>
+                            <ul>
+                                <li>Incentivo à <strong>indústria nacional</strong> — política de substituição de importações.</li>
+                                <li>Criação da <strong>Companhia Siderúrgica Nacional (CSN)</strong> em Volta Redonda (RJ).</li>
+                                <li>Expansão da <strong>infraestrutura</strong> (energia, transporte, comunicações).</li>
+                            </ul>
+                        </p>
+                        <div class="enem-dica">
+                            <strong>DICA ENEM:</strong>
+                            <p>O trabalhismo e a CLT são temas recorrentes no ENEM. Entenda a relação entre 
+                            a <strong>industrialização</strong> e a <strong>criação de direitos</strong> trabalhistas.</p>
+                        </div>
+                    </div>
+
+                    <!-- SEÇÃO 7 -->
+                    <div class="explicacao-detalhada">
+                        <h3>7. O Fim da Era Vargas (1945)</h3>
+                        <p>
+                            Em <span class="data-destaque">29 de outubro de 1945</span>, Getúlio Vargas foi deposto 
+                            por um golpe militar, que pôs fim ao Estado Novo e à Era Vargas. 
+                            O Brasil iniciou um período de <strong>redemocratização</strong>.
+                        </p>
+                        <p>
+                            <strong>Causas da queda:</strong>
+                            <ul>
+                                <li>Pressão popular pela <strong>redemocratização</strong>.</li>
+                                <li>Desgaste político de Vargas.</li>
+                                <li>Movimento <strong>"Queremismo"</strong> — campanha popular que defendia a permanência de Vargas no poder.</li>
+                                <li>Golpe militar liderado pelo general <strong>Eurico Gaspar Dutra</strong>.</li>
+                            </ul>
+                        </p>
+                        <div class="enem-dica">
+                            <strong>DICA ENEM:</strong>
+                            <p>O fim da Era Vargas é um momento de transição para a <strong>República Democrática</strong>. 
+                            O ENEM cobra as causas da queda de Vargas e o início da redemocratização.</p>
+                        </div>
+                    </div>
+
+                    <!-- DICA FINAL -->
+                    <div class="dica-saphius">
+                        <h3>Dica Saphius</h3>
+                        <p>
+                            Memorize as fases da Era Vargas: <strong>"Gov. Provisório + Gov. Constitucional + Estado Novo"</strong>.
+                            Lembre-se do lema de Vargas: <strong>"Trabalhismo + Industrialização"</strong>.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- ===== EXERCÍCIOS ===== -->
+                <div id="exercicios" class="aba-conteudo">
+                    <h2 style="color:#2e7d32;">Exercícios - Era Vargas</h2>
+                    <p style="color:#666;">15 questões (5 Fáceis, 5 Médias, 5 Difíceis)</p>
+
+                    <!-- ===== 5 FÁCEIS ===== -->
+                    <div class="exercicio-facil">
+                        <span class="badge">FÁCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>1.</strong> Em que ano Getúlio Vargas assumiu o poder?</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q1"> a) 1929</label>
+                            <label><input type="radio" name="q1"> b) 1930</label>
+                            <label><input type="radio" name="q1"> c) 1931</label>
+                            <label><input type="radio" name="q1"> d) 1932</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: B) 1930</strong></p>
+                            <p><strong>Explicação:</strong> Getúlio Vargas assumiu o poder em 1930, após a Revolução de 1930, que pôs fim à República Velha.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-facil">
+                        <span class="badge">FÁCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>2.</strong> O que foi o Estado Novo (1937-1945)?</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q2"> a) Um período democrático</label>
+                            <label><input type="radio" name="q2"> b) Uma ditadura instaurada por Vargas</label>
+                            <label><input type="radio" name="q2"> c) Uma revolução socialista</label>
+                            <label><input type="radio" name="q2"> d) Um governo parlamentarista</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: B) Uma ditadura instaurada por Vargas</strong></p>
+                            <p><strong>Explicação:</strong> O Estado Novo foi uma ditadura instaurada por Vargas em 1937, com o fechamento do Congresso e a centralização do poder.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-facil">
+                        <span class="badge">FÁCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>3.</strong> Qual foi a principal conquista trabalhista da Era Vargas?</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q3"> a) Criação da CLT</label>
+                            <label><input type="radio" name="q3"> b) Fim da escravidão</label>
+                            <label><input type="radio" name="q3"> c) Criação do voto feminino</label>
+                            <label><input type="radio" name="q3"> d) Criação do Banco Central</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: A) Criação da CLT</strong></p>
+                            <p><strong>Explicação:</strong> A Consolidação das Leis Trabalhistas (CLT) foi criada em 1943, reunindo todas as leis trabalhistas do período.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-facil">
+                        <span class="badge">FÁCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>4.</strong> Em que ano o Brasil entrou na Segunda Guerra Mundial?</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q4"> a) 1940</label>
+                            <label><input type="radio" name="q4"> b) 1941</label>
+                            <label><input type="radio" name="q4"> c) 1942</label>
+                            <label><input type="radio" name="q4"> d) 1943</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: C) 1942</strong></p>
+                            <p><strong>Explicação:</strong> O Brasil entrou na Segunda Guerra Mundial em 1942, enviando soldados para a Itália (FEB).</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-facil">
+                        <span class="badge">FÁCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>5.</strong> Quem liderou a Intentona Comunista (1935)?</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q5"> a) Getúlio Vargas</label>
+                            <label><input type="radio" name="q5"> b) Luís Carlos Prestes</label>
+                            <label><input type="radio" name="q5"> c) João Goulart</label>
+                            <label><input type="radio" name="q5"> d) Juscelino Kubitschek</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: B) Luís Carlos Prestes</strong></p>
+                            <p><strong>Explicação:</strong> A Intentona Comunista de 1935 foi liderada por Luís Carlos Prestes, que tentou uma revolução comunista contra Vargas.</p>
+                        </div>
+                    </div>
+
+                    <!-- ===== 5 MÉDIAS ===== -->
+                    <div class="exercicio-medio">
+                        <span class="badge">MÉDIO</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>6.</strong> (ENEM) A Revolução Constitucionalista de 1932 foi um movimento que:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q6"> a) Defendia a volta da monarquia</label>
+                            <label><input type="radio" name="q6"> b) Reivindicava uma nova constituição</label>
+                            <label><input type="radio" name="q6"> c) Apoiava o governo de Vargas</label>
+                            <label><input type="radio" name="q6"> d) Liderou a Intentona Comunista</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: B) Reivindicava uma nova constituição</strong></p>
+                            <p><strong>Explicação:</strong> A Revolução Constitucionalista de 1932 exigia uma nova constituição e mais autonomia para os estados.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-medio">
+                        <span class="badge">MÉDIO</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>7.</strong> (ENEM) A Constituição de 1934 trouxe como avanço:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q7"> a) O voto feminino</label>
+                            <label><input type="radio" name="q7"> b) O fim da escravidão</label>
+                            <label><input type="radio" name="q7"> c) A criação da CLT</label>
+                            <label><input type="radio" name="q7"> d) A centralização do poder</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: A) O voto feminino</strong></p>
+                            <p><strong>Explicação:</strong> A Constituição de 1934 garantiu o voto feminino e os direitos trabalhistas.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-medio">
+                        <span class="badge">MÉDIO</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>8.</strong> (ENEM) O Estado Novo (1937-1945) caracterizou-se pela:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q8"> a) Democracia participativa</label>
+                            <label><input type="radio" name="q8"> b) Centralização do poder e censura</label>
+                            <label><input type="radio" name="q8"> c) Descentralização administrativa</label>
+                            <label><input type="radio" name="q8"> d) Abertura política</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: B) Centralização do poder e censura</strong></p>
+                            <p><strong>Explicação:</strong> O Estado Novo foi uma ditadura com centralização do poder, censura e perseguição aos opositores.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-medio">
+                        <span class="badge">MÉDIO</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>9.</strong> (ENEM) O trabalhismo de Vargas caracterizou-se pela:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q9"> a) Criação de leis trabalhistas</label>
+                            <label><input type="radio" name="q9"> b) Exclusão dos trabalhadores</label>
+                            <label><input type="radio" name="q9"> c) Privatização das empresas</label>
+                            <label><input type="radio" name="q9"> d) Fim dos sindicatos</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: A) Criação de leis trabalhistas</strong></p>
+                            <p><strong>Explicação:</strong> O trabalhismo de Vargas foi marcado pela criação de leis que protegiam os trabalhadores, como a CLT.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-medio">
+                        <span class="badge">MÉDIO</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>10.</strong> (ENEM) A Intentona Comunista (1935) foi usada por Vargas para:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q10"> a) Justificar o Estado Novo</label>
+                            <label><input type="radio" name="q10"> b) Aprovar a CLT</label>
+                            <label><input type="radio" name="q10"> c) Criar a CSN</label>
+                            <label><input type="radio" name="q10"> d) Estabelecer o voto feminino</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: A) Justificar o Estado Novo</strong></p>
+                            <p><strong>Explicação:</strong> Vargas usou a Intentona Comunista como justificativa para fechar o Congresso e instaurar o Estado Novo.</p>
+                        </div>
+                    </div>
+
+                    <!-- ===== 5 DIFÍCEIS ===== -->
+                    <div class="exercicio-dificil">
+                        <span class="badge">DIFÍCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>11.</strong> (ENEM) A criação da Companhia Siderúrgica Nacional (CSN) em 1941 ocorreu durante o:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q11"> a) Governo Provisório</label>
+                            <label><input type="radio" name="q11"> b) Estado Novo</label>
+                            <label><input type="radio" name="q11"> c) Governo Constitucional</label>
+                            <label><input type="radio" name="q11"> d) Período da Redemocratização</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: B) Estado Novo</strong></p>
+                            <p><strong>Explicação:</strong> A CSN foi criada durante o Estado Novo, com investimentos dos EUA, como parte da política de industrialização de Vargas.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-dificil">
+                        <span class="badge">DIFÍCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>12.</strong> (ENEM) O movimento "Queremismo" (1945) defendia:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q12"> a) A permanência de Vargas no poder</label>
+                            <label><input type="radio" name="q12"> b) A redemocratização imediata</label>
+                            <label><input type="radio" name="q12"> c) A volta da monarquia</label>
+                            <label><input type="radio" name="q12"> d) A criação da CLT</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: A) A permanência de Vargas no poder</strong></p>
+                            <p><strong>Explicação:</strong> O "Queremismo" foi um movimento popular que defendia a permanência de Getúlio Vargas no poder em 1945.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-dificil">
+                        <span class="badge">DIFÍCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>13.</strong> (ENEM) O Departamento de Imprensa e Propaganda (DIP) durante o Estado Novo tinha como função:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q13"> a) Controlar a mídia e fazer propaganda política</label>
+                            <label><input type="radio" name="q13"> b) Promover a democracia</label>
+                            <label><input type="radio" name="q13"> c) Incentivar a oposição</label>
+                            <label><input type="radio" name="q13"> d) Criar leis trabalhistas</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: A) Controlar a mídia e fazer propaganda política</strong></p>
+                            <p><strong>Explicação:</strong> O DIP controlava a mídia e fazia propaganda do governo, promovendo a imagem de Vargas e o Estado Novo.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-dificil">
+                        <span class="badge">DIFÍCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>14.</strong> (ENEM) A política de substituição de importações, adotada por Vargas, consistia em:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q14"> a) Incentivar a produção nacional</label>
+                            <label><input type="radio" name="q14"> b) Abrir o mercado para produtos estrangeiros</label>
+                            <label><input type="radio" name="q14"> c) Reduzir os impostos de importação</label>
+                            <label><input type="radio" name="q14"> d) Privatizar as indústrias</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: A) Incentivar a produção nacional</strong></p>
+                            <p><strong>Explicação:</strong> A política de substituição de importações incentivava a produção nacional, reduzindo a dependência de produtos estrangeiros.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-dificil">
+                        <span class="badge">DIFÍCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>15.</strong> (ENEM) A queda de Vargas em 1945 foi causada por:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q15"> a) Um golpe militar</label>
+                            <label><input type="radio" name="q15"> b) Uma revolução popular</label>
+                            <label><input type="radio" name="q15"> c) A pressão dos EUA</label>
+                            <label><input type="radio" name="q15"> d) A vitória da oposição</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: A) Um golpe militar</strong></p>
+                            <p><strong>Explicação:</strong> Vargas foi deposto por um golpe militar em outubro de 1945, que pôs fim ao Estado Novo e iniciou a redemocratização.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- ===== RESUMO ===== -->
+                <div id="resumo" class="aba-conteudo">
+                    <div class="resumo-principal">
+                        <h2 class="resumo-titulo">Resumo - Era Vargas</h2>
+                        <p class="resumo-subtitulo">Principais pontos para memorizar</p>
+
+                        <div class="resumo-grid">
+                            <div class="resumo-card-item">
+                                <h3>Revolução de 1930</h3>
+                                <p>Getúlio Vargas assume o poder</p>
+                                <span class="resumo-tag">Fim da República Velha</span>
+                            </div>
+
+                            <div class="resumo-card-item">
+                                <h3>Governo Provisório</h3>
+                                <p>1930-1934 - Reformas e centralização</p>
+                                <span class="resumo-tag">Interventores</span>
+                            </div>
+
+                            <div class="resumo-card-item">
+                                <h3>Constituição de 1934</h3>
+                                <p>Voto feminino e direitos trabalhistas</p>
+                                <span class="resumo-tag">Direitos Sociais</span>
+                            </div>
+
+                            <div class="resumo-card-item">
+                                <h3>Estado Novo</h3>
+                                <p>1937-1945 - Ditadura e censura</p>
+                                <span class="resumo-tag">Centralização</span>
+                            </div>
+
+                            <div class="resumo-card-item">
+                                <h3>CLT (1943)</h3>
+                                <p>Consolidação das Leis Trabalhistas</p>
+                                <span class="resumo-tag">Trabalhismo</span>
+                            </div>
+
+                            <div class="resumo-card-item">
+                                <h3>Fim da Era Vargas</h3>
+                                <p>1945 - Deposto por golpe militar</p>
+                                <span class="resumo-tag">Redemocratização</span>
+                            </div>
+                        </div>
+
+                        <div class="resumo-dica-final">
+                            <h4>Dica Saphius</h4>
+                            <p>Memorize: <strong>"Era Vargas = Revolução de 30 + Estado Novo + CLT + Industrialização"</strong></p>
+                        </div>
+
+                        <div class="resumo-dica-enem">
+                            <h4>Dica ENEM</h4>
+                            <p>Atenção para os termos <strong>"Trabalhismo"</strong>, <strong>"Estado Novo"</strong> e <strong>"CLT"</strong> — eles aparecem com frequência na prova!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ===== SIMULADO ===== -->
+                <div id="simulado" class="aba-conteudo">
+                    <h2 style="color:#2e7d32;">Simulado - Era Vargas</h2>
+                    <p style="color:#666;">Teste seus conhecimentos com questões estilo ENEM</p>
+
+                    <div class="simulado-card">
+                        <div style="display:flex; gap:20px; flex-wrap:wrap; justify-content:center; margin-bottom:15px;">
+                            <span><strong>15 questões</strong></span>
+                            <span><strong>20 minutos</strong></span>
+                            <span><strong>Nível: Fácil a Difícil</strong></span>
+                        </div>
+                        <p style="color:#555; margin-bottom:15px;">As questões são as mesmas da aba "Exercícios" acima. Responda todas com calma!</p>
+                        <button class="btn-principal" onclick="alert('Simulado iniciado! Responda todas as 15 questões acima na aba Exercícios.')">
+                            Iniciar simulado
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+    </div>
+
+    <script>
+function trocarAba(botao, abaId) {
+    document.querySelectorAll('.aba-btn').forEach(b => b.classList.remove('active'));
+    botao.classList.add('active');
+    document.querySelectorAll('.aba-conteudo').forEach(c => c.classList.remove('active'));
+    document.getElementById(abaId).classList.add('active');
+}
+
+function mostrarResposta(botao) {
+    const exercicioDiv = botao.closest('.exercicio-facil, .exercicio-medio, .exercicio-dificil');
+    const respostaDiv = exercicioDiv.querySelector('.resposta-explicada');
+
+    if (respostaDiv.style.display === 'block') {
+        respostaDiv.style.display = 'none';
+        botao.textContent = 'Ver explicação';
+    } else {
+        respostaDiv.style.display = 'block';
+        botao.textContent = 'Ocultar explicação';
+    }
+}
+
+document.querySelectorAll('.exercicio-alternativas input[type="radio"]').forEach(input => {
+    input.addEventListener('change', verificarAtividade);
+});
+
+async function verificarAtividade() {
+    const questoes = document.querySelectorAll('.exercicio-alternativas');
+    const respondidas = document.querySelectorAll('.exercicio-alternativas input[type="radio"]:checked');
+
+    if (respondidas.length === questoes.length) {
+        try {
+            await fetch('/api/trilha/concluir', {
+                method: 'POST',
+                headers: {'Content-Type':'application/json'},
+                body: JSON.stringify({
+                    materia: 'historia',
+                    topico: 'era-vargas'
+                })
+            });
+
+            alert('Atividade concluída! Seu progresso na Trilha de Estudos foi atualizado.');
+        } catch (erro) {
+            console.error('Erro ao atualizar progresso:', erro);
+        }
+    }
+}
+</script>
+</body>
+</html>

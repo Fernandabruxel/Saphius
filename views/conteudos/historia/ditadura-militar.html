@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Ditadura Militar - Saphius</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/views/conteudos/historia/historia.css">
+</head>
+<body>
+    <div class="app-container">
+        <aside class="sidebar">
+            <div class="sidebar-logo"><h2>Saphius</h2></div>
+            <ul class="sidebar-menu">
+                <li><a href="/dashboard"><span class="icon"></span> <span>Dashboard</span></a></li>
+                <li><a href="/conteudos"><span class="icon"></span> <span>Conteúdos</span></a></li>
+                <li><a href="/trilha"><span class="icon"></span> <span>Trilha de estudos</span></a></li>
+                <li><a href="/bemestar"><span class="icon"></span> <span>Bem-estar</span></a></li>
+                <li><a href="/perfil"><span class="icon"></span> <span>Perfil</span></a></li>
+                <li><a href="/configuracoes"><span class="icon"></span> <span>Configurações</span></a></li>
+                <li><a href="/ajuda"><span class="icon"></span> <span>Ajuda</span></a></li>
+                <li><a href="/sair"><span class="icon"></span> <span>Sair</span></a></li>
+            </ul>
+        </aside>
+
+        <main class="main-content">
+            <div class="container">
+                <a href="/historia" class="voltar"> Voltar para História</a>
+
+                <h1 style="text-align:center; font-size:2.5em; color:#2e7d32;">Ditadura Militar (1964-1985)</h1>
+                <p style="color:#666; text-align:center; font-size:1.1em;">Regime militar, AI-5, repressão, economia e movimentos de oposição</p>
+
+                <!-- ABAS -->
+                <div class="abas-navegacao" style="margin:25px 0;">
+                    <button class="aba-btn active" onclick="trocarAba(this, 'conteudo')">Conteúdo</button>
+                    <button class="aba-btn" onclick="trocarAba(this, 'exercicios')">Exercícios</button>
+                    <button class="aba-btn" onclick="trocarAba(this, 'resumo')">Resumo</button>
+                    <button class="aba-btn" onclick="trocarAba(this, 'simulado')">Simulado</button>
+                </div>
+
+                <!-- ===== CONTEÚDO ===== -->
+                <div id="conteudo" class="aba-conteudo active">
+
+                    <!-- INTRODUÇÃO -->
+                    <div class="explicacao-detalhada">
+                        <h3>Introdução: O que foi a Ditadura Militar?</h3>
+                        <p>
+                            A <strong>Ditadura Militar</strong> foi o período da história do Brasil que se estendeu de 
+                            <span class="data-destaque">31 de março de 1964</span> até <span class="data-destaque">15 de março de 1985</span>. 
+                            Foi um regime autoritário instaurado por um <strong>golpe militar</strong> que derrubou o presidente 
+                            João Goulart (Jango).
+                        </p>
+                        <p>
+                            Durante 21 anos, o Brasil foi governado por generais que centralizaram o poder, 
+                            perseguiram opositores, censuraram a imprensa e promoveram um modelo econômico 
+                            chamado de <strong>"milagre econômico"</strong>, que gerou crescimento, mas também 
+                            aumentou a desigualdade social.
+                        </p>
+                        <div class="enem-dica">
+                            <strong>DICA ENEM:</strong>
+                            <p>A Ditadura Militar é um dos temas mais cobrados no ENEM. Questões sobre o 
+                            <strong>AI-5</strong>, a <strong>repressão</strong>, o <strong>milagre econômico</strong> 
+                            e os <strong>movimentos de oposição</strong> aparecem com frequência.</p>
+                        </div>
+                    </div>
+
+                    <!-- LINHA DO TEMPO -->
+                    <div style="margin:30px 0;">
+                        <h2 style="color:#2e7d32;">Linha do Tempo - Ditadura Militar</h2>
+                        <div class="linha-tempo-detailed">
+                            <div class="evento">
+                                <span class="ano">1964</span>
+                                <div class="descricao">
+                                    <strong>Golpe Militar</strong> — 31 de março, derruba o presidente João Goulart. 
+                                    Início da Ditadura Militar.
+                                </div>
+                            </div>
+                            <div class="evento">
+                                <span class="ano">1964-1967</span>
+                                <div class="descricao">
+                                    <strong>Governo Castelo Branco</strong> — Primeiro presidente militar, 
+                                    instaura o regime e cria a Lei de Segurança Nacional.
+                                </div>
+                            </div>
+                            <div class="evento">
+                                <span class="ano">1967-1969</span>
+                                <div class="descricao">
+                                    <strong>Governo Costa e Silva</strong> — Institui o <strong>AI-5</strong> 
+                                    em 1968, endurecendo a ditadura.
+                                </div>
+                            </div>
+                            <div class="evento">
+                                <span class="ano">1968</span>
+                                <div class="descricao">
+                                    <strong>Ato Institucional nº 5 (AI-5)</strong> — Fechamento do Congresso, 
+                                    cassação de mandatos e suspensão de direitos políticos.
+                                </div>
+                            </div>
+                            <div class="evento">
+                                <span class="ano">1969-1974</span>
+                                <div class="descricao">
+                                    <strong>Governo Médici</strong> — Período do <strong>"Milagre Econômico"</strong> 
+                                    e maior repressão.
+                                </div>
+                            </div>
+                            <div class="evento">
+                                <span class="ano">1974-1979</span>
+                                <div class="descricao">
+                                    <strong>Governo Geisel</strong> — Início da <strong>abertura lenta e gradual</strong> 
+                                    para a redemocratização.
+                                </div>
+                            </div>
+                            <div class="evento">
+                                <span class="ano">1979-1985</span>
+                                <div class="descricao">
+                                    <strong>Governo Figueiredo</strong> — Último presidente militar. 
+                                    Movimento das <strong>Diretas Já</strong> ganha força.
+                                </div>
+                            </div>
+                            <div class="evento">
+                                <span class="ano">1985</span>
+                                <div class="descricao">
+                                    <strong>Fim da Ditadura</strong> — Eleição de Tancredo Neves, 
+                                    encerrando o regime militar.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SEÇÃO 1 -->
+                    <div class="explicacao-detalhada">
+                        <h3>1. O Golpe Militar de 1964</h3>
+                        <p>
+                            O <strong>Golpe Militar de 1964</strong> ocorreu em <span class="data-destaque">31 de março de 1964</span>, 
+                            derrubando o presidente João Goulart (Jango). Os militares justificaram o golpe como uma 
+                            <strong>intervenção para combater o comunismo</strong> e a "corrupção".
+                        </p>
+                        <p>
+                            <strong>Causas do Golpe:</strong>
+                            <ul>
+                                <li><strong>Crise política:</strong> Jango enfrentava forte oposição de setores conservadores.</li>
+                                <li><strong>Reformas de base:</strong> Jango defendia reformas agrária, urbana e tributária, 
+                                que incomodavam as elites.</li>
+                                <li><strong>Guerra Fria:</strong> O contexto internacional de confronto entre EUA e URSS 
+                                influenciou os militares, que viam o governo como comunista.</li>
+                                <li><strong>Apoio dos EUA:</strong> Os EUA apoiaram o golpe, temendo que o Brasil se 
+                                alinhasse à União Soviética.</li>
+                            </ul>
+                        </p>
+                        <p>
+                            <strong>Consequências imediatas:</strong>
+                            <ul>
+                                <li>Instauração do <strong>regime militar</strong>.</li>
+                                <li>Cassacão de direitos políticos de opositores.</li>
+                                <li>Criação da <strong>Lei de Segurança Nacional</strong>.</li>
+                                <li>Início da <strong>repressão</strong> a sindicatos, estudantes e intelectuais.</li>
+                            </ul>
+                        </p>
+                        <div class="enem-dica">
+                            <strong>DICA ENEM:</strong>
+                            <p>O Golpe de 1964 é um marco da história do Brasil. O ENEM cobra as causas e as 
+                            consequências imediatas do regime militar.</p>
+                        </div>
+                    </div>
+
+                    <!-- SEÇÃO 2 -->
+                    <div class="explicacao-detalhada">
+                        <h3>2. O Governo Castelo Branco (1964-1967)</h3>
+                        <p>
+                            O <strong>Marechal Castelo Branco</strong> foi o primeiro presidente do regime militar. 
+                            Seu governo foi marcado pela <strong>institucionalização</strong> da ditadura e pela 
+                            <strong>repressão moderada</strong>.
+                        </p>
+                        <p>
+                            <strong>Principais ações:</strong>
+                            <ul>
+                                <li>Criação da <strong>Lei de Segurança Nacional</strong>.</li>
+                                <li>Promulgação do <strong>Ato Institucional nº 1 (AI-1)</strong> — que permitia a 
+                                cassação de mandatos e a suspensão de direitos políticos.</li>
+                                <li>Fim dos <strong>partidos políticos</strong> existentes — criação da <strong>ARENA</strong> 
+                                (governo) e do <strong>MDB</strong> (oposição).</li>
+                                <li>Início da <strong>repressão</strong> a movimentos sociais.</li>
+                            </ul>
+                        </p>
+                        <div class="enem-dica">
+                            <strong>DICA ENEM:</strong>
+                            <p>O AI-1 foi o primeiro ato institucional do regime. O ENEM cobra o 
+                            <strong>fim do pluripartidarismo</strong> e a criação da ARENA e do MDB.</p>
+                        </div>
+                    </div>
+
+                    <!-- SEÇÃO 3 -->
+                    <div class="explicacao-detalhada">
+                        <h3>3. O Governo Costa e Silva e o AI-5 (1967-1969)</h3>
+                        <p>
+                            O <strong>General Costa e Silva</strong> assumiu a presidência em 1967. 
+                            Em <span class="data-destaque">13 de dezembro de 1968</span>, decretou o 
+                            <strong>Ato Institucional nº 5 (AI-5)</strong>, que endureceu a ditadura.
+                        </p>
+                        <p>
+                            <strong>O que foi o AI-5?</strong>
+                            <ul>
+                                <li><strong>Fechamento do Congresso Nacional</strong>.</li>
+                                <li><strong>Suspensão de direitos políticos</strong> por 10 anos.</li>
+                                <li><strong>Censura</strong> à imprensa, rádio, TV e teatro.</li>
+                                <li><strong>Autorização</strong> para o governo prender, exilar ou cassar opositores.</li>
+                                <li><strong>Fim do habeas corpus</strong> para crimes políticos.</li>
+                            </ul>
+                        </p>
+                        <p>
+                            <strong>Consequências do AI-5:</strong>
+                            <ul>
+                                <li>Intensificação da <strong>repressão</strong> e da <strong>censura</strong>.</li>
+                                <li>Perseguição a <strong>estudantes</strong>, <strong>intelectuais</strong> e 
+                                <strong>sindicatos</strong>.</li>
+                                <li>Fortalecimento dos <strong>movimentos de resistência</strong> (guerrilha).</li>
+                            </ul>
+                        </p>
+                        <div class="revolta-card">
+                            <h4>Ato Institucional nº 5 (AI-5) - 1968</h4>
+                            <p>
+                                <strong>Decreto:</strong> 13 de dezembro de 1968<br>
+                                <strong>Contexto:</strong> Endurecimento da ditadura, com fechamento do Congresso.<br>
+                                <strong>Consequência:</strong> Censura, perseguição e repressão intensificada.
+                            </p>
+                            <div class="enem-dica" style="margin-top:10px;">
+                                <strong>DICA ENEM:</strong>
+                                <p>O AI-5 é o <strong>marco do endurecimento</strong> da Ditadura Militar. 
+                                O ENEM cobra os efeitos do AI-5 na sociedade e na política brasileira.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SEÇÃO 4 -->
+                    <div class="explicacao-detalhada">
+                        <h3>4. O Governo Médici e o "Milagre Econômico" (1969-1974)</h3>
+                        <p>
+                            O <strong>General Emílio Garrastazu Médici</strong> governou o Brasil durante o período 
+                            de maior repressão, mas também de maior <strong>crescimento econômico</strong> — 
+                            o chamado <strong>"Milagre Econômico"</strong>.
+                        </p>
+                        <p>
+                            <strong>Características do "Milagre Econômico":</strong>
+                            <ul>
+                                <li><strong>Crescimento do PIB</strong> em taxas superiores a 10% ao ano.</li>
+                                <li><strong>Expansão da indústria</strong> e da <strong>infraestrutura</strong>.</li>
+                                <li><strong>Grandes obras</strong> — ponte Rio-Niterói, Transamazônica, hidrelétrica de Itaipu.</li>
+                                <li><strong>Aumento da dívida externa</strong> — financiamento externo para o desenvolvimento.</li>
+                            </ul>
+                        </p>
+                        <p>
+                            <strong>Repressão no governo Médici:</strong>
+                            <ul>
+                                <li>Atuação do <strong>DOI-CODI</strong> (órgão de repressão e tortura).</li>
+                                <li>Perseguição a <strong>guerrilheiros</strong> e opositores.</li>
+                                <li><strong>Censura</strong> a jornais, revistas, músicas e filmes.</li>
+                            </ul>
+                        </p>
+                        <div class="enem-dica">
+                            <strong>DICA ENEM:</strong>
+                            <p>O "Milagre Econômico" é frequentemente cobrado no ENEM, que relaciona o 
+                            <strong>crescimento econômico</strong> com o <strong>endividamento externo</strong> 
+                            e a <strong>desigualdade social</strong>.</p>
+                        </div>
+                    </div>
+
+                    <!-- SEÇÃO 5 -->
+                    <div class="explicacao-detalhada">
+                        <h3>5. A Resistência e a Guerrilha</h3>
+                        <p>
+                            Durante a Ditadura Militar, surgiram vários <strong>movimentos de resistência</strong> 
+                            contra o regime, incluindo <strong>guerrilhas</strong> urbanas e rurais.
+                        </p>
+                        <p>
+                            <strong>Principais movimentos:</strong>
+                            <ul>
+                                <li><strong>Guerrilha do Araguaia</strong> — movimento rural no Pará (1972-1975).</li>
+                                <li><strong>VAR-Palmares</strong> — organização urbana que atuou na luta armada.</li>
+                                <li><strong>MR-8</strong> — movimento revolucionário que liderou ações contra o regime.</li>
+                                <li><strong>Movimento estudantil</strong> — protestos e greves nas universidades.</li>
+                            </ul>
+                        </p>
+                        <div class="revolta-card">
+                            <h4>Guerrilha do Araguaia (1972-1975)</h4>
+                            <p>
+                                <strong>Local:</strong> Região do Araguaia (Pará)<br>
+                                <strong>Contexto:</strong> Movimento de resistência rural contra a ditadura.<br>
+                                <strong>Desfecho:</strong> Os guerrilheiros foram duramente reprimidos pelo exército, 
+                                com tortura e mortes.
+                            </p>
+                            <div class="enem-dica" style="margin-top:10px;">
+                                <strong>DICA ENEM:</strong>
+                                <p>A Guerrilha do Araguaia é um dos exemplos de <strong>resistência armada</strong> 
+                                contra a ditadura. O ENEM cobra os movimentos de oposição ao regime.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SEÇÃO 6 -->
+                    <div class="explicacao-detalhada">
+                        <h3>6. O Governo Geisel e a "Abertura" (1974-1979)</h3>
+                        <p>
+                            O <strong>General Ernesto Geisel</strong> iniciou um processo de 
+                            <strong>abertura lenta e gradual</strong>, que visava a transição para a 
+                            <strong>redemocratização</strong>.
+                        </p>
+                        <p>
+                            <strong>Principais medidas:</strong>
+                            <ul>
+                                <li><strong>Distensão</strong> — afrouxamento da repressão.</li>
+                                <li><strong>Revogação do AI-5</strong> em 1978.</li>
+                                <li>Permissão para a <strong>volta dos exilados políticos</strong>.</li>
+                                <li><strong>Continuidade da censura</strong>, mas com menor intensidade.</li>
+                            </ul>
+                        </p>
+                        <div class="enem-dica">
+                            <strong>DICA ENEM:</strong>
+                            <p>A "abertura" de Geisel é um tema importante no ENEM, que cobra a 
+                            <strong>transição do autoritarismo para a democracia</strong>.</p>
+                        </div>
+                    </div>
+
+                    <!-- SEÇÃO 7 -->
+                    <div class="explicacao-detalhada">
+                        <h3>7. O Governo Figueiredo e as Diretas Já (1979-1985)</h3>
+                        <p>
+                            O <strong>General João Figueiredo</strong> foi o último presidente da Ditadura Militar. 
+                            Seu governo foi marcado pela <strong>crise econômica</strong> e pelo crescimento do 
+                            movimento <strong>"Diretas Já"</strong>.
+                        </p>
+                        <p>
+                            <strong>Diretas Já:</strong>
+                            <ul>
+                                <li>Movimento popular que defendia a <strong>eleição direta para presidente</strong>.</li>
+                                <li>Reuniu milhões de pessoas em <strong>comícios</strong> em todo o país.</li>
+                                <li>Liderado por figuras como <strong>Leonel Brizola</strong>, <strong>Ulysses Guimarães</strong> 
+                                e <strong>Fernando Henrique Cardoso</strong>.</li>
+                                <li><strong>Derrota:</strong> A emenda para eleições diretas foi rejeitada no Congresso.</li>
+                            </ul>
+                        </p>
+                        <p>
+                            <strong>Fim da Ditadura (1985):</strong>
+                            <ul>
+                                <li>Eleição de <strong>Tancredo Neves</strong> pelo Colégio Eleitoral.</li>
+                                <li>Início da <strong>Nova República</strong> e da redemocratização.</li>
+                            </ul>
+                        </p>
+                        <div class="revolta-card">
+                            <h4>Movimento das Diretas Já (1984)</h4>
+                            <p>
+                                <strong>Líderes:</strong> Ulysses Guimarães, Leonel Brizola, FHC<br>
+                                <strong>Local:</strong> Todo o Brasil<br>
+                                <strong>Contexto:</strong> Campanha popular por eleições diretas.<br>
+                                <strong>Desfecho:</strong> A emenda foi rejeitada, mas o movimento acelerou 
+                                o fim da ditadura.
+                            </p>
+                            <div class="enem-dica" style="margin-top:10px;">
+                                <strong>DICA ENEM:</strong>
+                                <p>As Diretas Já são um símbolo da <strong>luta pela democracia</strong> no Brasil. 
+                                O ENEM cobra o movimento como exemplo de <strong>resistência popular</strong>.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- DICA FINAL -->
+                    <div class="dica-saphius">
+                        <h3>Dica Saphius</h3>
+                        <p>
+                            Memorize a sequência da Ditadura: <strong>"Golpe de 64 + AI-5 + Milagre Econômico + 
+                            Abertura + Diretas Já"</strong>. Relacione a <strong>repressão</strong> com a 
+                            <strong>resistência</strong> para entender o período.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- ===== EXERCÍCIOS ===== -->
+                <div id="exercicios" class="aba-conteudo">
+                    <h2 style="color:#2e7d32;">Exercícios - Ditadura Militar</h2>
+                    <p style="color:#666;">15 questões (5 Fáceis, 5 Médias, 5 Difíceis)</p>
+
+                    <!-- ===== 5 FÁCEIS ===== -->
+                    <div class="exercicio-facil">
+                        <span class="badge">FÁCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>1.</strong> Em que ano ocorreu o golpe militar que iniciou a Ditadura Militar?</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q1"> a) 1963</label>
+                            <label><input type="radio" name="q1"> b) 1964</label>
+                            <label><input type="radio" name="q1"> c) 1965</label>
+                            <label><input type="radio" name="q1"> d) 1966</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: B) 1964</strong></p>
+                            <p><strong>Explicação:</strong> O golpe militar que iniciou a Ditadura Militar ocorreu em 31 de março de 1964, derrubando o presidente João Goulart.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-facil">
+                        <span class="badge">FÁCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>2.</strong> O que foi o AI-5 (Ato Institucional nº 5)?</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q2"> a) Um ato que criou a CLT</label>
+                            <label><input type="radio" name="q2"> b) Um ato que fechou o Congresso e endureceu a ditadura</label>
+                            <label><input type="radio" name="q2"> c) Um ato que criou o voto feminino</label>
+                            <label><input type="radio" name="q2"> d) Um ato que estabeleceu a liberdade de imprensa</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: B) Um ato que fechou o Congresso e endureceu a ditadura</strong></p>
+                            <p><strong>Explicação:</strong> O AI-5 foi decretado em 1968, fechando o Congresso e suspendendo direitos políticos, endurecendo o regime.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-facil">
+                        <span class="badge">FÁCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>3.</strong> Em que ano terminou a Ditadura Militar?</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q3"> a) 1980</label>
+                            <label><input type="radio" name="q3"> b) 1985</label>
+                            <label><input type="radio" name="q3"> c) 1990</label>
+                            <label><input type="radio" name="q3"> d) 1979</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: B) 1985</strong></p>
+                            <p><strong>Explicação:</strong> A Ditadura Militar terminou em 1985, com a eleição de Tancredo Neves e o início da Nova República.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-facil">
+                        <span class="badge">FÁCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>4.</strong> O movimento "Diretas Já" (1984) defendia:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q4"> a) Eleições diretas para presidente</label>
+                            <label><input type="radio" name="q4"> b) A volta da monarquia</label>
+                            <label><input type="radio" name="q4"> c) A criação da CLT</label>
+                            <label><input type="radio" name="q4"> d) O fim da censura</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: A) Eleições diretas para presidente</strong></p>
+                            <p><strong>Explicação:</strong> O movimento "Diretas Já" defendia a realização de eleições diretas para presidente, que foram realizadas apenas em 1989.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-facil">
+                        <span class="badge">FÁCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>5.</strong> Qual foi o último presidente da Ditadura Militar?</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q5"> a) João Figueiredo</label>
+                            <label><input type="radio" name="q5"> b) Ernesto Geisel</label>
+                            <label><input type="radio" name="q5"> c) Emílio Médici</label>
+                            <label><input type="radio" name="q5"> d) Castelo Branco</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: A) João Figueiredo</strong></p>
+                            <p><strong>Explicação:</strong> João Figueiredo foi o último presidente da Ditadura Militar (1979-1985).</p>
+                        </div>
+                    </div>
+
+                    <!-- ===== 5 MÉDIAS ===== -->
+                    <div class="exercicio-medio">
+                        <span class="badge">MÉDIO</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>6.</strong> (ENEM) O "Milagre Econômico" (1969-1973) foi caracterizado por:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q6"> a) Crescimento do PIB e aumento da dívida externa</label>
+                            <label><input type="radio" name="q6"> b) Redução da desigualdade social</label>
+                            <label><input type="radio" name="q6"> c) Fim da censura</label>
+                            <label><input type="radio" name="q6"> d) Abertura política imediata</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: A) Crescimento do PIB e aumento da dívida externa</strong></p>
+                            <p><strong>Explicação:</strong> O "Milagre Econômico" teve alto crescimento do PIB, mas também aumento significativo da dívida externa e desigualdade social.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-medio">
+                        <span class="badge">MÉDIO</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>7.</strong> (ENEM) O Ato Institucional nº 5 (AI-5) de 1968 foi um marco da ditadura porque:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q7"> a) Estabeleceu a liberdade de imprensa</label>
+                            <label><input type="radio" name="q7"> b) Fechou o Congresso Nacional e suspendeu direitos</label>
+                            <label><input type="radio" name="q7"> c) Criou a Justiça do Trabalho</label>
+                            <label><input type="radio" name="q7"> d) Instituiu o voto secreto</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: B) Fechou o Congresso Nacional e suspendeu direitos</strong></p>
+                            <p><strong>Explicação:</strong> O AI-5 fechou o Congresso, suspendeu direitos políticos e intensificou a repressão e censura.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-medio">
+                        <span class="badge">MÉDIO</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>8.</strong> (ENEM) A resistência à Ditadura Militar incluiu:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q8"> a) Apoio ao regime</label>
+                            <label><input type="radio" name="q8"> b) Movimentos de guerrilha e protestos estudantis</label>
+                            <label><input type="radio" name="q8"> c) Acordos políticos com os militares</label>
+                            <label><input type="radio" name="q8"> d) Participação no "Milagre Econômico"</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: B) Movimentos de guerrilha e protestos estudantis</strong></p>
+                            <p><strong>Explicação:</strong> A resistência incluiu movimentos de guerrilha (Araguaia) e protestos de estudantes, intelectuais e artistas.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-medio">
+                        <span class="badge">MÉDIO</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>9.</strong> (ENEM) O governo Geisel (1974-1979) foi marcado pela:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q9"> a) Repressão intensa</label>
+                            <label><input type="radio" name="q9"> b) Abertura lenta e gradual</label>
+                            <label><input type="radio" name="q9"> c) Fim da censura</label>
+                            <label><input type="radio" name="q9"> d) Estabelecimento da CLT</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: B) Abertura lenta e gradual</strong></p>
+                            <p><strong>Explicação:</strong> O governo Geisel iniciou o processo de abertura política, que culminou na redemocratização.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-medio">
+                        <span class="badge">MÉDIO</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>10.</strong> (ENEM) A Guerrilha do Araguaia foi um movimento de resistência:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q10"> a) No Pará</label>
+                            <label><input type="radio" name="q10"> b) No Rio de Janeiro</label>
+                            <label><input type="radio" name="q10"> c) Na Bahia</label>
+                            <label><input type="radio" name="q10"> d) No Maranhão</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: A) No Pará</strong></p>
+                            <p><strong>Explicação:</strong> A Guerrilha do Araguaia ocorreu na região do Araguaia, no Pará, entre 1972 e 1975.</p>
+                        </div>
+                    </div>
+
+                    <!-- ===== 5 DIFÍCEIS ===== -->
+                    <div class="exercicio-dificil">
+                        <span class="badge">DIFÍCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>11.</strong> (ENEM) A criação da ARENA e do MDB durante a Ditadura Militar representou:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q11"> a) A volta da democracia</label>
+                            <label><input type="radio" name="q11"> b) O fim do pluripartidarismo</label>
+                            <label><input type="radio" name="q11"> c) A criação de um sistema bipartidário artificial</label>
+                            <label><input type="radio" name="q11"> d) Todas as alternativas estão corretas</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: C) A criação de um sistema bipartidário artificial</strong></p>
+                            <p><strong>Explicação:</strong> A ARENA (governo) e o MDB (oposição) foram criados para simular um sistema democrático, mas sem oposição real.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-dificil">
+                        <span class="badge">DIFÍCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>12.</strong> (ENEM) O DOI-CODI, durante a Ditadura Militar, foi:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q12"> a) Um órgão de repressão e tortura</label>
+                            <label><input type="radio" name="q12"> b) Uma agência de propaganda</label>
+                            <label><input type="radio" name="q12"> c) Um órgão de censura</label>
+                            <label><input type="radio" name="q12"> d) Uma instituição de ensino</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: A) Um órgão de repressão e tortura</strong></p>
+                            <p><strong>Explicação:</strong> O DOI-CODI foi um dos principais órgãos de repressão do regime, responsável por torturas e assassinatos.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-dificil">
+                        <span class="badge">DIFÍCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>13.</strong> (ENEM) O movimento das Diretas Já (1984) foi um marco porque:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q13"> a) Conseguiu aprovar a emenda para eleições diretas</label>
+                            <label><input type="radio" name="q13"> b) Mobilizou milhões de pessoas pela redemocratização</label>
+                            <label><input type="radio" name="q13"> c) Foi apoiado pelos militares</label>
+                            <label><input type="radio" name="q13"> d) Levou à volta da monarquia</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: B) Mobilizou milhões de pessoas pela redemocratização</strong></p>
+                            <p><strong>Explicação:</strong> As Diretas Já mobilizaram milhões de pessoas em todo o Brasil, mas a emenda foi rejeitada no Congresso.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-dificil">
+                        <span class="badge">DIFÍCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>14.</strong> (ENEM) A economia brasileira durante a Ditadura Militar foi marcada pelo:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q14"> a) Crescimento com distribuição de renda</label>
+                            <label><input type="radio" name="q14"> b) Crescimento e endividamento externo</label>
+                            <label><input type="radio" name="q14"> c) Estagnação econômica</label>
+                            <label><input type="radio" name="q14"> d) Redução da dívida externa</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: B) Crescimento e endividamento externo</strong></p>
+                            <p><strong>Explicação:</strong> O regime teve altas taxas de crescimento, mas também aumentou a dívida externa e a desigualdade.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-dificil">
+                        <span class="badge">DIFÍCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>15.</strong> (ENEM) O fim da Ditadura Militar em 1985 foi resultado de:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q15"> a) Uma revolução popular</label>
+                            <label><input type="radio" name="q15"> b) Um golpe militar</label>
+                            <label><input type="radio" name="q15"> c) Pressão popular e crises políticas</label>
+                            <label><input type="radio" name="q15"> d) Intervenção dos EUA</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: C) Pressão popular e crises políticas</strong></p>
+                            <p><strong>Explicação:</strong> O fim da ditadura foi resultado de pressão popular (Diretas Já), crises econômicas e desgaste político do regime.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- ===== RESUMO ===== -->
+                <div id="resumo" class="aba-conteudo">
+                    <div class="resumo-principal">
+                        <h2 class="resumo-titulo">Resumo - Ditadura Militar</h2>
+                        <p class="resumo-subtitulo">Principais pontos para memorizar</p>
+
+                        <div class="resumo-grid">
+                            <div class="resumo-card-item">
+                                <h3>Golpe de 1964</h3>
+                                <p>31 de março - Fim de Jango</p>
+                                <span class="resumo-tag">Início da Ditadura</span>
+                            </div>
+
+                            <div class="resumo-card-item">
+                                <h3>AI-5 (1968)</h3>
+                                <p>Fechou o Congresso e suspendeu direitos</p>
+                                <span class="resumo-tag">Endurecimento</span>
+                            </div>
+
+                            <div class="resumo-card-item">
+                                <h3>Milagre Econômico</h3>
+                                <p>Crescimento e endividamento externo</p>
+                                <span class="resumo-tag">Desenvolvimento</span>
+                            </div>
+
+                            <div class="resumo-card-item">
+                                <h3>Repressão</h3>
+                                <p>DOI-CODI, censura, tortura</p>
+                                <span class="resumo-tag">Violência</span>
+                            </div>
+
+                            <div class="resumo-card-item">
+                                <h3>Resistência</h3>
+                                <p>Araguaia, estudantes, artistas</p>
+                                <span class="resumo-tag">Oposição</span>
+                            </div>
+
+                            <div class="resumo-card-item">
+                                <h3>Diretas Já (1984)</h3>
+                                <p>Movimento pela redemocratização</p>
+                                <span class="resumo-tag">Fim da Ditadura</span>
+                            </div>
+                        </div>
+
+                        <div class="resumo-dica-final">
+                            <h4>Dica Saphius</h4>
+                            <p>Memorize: <strong>"Ditadura = 64 + AI-5 + Milagre + Repressão + Resistência + Diretas Já"</strong></p>
+                        </div>
+
+                        <div class="resumo-dica-enem">
+                            <h4>Dica ENEM</h4>
+                            <p>Atenção para os termos <strong>"AI-5"</strong>, <strong>"Milagre Econômico"</strong>, 
+                            <strong>"DOI-CODI"</strong> e <strong>"Diretas Já"</strong> — eles aparecem com frequência na prova!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ===== SIMULADO ===== -->
+                <div id="simulado" class="aba-conteudo">
+                    <h2 style="color:#2e7d32;">Simulado - Ditadura Militar</h2>
+                    <p style="color:#666;">Teste seus conhecimentos com questões estilo ENEM</p>
+
+                    <div class="simulado-card">
+                        <div style="display:flex; gap:20px; flex-wrap:wrap; justify-content:center; margin-bottom:15px;">
+                            <span><strong>15 questões</strong></span>
+                            <span><strong>20 minutos</strong></span>
+                            <span><strong>Nível: Fácil a Difícil</strong></span>
+                        </div>
+                        <p style="color:#555; margin-bottom:15px;">As questões são as mesmas da aba "Exercícios" acima. Responda todas com calma!</p>
+                        <button class="btn-principal" onclick="alert('Simulado iniciado! Responda todas as 15 questões acima na aba Exercícios.')">
+                            Iniciar simulado
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+    </div>
+
+   <script>
+function trocarAba(botao, abaId) {
+    document.querySelectorAll('.aba-btn').forEach(b => b.classList.remove('active'));
+    botao.classList.add('active');
+    document.querySelectorAll('.aba-conteudo').forEach(c => c.classList.remove('active'));
+    document.getElementById(abaId).classList.add('active');
+}
+
+function mostrarResposta(botao) {
+    const exercicioDiv = botao.closest('.exercicio-facil, .exercicio-medio, .exercicio-dificil');
+    const respostaDiv = exercicioDiv.querySelector('.resposta-explicada');
+
+    if (respostaDiv.style.display === 'block') {
+        respostaDiv.style.display = 'none';
+        botao.textContent = 'Ver explicação';
+    } else {
+        respostaDiv.style.display = 'block';
+        botao.textContent = 'Ocultar explicação';
+    }
+}
+
+document.querySelectorAll('.exercicio-alternativas input[type="radio"]').forEach(input => {
+    input.addEventListener('change', verificarAtividade);
+});
+
+async function verificarAtividade() {
+    const questoes = document.querySelectorAll('.exercicio-alternativas');
+    const respondidas = document.querySelectorAll('.exercicio-alternativas input[type="radio"]:checked');
+
+    if (respondidas.length === questoes.length) {
+        try {
+            await fetch('/api/trilha/concluir', {
+                method: 'POST',
+                headers: {'Content-Type':'application/json'},
+                body: JSON.stringify({
+                    materia: 'historia',
+                    topico: 'ditadura-militar'
+                })
+            });
+
+            alert('Atividade concluída! Seu progresso na Trilha de Estudos foi atualizado.');
+        } catch (erro) {
+            console.error('Erro ao atualizar progresso:', erro);
+        }
+    }
+}
+</script>
+</body>
+</html>

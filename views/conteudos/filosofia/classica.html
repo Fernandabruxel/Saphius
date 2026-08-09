@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Filosofia Clássica - Saphius</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/views/conteudos/filosofia/filosofia.css">
+</head>
+<body>
+    <div class="app-container">
+        <aside class="sidebar">
+            <div class="sidebar-logo"><h2>Saphius</h2></div>
+            <ul class="sidebar-menu">
+                <li><a href="/dashboard"><span class="icon"></span> <span>Dashboard</span></a></li>
+                <li><a href="/conteudos"><span class="icon"></span> <span>Conteúdos</span></a></li>
+                <li><a href="/trilha"><span class="icon"></span> <span>Trilha de estudos</span></a></li>
+                <li><a href="/bemestar"><span class="icon"></span> <span>Bem-estar</span></a></li>
+                <li><a href="/perfil"><span class="icon"></span> <span>Perfil</span></a></li>
+                <li><a href="/configuracoes"><span class="icon"></span> <span>Configurações</span></a></li>
+                <li><a href="/ajuda"><span class="icon"></span> <span>Ajuda</span></a></li>
+                <li><a href="/sair"><span class="icon"></span> <span>Sair</span></a></li>
+            </ul>
+        </aside>
+
+        <main class="main-content">
+            <div class="container">
+                <a href="/filosofia" class="voltar">Voltar para Filosofia</a>
+
+                <h1 style="text-align:center; font-size:2.5em; color:#2e7d32;">Filosofia Clássica</h1>
+                <p style="color:#666; text-align:center; font-size:1.1em;">Sócrates, Platão e Aristóteles</p>
+
+                <div class="abas-navegacao" style="margin:25px 0;">
+                    <button class="aba-btn active" onclick="trocarAba(this, 'conteudo')">Conteúdo</button>
+                    <button class="aba-btn" onclick="trocarAba(this, 'exercicios')">Exercícios</button>
+                    <button class="aba-btn" onclick="trocarAba(this, 'resumo')">Resumo</button>
+                    <button class="aba-btn" onclick="trocarAba(this, 'simulado')">Simulado</button>
+                </div>
+
+                <div id="conteudo" class="aba-conteudo active">
+
+                    <div class="explicacao-detalhada">
+                        <h3>O que é a Filosofia Clássica?</h3>
+                        <p>
+                            A <strong>Filosofia Clássica</strong> refere-se ao período da filosofia grega antiga, 
+                            que inclui os pensadores <strong>Sócrates</strong>, <strong>Platão</strong> e 
+                            <strong>Aristóteles</strong>. Eles são considerados os fundadores da filosofia ocidental 
+                            e influenciaram profundamente o pensamento humano, estabelecendo as bases da ética, da política, da lógica e da metafísica.
+                        </p>
+                        <div class="enem-dica">
+                            <strong>DICA ENEM:</strong>
+                            <p>A Filosofia Clássica é um tema recorrente no ENEM, especialmente questões sobre 
+                            <strong>Platão</strong>, <strong>Aristóteles</strong> e o <strong>Mito da Caverna</strong>.</p>
+                        </div>
+                    </div>
+
+                    <div class="explicacao-detalhada">
+                        <h3>Sócrates (469-399 a.C.)</h3>
+                        <ul>
+                            <li><strong>Método:</strong> Maiêutica (arte de fazer perguntas para levar o outro ao conhecimento). Através do diálogo, Sócrates conduzia o interlocutor a descobrir a verdade por si mesmo.</li>
+                            <li><strong>Frase famosa:</strong> "Só sei que nada sei". Reconhecimento da própria ignorância como ponto de partida para a busca do conhecimento.</li>
+                            <li><strong>Ética:</strong> A virtude é conhecimento; ninguém erra por vontade própria. O conhecimento do bem leva à prática do bem.</li>
+                            <li><strong>Condenação:</strong> Sócrates foi condenado à morte por corromper a juventude e desrespeitar os deuses da cidade.</li>
+                        </ul>
+                        <div class="enem-dica">
+                            <strong>DICA ENEM:</strong>
+                            <p>O ENEM cobra o <strong>método socrático</strong> e a <strong>frase "Só sei que nada sei"</strong>.</p>
+                        </div>
+                    </div>
+
+                    <div class="explicacao-detalhada">
+                        <h3>Platão (427-347 a.C.)</h3>
+                        <ul>
+                            <li><strong>Mito da Caverna:</strong> Alegoria sobre o conhecimento e a libertação da ignorância. Os prisioneiros na caverna representam a maioria das pessoas, que vivem na ilusão.</li>
+                            <li><strong>Teoria das Ideias:</strong> O mundo sensível (material) é uma cópia imperfeita do mundo das ideias (inteligível), onde as coisas são perfeitas e imutáveis.</li>
+                            <li><strong>Política:</strong> O governante deve ser o filósofo (governante sábio), que conhece o bem e a justiça. A república ideal é aquela governada por filósofos.</li>
+                            <li><strong>Dualismo:</strong> Platão distingue entre o mundo sensível (corpo) e o mundo inteligível (alma).</li>
+                        </ul>
+                        <div class="enem-dica">
+                            <strong>DICA ENEM:</strong>
+                            <p>O ENEM cobra o <strong>Mito da Caverna</strong> e a <strong>Teoria das Ideias</strong> de Platão.</p>
+                        </div>
+                    </div>
+
+                    <div class="explicacao-detalhada">
+                        <h3>Aristóteles (384-322 a.C.)</h3>
+                        <ul>
+                            <li><strong>Lógica:</strong> Criou o silogismo (raciocínio lógico). Exemplo: "Todos os homens são mortais. Sócrates é homem. Logo, Sócrates é mortal."</li>
+                            <li><strong>Ética:</strong> A virtude está no equilíbrio (meio-termo) entre dois extremos. Exemplo: A coragem é o meio-termo entre a covardia e a temeridade.</li>
+                            <li><strong>Política:</strong> O ser humano é um animal político (vive em sociedade). A cidade (pólis) é a forma natural de organização humana.</li>
+                            <li><strong>Metafísica:</strong> Todo ser é composto de matéria e forma (hilemorfismo). O motor imóvel é a causa final de todas as coisas.</li>
+                            <li><strong>Diferença com Platão:</strong> Aristóteles valorizava o mundo sensível, enquanto Platão valorizava o mundo das ideias.</li>
+                        </ul>
+                        <div class="enem-dica">
+                            <strong>DICA ENEM:</strong>
+                            <p>O ENEM cobra a <strong>diferença entre Platão e Aristóteles</strong> e o <strong>silogismo</strong>.</p>
+                        </div>
+                    </div>
+
+                    <div class="dica-saphius">
+                        <h3>Dica Saphius</h3>
+                        <p>
+                            Entenda a diferença entre <strong>Platão (idealista)</strong> e <strong>Aristóteles (realista)</strong> para responder questões sobre Filosofia Clássica. Memorize: <strong>"Sócrates + Platão + Aristóteles = Filosofia Clássica"</strong>.
+                        </p>
+                    </div>
+                </div>
+
+                <div id="exercicios" class="aba-conteudo">
+                    <h2 style="color:#2e7d32;">Exercícios - Filosofia Clássica</h2>
+                    <p style="color:#666;">15 questões (5 Fáceis, 5 Médias, 5 Difíceis)</p>
+
+                    <!-- 5 FÁCEIS -->
+                    <div class="exercicio-facil">
+                        <span class="badge">FÁCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>1.</strong> Quem é considerado o pai da filosofia?</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q1"> a) Platão</label>
+                            <label><input type="radio" name="q1"> b) Aristóteles</label>
+                            <label><input type="radio" name="q1"> c) Sócrates</label>
+                            <label><input type="radio" name="q1"> d) Tales de Mileto</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: C) Sócrates</strong></p>
+                            <p><strong>Explicação:</strong> Sócrates é considerado o pai da filosofia ocidental por sua contribuição à ética e ao método de investigação.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-facil">
+                        <span class="badge">FÁCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>2.</strong> O que é o Mito da Caverna?</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q2"> a) Uma história sobre a política</label>
+                            <label><input type="radio" name="q2"> b) Uma alegoria sobre o conhecimento</label>
+                            <label><input type="radio" name="q2"> c) Uma teoria sobre a natureza</label>
+                            <label><input type="radio" name="q2"> d) Um mito sobre a criação</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: B) Uma alegoria sobre o conhecimento</strong></p>
+                            <p><strong>Explicação:</strong> O Mito da Caverna, de Platão, é uma alegoria sobre o conhecimento e a libertação da ignorância.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-facil">
+                        <span class="badge">FÁCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>3.</strong> Qual a frase famosa de Sócrates?</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q3"> a) "Penso, logo existo"</label>
+                            <label><input type="radio" name="q3"> b) "Só sei que nada sei"</label>
+                            <label><input type="radio" name="q3"> c) "Conhece-te a ti mesmo"</label>
+                            <label><input type="radio" name="q3"> d) "A virtude está no equilíbrio"</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: B) "Só sei que nada sei"</strong></p>
+                            <p><strong>Explicação:</strong> A frase "Só sei que nada sei" reflete a humildade socrática diante do conhecimento.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-facil">
+                        <span class="badge">FÁCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>4.</strong> Para Aristóteles, a virtude está no:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q4"> a) Excesso</label>
+                            <label><input type="radio" name="q4"> b) Equilíbrio</label>
+                            <label><input type="radio" name="q4"> c) Prazer</label>
+                            <label><input type="radio" name="q4"> d) Dever</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: B) Equilíbrio</strong></p>
+                            <p><strong>Explicação:</strong> Aristóteles defendia que a virtude está no equilíbrio (meio-termo) entre dois extremos.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-facil">
+                        <span class="badge">FÁCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>5.</strong> Platão defende que o governante deve ser:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q5"> a) Um militar</label>
+                            <label><input type="radio" name="q5"> b) Um filósofo</label>
+                            <label><input type="radio" name="q5"> c) Um político</label>
+                            <label><input type="radio" name="q5"> d) Um rei</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: B) Um filósofo</strong></p>
+                            <p><strong>Explicação:</strong> Platão defendia que o governante deve ser um filósofo (governante sábio).</p>
+                        </div>
+                    </div>
+
+                    <!-- 5 MÉDIAS -->
+                    <div class="exercicio-medio">
+                        <span class="badge">MÉDIO</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>6.</strong> (ENEM) A maiêutica de Sócrates consiste em:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q6"> a) Fazer perguntas para levar o outro ao conhecimento</label>
+                            <label><input type="radio" name="q6"> b) Ensinar verdades absolutas</label>
+                            <label><input type="radio" name="q6"> c) Defender a política</label>
+                            <label><input type="radio" name="q6"> d) Criar leis</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: A) Fazer perguntas para levar o outro ao conhecimento</strong></p>
+                            <p><strong>Explicação:</strong> A maiêutica socrática é a arte de fazer perguntas para levar o outro ao conhecimento.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-medio">
+                        <span class="badge">MÉDIO</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>7.</strong> (ENEM) A Teoria das Ideias de Platão afirma que:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q7"> a) O mundo sensível é a realidade verdadeira</label>
+                            <label><input type="radio" name="q7"> b) O mundo das ideias é a realidade verdadeira</label>
+                            <label><input type="radio" name="q7"> c) A política é a base da filosofia</label>
+                            <label><input type="radio" name="q7"> d) A ética é desnecessária</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: B) O mundo das ideias é a realidade verdadeira</strong></p>
+                            <p><strong>Explicação:</strong> Platão defendia que o mundo das ideias é a realidade verdadeira e o mundo sensível é uma cópia imperfeita.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-medio">
+                        <span class="badge">MÉDIO</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>8.</strong> (ENEM) Aristóteles criou o silogismo, que é um:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q8"> a) Método de ensino</label>
+                            <label><input type="radio" name="q8"> b) Raciocínio lógico</label>
+                            <label><input type="radio" name="q8"> c) Sistema político</label>
+                            <label><input type="radio" name="q8"> d) Conceito ético</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: B) Raciocínio lógico</strong></p>
+                            <p><strong>Explicação:</strong> O silogismo é um raciocínio lógico criado por Aristóteles.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-medio">
+                        <span class="badge">MÉDIO</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>9.</strong> (ENEM) Para Aristóteles, o ser humano é um "animal político" porque:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q9"> a) Vive em sociedade</label>
+                            <label><input type="radio" name="q9"> b) É irracional</label>
+                            <label><input type="radio" name="q9"> c) Busca o prazer</label>
+                            <label><input type="radio" name="q9"> d) É individualista</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: A) Vive em sociedade</strong></p>
+                            <p><strong>Explicação:</strong> Aristóteles afirmava que o ser humano é um "animal político" porque vive em sociedade e depende dela.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-medio">
+                        <span class="badge">MÉDIO</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>10.</strong> (ENEM) O Mito da Caverna de Platão simboliza:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q10"> a) A importância da política</label>
+                            <label><input type="radio" name="q10"> b) A libertação do conhecimento</label>
+                            <label><input type="radio" name="q10"> c) A busca pelo prazer</label>
+                            <label><input type="radio" name="q10"> d) A negação da filosofia</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: B) A libertação do conhecimento</strong></p>
+                            <p><strong>Explicação:</strong> O Mito da Caverna simboliza a libertação da ignorância e a busca pelo conhecimento verdadeiro.</p>
+                        </div>
+                    </div>
+
+                    <!-- 5 DIFÍCEIS -->
+                    <div class="exercicio-dificil">
+                        <span class="badge">DIFÍCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>11.</strong> (ENEM) A diferença entre Platão e Aristóteles é que:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q11"> a) Platão era materialista e Aristóteles idealista</label>
+                            <label><input type="radio" name="q11"> b) Platão defendia a política e Aristóteles a ética</label>
+                            <label><input type="radio" name="q11"> c) Platão valorizava o mundo das ideias e Aristóteles o mundo sensível</label>
+                            <label><input type="radio" name="q11"> d) Platão era democrata e Aristóteles monarquista</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: C) Platão valorizava o mundo das ideias e Aristóteles o mundo sensível</strong></p>
+                            <p><strong>Explicação:</strong> Platão valorizava o mundo das ideias (idealismo), enquanto Aristóteles valorizava o mundo sensível (realismo).</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-dificil">
+                        <span class="badge">DIFÍCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>12.</strong> (ENEM) A maiêutica socrática é um método que busca:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q12"> a) Ensinar verdades absolutas</label>
+                            <label><input type="radio" name="q12"> b) Fazer o outro descobrir o conhecimento por si mesmo</label>
+                            <label><input type="radio" name="q12"> c) Impor ideias</label>
+                            <label><input type="radio" name="q12"> d) Criar leis</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: B) Fazer o outro descobrir o conhecimento por si mesmo</strong></p>
+                            <p><strong>Explicação:</strong> A maiêutica socrática busca fazer o outro descobrir o conhecimento por si mesmo através de perguntas.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-dificil">
+                        <span class="badge">DIFÍCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>13.</strong> (ENEM) A ética de Aristóteles é baseada no conceito de:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q13"> a) Dever</label>
+                            <label><input type="radio" name="q13"> b) Eudaimonia (felicidade)</label>
+                            <label><input type="radio" name="q13"> c) Prazer</label>
+                            <label><input type="radio" name="q13"> d) Utilidade</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: B) Eudaimonia (felicidade)</strong></p>
+                            <p><strong>Explicação:</strong> A ética de Aristóteles busca a eudaimonia, que é a felicidade alcançada através da virtude.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-dificil">
+                        <span class="badge">DIFÍCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>14.</strong> (ENEM) A Teoria das Ideias de Platão influenciou a filosofia porque:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q14"> a) Defendeu o materialismo</label>
+                            <label><input type="radio" name="q14"> b) Introduziu a ideia de que o conhecimento verdadeiro é imutável</label>
+                            <label><input type="radio" name="q14"> c) Negou a existência de Deus</label>
+                            <label><input type="radio" name="q14"> d) Defendeu a democracia</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: B) Introduziu a ideia de que o conhecimento verdadeiro é imutável</strong></p>
+                            <p><strong>Explicação:</strong> A Teoria das Ideias de Platão introduziu a ideia de que o conhecimento verdadeiro é imutável e perfeito.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-dificil">
+                        <span class="badge">DIFÍCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>15.</strong> (ENEM) Sócrates foi condenado à morte por:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q15"> a) Traição</label>
+                            <label><input type="radio" name="q15"> b) Corrupção da juventude e desrespeito aos deuses</label>
+                            <label><input type="radio" name="q15"> c) Participação em conspirações</label>
+                            <label><input type="radio" name="q15"> d) Defesa da democracia</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: B) Corrupção da juventude e desrespeito aos deuses</strong></p>
+                            <p><strong>Explicação:</strong> Sócrates foi condenado à morte por corromper a juventude e desrespeitar os deuses da cidade.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="resumo" class="aba-conteudo">
+                    <div class="resumo-principal">
+                        <h2 class="resumo-titulo">Resumo - Filosofia Clássica</h2>
+                        <p class="resumo-subtitulo">Principais pontos para memorizar</p>
+
+                        <div class="resumo-grid">
+                            <div class="resumo-card-item">
+                                <h3>Sócrates</h3>
+                                <p>Maiêutica, "Só sei que nada sei"</p>
+                                <span class="resumo-tag">Ética</span>
+                            </div>
+                            <div class="resumo-card-item">
+                                <h3>Platão</h3>
+                                <p>Mito da Caverna, Teoria das Ideias</p>
+                                <span class="resumo-tag">Idealismo</span>
+                            </div>
+                            <div class="resumo-card-item">
+                                <h3>Aristóteles</h3>
+                                <p>Silogismo, Ética da Virtude, Animal Político</p>
+                                <span class="resumo-tag">Realismo</span>
+                            </div>
+                            <div class="resumo-card-item">
+                                <h3>Mito da Caverna</h3>
+                                <p>Alegoria sobre o conhecimento</p>
+                                <span class="resumo-tag">Libertação</span>
+                            </div>
+                            <div class="resumo-card-item">
+                                <h3>Meio-Termo</h3>
+                                <p>Equilíbrio entre dois extremos</p>
+                                <span class="resumo-tag">Virtude</span>
+                            </div>
+                            <div class="resumo-card-item">
+                                <h3>Animal Político</h3>
+                                <p>O ser humano vive em sociedade</p>
+                                <span class="resumo-tag">Política</span>
+                            </div>
+                        </div>
+
+                        <div class="resumo-dica-final">
+                            <h4>Dica Saphius</h4>
+                            <p>Memorize: <strong>"Sócrates + Platão + Aristóteles = Filosofia Clássica"</strong></p>
+                        </div>
+
+                        <div class="resumo-dica-enem">
+                            <h4>Dica ENEM</h4>
+                            <p>Atenção para os termos <strong>"Mito da Caverna"</strong>, <strong>"Silogismo"</strong> e <strong>"Maiêutica"</strong>.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="simulado" class="aba-conteudo">
+                    <h2 style="color:#2e7d32;">Simulado - Filosofia Clássica</h2>
+                    <p style="color:#666;">Teste seus conhecimentos com questões estilo ENEM</p>
+                    <div class="simulado-card">
+                        <div style="display:flex; gap:20px; flex-wrap:wrap; justify-content:center; margin-bottom:15px;">
+                            <span><strong>15 questões</strong></span>
+                            <span><strong>20 minutos</strong></span>
+                            <span><strong>Nível: Fácil a Difícil</strong></span>
+                        </div>
+                        <p style="color:#555; margin-bottom:15px;">As questões são as mesmas da aba "Exercícios" acima.</p>
+                        <button class="btn-principal" onclick="alert(' Simulado iniciado! Responda todas as 15 questões acima na aba Exercícios.')">
+                            Iniciar simulado
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+   <script>
+    function trocarAba(botao, abaId) {
+        document.querySelectorAll('.aba-btn').forEach(b => b.classList.remove('active'));
+        botao.classList.add('active');
+
+        document.querySelectorAll('.aba-conteudo').forEach(c => c.classList.remove('active'));
+        document.getElementById(abaId).classList.add('active');
+    }
+
+    function mostrarResposta(botao) {
+        const exercicioDiv = botao.closest('.exercicio-facil, .exercicio-medio, .exercicio-dificil');
+        const respostaDiv = exercicioDiv.querySelector('.resposta-explicada');
+
+        if (respostaDiv.style.display === 'block') {
+            respostaDiv.style.display = 'none';
+            botao.textContent = 'Ver explicação';
+        } else {
+            respostaDiv.style.display = 'block';
+            botao.textContent = 'Ocultar explicação';
+        }
+    }
+
+    document.querySelectorAll('.exercicio-alternativas input[type="radio"]').forEach(input => {
+        input.addEventListener('change', verificarAtividade);
+    });
+
+    async function verificarAtividade() {
+        const questoes = document.querySelectorAll('.exercicio-alternativas');
+        const respondidas = document.querySelectorAll(
+            '.exercicio-alternativas input[type="radio"]:checked'
+        );
+
+        if (respondidas.length === questoes.length) {
+            try {
+                await fetch('/api/trilha/concluir', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        materia: 'filosofia',
+                        topico: 'classica'
+                    })
+                });
+
+                alert('Atividade concluída! Seu progresso na Trilha de Estudos foi atualizado.');
+            } catch (erro) {
+                console.error('Erro ao atualizar progresso:', erro);
+            }
+        }
+    }
+</script>
+
+</body>
+</html>

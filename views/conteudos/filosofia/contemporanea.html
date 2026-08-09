@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Filosofia Contemporânea - Saphius</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/views/conteudos/filosofia/filosofia.css">
+</head>
+<body>
+    <div class="app-container">
+        <aside class="sidebar">
+            <div class="sidebar-logo"><h2>Saphius</h2></div>
+            <ul class="sidebar-menu">
+                <li><a href="/dashboard"><span class="icon"></span> <span>Dashboard</span></a></li>
+                <li><a href="/conteudos"><span class="icon"></span> <span>Conteúdos</span></a></li>
+                <li><a href="/trilha"><span class="icon"></span> <span>Trilha de estudos</span></a></li>
+                <li><a href="/bemestar"><span class="icon"></span> <span>Bem-estar</span></a></li>
+                <li><a href="/perfil"><span class="icon"></span> <span>Perfil</span></a></li>
+                <li><a href="/configuracoes"><span class="icon"></span> <span>Configurações</span></a></li>
+                <li><a href="/ajuda"><span class="icon"></span> <span>Ajuda</span></a></li>
+                <li><a href="/sair"><span class="icon"></span> <span>Sair</span></a></li>
+            </ul>
+        </aside>
+
+        <main class="main-content">
+            <div class="container">
+                <a href="/filosofia" class="voltar">Voltar para Filosofia</a>
+
+                <h1 style="text-align:center; font-size:2.5em; color:#2e7d32;">Filosofia Contemporânea</h1>
+                <p style="color:#666; text-align:center; font-size:1.1em;">Existencialismo (Sartre), Fenomenologia (Husserl), Desconstrução (Derrida)</p>
+
+                <div class="abas-navegacao" style="margin:25px 0;">
+                    <button class="aba-btn active" onclick="trocarAba(this, 'conteudo')">Conteúdo</button>
+                    <button class="aba-btn" onclick="trocarAba(this, 'exercicios')">Exercícios</button>
+                    <button class="aba-btn" onclick="trocarAba(this, 'resumo')">Resumo</button>
+                    <button class="aba-btn" onclick="trocarAba(this, 'simulado')">Simulado</button>
+                </div>
+
+                <div id="conteudo" class="aba-conteudo active">
+
+                    <div class="explicacao-detalhada">
+                        <h3>O que é a Filosofia Contemporânea?</h3>
+                        <p>
+                            A <strong>Filosofia Contemporânea</strong> é o período da filosofia que se desenvolveu a 
+                            partir do século XIX até os dias atuais. Ela se caracteriza pela <strong>crítica</strong> 
+                            às tradições e pela reflexão sobre a <strong>existência humana</strong>, a 
+                            <strong>linguagem</strong> e a <strong>sociedade</strong>. Seus principais temas incluem a liberdade, a angústia, a desconstrução e a fenomenologia.
+                        </p>
+                        <div class="enem-dica">
+                            <strong>DICA ENEM:</strong>
+                            <p>A Filosofia Contemporânea é um tema recorrente no ENEM, especialmente questões sobre 
+                            <strong>Existencialismo</strong>, <strong>Fenomenologia</strong> e <strong>Desconstrução</strong>.</p>
+                        </div>
+                    </div>
+
+                    <div class="explicacao-detalhada">
+                        <h3>Fenomenologia (Edmund Husserl, 1859-1938)</h3>
+                        <ul>
+                            <li><strong>Método:</strong> Voltar às coisas mesmas (investigar a experiência pura da consciência). A fenomenologia busca descrever a essência das coisas.</li>
+                            <li><strong>Intencionalidade:</strong> A consciência é sempre consciência de algo. Não há consciência vazia.</li>
+                            <li><strong>Redução fenomenológica (epoché):</strong> Suspender os juízos e preconceitos para acessar a essência das coisas.</li>
+                            <li><strong>Mundo da vida:</strong> O mundo vivido, anterior à reflexão filosófica, é o ponto de partida da fenomenologia.</li>
+                        </ul>
+                        <div class="enem-dica">
+                            <strong>DICA ENEM:</strong>
+                            <p>O ENEM cobra a <strong>fenomenologia</strong> de Husserl e o conceito de <strong>intencionalidade</strong>.</p>
+                        </div>
+                    </div>
+
+                    <div class="explicacao-detalhada">
+                        <h3>Existencialismo (Jean-Paul Sartre, 1905-1980)</h3>
+                        <ul>
+                            <li><strong>Frase famosa:</strong> "A existência precede a essência". O ser humano não tem uma essência pré-definida; ele se constrói através de suas escolhas.</li>
+                            <li><strong>Liberdade:</strong> O ser humano é condenado a ser livre e responsável por suas escolhas. A liberdade é angustiante.</li>
+                            <li><strong>Angústia:</strong> A liberdade gera angústia, pois o ser humano é responsável por sua vida e por suas ações.</li>
+                            <li><strong>Má-fé:</strong> Negar a liberdade e a responsabilidade é viver na má-fé (autoengano).</li>
+                            <li><strong>O outro:</strong> "O inferno são os outros" (Huis clos). O olhar do outro me objetifica e limita minha liberdade.</li>
+                        </ul>
+                        <div class="enem-dica">
+                            <strong>DICA ENEM:</strong>
+                            <p>O ENEM cobra o <strong>existencialismo</strong> de Sartre e os conceitos de <strong>liberdade</strong>, <strong>angústia</strong> e <strong>má-fé</strong>.</p>
+                        </div>
+                    </div>
+
+                    <div class="explicacao-detalhada">
+                        <h3>Desconstrução (Jacques Derrida, 1930-2004)</h3>
+                        <ul>
+                            <li><strong>Desconstrução:</strong> Método que revela contradições e fragilidades nos significados e nas estruturas de poder.</li>
+                            <li><strong>Logocentrismo:</strong> Crítica à tradição filosófica que privilegia a presença, a origem e o centro.</li>
+                            <li><strong>Différance:</strong> Os significados são adiados e diferem entre si, sem uma origem fixa.</li>
+                            <li><strong>Escrita:</strong> A escrita não é inferior à fala; ela é fundamental para o pensamento.</li>
+                        </ul>
+                        <div class="enem-dica">
+                            <strong>DICA ENEM:</strong>
+                            <p>O ENEM cobra a <strong>desconstrução</strong> de Derrida e a crítica ao <strong>logocentrismo</strong>.</p>
+                        </div>
+                    </div>
+
+                    <div class="explicacao-detalhada">
+                        <h3>Outros Pensadores Contemporâneos</h3>
+                        <ul>
+                            <li><strong>Michel Foucault (1926-1984):</strong> Estudo do poder e das instituições (prisões, hospitais, escolas). O poder não é apenas repressivo, mas também produtivo.</li>
+                            <li><strong>Jürgen Habermas (1929-presente):</strong> Teoria da ação comunicativa. A comunicação é fundamental para a democracia e a emancipação social.</li>
+                            <li><strong>Hannah Arendt (1906-1975):</strong> Estudo da política e do totalitarismo. A banalidade do mal.</li>
+                        </ul>
+                        <div class="enem-dica">
+                            <strong>DICA ENEM:</strong>
+                            <p>O ENEM cobra <strong>Foucault</strong> e o conceito de <strong>poder</strong>, além de <strong>Habermas</strong> e a <strong>ação comunicativa</strong>.</p>
+                        </div>
+                    </div>
+
+                    <div class="dica-saphius">
+                        <h3>Dica Saphius</h3>
+                        <p>
+                            Entenda a diferença entre <strong>Existencialismo</strong>, <strong>Fenomenologia</strong> e <strong>Desconstrução</strong> para responder questões sobre Filosofia Contemporânea. Memorize: <strong>"Existencialismo + Fenomenologia + Desconstrução = Filosofia Contemporânea"</strong>.
+                        </p>
+                    </div>
+                </div>
+
+                <div id="exercicios" class="aba-conteudo">
+                    <h2 style="color:#2e7d32;">Exercícios - Filosofia Contemporânea</h2>
+                    <p style="color:#666;">15 questões (5 Fáceis, 5 Médias, 5 Difíceis)</p>
+
+                    <!-- 5 FÁCEIS -->
+                    <div class="exercicio-facil">
+                        <span class="badge">FÁCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>1.</strong> A frase "A existência precede a essência" é do:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q1"> a) Husserl</label>
+                            <label><input type="radio" name="q1"> b) Sartre</label>
+                            <label><input type="radio" name="q1"> c) Foucault</label>
+                            <label><input type="radio" name="q1"> d) Derrida</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: B) Sartre</strong></p>
+                            <p><strong>Explicação:</strong> A frase "A existência precede a essência" é de Jean-Paul Sartre, principal filósofo do existencialismo.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-facil">
+                        <span class="badge">FÁCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>2.</strong> O que é a fenomenologia?</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q2"> a) Estudo da política</label>
+                            <label><input type="radio" name="q2"> b) Estudo da experiência pura da consciência</label>
+                            <label><input type="radio" name="q2"> c) Estudo da ética</label>
+                            <label><input type="radio" name="q2"> d) Estudo da religião</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: B) Estudo da experiência pura da consciência</strong></p>
+                            <p><strong>Explicação:</strong> A fenomenologia, fundada por Husserl, é o estudo da experiência pura e da consciência.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-facil">
+                        <span class="badge">FÁCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>3.</strong> Para Sartre, o ser humano é condenado a ser:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q3"> a) Livre</label>
+                            <label><input type="radio" name="q3"> b) Determinado</label>
+                            <label><input type="radio" name="q3"> c) Escravo</label>
+                            <label><input type="radio" name="q3"> d) Controlado</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: A) Livre</strong></p>
+                            <p><strong>Explicação:</strong> Sartre afirmava que o ser humano é condenado a ser livre e responsável por suas escolhas.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-facil">
+                        <span class="badge">FÁCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>4.</strong> A redução fenomenológica é um método de:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q4"> a) Husserl</label>
+                            <label><input type="radio" name="q4"> b) Sartre</label>
+                            <label><input type="radio" name="q4"> c) Foucault</label>
+                            <label><input type="radio" name="q4"> d) Derrida</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: A) Husserl</strong></p>
+                            <p><strong>Explicação:</strong> A redução fenomenológica (epoché) é um método criado por Husserl para acessar a essência das coisas.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-facil">
+                        <span class="badge">FÁCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>5.</strong> O existencialismo de Sartre defende que:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q5"> a) O ser humano é determinado pela sociedade</label>
+                            <label><input type="radio" name="q5"> b) O ser humano é livre e responsável por suas escolhas</label>
+                            <label><input type="radio" name="q5"> c) O ser humano é controlado por Deus</label>
+                            <label><input type="radio" name="q5"> d) O ser humano é irracional</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: B) O ser humano é livre e responsável por suas escolhas</strong></p>
+                            <p><strong>Explicação:</strong> O existencialismo de Sartre defende a liberdade e a responsabilidade do ser humano.</p>
+                        </div>
+                    </div>
+
+                    <!-- 5 MÉDIAS -->
+                    <div class="exercicio-medio">
+                        <span class="badge">MÉDIO</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>6.</strong> (ENEM) O existencialismo de Sartre defende que:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q6"> a) A essência precede a existência</label>
+                            <label><input type="radio" name="q6"> b) A existência precede a essência</label>
+                            <label><input type="radio" name="q6"> c) A essência e a existência são iguais</label>
+                            <label><input type="radio" name="q6"> d) A essência é mais importante que a existência</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: B) A existência precede a essência</strong></p>
+                            <p><strong>Explicação:</strong> Sartre afirmava que a existência precede a essência, ou seja, o ser humano existe primeiro e depois constrói sua essência.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-medio">
+                        <span class="badge">MÉDIO</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>7.</strong> (ENEM) A fenomenologia de Husserl busca:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q7"> a) Estudar a política</label>
+                            <label><input type="radio" name="q7"> b) Investigar a experiência pura da consciência</label>
+                            <label><input type="radio" name="q7"> c) Negar a existência de Deus</label>
+                            <label><input type="radio" name="q7"> d) Defender a democracia</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: B) Investigar a experiência pura da consciência</strong></p>
+                            <p><strong>Explicação:</strong> A fenomenologia investiga a experiência pura da consciência e a essência das coisas.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-medio">
+                        <span class="badge">MÉDIO</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>8.</strong> (ENEM) O conceito de "má-fé" em Sartre refere-se a:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q8"> a) Negar a liberdade e a responsabilidade</label>
+                            <label><input type="radio" name="q8"> b) Assumir a liberdade</label>
+                            <label><input type="radio" name="q8"> c) Aceitar a determinação social</label>
+                            <label><input type="radio" name="q8"> d) Seguir as leis</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: A) Negar a liberdade e a responsabilidade</strong></p>
+                            <p><strong>Explicação:</strong> A má-fé em Sartre é a negação da liberdade e da responsabilidade, vivendo como se não tivesse escolha.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-medio">
+                        <span class="badge">MÉDIO</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>9.</strong> (ENEM) A intencionalidade da consciência significa que:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q9"> a) A consciência é vazia</label>
+                            <label><input type="radio" name="q9"> b) A consciência é sempre consciência de algo</label>
+                            <label><input type="radio" name="q9"> c) A consciência é determinada pela sociedade</label>
+                            <label><input type="radio" name="q9"> d) A consciência é irracional</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: B) A consciência é sempre consciência de algo</strong></p>
+                            <p><strong>Explicação:</strong> A intencionalidade é um conceito da fenomenologia que afirma que a consciência é sempre consciência de algo.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-medio">
+                        <span class="badge">MÉDIO</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>10.</strong> (ENEM) A filosofia de Foucault se concentra no estudo do:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q10"> a) Poder e das instituições</label>
+                            <label><input type="radio" name="q10"> b) Existencialismo</label>
+                            <label><input type="radio" name="q10"> c) Fenomenologia</label>
+                            <label><input type="radio" name="q10"> d) Racionalismo</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: A) Poder e das instituições</strong></p>
+                            <p><strong>Explicação:</strong> Foucault estudou o poder e as instituições, como prisões, hospitais e escolas.</p>
+                        </div>
+                    </div>
+
+                    <!-- 5 DIFÍCEIS -->
+                    <div class="exercicio-dificil">
+                        <span class="badge">DIFÍCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>11.</strong> (ENEM) O existencialismo de Sartre influenciou a filosofia porque:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q11"> a) Defendeu a determinação social</label>
+                            <label><input type="radio" name="q11"> b) Reafirmou a liberdade e a responsabilidade do indivíduo</label>
+                            <label><input type="radio" name="q11"> c) Negou a existência de Deus</label>
+                            <label><input type="radio" name="q11"> d) Defendeu a política</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: B) Reafirmou a liberdade e a responsabilidade do indivíduo</strong></p>
+                            <p><strong>Explicação:</strong> O existencialismo reafirmou a liberdade e a responsabilidade do indivíduo em um mundo sem sentido pré-definido.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-dificil">
+                        <span class="badge">DIFÍCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>12.</strong> (ENEM) A fenomenologia de Husserl propõe a "volta às coisas mesmas", que significa:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q12"> a) Aceitar as aparências</label>
+                            <label><input type="radio" name="q12"> b) Investigar a experiência pura sem preconceitos</label>
+                            <label><input type="radio" name="q12"> c) Negar a experiência</label>
+                            <label><input type="radio" name="q12"> d) Defender a política</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: B) Investigar a experiência pura sem preconceitos</strong></p>
+                            <p><strong>Explicação:</strong> A "volta às coisas mesmas" propõe investigar a experiência pura sem preconceitos ou juízos prévios.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-dificil">
+                        <span class="badge">DIFÍCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>13.</strong> (ENEM) A angústia existencial, para Sartre, é causada pela:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q13"> a) Falta de liberdade</label>
+                            <label><input type="radio" name="q13"> b) Liberdade e responsabilidade</label>
+                            <label><input type="radio" name="q13"> c) Falta de significado</label>
+                            <label><input type="radio" name="q13"> d) Determinação social</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: B) Liberdade e responsabilidade</strong></p>
+                            <p><strong>Explicação:</strong> A angústia existencial é causada pela liberdade e responsabilidade do ser humano.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-dificil">
+                        <span class="badge">DIFÍCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>14.</strong> (ENEM) A desconstrução de Derrida é um método que:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q14"> a) Reafirma os significados tradicionais</label>
+                            <label><input type="radio" name="q14"> b) Desconstrói os significados para revelar contradições</label>
+                            <label><input type="radio" name="q14"> c) Defende a política</label>
+                            <label><input type="radio" name="q14"> d) Negra a filosofia</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: B) Desconstrói os significados para revelar contradições</strong></p>
+                            <p><strong>Explicação:</strong> A desconstrução de Derrida revela contradições nos significados e nas estruturas de poder.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-dificil">
+                        <span class="badge">DIFÍCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>15.</strong> (ENEM) A Filosofia Contemporânea é importante porque:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q15"> a) Ignora a realidade</label>
+                            <label><input type="radio" name="q15"> b) Questiona as certezas e abre novos caminhos</label>
+                            <label><input type="radio" name="q15"> c) Defende a tradição</label>
+                            <label><input type="radio" name="q15"> d) Negra a razão</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: B) Questiona as certezas e abre novos caminhos</strong></p>
+                            <p><strong>Explicação:</strong> A Filosofia Contemporânea questiona as certezas e abre novos caminhos para o pensamento humano.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="resumo" class="aba-conteudo">
+                    <div class="resumo-principal">
+                        <h2 class="resumo-titulo">Resumo - Filosofia Contemporânea</h2>
+                        <p class="resumo-subtitulo">Principais pontos para memorizar</p>
+
+                        <div class="resumo-grid">
+                            <div class="resumo-card-item">
+                                <h3>Existencialismo</h3>
+                                <p>Sartre - "A existência precede a essência"</p>
+                                <span class="resumo-tag">Liberdade</span>
+                            </div>
+                            <div class="resumo-card-item">
+                                <h3>Fenomenologia</h3>
+                                <p>Husserl - "Volta às coisas mesmas"</p>
+                                <span class="resumo-tag">Intencionalidade</span>
+                            </div>
+                            <div class="resumo-card-item">
+                                <h3>Angústia</h3>
+                                <p>Liberdade e responsabilidade</p>
+                                <span class="resumo-tag">Existencialismo</span>
+                            </div>
+                            <div class="resumo-card-item">
+                                <h3>Má-fé</h3>
+                                <p>Negação da liberdade</p>
+                                <span class="resumo-tag">Sartre</span>
+                            </div>
+                            <div class="resumo-card-item">
+                                <h3>Redução Fenomenológica</h3>
+                                <p>Investigar a experiência pura</p>
+                                <span class="resumo-tag">Husserl</span>
+                            </div>
+                            <div class="resumo-card-item">
+                                <h3>Desconstrução</h3>
+                                <p>Revelar contradições</p>
+                                <span class="resumo-tag">Derrida</span>
+                            </div>
+                        </div>
+
+                        <div class="resumo-dica-final">
+                            <h4>Dica Saphius</h4>
+                            <p>Memorize: <strong>"Existencialismo + Fenomenologia + Desconstrução = Filosofia Contemporânea"</strong></p>
+                        </div>
+
+                        <div class="resumo-dica-enem">
+                            <h4>Dica ENEM</h4>
+                            <p>Atenção para os termos <strong>"Existencialismo"</strong>, <strong>"Fenomenologia"</strong> e <strong>"Desconstrução"</strong>.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="simulado" class="aba-conteudo">
+                    <h2 style="color:#2e7d32;">Simulado - Filosofia Contemporânea</h2>
+                    <p style="color:#666;">Teste seus conhecimentos com questões estilo ENEM</p>
+                    <div class="simulado-card">
+                        <div style="display:flex; gap:20px; flex-wrap:wrap; justify-content:center; margin-bottom:15px;">
+                            <span><strong>15 questões</strong></span>
+                            <span><strong>20 minutos</strong></span>
+                            <span><strong>Nível: Fácil a Difícil</strong></span>
+                        </div>
+                        <p style="color:#555; margin-bottom:15px;">As questões são as mesmas da aba "Exercícios" acima.</p>
+                        <button class="btn-principal" onclick="alert('Simulado iniciado! Responda todas as 15 questões acima na aba Exercícios.')">
+                            Iniciar simulado
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script>
+    function trocarAba(botao, abaId) {
+        document.querySelectorAll('.aba-btn').forEach(b => b.classList.remove('active'));
+        botao.classList.add('active');
+
+        document.querySelectorAll('.aba-conteudo').forEach(c => c.classList.remove('active'));
+        document.getElementById(abaId).classList.add('active');
+    }
+
+    function mostrarResposta(botao) {
+        const exercicioDiv = botao.closest('.exercicio-facil, .exercicio-medio, .exercicio-dificil');
+        const respostaDiv = exercicioDiv.querySelector('.resposta-explicada');
+
+        if (respostaDiv.style.display === 'block') {
+            respostaDiv.style.display = 'none';
+            botao.textContent = 'Ver explicação';
+        } else {
+            respostaDiv.style.display = 'block';
+            botao.textContent = 'Ocultar explicação';
+        }
+    }
+
+    document.querySelectorAll('.exercicio-alternativas input[type="radio"]').forEach(input => {
+        input.addEventListener('change', verificarAtividade);
+    });
+
+    async function verificarAtividade() {
+        const questoes = document.querySelectorAll('.exercicio-alternativas');
+        const respondidas = document.querySelectorAll(
+            '.exercicio-alternativas input[type="radio"]:checked'
+        );
+
+        if (respondidas.length === questoes.length) {
+            try {
+                await fetch('/api/trilha/concluir', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        materia: 'filosofia',
+                        topico: 'contemporanea'
+                    })
+                });
+
+                alert('Atividade concluída! Seu progresso na Trilha de Estudos foi atualizado.');
+            } catch (erro) {
+                console.error('Erro ao atualizar progresso:', erro);
+            }
+        }
+    }
+</script>
+
+</body>
+</html>

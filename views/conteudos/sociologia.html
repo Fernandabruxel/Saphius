@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sociologia - Saphius</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="app-container">
+        <aside class="sidebar">
+            <div class="sidebar-logo"><h2>Saphius</h2></div>
+            <ul class="sidebar-menu">
+                <li><a href="/dashboard"><span class="icon"></span> <span>Dashboard</span></a></li>
+                <li><a href="/conteudos"><span class="icon"></span> <span>Conteúdos</span></a></li>
+                <li><a href="/trilha"><span class="icon"></span> <span>Trilha de estudos</span></a></li>
+                <li><a href="/bemestar"><span class="icon"></span> <span>Bem-estar</span></a></li>
+                <li><a href="/perfil"><span class="icon"></span> <span>Perfil</span></a></li>
+                <li><a href="/configuracoes"><span class="icon"></span> <span>Configurações</span></a></li>
+                <li><a href="/ajuda"><span class="icon"></span> <span>Ajuda</span></a></li>
+                <li><a href="/sair"><span class="icon"></span> <span>Sair</span></a></li>
+            </ul>
+        </aside>
+
+        <main class="main-content">
+            <div class="container sociologia-container">
+                <div class="sociologia-header">
+                    <h1>Sociologia</h1>
+                    <p>Cidadania - Cultura - Trabalho - Movimentos sociais</p>
+                    <p class="descricao">Explore os conteúdos, assista às aulas, pratique com exercícios e teste seus conhecimentos para o ENEM.</p>
+                </div>
+
+                <div class="abas-navegacao">
+                    <button class="aba-btn active" onclick="trocarAba(this, 'conteudos')">Conteúdos</button>
+                    <button class="aba-btn" onclick="trocarAba(this, 'exercicios')">Exercícios</button>
+                    <button class="aba-btn" onclick="trocarAba(this, 'resumos')">Resumos</button>
+                    <button class="aba-btn" onclick="trocarAba(this, 'simulados')">Simulados</button>
+                </div>
+
+                <!-- ===== ABA CONTEÚDOS ===== -->
+                <div id="conteudos" class="aba-conteudo active">
+                    <h2>Conteúdos</h2>
+                    <p class="aba-subtitle">Selecione um tópico para estudar:</p>
+                    <div class="topicos-lista">
+                        <a href="/sociologia/cidadania" class="topico-item">
+                            <div class="topico-numero">1</div>
+                            <div class="topico-info">
+                                <h3>Cidadania</h3>
+                                <p>Direitos e deveres, Participação política, Democracia e cidadania no Brasil</p>
+                            </div>
+                            <span class="topico-status">Estudar</span>
+                        </a>
+                        <a href="/sociologia/cultura-brasileira" class="topico-item">
+                            <div class="topico-numero">2</div>
+                            <div class="topico-info">
+                                <h3>Cultura Brasileira</h3>
+                                <p>Diversidade cultural, Identidade, Cultura de massa, Indústria cultural</p>
+                            </div>
+                            <span class="topico-status">Estudar</span>
+                        </a>
+                        <a href="/sociologia/trabalho" class="topico-item">
+                            <div class="topico-numero">3</div>
+                            <div class="topico-info">
+                                <h3>Trabalho</h3>
+                                <p>Relações de trabalho, Globalização, Novas tecnologias, Impactos sociais</p>
+                            </div>
+                            <span class="topico-status">Estudar</span>
+                        </a>
+                        <a href="/sociologia/movimentos-sociais" class="topico-item">
+                            <div class="topico-numero">4</div>
+                            <div class="topico-info">
+                                <h3>Movimentos Sociais</h3>
+                                <p>Movimentos populares, Organização social, Lutas e conquistas no Brasil</p>
+                            </div>
+                            <span class="topico-status">Estudar</span>
+                        </a>
+                        <a href="/sociologia/desigualdade-social" class="topico-item">
+                            <div class="topico-numero">5</div>
+                            <div class="topico-info">
+                                <h3>Desigualdade Social</h3>
+                                <p>Pobreza, Exclusão social, Políticas públicas, Justiça social</p>
+                            </div>
+                            <span class="topico-status">Estudar</span>
+                        </a>
+                        <a href="/sociologia/violencia-seguranca" class="topico-item">
+                            <div class="topico-numero">6</div>
+                            <div class="topico-info">
+                                <h3>Violência e Segurança</h3>
+                                <p>Questões de segurança, Direitos humanos, Violência no Brasil</p>
+                            </div>
+                            <span class="topico-status">Estudar</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- ===== ABA EXERCÍCIOS ===== -->
+                <div id="exercicios" class="aba-conteudo">
+                    <h2>Exercícios</h2>
+                    <p class="aba-subtitle">Pratique com exercícios sobre Sociologia</p>
+                    <div class="topicos-lista">
+                        <a href="/sociologia/cidadania" class="topico-item">
+                            <div class="topico-numero">1</div>
+                            <div class="topico-info">
+                                <h3>Exercícios - Cidadania</h3>
+                                <p>Questões sobre direitos e deveres.</p>
+                            </div>
+                            <span class="topico-status">Praticar</span>
+                        </a>
+                        <a href="/sociologia/cultura-brasileira" class="topico-item">
+                            <div class="topico-numero">2</div>
+                            <div class="topico-info">
+                                <h3>Exercícios - Cultura Brasileira</h3>
+                                <p>Questões sobre diversidade cultural.</p>
+                            </div>
+                            <span class="topico-status">Praticar</span>
+                        </a>
+                        <a href="/sociologia/trabalho" class="topico-item">
+                            <div class="topico-numero">3</div>
+                            <div class="topico-info">
+                                <h3>Exercícios - Trabalho</h3>
+                                <p>Questões sobre relações de trabalho.</p>
+                            </div>
+                            <span class="topico-status">Praticar</span>
+                        </a>
+                        <a href="/sociologia/movimentos-sociais" class="topico-item">
+                            <div class="topico-numero">4</div>
+                            <div class="topico-info">
+                                <h3>Exercícios - Movimentos Sociais</h3>
+                                <p>Questões sobre movimentos populares.</p>
+                            </div>
+                            <span class="topico-status">Praticar</span>
+                        </a>
+                        <a href="/sociologia/desigualdade-social" class="topico-item">
+                            <div class="topico-numero">5</div>
+                            <div class="topico-info">
+                                <h3>Exercícios - Desigualdade Social</h3>
+                                <p>Questões sobre pobreza e exclusão social.</p>
+                            </div>
+                            <span class="topico-status">Praticar</span>
+                        </a>
+                        <a href="/sociologia/violencia-seguranca" class="topico-item">
+                            <div class="topico-numero">6</div>
+                            <div class="topico-info">
+                                <h3>Exercícios - Violência e Segurança</h3>
+                                <p>Questões sobre segurança e direitos humanos.</p>
+                            </div>
+                            <span class="topico-status">Praticar</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- ===== ABA RESUMOS ===== -->
+                <div id="resumos" class="aba-conteudo">
+                    <h2>Resumos</h2>
+                    <p class="aba-subtitle">Resumos dos principais tópicos de Sociologia</p>
+                    <div class="topicos-lista">
+                        <a href="/sociologia/cidadania" class="topico-item">
+                            <div class="topico-numero">1</div>
+                            <div class="topico-info">
+                                <h3>Resumo - Cidadania</h3>
+                                <p>Principais pontos sobre direitos e deveres.</p>
+                            </div>
+                            <span class="topico-status">Ver resumo</span>
+                        </a>
+                        <a href="/sociologia/cultura-brasileira" class="topico-item">
+                            <div class="topico-numero">2</div>
+                            <div class="topico-info">
+                                <h3>Resumo - Cultura Brasileira</h3>
+                                <p>Principais pontos sobre diversidade cultural.</p>
+                            </div>
+                            <span class="topico-status">Ver resumo</span>
+                        </a>
+                        <a href="/sociologia/trabalho" class="topico-item">
+                            <div class="topico-numero">3</div>
+                            <div class="topico-info">
+                                <h3>Resumo - Trabalho</h3>
+                                <p>Principais pontos sobre relações de trabalho.</p>
+                            </div>
+                            <span class="topico-status">Ver resumo</span>
+                        </a>
+                        <a href="/sociologia/movimentos-sociais" class="topico-item">
+                            <div class="topico-numero">4</div>
+                            <div class="topico-info">
+                                <h3>Resumo - Movimentos Sociais</h3>
+                                <p>Principais pontos sobre movimentos populares.</p>
+                            </div>
+                            <span class="topico-status">Ver resumo</span>
+                        </a>
+                        <a href="/sociologia/desigualdade-social" class="topico-item">
+                            <div class="topico-numero">5</div>
+                            <div class="topico-info">
+                                <h3>Resumo - Desigualdade Social</h3>
+                                <p>Principais pontos sobre pobreza e exclusão social.</p>
+                            </div>
+                            <span class="topico-status">Ver resumo</span>
+                        </a>
+                        <a href="/sociologia/violencia-seguranca" class="topico-item">
+                            <div class="topico-numero">6</div>
+                            <div class="topico-info">
+                                <h3>Resumo - Violência e Segurança</h3>
+                                <p>Principais pontos sobre segurança e direitos humanos.</p>
+                            </div>
+                            <span class="topico-status">Ver resumo</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- ===== ABA SIMULADOS ===== -->
+                <div id="simulados" class="aba-conteudo">
+                    <h2>Simulados</h2>
+                    <p class="aba-subtitle">Teste seus conhecimentos com simulados estilo ENEM</p>
+                    <div class="topicos-lista">
+                        <a href="/sociologia/cidadania" class="topico-item">
+                            <div class="topico-numero">1</div>
+                            <div class="topico-info">
+                                <h3>Simulado - Cidadania</h3>
+                                <p>10 questões estilo ENEM</p>
+                            </div>
+                            <span class="topico-status">Iniciar</span>
+                        </a>
+                        <a href="/sociologia/cultura-brasileira" class="topico-item">
+                            <div class="topico-numero">2</div>
+                            <div class="topico-info">
+                                <h3>Simulado - Cultura Brasileira</h3>
+                                <p>10 questões estilo ENEM</p>
+                            </div>
+                            <span class="topico-status">Iniciar</span>
+                        </a>
+                        <a href="/sociologia/trabalho" class="topico-item">
+                            <div class="topico-numero">3</div>
+                            <div class="topico-info">
+                                <h3>Simulado - Trabalho</h3>
+                                <p>10 questões estilo ENEM</p>
+                            </div>
+                            <span class="topico-status">Iniciar</span>
+                        </a>
+                        <a href="/sociologia/movimentos-sociais" class="topico-item">
+                            <div class="topico-numero">4</div>
+                            <div class="topico-info">
+                                <h3>Simulado - Movimentos Sociais</h3>
+                                <p>10 questões estilo ENEM</p>
+                            </div>
+                            <span class="topico-status">Iniciar</span>
+                        </a>
+                        <a href="/sociologia/desigualdade-social" class="topico-item">
+                            <div class="topico-numero">5</div>
+                            <div class="topico-info">
+                                <h3>Simulado - Desigualdade Social</h3>
+                                <p>10 questões estilo ENEM</p>
+                            </div>
+                            <span class="topico-status">Iniciar</span>
+                        </a>
+                        <a href="/sociologia/violencia-seguranca" class="topico-item">
+                            <div class="topico-numero">6</div>
+                            <div class="topico-info">
+                                <h3>Simulado - Violência e Segurança</h3>
+                                <p>10 questões estilo ENEM</p>
+                            </div>
+                            <span class="topico-status">Iniciar</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="dica-saphius">
+                    <h3>Dica Saphius</h3>
+                    <p>Estude os conteúdos, faça os exercícios e teste seus conhecimentos nos simulados.</p>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        function trocarAba(botao, abaId) {
+            document.querySelectorAll('.aba-btn').forEach(b => b.classList.remove('active'));
+            botao.classList.add('active');
+            document.querySelectorAll('.aba-conteudo').forEach(c => c.classList.remove('active'));
+            document.getElementById(abaId).classList.add('active');
+        }
+    </script>
+</body>
+</html>

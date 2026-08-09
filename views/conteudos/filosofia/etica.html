@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Ética - Saphius</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/views/conteudos/filosofia/filosofia.css">
+</head>
+<body>
+    <div class="app-container">
+        <aside class="sidebar">
+            <div class="sidebar-logo"><h2>Saphius</h2></div>
+            <ul class="sidebar-menu">
+                <li><a href="/dashboard"><span class="icon"></span> <span>Dashboard</span></a></li>
+                <li><a href="/conteudos"><span class="icon"></span> <span>Conteúdos</span></a></li>
+                <li><a href="/trilha"><span class="icon"></span> <span>Trilha de estudos</span></a></li>
+                <li><a href="/bemestar"><span class="icon"></span> <span>Bem-estar</span></a></li>
+                <li><a href="/perfil"><span class="icon"></span> <span>Perfil</span></a></li>
+                <li><a href="/configuracoes"><span class="icon"></span> <span>Configurações</span></a></li>
+                <li><a href="/ajuda"><span class="icon"></span> <span>Ajuda</span></a></li>
+                <li><a href="/sair"><span class="icon"></span> <span>Sair</span></a></li>
+            </ul>
+        </aside>
+
+        <main class="main-content">
+            <div class="container">
+                <a href="/filosofia" class="voltar">Voltar para Filosofia</a>
+
+                <h1 style="text-align:center; font-size:2.5em; color:#2e7d32;">Ética</h1>
+                <p style="color:#666; text-align:center; font-size:1.1em;">Conceitos de ética e moral, Dilemas éticos, Teorias éticas</p>
+
+                <div class="abas-navegacao" style="margin:25px 0;">
+                    <button class="aba-btn active" onclick="trocarAba(this, 'conteudo')">Conteúdo</button>
+                    <button class="aba-btn" onclick="trocarAba(this, 'exercicios')">Exercícios</button>
+                    <button class="aba-btn" onclick="trocarAba(this, 'resumo')">Resumo</button>
+                    <button class="aba-btn" onclick="trocarAba(this, 'simulado')">Simulado</button>
+                </div>
+
+                <div id="conteudo" class="aba-conteudo active">
+
+                    <div class="explicacao-detalhada">
+                        <h3>O que é Ética?</h3>
+                        <p>
+                            A <strong>Ética</strong> é o ramo da filosofia que estuda os princípios morais que orientam 
+                            o comportamento humano. Ela busca responder perguntas como: <em>"O que é certo e errado?"</em>, 
+                            <em>"O que é bom e mau?"</em>, <em>"Como devemos agir?"</em>. A ética é uma reflexão teórica 
+                            sobre a moral, enquanto a moral é o conjunto de regras praticadas em uma sociedade.
+                        </p>
+                        <div class="enem-dica">
+                            <strong>DICA ENEM:</strong>
+                            <p>Ética é um tema recorrente no ENEM, especialmente em questões que envolvem 
+                            <strong>cidadania</strong>, <strong>política</strong> e <strong>direitos humanos</strong>.</p>
+                        </div>
+                    </div>
+
+                    <div class="explicacao-detalhada">
+                        <h3>Ética vs Moral</h3>
+                        <ul>
+                            <li><strong>Ética:</strong> Reflexão teórica sobre os princípios morais. É universal e racional. Busca entender o que é o bem.</li>
+                            <li><strong>Moral:</strong> Conjunto de regras e valores de uma sociedade. É prático e cultural. Varia de acordo com o tempo e o lugar.</li>
+                            <li><strong>Exemplo:</strong> A ética pergunta "Por que não devemos mentir?". A moral diz "Não se deve mentir".</li>
+                        </ul>
+                        <div class="enem-dica">
+                            <strong>DICA ENEM:</strong>
+                            <p>O ENEM cobra a diferença entre <strong>ética</strong> e <strong>moral</strong> em questões sobre comportamento e valores.</p>
+                        </div>
+                    </div>
+
+                    <div class="explicacao-detalhada">
+                        <h3>Principais Teorias Éticas</h3>
+                        <ul>
+                            <li><strong>Ética das Virtudes (Aristóteles):</strong> A virtude está no equilíbrio entre dois extremos (meio-termo). A felicidade (eudaimonia) é alcançada através da virtude.</li>
+                            <li><strong>Ética Deontológica (Kant):</strong> A ação é moral se for baseada no dever e na boa vontade, independente das consequências. O imperativo categórico é a regra universal.</li>
+                            <li><strong>Utilitarismo (Mill, Bentham):</strong> A ação moral é aquela que gera a maior felicidade para o maior número de pessoas. É uma ética consequencialista.</li>
+                            <li><strong>Ética do Cuidado (Gilligan):</strong> Foca nas relações e na responsabilidade com o outro. Valoriza a empatia e o cuidado.</li>
+                            <li><strong>Ética da Libertação (Dussel):</strong> Defende a ética como uma luta contra a opressão e a exclusão social.</li>
+                        </ul>
+                        <div class="enem-dica">
+                            <strong>DICA ENEM:</strong>
+                            <p>O ENEM cobra as principais teorias éticas, como o <strong>utilitarismo</strong> e o <strong>imperativo categórico</strong> de Kant.</p>
+                        </div>
+                    </div>
+
+                    <div class="explicacao-detalhada">
+                        <h3>Dilemas Éticos</h3>
+                        <p>
+                            Os dilemas éticos são situações em que há um conflito entre dois ou mais valores morais. Exemplos:
+                        </p>
+                        <ul>
+                            <li><strong>Eutanásia:</strong> Direito à vida vs direito à dignidade.</li>
+                            <li><strong>Aborto:</strong> Direito do feto vs direito da mulher.</li>
+                            <li><strong>Pena de morte:</strong> Justiça vs direito à vida.</li>
+                            <li><strong>Mentira:</strong> Verdade vs proteção de alguém.</li>
+                            <li><strong>Justiça social:</strong> Igualdade vs liberdade.</li>
+                        </ul>
+                        <div class="enem-dica">
+                            <strong>DICA ENEM:</strong>
+                            <p>O ENEM cobra <strong>dilemas éticos</strong> em questões sobre saúde, política e direitos humanos.</p>
+                        </div>
+                    </div>
+
+                    <div class="dica-saphius">
+                        <h3>Dica Saphius</h3>
+                        <p>
+                            Entenda a diferença entre <strong>Ética e Moral</strong> para responder questões sobre comportamento e valores. Memorize: <strong>"Ética = Reflexão | Moral = Prática"</strong>.
+                        </p>
+                    </div>
+                </div>
+
+                <div id="exercicios" class="aba-conteudo">
+                    <h2 style="color:#2e7d32;">Exercícios - Ética</h2>
+                    <p style="color:#666;">15 questões (5 Fáceis, 5 Médias, 5 Difíceis)</p>
+
+                    <!-- 5 FÁCEIS -->
+                    <div class="exercicio-facil">
+                        <span class="badge">FÁCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>1.</strong> O que é ética?</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q1"> a) Conjunto de regras de uma sociedade</label>
+                            <label><input type="radio" name="q1"> b) Reflexão sobre princípios morais</label>
+                            <label><input type="radio" name="q1"> c) Lei escrita</label>
+                            <label><input type="radio" name="q1"> d) Costumes tradicionais</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: B) Reflexão sobre princípios morais</strong></p>
+                            <p><strong>Explicação:</strong> Ética é a reflexão teórica sobre os princípios que orientam o comportamento humano.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-facil">
+                        <span class="badge">FÁCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>2.</strong> A moral é:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q2"> a) Universal e racional</label>
+                            <label><input type="radio" name="q2"> b) Conjunto de regras de uma sociedade</label>
+                            <label><input type="radio" name="q2"> c) Reflexão filosófica</label>
+                            <label><input type="radio" name="q2"> d) Teoria ética</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: B) Conjunto de regras de uma sociedade</strong></p>
+                            <p><strong>Explicação:</strong> Moral é o conjunto de regras e valores praticados por uma sociedade.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-facil">
+                        <span class="badge">FÁCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>3.</strong> Quem defendeu a ética das virtudes?</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q3"> a) Kant</label>
+                            <label><input type="radio" name="q3"> b) Aristóteles</label>
+                            <label><input type="radio" name="q3"> c) Mill</label>
+                            <label><input type="radio" name="q3"> d) Gilligan</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: B) Aristóteles</strong></p>
+                            <p><strong>Explicação:</strong> Aristóteles desenvolveu a ética das virtudes, onde a virtude está no equilíbrio entre dois extremos.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-facil">
+                        <span class="badge">FÁCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>4.</strong> O utilitarismo defende que uma ação é moral quando:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q4"> a) É baseada no dever</label>
+                            <label><input type="radio" name="q4"> b) Gera a maior felicidade para o maior número</label>
+                            <label><input type="radio" name="q4"> c) É praticada por todos</label>
+                            <label><input type="radio" name="q4"> d) É racional</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: B) Gera a maior felicidade para o maior número</strong></p>
+                            <p><strong>Explicação:</strong> O utilitarismo, defendido por Mill e Bentham, busca a maior felicidade para o maior número de pessoas.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-facil">
+                        <span class="badge">FÁCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>5.</strong> A ética do cuidado, proposta por Gilligan, destaca:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q5"> a) A razão acima de tudo</label>
+                            <label><input type="radio" name="q5"> b) A responsabilidade com o outro</label>
+                            <label><input type="radio" name="q5"> c) A busca pela felicidade</label>
+                            <label><input type="radio" name="q5"> d) A virtude como equilíbrio</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: B) A responsabilidade com o outro</strong></p>
+                            <p><strong>Explicação:</strong> A ética do cuidado foca nas relações e na responsabilidade com o outro.</p>
+                        </div>
+                    </div>
+
+                    <!-- 5 MÉDIAS -->
+                    <div class="exercicio-medio">
+                        <span class="badge">MÉDIO</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>6.</strong> (ENEM) A ética de Kant é baseada no:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q6"> a) Dever e na boa vontade</label>
+                            <label><input type="radio" name="q6"> b) Utilitarismo</label>
+                            <label><input type="radio" name="q6"> c) Hedonismo</label>
+                            <label><input type="radio" name="q6"> d) Relativismo</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: A) Dever e na boa vontade</strong></p>
+                            <p><strong>Explicação:</strong> Kant defende uma ética baseada no dever e na boa vontade, independente das consequências.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-medio">
+                        <span class="badge">MÉDIO</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>7.</strong> (ENEM) A ética das virtudes de Aristóteles busca:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q7"> a) O equilíbrio entre dois extremos</label>
+                            <label><input type="radio" name="q7"> b) A obediência às leis</label>
+                            <label><input type="radio" name="q7"> c) A busca pelo prazer</label>
+                            <label><input type="radio" name="q7"> d) A negação dos desejos</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: A) O equilíbrio entre dois extremos</strong></p>
+                            <p><strong>Explicação:</strong> Para Aristóteles, a virtude está no equilíbrio (meio-termo) entre dois extremos.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-medio">
+                        <span class="badge">MÉDIO</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>8.</strong> (ENEM) O utilitarismo é criticado por:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q8"> a) Ser individualista</label>
+                            <label><input type="radio" name="q8"> b) Desconsiderar os direitos individuais</label>
+                            <label><input type="radio" name="q8"> c) Ser irracional</label>
+                            <label><input type="radio" name="q8"> d) Ser religioso</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: B) Desconsiderar os direitos individuais</strong></p>
+                            <p><strong>Explicação:</strong> O utilitarismo é criticado por desconsiderar os direitos individuais em nome da maioria.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-medio">
+                        <span class="badge">MÉDIO</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>9.</strong> (ENEM) A ética do cuidado, de Gilligan, é importante porque:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q9"> a) Valoriza a razão</label>
+                            <label><input type="radio" name="q9"> b) Destaca a importância das relações</label>
+                            <label><input type="radio" name="q9"> c) Defende a moral universal</label>
+                            <label><input type="radio" name="q9"> d) Ignora as emoções</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: B) Destaca a importância das relações</strong></p>
+                            <p><strong>Explicação:</strong> A ética do cuidado destaca a importância das relações e da responsabilidade com o outro.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-medio">
+                        <span class="badge">MÉDIO</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>10.</strong> (ENEM) A ética e a moral são diferentes porque:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q10"> a) Ética é prática e moral é teórica</label>
+                            <label><input type="radio" name="q10"> b) Ética é universal e moral é cultural</label>
+                            <label><input type="radio" name="q10"> c) Moral é racional e ética é religiosa</label>
+                            <label><input type="radio" name="q10"> d) Ética e moral são sinônimos</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: B) Ética é universal e moral é cultural</strong></p>
+                            <p><strong>Explicação:</strong> A ética é uma reflexão universal sobre princípios, enquanto a moral é o conjunto de regras de uma sociedade.</p>
+                        </div>
+                    </div>
+
+                    <!-- 5 DIFÍCEIS -->
+                    <div class="exercicio-dificil">
+                        <span class="badge">DIFÍCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>11.</strong> (ENEM) O imperativo categórico de Kant afirma que:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q11"> a) A ação moral é baseada na utilidade</label>
+                            <label><input type="radio" name="q11"> b) Devemos agir de forma que nossa ação possa se tornar uma lei universal</label>
+                            <label><input type="radio" name="q11"> c) A felicidade é o fim último</label>
+                            <label><input type="radio" name="q11"> d) A virtude é o equilíbrio</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: B) Devemos agir de forma que nossa ação possa se tornar uma lei universal</strong></p>
+                            <p><strong>Explicação:</strong> O imperativo categórico de Kant exige que aja de forma que sua ação possa se tornar uma lei universal.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-dificil">
+                        <span class="badge">DIFÍCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>12.</strong> (ENEM) O utilitarismo de Mill defende que:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q12"> a) A ação moral é aquela que segue a lei</label>
+                            <label><input type="radio" name="q12"> b) A ação moral é aquela que gera prazer e evita a dor</label>
+                            <label><input type="radio" name="q12"> c) A ação moral é aquela que é virtuosa</label>
+                            <label><input type="radio" name="q12"> d) A ação moral é aquela que é racional</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: B) A ação moral é aquela que gera prazer e evita a dor</strong></p>
+                            <p><strong>Explicação:</strong> O utilitarismo de Mill busca o prazer e a ausência de dor como critério moral.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-dificil">
+                        <span class="badge">DIFÍCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>13.</strong> (ENEM) A ética das virtudes de Aristóteles é baseada no conceito de:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q13"> a) Dever</label>
+                            <label><input type="radio" name="q13"> b) Felicidade (eudaimonia)</label>
+                            <label><input type="radio" name="q13"> c) Utilidade</label>
+                            <label><input type="radio" name="q13"> d) Cuidado</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: B) Felicidade (eudaimonia)</strong></p>
+                            <p><strong>Explicação:</strong> Para Aristóteles, a ética das virtudes busca a felicidade (eudaimonia) através do equilíbrio.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-dificil">
+                        <span class="badge">DIFÍCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>14.</strong> (ENEM) A ética do cuidado, de Gilligan, critica a ética tradicional por:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q14"> a) Ser muito emocional</label>
+                            <label><input type="radio" name="q14"> b) Ser muito racional e individualista</label>
+                            <label><input type="radio" name="q14"> c) Ignorar a moral</label>
+                            <label><input type="radio" name="q14"> d) Ser religiosa</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: B) Ser muito racional e individualista</strong></p>
+                            <p><strong>Explicação:</strong> Gilligan critica a ética tradicional por ser muito racional e individualista, ignorando as relações e o cuidado.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-dificil">
+                        <span class="badge">DIFÍCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>15.</strong> (ENEM) A ética é importante para a sociedade porque:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q15"> a) Estabelece leis</label>
+                            <label><input type="radio" name="q15"> b) Orienta o comportamento humano e promove a justiça</label>
+                            <label><input type="radio" name="q15"> c) Define a religião</label>
+                            <label><input type="radio" name="q15"> d) Cria costumes</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: B) Orienta o comportamento humano e promove a justiça</strong></p>
+                            <p><strong>Explicação:</strong> A ética orienta o comportamento humano e promove a justiça e o bem-estar social.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="resumo" class="aba-conteudo">
+                    <div class="resumo-principal">
+                        <h2 class="resumo-titulo">Resumo - Ética</h2>
+                        <p class="resumo-subtitulo">Principais pontos para memorizar</p>
+
+                        <div class="resumo-grid">
+                            <div class="resumo-card-item">
+                                <h3>Ética</h3>
+                                <p>Reflexão sobre princípios morais</p>
+                                <span class="resumo-tag">Universal</span>
+                            </div>
+                            <div class="resumo-card-item">
+                                <h3>Moral</h3>
+                                <p>Regras de uma sociedade</p>
+                                <span class="resumo-tag">Cultural</span>
+                            </div>
+                            <div class="resumo-card-item">
+                                <h3>Ética das Virtudes</h3>
+                                <p>Aristóteles - Equilíbrio (meio-termo)</p>
+                                <span class="resumo-tag">Virtude</span>
+                            </div>
+                            <div class="resumo-card-item">
+                                <h3>Ética Deontológica</h3>
+                                <p>Kant - Dever e boa vontade</p>
+                                <span class="resumo-tag">Imperativo Categórico</span>
+                            </div>
+                            <div class="resumo-card-item">
+                                <h3>Utilitarismo</h3>
+                                <p>Mill - Maior felicidade para o maior número</p>
+                                <span class="resumo-tag">Consequencialista</span>
+                            </div>
+                            <div class="resumo-card-item">
+                                <h3>Ética do Cuidado</h3>
+                                <p>Gilligan - Relações e responsabilidade</p>
+                                <span class="resumo-tag">Cuidado</span>
+                            </div>
+                        </div>
+
+                        <div class="resumo-dica-final">
+                            <h4>Dica Saphius</h4>
+                            <p>Memorize: <strong>"Ética = Reflexão | Moral = Prática"</strong></p>
+                        </div>
+
+                        <div class="resumo-dica-enem">
+                            <h4>Dica ENEM</h4>
+                            <p>Atenção para os termos <strong>"Imperativo Categórico"</strong>, <strong>"Eudaimonia"</strong> e <strong>"Utilitarismo"</strong>.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="simulado" class="aba-conteudo">
+                    <h2 style="color:#2e7d32;">Simulado - Ética</h2>
+                    <p style="color:#666;">Teste seus conhecimentos com questões estilo ENEM</p>
+                    <div class="simulado-card">
+                        <div style="display:flex; gap:20px; flex-wrap:wrap; justify-content:center; margin-bottom:15px;">
+                            <span><strong>15 questões</strong></span>
+                            <span><strong>20 minutos</strong></span>
+                            <span><strong>Nível: Fácil a Difícil</strong></span>
+                        </div>
+                        <p style="color:#555; margin-bottom:15px;">As questões são as mesmas da aba "Exercícios" acima.</p>
+                        <button class="btn-principal" onclick="alert(' Simulado iniciado! Responda todas as 15 questões acima na aba Exercícios.')">
+                            Iniciar simulado
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script>
+    function trocarAba(botao, abaId) {
+        document.querySelectorAll('.aba-btn').forEach(b => b.classList.remove('active'));
+        botao.classList.add('active');
+
+        document.querySelectorAll('.aba-conteudo').forEach(c => c.classList.remove('active'));
+        document.getElementById(abaId).classList.add('active');
+    }
+
+    function mostrarResposta(botao) {
+        const exercicioDiv = botao.closest('.exercicio-facil, .exercicio-medio, .exercicio-dificil');
+        const respostaDiv = exercicioDiv.querySelector('.resposta-explicada');
+
+        if (respostaDiv.style.display === 'block') {
+            respostaDiv.style.display = 'none';
+            botao.textContent = 'Ver explicação';
+        } else {
+            respostaDiv.style.display = 'block';
+            botao.textContent = 'Ocultar explicação';
+        }
+    }
+
+    document.querySelectorAll('.exercicio-alternativas input[type="radio"]').forEach(input => {
+        input.addEventListener('change', verificarAtividade);
+    });
+
+    async function verificarAtividade() {
+        const questoes = document.querySelectorAll('.exercicio-alternativas');
+        const respondidas = document.querySelectorAll(
+            '.exercicio-alternativas input[type="radio"]:checked'
+        );
+
+        if (respondidas.length === questoes.length) {
+            try {
+                await fetch('/api/trilha/concluir', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        materia: 'filosofia',
+                        topico: 'etica'
+                    })
+                });
+
+                alert('Atividade concluída! Seu progresso na Trilha de Estudos foi atualizado.');
+            } catch (erro) {
+                console.error('Erro ao atualizar progresso:', erro);
+            }
+        }
+    }
+</script>
+
+</body>
+</html>

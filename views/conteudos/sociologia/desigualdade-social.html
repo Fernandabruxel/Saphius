@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Desigualdade Social - Saphius</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/views/conteudos/sociologia/sociologia.css">
+</head>
+<body>
+    <div class="app-container">
+        <aside class="sidebar">
+            <div class="sidebar-logo"><h2>Saphius</h2></div>
+            <ul class="sidebar-menu">
+                <li><a href="/dashboard"><span class="icon"></span> <span>Dashboard</span></a></li>
+                <li><a href="/conteudos"><span class="icon"></span> <span>Conteúdos</span></a></li>
+                <li><a href="/trilha"><span class="icon"></span> <span>Trilha de estudos</span></a></li>
+                <li><a href="/bemestar"><span class="icon"></span> <span>Bem-estar</span></a></li>
+                <li><a href="/perfil"><span class="icon"></span> <span>Perfil</span></a></li>
+                <li><a href="/configuracoes"><span class="icon"></span> <span>Configurações</span></a></li>
+                <li><a href="/ajuda"><span class="icon"></span> <span>Ajuda</span></a></li>
+                <li><a href="/sair"><span class="icon"></span> <span>Sair</span></a></li>
+            </ul>
+        </aside>
+
+        <main class="main-content">
+            <div class="container">
+                <a href="/sociologia" class="voltar">Voltar para Sociologia</a>
+
+                <h1 style="text-align:center; font-size:2.5em; color:#2e7d32;">Desigualdade Social</h1>
+                <p style="color:#666; text-align:center; font-size:1.1em;">Pobreza, Exclusão social, Políticas públicas, Justiça social</p>
+
+                <div class="abas-navegacao" style="margin:25px 0;">
+                    <button class="aba-btn active" onclick="trocarAba(this, 'conteudo')">Conteúdo</button>
+                    <button class="aba-btn" onclick="trocarAba(this, 'exercicios')">Exercícios</button>
+                    <button class="aba-btn" onclick="trocarAba(this, 'resumo')">Resumo</button>
+                    <button class="aba-btn" onclick="trocarAba(this, 'simulado')">Simulado</button>
+                </div>
+
+                <div id="conteudo" class="aba-conteudo active">
+
+                    <div class="explicacao-detalhada">
+                        <h3>O que é Desigualdade Social?</h3>
+                        <p>
+                            A <strong>desigualdade social</strong> é a diferença no acesso a recursos, oportunidades e direitos 
+                            entre diferentes grupos sociais. Ela se manifesta na <strong>renda</strong>, na 
+                            <strong>educação</strong>, na <strong>saúde</strong>, na <strong>moradia</strong> e no 
+                            <strong>acesso à justiça</strong>. A desigualdade é um dos principais problemas sociais do Brasil.
+                        </p>
+                        <div class="enem-dica">
+                            <strong>DICA ENEM:</strong>
+                            <p>Desigualdade social é um tema recorrente no ENEM, especialmente em questões sobre 
+                            <strong>pobreza</strong>, <strong>exclusão</strong> e <strong>políticas públicas</strong>.</p>
+                        </div>
+                    </div>
+
+                    <div class="explicacao-detalhada">
+                        <h3>Tipos de Desigualdade</h3>
+                        <ul>
+                            <li><strong>Desigualdade econômica:</strong> Diferenças de renda e riqueza entre os indivíduos e grupos. No Brasil, os 10% mais ricos detêm cerca de 50% da renda total.</li>
+                            <li><strong>Desigualdade educacional:</strong> Acesso desigual à educação de qualidade, que perpetua a desigualdade social.</li>
+                            <li><strong>Desigualdade racial:</strong> Diferenças baseadas na raça ou etnia, com negros e indígenas tendo menos acesso a oportunidades.</li>
+                            <li><strong>Desigualdade de gênero:</strong> Diferenças entre homens e mulheres, como a diferença salarial e a violência de gênero.</li>
+                            <li><strong>Desigualdade regional:</strong> Diferenças entre regiões do país, como Nordeste e Sudeste.</li>
+                            <li><strong>Desigualdade digital:</strong> Diferenças no acesso à internet e tecnologias, que afeta a educação e o trabalho.</li>
+                        </ul>
+                        <div class="enem-dica">
+                            <strong>DICA ENEM:</strong>
+                            <p>O ENEM cobra os diferentes tipos de desigualdade e suas causas históricas.</p>
+                        </div>
+                    </div>
+
+                    <div class="explicacao-detalhada">
+                        <h3>Causas da Desigualdade no Brasil</h3>
+                        <ul>
+                            <li><strong>Herança colonial:</strong> Concentração de terras e poder desde o período colonial, com a exclusão de indígenas e negros.</li>
+                            <li><strong>Industrialização:</strong> Concentração de riqueza no Sudeste, com a exclusão de outras regiões.</li>
+                            <li><strong>Políticas públicas insuficientes:</strong> Falta de investimento em educação, saúde e infraestrutura nas regiões mais pobres.</li>
+                            <li><strong>Corrupção e má gestão:</strong> Desvio de recursos públicos que poderiam ser usados para reduzir a desigualdade.</li>
+                            <li><strong>Concentração de terras:</strong> Latifúndios e concentração fundiária, que geram exclusão social.</li>
+                            <li><strong>Discriminação racial e de gênero:</strong> Preconceito que limita o acesso a oportunidades.</li>
+                        </ul>
+                        <div class="enem-dica">
+                            <strong>DICA ENEM:</strong>
+                            <p>O ENEM cobra as <strong>causas históricas</strong> da desigualdade social no Brasil.</p>
+                        </div>
+                    </div>
+
+                    <div class="explicacao-detalhada">
+                        <h3>Políticas Públicas para Reduzir a Desigualdade</h3>
+                        <ul>
+                            <li><strong>Bolsa Família:</strong> Transferência de renda para famílias em situação de pobreza, que reduz a pobreza e a desigualdade.</li>
+                            <li><strong>Programa de Aceleração do Crescimento (PAC):</strong> Investimentos em infraestrutura, especialmente em regiões menos desenvolvidas.</li>
+                            <li><strong>FIES e ProUni:</strong> Financiamento e bolsas para o ensino superior, ampliando o acesso à educação.</li>
+                            <li><strong>Reforma agrária:</strong> Distribuição de terras para agricultores, reduzindo a concentração fundiária.</li>
+                            <li><strong>Leis de cotas:</strong> Reserva de vagas para negros e indígenas em universidades e concursos públicos.</li>
+                            <li><strong>Programas de capacitação profissional:</strong> Cursos e treinamentos para jovens e trabalhadores.</li>
+                        </ul>
+                        <div class="enem-dica">
+                            <strong>DICA ENEM:</strong>
+                            <p>O ENEM cobra as <strong>políticas públicas</strong> que visam reduzir a desigualdade social.</p>
+                        </div>
+                    </div>
+
+                    <div class="explicacao-detalhada">
+                        <h3>Consequências da Desigualdade Social</h3>
+                        <ul>
+                            <li><strong>Pobreza e exclusão social:</strong> Falta de acesso a direitos básicos como saúde, educação e moradia.</li>
+                            <li><strong>Violência:</strong> A desigualdade gera conflitos e violência, especialmente nas periferias.</li>
+                            <li><strong>Baixo desenvolvimento econômico:</strong> A desigualdade limita o crescimento econômico e a produtividade.</li>
+                            <li><strong>Instabilidade política:</strong> Descontentamento social e crises políticas.</li>
+                            <li><strong>Ciclo de pobreza:</strong> A pobreza se perpetua de geração em geração.</li>
+                        </ul>
+                    </div>
+
+                    <div class="dica-saphius">
+                        <h3>Dica Saphius</h3>
+                        <p>
+                            Relacione as <strong>causas</strong> da desigualdade com as <strong>políticas públicas</strong> para responder questões sobre o tema. Memorize: <strong>"Pobreza + Exclusão + Políticas Públicas = Desigualdade"</strong>.
+                        </p>
+                    </div>
+                </div>
+
+                <div id="exercicios" class="aba-conteudo">
+                    <h2 style="color:#2e7d32;">Exercícios - Desigualdade Social</h2>
+                    <p style="color:#666;">15 questões (5 Fáceis, 5 Médias, 5 Difíceis)</p>
+
+                    <!-- 5 FÁCEIS -->
+                    <div class="exercicio-facil">
+                        <span class="badge">FÁCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>1.</strong> A desigualdade social se manifesta na:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q1"> a) Igualdade de oportunidades</label>
+                            <label><input type="radio" name="q1"> b) Diferença de acesso a recursos e direitos</label>
+                            <label><input type="radio" name="q1"> c) Homogeneidade social</label>
+                            <label><input type="radio" name="q1"> d) Justiça social plena</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: B) Diferença de acesso a recursos e direitos</strong></p>
+                            <p><strong>Explicação:</strong> A desigualdade social é a diferença no acesso a recursos, oportunidades e direitos.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-facil">
+                        <span class="badge">FÁCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>2.</strong> A desigualdade racial refere-se a:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q2"> a) Diferenças entre homens e mulheres</label>
+                            <label><input type="radio" name="q2"> b) Diferenças baseadas na raça ou etnia</label>
+                            <label><input type="radio" name="q2"> c) Diferenças de renda</label>
+                            <label><input type="radio" name="q2"> d) Diferenças regionais</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: B) Diferenças baseadas na raça ou etnia</strong></p>
+                            <p><strong>Explicação:</strong> A desigualdade racial refere-se a diferenças baseadas na raça ou etnia.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-facil">
+                        <span class="badge">FÁCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>3.</strong> O Bolsa Família é um programa de:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q3"> a) Transferência de renda</label>
+                            <label><input type="radio" name="q3"> b) Reforma agrária</label>
+                            <label><input type="radio" name="q3"> c) Financiamento estudantil</label>
+                            <label><input type="radio" name="q3"> d) Investimento em infraestrutura</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: A) Transferência de renda</strong></p>
+                            <p><strong>Explicação:</strong> O Bolsa Família é um programa de transferência de renda para famílias em situação de pobreza.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-facil">
+                        <span class="badge">FÁCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>4.</strong> A desigualdade regional no Brasil é caracterizada por:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q4"> a) Diferenças entre o Norte e o Sul</label>
+                            <label><input type="radio" name="q4"> b) Igualdade entre as regiões</label>
+                            <label><input type="radio" name="q4"> c) Homogeneidade econômica</label>
+                            <label><input type="radio" name="q4"> d) Distribuição igualitária de renda</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: A) Diferenças entre o Norte e o Sul</strong></p>
+                            <p><strong>Explicação:</strong> A desigualdade regional é marcada por diferenças econômicas e sociais entre as regiões do Brasil.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-facil">
+                        <span class="badge">FÁCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>5.</strong> O FIES e o ProUni são programas de:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q5"> a) Transferência de renda</label>
+                            <label><input type="radio" name="q5"> b) Acesso ao ensino superior</label>
+                            <label><input type="radio" name="q5"> c) Reforma agrária</label>
+                            <label><input type="radio" name="q5"> d) Investimento em infraestrutura</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: B) Acesso ao ensino superior</strong></p>
+                            <p><strong>Explicação:</strong> O FIES e o ProUni são programas que facilitam o acesso ao ensino superior.</p>
+                        </div>
+                    </div>
+
+                    <!-- 5 MÉDIAS -->
+                    <div class="exercicio-medio">
+                        <span class="badge">MÉDIO</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>6.</strong> (ENEM) A desigualdade social no Brasil é agravada pela:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q6"> a) Distribuição igualitária de renda</label>
+                            <label><input type="radio" name="q6"> b) Concentração de terra e riqueza</label>
+                            <label><input type="radio" name="q6"> c) Investimento em educação</label>
+                            <label><input type="radio" name="q6"> d) Políticas sociais eficientes</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: B) Concentração de terra e riqueza</strong></p>
+                            <p><strong>Explicação:</strong> A concentração de terra e riqueza agrava a desigualdade social no Brasil.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-medio">
+                        <span class="badge">MÉDIO</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>7.</strong> (ENEM) A pobreza é um dos principais indicadores de:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q7"> a) Desigualdade social</label>
+                            <label><input type="radio" name="q7"> b) Igualdade de oportunidades</label>
+                            <label><input type="radio" name="q7"> c) Justiça social</label>
+                            <label><input type="radio" name="q7"> d) Desenvolvimento econômico</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: A) Desigualdade social</strong></p>
+                            <p><strong>Explicação:</strong> A pobreza é um dos principais indicadores de desigualdade social.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-medio">
+                        <span class="badge">MÉDIO</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>8.</strong> (ENEM) A exclusão social é caracterizada pela:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q8"> a) Participação plena na sociedade</label>
+                            <label><input type="radio" name="q8"> b) Falta de acesso a direitos e oportunidades</label>
+                            <label><input type="radio" name="q8"> c) Igualdade de oportunidades</label>
+                            <label><input type="radio" name="q8"> d) Distribuição equitativa de recursos</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: B) Falta de acesso a direitos e oportunidades</strong></p>
+                            <p><strong>Explicação:</strong> A exclusão social é a falta de acesso a direitos e oportunidades.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-medio">
+                        <span class="badge">MÉDIO</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>9.</strong> (ENEM) As políticas públicas são importantes para reduzir a desigualdade porque:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q9"> a) Mantêm a exclusão social</label>
+                            <label><input type="radio" name="q9"> b) Promovem a justiça social</label>
+                            <label><input type="radio" name="q9"> c) Aumentam a concentração de renda</label>
+                            <label><input type="radio" name="q9"> d) Reduzem os investimentos sociais</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: B) Promovem a justiça social</strong></p>
+                            <p><strong>Explicação:</strong> Políticas públicas promovem a justiça social e reduzem a desigualdade.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-medio">
+                        <span class="badge">MÉDIO</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>10.</strong> (ENEM) A reforma agrária é uma política que busca:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q10"> a) Concentrar terras</label>
+                            <label><input type="radio" name="q10"> b) Distribuir terras para agricultores</label>
+                            <label><input type="radio" name="q10"> c) Reduzir a produção agrícola</label>
+                            <label><input type="radio" name="q10"> d) Aumentar a desigualdade</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: B) Distribuir terras para agricultores</strong></p>
+                            <p><strong>Explicação:</strong> A reforma agrária busca distribuir terras para agricultores e reduzir a desigualdade.</p>
+                        </div>
+                    </div>
+
+                    <!-- 5 DIFÍCEIS -->
+                    <div class="exercicio-dificil">
+                        <span class="badge">DIFÍCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>11.</strong> (ENEM) A desigualdade social no Brasil é um problema histórico que tem raízes na:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q11"> a) Distribuição igualitária de terras</label>
+                            <label><input type="radio" name="q11"> b) Escravidão e concentração de poder</label>
+                            <label><input type="radio" name="q11"> c) Industrialização equilibrada</label>
+                            <label><input type="radio" name="q11"> d) Políticas de inclusão social</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: B) Escravidão e concentração de poder</strong></p>
+                            <p><strong>Explicação:</strong> A desigualdade social no Brasil tem raízes históricas na escravidão e na concentração de poder.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-dificil">
+                        <span class="badge">DIFÍCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>12.</strong> (ENEM) O Programa Bolsa Família é uma política pública que:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q12"> a) Aumenta a pobreza</label>
+                            <label><input type="radio" name="q12"> b) Transfere renda para famílias pobres</label>
+                            <label><input type="radio" name="q12"> c) Concentra a riqueza</label>
+                            <label><input type="radio" name="q12"> d) Reduz os investimentos sociais</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: B) Transfere renda para famílias pobres</strong></p>
+                            <p><strong>Explicação:</strong> O Bolsa Família transfere renda para famílias em situação de pobreza.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-dificil">
+                        <span class="badge">DIFÍCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>13.</strong> (ENEM) A desigualdade de gênero é caracterizada pela:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q13"> a) Igualdade entre homens e mulheres</label>
+                            <label><input type="radio" name="q13"> b) Diferença de oportunidades e direitos entre gêneros</label>
+                            <label><input type="radio" name="q13"> c) Homogeneidade social</label>
+                            <label><input type="radio" name="q13"> d) Distribuição igualitária de recursos</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: B) Diferença de oportunidades e direitos entre gêneros</strong></p>
+                            <p><strong>Explicação:</strong> A desigualdade de gênero é a diferença de oportunidades e direitos entre homens e mulheres.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-dificil">
+                        <span class="badge">DIFÍCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>14.</strong> (ENEM) A justiça social é um conceito que busca:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q14"> a) A exclusão social</label>
+                            <label><input type="radio" name="q14"> b) A igualdade de oportunidades</label>
+                            <label><input type="radio" name="q14"> c) A concentração de renda</label>
+                            <label><input type="radio" name="q14"> d) A desigualdade</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: B) A igualdade de oportunidades</strong></p>
+                            <p><strong>Explicação:</strong> A justiça social busca a igualdade de oportunidades e a distribuição equitativa de recursos.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-dificil">
+                        <span class="badge">DIFÍCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>15.</strong> (ENEM) A redução da desigualdade social é importante para:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q15"> a) Aumentar a exclusão</label>
+                            <label><input type="radio" name="q15"> b) Promover o desenvolvimento sustentável</label>
+                            <label><input type="radio" name="q15"> c) Concentrar a riqueza</label>
+                            <label><input type="radio" name="q15"> d) Reduzir a cidadania</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: B) Promover o desenvolvimento sustentável</strong></p>
+                            <p><strong>Explicação:</strong> A redução da desigualdade social promove o desenvolvimento sustentável e a justiça social.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="resumo" class="aba-conteudo">
+                    <div class="resumo-principal">
+                        <h2 class="resumo-titulo">Resumo - Desigualdade Social</h2>
+                        <p class="resumo-subtitulo">Principais pontos para memorizar</p>
+
+                        <div class="resumo-grid">
+                            <div class="resumo-card-item">
+                                <h3>Desigualdade</h3>
+                                <p>Diferença de acesso a recursos</p>
+                                <span class="resumo-tag">Exclusão</span>
+                            </div>
+                            <div class="resumo-card-item">
+                                <h3>Pobreza</h3>
+                                <p>Falta de recursos básicos</p>
+                                <span class="resumo-tag">Carência</span>
+                            </div>
+                            <div class="resumo-card-item">
+                                <h3>Causas</h3>
+                                <p>Concentração de terra, corrupção</p>
+                                <span class="resumo-tag">Históricas</span>
+                            </div>
+                            <div class="resumo-card-item">
+                                <h3>Políticas Públicas</h3>
+                                <p>Bolsa Família, FIES, ProUni</p>
+                                <span class="resumo-tag">Inclusão</span>
+                            </div>
+                            <div class="resumo-card-item">
+                                <h3>Justiça Social</h3>
+                                <p>Igualdade de oportunidades</p>
+                                <span class="resumo-tag">Equidade</span>
+                            </div>
+                            <div class="resumo-card-item">
+                                <h3>Desafios</h3>
+                                <p>Desigualdade racial e de gênero</p>
+                                <span class="resumo-tag">Combate</span>
+                            </div>
+                        </div>
+
+                        <div class="resumo-dica-final">
+                            <h4>Dica Saphius</h4>
+                            <p>Memorize: <strong>"Pobreza + Exclusão + Políticas Públicas = Desigualdade"</strong></p>
+                        </div>
+
+                        <div class="resumo-dica-enem">
+                            <h4>Dica ENEM</h4>
+                            <p>Atenção para os termos <strong>"Bolsa Família"</strong>, <strong>"Justiça Social"</strong> e <strong>"Exclusão"</strong>.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="simulado" class="aba-conteudo">
+                    <h2 style="color:#2e7d32;">Simulado - Desigualdade Social</h2>
+                    <p style="color:#666;">Teste seus conhecimentos com questões estilo ENEM</p>
+                    <div class="simulado-card">
+                        <div style="display:flex; gap:20px; flex-wrap:wrap; justify-content:center; margin-bottom:15px;">
+                            <span><strong>15 questões</strong></span>
+                            <span><strong>20 minutos</strong></span>
+                            <span><strong>Nível: Fácil a Difícil</strong></span>
+                        </div>
+                        <p style="color:#555; margin-bottom:15px;">As questões são as mesmas da aba "Exercícios" acima.</p>
+                        <button class="btn-principal" onclick="alert('Simulado iniciado! Responda todas as 15 questões acima na aba Exercícios.')">
+                            Iniciar simulado
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script>
+    function trocarAba(botao, abaId) {
+        document.querySelectorAll('.aba-btn').forEach(b => b.classList.remove('active'));
+        botao.classList.add('active');
+
+        document.querySelectorAll('.aba-conteudo').forEach(c => c.classList.remove('active'));
+        document.getElementById(abaId).classList.add('active');
+    }
+
+    function mostrarResposta(botao) {
+        const exercicioDiv = botao.closest('.exercicio-facil, .exercicio-medio, .exercicio-dificil');
+        const respostaDiv = exercicioDiv.querySelector('.resposta-explicada');
+
+        if (respostaDiv.style.display === 'block') {
+            respostaDiv.style.display = 'none';
+            botao.textContent = 'Ver explicação';
+        } else {
+            respostaDiv.style.display = 'block';
+            botao.textContent = 'Ocultar explicação';
+        }
+    }
+
+    document.querySelectorAll('.exercicio-alternativas input[type="radio"]').forEach(input => {
+        input.addEventListener('change', verificarAtividade);
+    });
+
+    async function verificarAtividade() {
+        const questoes = document.querySelectorAll('.exercicio-alternativas');
+        const respondidas = document.querySelectorAll(
+            '.exercicio-alternativas input[type="radio"]:checked'
+        );
+
+        if (respondidas.length === questoes.length) {
+            try {
+                await fetch('/api/trilha/concluir', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        materia: 'sociologia',
+                        topico: 'desigualdade-social'
+                    })
+                });
+
+                alert('Atividade concluída! Seu progresso na Trilha de Estudos foi atualizado.');
+            } catch (erro) {
+                console.error('Erro ao atualizar progresso:', erro);
+            }
+        }
+    }
+</script>
+
+</body>
+</html>

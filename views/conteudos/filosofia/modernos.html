@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Pensadores Modernos - Saphius</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/views/conteudos/filosofia/filosofia.css">
+</head>
+<body>
+    <div class="app-container">
+        <aside class="sidebar">
+            <div class="sidebar-logo"><h2>Saphius</h2></div>
+            <ul class="sidebar-menu">
+                <li><a href="/dashboard"><span class="icon"></span> <span>Dashboard</span></a></li>
+                <li><a href="/conteudos"><span class="icon"></span> <span>Conteúdos</span></a></li>
+                <li><a href="/trilha"><span class="icon"></span> <span>Trilha de estudos</span></a></li>
+                <li><a href="/bemestar"><span class="icon"></span> <span>Bem-estar</span></a></li>
+                <li><a href="/perfil"><span class="icon"></span> <span>Perfil</span></a></li>
+                <li><a href="/configuracoes"><span class="icon"></span> <span>Configurações</span></a></li>
+                <li><a href="/ajuda"><span class="icon"></span> <span>Ajuda</span></a></li>
+                <li><a href="/sair"><span class="icon"></span> <span>Sair</span></a></li>
+            </ul>
+        </aside>
+
+        <main class="main-content">
+            <div class="container">
+                <a href="/filosofia" class="voltar">Voltar para Filosofia</a>
+
+                <h1 style="text-align:center; font-size:2.5em; color:#2e7d32;">Pensadores Modernos</h1>
+                <p style="color:#666; text-align:center; font-size:1.1em;">Descartes, Kant e Rousseau</p>
+
+                <div class="abas-navegacao" style="margin:25px 0;">
+                    <button class="aba-btn active" onclick="trocarAba(this, 'conteudo')">Conteúdo</button>
+                    <button class="aba-btn" onclick="trocarAba(this, 'exercicios')">Exercícios</button>
+                    <button class="aba-btn" onclick="trocarAba(this, 'resumo')">Resumo</button>
+                    <button class="aba-btn" onclick="trocarAba(this, 'simulado')">Simulado</button>
+                </div>
+
+                <div id="conteudo" class="aba-conteudo active">
+
+                    <div class="explicacao-detalhada">
+                        <h3>O que é a Filosofia Moderna?</h3>
+                        <p>
+                            A <strong>Filosofia Moderna</strong> é o período da filosofia que se desenvolveu entre os 
+                            séculos XVII e XIX, marcado pela <strong>razão</strong>, pela <strong>ciência</strong> 
+                            e pela <strong>crítica</strong>. Os principais pensadores são <strong>Descartes</strong> 
+                            (racionalismo), <strong>Kant</strong> (crítica) e <strong>Rousseau</strong> (contrato social). 
+                            A filosofia moderna rompeu com a tradição medieval e estabeleceu a razão como fundamento do conhecimento.
+                        </p>
+                        <div class="enem-dica">
+                            <strong>DICA ENEM:</strong>
+                            <p>A Filosofia Moderna é um tema recorrente no ENEM, especialmente questões sobre 
+                            <strong>Descartes</strong>, <strong>Kant</strong> e o <strong>Contrato Social</strong>.</p>
+                        </div>
+                    </div>
+
+                    <div class="explicacao-detalhada">
+                        <h3>René Descartes (1596-1650) - O Racionalista</h3>
+                        <ul>
+                            <li><strong>Racionalismo:</strong> A razão é a base do conhecimento verdadeiro. A dúvida é o caminho para a certeza.</li>
+                            <li><strong>Frase famosa:</strong> "Penso, logo existo" (Cogito, ergo sum). A primeira verdade indubitável.</li>
+                            <li><strong>Método:</strong> Dúvida metódica — duvidar de tudo para encontrar uma verdade indubitável.</li>
+                            <li><strong>Dualismo:</strong> O ser humano é composto de duas substâncias: a alma (res cogitans) e o corpo (res extensa).</li>
+                            <li><strong>Deus:</strong> Descartes argumenta que Deus existe e garante a veracidade do conhecimento.</li>
+                        </ul>
+                        <div class="enem-dica">
+                            <strong>DICA ENEM:</strong>
+                            <p>O ENEM cobra o <strong>racionalismo</strong> de Descartes e a frase <strong>"Penso, logo existo"</strong>.</p>
+                        </div>
+                    </div>
+
+                    <div class="explicacao-detalhada">
+                        <h3>Jean-Jacques Rousseau (1712-1778) - O Filósofo do Contrato Social</h3>
+                        <ul>
+                            <li><strong>Contrato Social:</strong> O poder emana do povo, e a vontade geral é a base da democracia. O Estado deve garantir a liberdade e a igualdade.</li>
+                            <li><strong>Vontade Geral:</strong> O bem comum deve prevalecer sobre os interesses individuais.</li>
+                            <li><strong>Natureza humana:</strong> O ser humano é bom por natureza, mas a sociedade o corrompe. A educação deve preservar a bondade natural.</li>
+                            <li><strong>Liberdade:</strong> "O homem nasce livre, e por toda a parte encontra-se a ferros". A liberdade é um direito natural.</li>
+                            <li><strong>Influência:</strong> Suas ideias influenciaram a Revolução Francesa e a democracia moderna.</li>
+                        </ul>
+                        <div class="enem-dica">
+                            <strong>DICA ENEM:</strong>
+                            <p>O ENEM cobra o <strong>Contrato Social</strong> de Rousseau e a ideia de <strong>vontade geral</strong>.</p>
+                        </div>
+                    </div>
+
+                    <div class="explicacao-detalhada">
+                        <h3>Immanuel Kant (1724-1804) - O Filósofo da Crítica</h3>
+                        <ul>
+                            <li><strong>Crítica da Razão Pura:</strong> A razão tem limites; o conhecimento depende da experiência e das categorias do entendimento.</li>
+                            <li><strong>Imperativo Categórico:</strong> "Aja de forma que sua ação possa se tornar uma lei universal." A ética é baseada no dever, não nas consequências.</li>
+                            <li><strong>Iluminismo:</strong> "Sapere aude!" (Ouse saber!). Kant defende o uso da razão pública.</li>
+                            <li><strong>Fenômeno e Númeno:</strong> Conhecemos apenas o fenômeno (a aparência), não o númeno (a coisa em si).</li>
+                            <li><strong>Paz Perpétua:</strong> Kant defende a paz entre as nações através de um governo republicano e da cooperação internacional.</li>
+                        </ul>
+                        <div class="enem-dica">
+                            <strong>DICA ENEM:</strong>
+                            <p>O ENEM cobra o <strong>Imperativo Categórico</strong> de Kant e a <strong>Crítica da Razão Pura</strong>.</p>
+                        </div>
+                    </div>
+
+                    <div class="explicacao-detalhada">
+                        <h3>Comparação entre os Pensadores</h3>
+                        <ul>
+                            <li><strong>Descartes:</strong> Racionalismo. O conhecimento é inato e a razão é a fonte da verdade.</li>
+                            <li><strong>Rousseau:</strong> Democracia. O poder emana do povo e a sociedade deve ser organizada pela vontade geral.</li>
+                            <li><strong>Kant:</strong> Crítica. A razão tem limites, mas é fundamental para a ética e o conhecimento.</li>
+                        </ul>
+                        <div class="enem-dica">
+                            <strong>DICA ENEM:</strong>
+                            <p>Entenda a diferença entre <strong>Descartes (Racionalismo)</strong>, <strong>Rousseau (Contrato Social)</strong> e <strong>Kant (Crítica)</strong>.</p>
+                        </div>
+                    </div>
+
+                    <div class="dica-saphius">
+                        <h3>Dica Saphius</h3>
+                        <p>
+                            Entenda a diferença entre <strong>Descartes (Racionalismo)</strong>, <strong>Rousseau (Contrato Social)</strong> e <strong>Kant (Crítica)</strong> para responder questões sobre Filosofia Moderna. Memorize: <strong>"Descartes + Rousseau + Kant = Pensadores Modernos"</strong>.
+                        </p>
+                    </div>
+                </div>
+
+                <div id="exercicios" class="aba-conteudo">
+                    <h2 style="color:#2e7d32;">Exercícios - Pensadores Modernos</h2>
+                    <p style="color:#666;">15 questões (5 Fáceis, 5 Médias, 5 Difíceis)</p>
+
+                    <!-- 5 FÁCEIS -->
+                    <div class="exercicio-facil">
+                        <span class="badge">FÁCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>1.</strong> A frase "Penso, logo existo" é de:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q1"> a) Kant</label>
+                            <label><input type="radio" name="q1"> b) Rousseau</label>
+                            <label><input type="radio" name="q1"> c) Descartes</label>
+                            <label><input type="radio" name="q1"> d) Platão</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: C) Descartes</strong></p>
+                            <p><strong>Explicação:</strong> A frase "Penso, logo existo" (Cogito, ergo sum) é de René Descartes.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-facil">
+                        <span class="badge">FÁCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>2.</strong> O Contrato Social é uma obra de:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q2"> a) Descartes</label>
+                            <label><input type="radio" name="q2"> b) Rousseau</label>
+                            <label><input type="radio" name="q2"> c) Kant</label>
+                            <label><input type="radio" name="q2"> d) Maquiavel</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: B) Rousseau</strong></p>
+                            <p><strong>Explicação:</strong> O livro "O Contrato Social" foi escrito por Jean-Jacques Rousseau.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-facil">
+                        <span class="badge">FÁCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>3.</strong> O Imperativo Categórico é um conceito de:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q3"> a) Descartes</label>
+                            <label><input type="radio" name="q3"> b) Rousseau</label>
+                            <label><input type="radio" name="q3"> c) Kant</label>
+                            <label><input type="radio" name="q3"> d) Aristóteles</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: C) Kant</strong></p>
+                            <p><strong>Explicação:</strong> O Imperativo Categórico é o princípio ético de Immanuel Kant.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-facil">
+                        <span class="badge">FÁCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>4.</strong> O que é a "dúvida metódica" de Descartes?</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q4"> a) Duvidar de tudo para encontrar uma verdade indubitável</label>
+                            <label><input type="radio" name="q4"> b) Aceitar tudo como verdade</label>
+                            <label><input type="radio" name="q4"> c) Negar a existência de Deus</label>
+                            <label><input type="radio" name="q4"> d) Defender a política</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: A) Duvidar de tudo para encontrar uma verdade indubitável</strong></p>
+                            <p><strong>Explicação:</strong> A dúvida metódica de Descartes consiste em duvidar de tudo para encontrar uma verdade indubitável.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-facil">
+                        <span class="badge">FÁCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>5.</strong> O lema do Iluminismo, "Sapere aude!", significa:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q5"> a) "Ouse saber!"</label>
+                            <label><input type="radio" name="q5"> b) "Penso, logo existo"</label>
+                            <label><input type="radio" name="q5"> c) "Aja conforme a lei"</label>
+                            <label><input type="radio" name="q5"> d) "Conhece-te a ti mesmo"</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: A) "Ouse saber!"</strong></p>
+                            <p><strong>Explicação:</strong> O lema do Iluminismo, "Sapere aude!", significa "Ouse saber!" e incentiva o uso da razão.</p>
+                        </div>
+                    </div>
+
+                    <!-- 5 MÉDIAS -->
+                    <div class="exercicio-medio">
+                        <span class="badge">MÉDIO</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>6.</strong> (ENEM) O racionalismo de Descartes defende que:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q6"> a) O conhecimento vem da experiência</label>
+                            <label><input type="radio" name="q6"> b) A razão é a base do conhecimento</label>
+                            <label><input type="radio" name="q6"> c) A fé é a base do conhecimento</label>
+                            <label><input type="radio" name="q6"> d) A política é a base do conhecimento</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: B) A razão é a base do conhecimento</strong></p>
+                            <p><strong>Explicação:</strong> O racionalismo de Descartes defende que a razão é a base do conhecimento verdadeiro.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-medio">
+                        <span class="badge">MÉDIO</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>7.</strong> (ENEM) A "vontade geral" de Rousseau defende que:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q7"> a) O interesse individual é mais importante</label>
+                            <label><input type="radio" name="q7"> b) O bem comum deve prevalecer</label>
+                            <label><input type="radio" name="q7"> c) A política é desnecessária</label>
+                            <label><input type="radio" name="q7"> d) O poder deve ser centralizado</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: B) O bem comum deve prevalecer</strong></p>
+                            <p><strong>Explicação:</strong> Rousseau defendia que a vontade geral representa o bem comum e deve prevalecer.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-medio">
+                        <span class="badge">MÉDIO</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>8.</strong> (ENEM) Kant defende que o conhecimento é baseado na:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q8"> a) Razão e na experiência</label>
+                            <label><input type="radio" name="q8"> b) Fé e na tradição</label>
+                            <label><input type="radio" name="q8"> c) Política e na moral</label>
+                            <label><input type="radio" name="q8"> d) Ciência e na religião</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: A) Razão e na experiência</strong></p>
+                            <p><strong>Explicação:</strong> Kant defendia que o conhecimento é baseado na razão e na experiência (Crítica da Razão Pura).</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-medio">
+                        <span class="badge">MÉDIO</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>9.</strong> (ENEM) O Contrato Social de Rousseau influenciou:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q9"> a) A monarquia</label>
+                            <label><input type="radio" name="q9"> b) A democracia</label>
+                            <label><input type="radio" name="q9"> c) A ditadura</label>
+                            <label><input type="radio" name="q9"> d) O feudalismo</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: B) A democracia</strong></p>
+                            <p><strong>Explicação:</strong> O Contrato Social de Rousseau influenciou a democracia e a participação popular.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-medio">
+                        <span class="badge">MÉDIO</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>10.</strong> (ENEM) O Imperativo Categórico de Kant afirma que:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q10"> a) Devemos agir de acordo com a utilidade</label>
+                            <label><input type="radio" name="q10"> b) Devemos agir de forma que nossa ação possa se tornar uma lei universal</label>
+                            <label><input type="radio" name="q10"> c) Devemos agir conforme a tradição</label>
+                            <label><input type="radio" name="q10"> d) Devemos agir com emoção</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: B) Devemos agir de forma que nossa ação possa se tornar uma lei universal</strong></p>
+                            <p><strong>Explicação:</strong> O Imperativo Categórico exige que ajamos de forma que nossa ação possa se tornar uma lei universal.</p>
+                        </div>
+                    </div>
+
+                    <!-- 5 DIFÍCEIS -->
+                    <div class="exercicio-dificil">
+                        <span class="badge">DIFÍCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>11.</strong> (ENEM) A diferença entre Descartes e Kant é que:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q11"> a) Descartes era empirista e Kant racionalista</label>
+                            <label><input type="radio" name="q11"> b) Descartes defendia a razão pura e Kant a razão prática</label>
+                            <label><input type="radio" name="q11"> c) Descartes negava a razão e Kant valorizava a experiência</label>
+                            <label><input type="radio" name="q11"> d) Descartes era político e Kant ético</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: B) Descartes defendia a razão pura e Kant a razão prática</strong></p>
+                            <p><strong>Explicação:</strong> Descartes defendia a razão pura como base do conhecimento, enquanto Kant valorizava a razão prática e a experiência.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-dificil">
+                        <span class="badge">DIFÍCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>12.</strong> (ENEM) A Crítica da Razão Pura de Kant é importante porque:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q12"> a) Defendeu a fé como base do conhecimento</label>
+                            <label><input type="radio" name="q12"> b) Estabeleceu os limites da razão humana</label>
+                            <label><input type="radio" name="q12"> c) Negou a existência de Deus</label>
+                            <label><input type="radio" name="q12"> d) Defendeu a monarquia</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: B) Estabeleceu os limites da razão humana</strong></p>
+                            <p><strong>Explicação:</strong> A Crítica da Razão Pura de Kant estabeleceu os limites da razão humana e a importância da experiência.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-dificil">
+                        <span class="badge">DIFÍCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>13.</strong> (ENEM) Rousseau defendia que a sociedade corrompe o ser humano, que é:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q13"> a) Bom por natureza</label>
+                            <label><input type="radio" name="q13"> b) Mau por natureza</label>
+                            <label><input type="radio" name="q13"> c) Neutro por natureza</label>
+                            <label><input type="radio" name="q13"> d) Racional por natureza</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: A) Bom por natureza</strong></p>
+                            <p><strong>Explicação:</strong> Rousseau defendia que o ser humano é bom por natureza, mas a sociedade o corrompe.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-dificil">
+                        <span class="badge">DIFÍCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>14.</strong> (ENEM) O Iluminismo, do qual Kant faz parte, defendia:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q14"> a) O uso da razão e a crítica às tradições</label>
+                            <label><input type="radio" name="q14"> b) A aceitação das tradições</label>
+                            <label><input type="radio" name="q14"> c) A defesa da monarquia absoluta</label>
+                            <label><input type="radio" name="q14"> d) A negação da ciência</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: A) O uso da razão e a crítica às tradições</strong></p>
+                            <p><strong>Explicação:</strong> O Iluminismo defendia o uso da razão e a crítica às tradições e ao autoritarismo.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-dificil">
+                        <span class="badge">DIFÍCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>15.</strong> (ENEM) O "Cogito, ergo sum" ("Penso, logo existo") foi a base para o:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q15"> a) Empirismo</label>
+                            <label><input type="radio" name="q15"> b) Racionalismo</label>
+                            <label><input type="radio" name="q15"> c) Idealismo</label>
+                            <label><input type="radio" name="q15"> d) Materialismo</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: B) Racionalismo</strong></p>
+                            <p><strong>Explicação:</strong> O "Cogito, ergo sum" é a base do racionalismo de Descartes.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="resumo" class="aba-conteudo">
+                    <div class="resumo-principal">
+                        <h2 class="resumo-titulo">Resumo - Pensadores Modernos</h2>
+                        <p class="resumo-subtitulo">Principais pontos para memorizar</p>
+
+                        <div class="resumo-grid">
+                            <div class="resumo-card-item">
+                                <h3>Descartes</h3>
+                                <p>"Penso, logo existo", Dúvida metódica</p>
+                                <span class="resumo-tag">Racionalismo</span>
+                            </div>
+                            <div class="resumo-card-item">
+                                <h3>Rousseau</h3>
+                                <p>Contrato Social, Vontade Geral</p>
+                                <span class="resumo-tag">Democracia</span>
+                            </div>
+                            <div class="resumo-card-item">
+                                <h3>Kant</h3>
+                                <p>Imperativo Categórico, Crítica da Razão Pura</p>
+                                <span class="resumo-tag">Iluminismo</span>
+                            </div>
+                            <div class="resumo-card-item">
+                                <h3>Racionalismo</h3>
+                                <p>A razão é a base do conhecimento</p>
+                                <span class="resumo-tag">Descartes</span>
+                            </div>
+                            <div class="resumo-card-item">
+                                <h3>Contrato Social</h3>
+                                <p>O poder emana do povo</p>
+                                <span class="resumo-tag">Rousseau</span>
+                            </div>
+                            <div class="resumo-card-item">
+                                <h3>Imperativo Categórico</h3>
+                                <p>Aja de forma que sua ação possa se tornar uma lei universal</p>
+                                <span class="resumo-tag">Kant</span>
+                            </div>
+                        </div>
+
+                        <div class="resumo-dica-final">
+                            <h4>Dica Saphius</h4>
+                            <p>Memorize: <strong>"Descartes + Rousseau + Kant = Pensadores Modernos"</strong></p>
+                        </div>
+
+                        <div class="resumo-dica-enem">
+                            <h4>Dica ENEM</h4>
+                            <p>Atenção para os termos <strong>"Cogito"</strong>, <strong>"Contrato Social"</strong> e <strong>"Imperativo Categórico"</strong>.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="simulado" class="aba-conteudo">
+                    <h2 style="color:#2e7d32;">Simulado - Pensadores Modernos</h2>
+                    <p style="color:#666;">Teste seus conhecimentos com questões estilo ENEM</p>
+                    <div class="simulado-card">
+                        <div style="display:flex; gap:20px; flex-wrap:wrap; justify-content:center; margin-bottom:15px;">
+                            <span><strong>15 questões</strong></span>
+                            <span><strong>20 minutos</strong></span>
+                            <span><strong>Nível: Fácil a Difícil</strong></span>
+                        </div>
+                        <p style="color:#555; margin-bottom:15px;">As questões são as mesmas da aba "Exercícios" acima.</p>
+                        <button class="btn-principal" onclick="alert('Simulado iniciado! Responda todas as 15 questões acima na aba Exercícios.')">
+                            Iniciar simulado
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script>
+    function trocarAba(botao, abaId) {
+        document.querySelectorAll('.aba-btn').forEach(b => b.classList.remove('active'));
+        botao.classList.add('active');
+
+        document.querySelectorAll('.aba-conteudo').forEach(c => c.classList.remove('active'));
+        document.getElementById(abaId).classList.add('active');
+    }
+
+    function mostrarResposta(botao) {
+        const exercicioDiv = botao.closest('.exercicio-facil, .exercicio-medio, .exercicio-dificil');
+        const respostaDiv = exercicioDiv.querySelector('.resposta-explicada');
+
+        if (respostaDiv.style.display === 'block') {
+            respostaDiv.style.display = 'none';
+            botao.textContent = 'Ver explicação';
+        } else {
+            respostaDiv.style.display = 'block';
+            botao.textContent = 'Ocultar explicação';
+        }
+    }
+
+    document.querySelectorAll('.exercicio-alternativas input[type="radio"]').forEach(input => {
+        input.addEventListener('change', verificarAtividade);
+    });
+
+    async function verificarAtividade() {
+        const questoes = document.querySelectorAll('.exercicio-alternativas');
+        const respondidas = document.querySelectorAll(
+            '.exercicio-alternativas input[type="radio"]:checked'
+        );
+
+        if (respondidas.length === questoes.length) {
+            try {
+                await fetch('/api/trilha/concluir', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        materia: 'filosofia',
+                        topico: 'modernos'
+                    })
+                });
+
+                alert('Atividade concluída! Seu progresso na Trilha de Estudos foi atualizado.');
+            } catch (erro) {
+                console.error('Erro ao atualizar progresso:', erro);
+            }
+        }
+    }
+</script>
+
+</body>
+</html>

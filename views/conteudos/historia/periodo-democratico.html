@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Período Democrático - Saphius</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/views/conteudos/historia/historia.css">
+</head>
+<body>
+    <div class="app-container">
+        <aside class="sidebar">
+            <div class="sidebar-logo"><h2>Saphius</h2></div>
+            <ul class="sidebar-menu">
+                <li><a href="/dashboard"><span class="icon"></span> <span>Dashboard</span></a></li>
+                <li><a href="/conteudos"><span class="icon"></span> <span>Conteúdos</span></a></li>
+                <li><a href="/trilha"><span class="icon"></span> <span>Trilha de estudos</span></a></li>
+                <li><a href="/bemestar"><span class="icon"></span> <span>Bem-estar</span></a></li>
+                <li><a href="/perfil"><span class="icon"></span> <span>Perfil</span></a></li>
+                <li><a href="/configuracoes"><span class="icon"></span> <span>Configurações</span></a></li>
+                <li><a href="/ajuda"><span class="icon"></span> <span>Ajuda</span></a></li>
+                <li><a href="/sair"><span class="icon"></span> <span>Sair</span></a></li>
+            </ul>
+        </aside>
+
+        <main class="main-content">
+            <div class="container">
+                <a href="/historia" class="voltar"> Voltar para História</a>
+
+                <h1 style="text-align:center; font-size:2.5em; color:#2e7d32;">Período Democrático (1945-1964)</h1>
+                <p style="color:#666; text-align:center; font-size:1.1em;">Democratização, Populismo, Desenvolvimento e Golpe Militar</p>
+
+                <!-- ABAS -->
+                <div class="abas-navegacao" style="margin:25px 0;">
+                    <button class="aba-btn active" onclick="trocarAba(this, 'conteudo')">Conteúdo</button>
+                    <button class="aba-btn" onclick="trocarAba(this, 'exercicios')">Exercícios</button>
+                    <button class="aba-btn" onclick="trocarAba(this, 'resumo')">Resumo</button>
+                    <button class="aba-btn" onclick="trocarAba(this, 'simulado')">Simulado</button>
+                </div>
+
+                <!-- ===== CONTEÚDO ===== -->
+                <div id="conteudo" class="aba-conteudo active">
+
+                    <!-- INTRODUÇÃO -->
+                    <div class="explicacao-detalhada">
+                        <h3>Introdução: O que foi o Período Democrático?</h3>
+                        <p>
+                            O <strong>Período Democrático (1945-1964)</strong> foi uma fase da história do Brasil 
+                            marcada pela <strong>redemocratização</strong> após o fim do Estado Novo, com a 
+                            eleição de presidentes e o retorno do regime democrático.
+                        </p>
+                        <p>
+                            Este período começou com a <span class="data-destaque">deposição de Getúlio Vargas em 1945</span> 
+                            e terminou com o <span class="data-destaque">Golpe Militar de 1964</span>, que instaurou 
+                            a Ditadura Militar. Foi uma época de <strong>populismo</strong>, <strong>desenvolvimento</strong> 
+                            e <strong>crises políticas</strong>.
+                        </p>
+                        <div class="enem-dica">
+                            <strong>DICA ENEM:</strong>
+                            <p>O Período Democrático é um tema recorrente no ENEM. Questões sobre o 
+                            <strong>populismo</strong>, o <strong>nacional-desenvolvimentismo</strong> e o 
+                            <strong>Golpe de 1964</strong> aparecem com frequência.</p>
+                        </div>
+                    </div>
+
+                    <!-- LINHA DO TEMPO -->
+                    <div style="margin:30px 0;">
+                        <h2 style="color:#2e7d32;">Linha do Tempo - Período Democrático</h2>
+                        <div class="linha-tempo-detailed">
+                            <div class="evento">
+                                <span class="ano">1945</span>
+                                <div class="descricao">
+                                    <strong>Fim do Estado Novo</strong> — Vargas é deposto por um golpe militar, 
+                                    iniciando a redemocratização.
+                                </div>
+                            </div>
+                            <div class="evento">
+                                <span class="ano">1946</span>
+                                <div class="descricao">
+                                    <strong>Constituição de 1946</strong> — Nova constituição democrática, 
+                                    com direitos trabalhistas e liberdade partidária.
+                                </div>
+                            </div>
+                            <div class="evento">
+                                <span class="ano">1951-1954</span>
+                                <div class="descricao">
+                                    <strong>Governo Vargas (1951-1954)</strong> — Vargas retorna ao poder 
+                                    pelo voto, com foco no nacionalismo e nas reformas.
+                                </div>
+                            </div>
+                            <div class="evento">
+                                <span class="ano">1954</span>
+                                <div class="descricao">
+                                    <strong>Suicídio de Vargas</strong> — 24 de agosto, Vargas comete suicídio 
+                                    com uma carta-testamento.
+                                </div>
+                            </div>
+                            <div class="evento">
+                                <span class="ano">1956-1961</span>
+                                <div class="descricao">
+                                    <strong>Governo JK (Juscelino Kubitschek)</strong> — Plano de Metas, 
+                                    construção de Brasília e "50 anos em 5".
+                                </div>
+                            </div>
+                            <div class="evento">
+                                <span class="ano">1961</span>
+                                <div class="descricao">
+                                    <strong>Governo Jânio Quadros</strong> — Renúncia após apenas 7 meses de governo.
+                                </div>
+                            </div>
+                            <div class="evento">
+                                <span class="ano">1961-1964</span>
+                                <div class="descricao">
+                                    <strong>Governo João Goulart (Jango)</strong> — Último presidente do período, 
+                                    defendeu reformas de base e foi deposto pelo golpe de 1964.
+                                </div>
+                            </div>
+                            <div class="evento">
+                                <span class="ano">1964</span>
+                                <div class="descricao">
+                                    <strong>Golpe Militar</strong> — 31 de março, derruba Jango e inicia a 
+                                    Ditadura Militar.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SEÇÃO 1 -->
+                    <div class="explicacao-detalhada">
+                        <h3>1. A Redemocratização (1945-1946)</h3>
+                        <p>
+                            Com a <strong>deposição de Getúlio Vargas</strong> em 29 de outubro de 1945, 
+                            o Brasil iniciou um processo de redemocratização. O general <strong>Eurico Gaspar Dutra</strong> 
+                            foi eleito presidente em 1945, e uma nova constituição foi promulgada em 1946.
+                        </p>
+                        <p>
+                            <strong>Características da Constituição de 1946:</strong>
+                            <ul>
+                                <li>Restabelecimento do <strong>regime democrático</strong>.</li>
+                                <li>Garantia das <strong>liberdades individuais</strong> e do <strong>pluripartidarismo</strong>.</li>
+                                <li>Manutenção dos <strong>direitos trabalhistas</strong> conquistados na Era Vargas.</li>
+                                <li>Fim da censura e da centralização do poder.</li>
+                            </ul>
+                        </p>
+                        <div class="enem-dica">
+                            <strong>DICA ENEM:</strong>
+                            <p>A Constituição de 1946 representa o <strong>restabelecimento da democracia</strong> 
+                            após o Estado Novo. O ENEM cobra as diferenças entre a Constituição de 1946 e a de 1937.</p>
+                        </div>
+                    </div>
+
+                    <!-- SEÇÃO 2 -->
+                    <div class="explicacao-detalhada">
+                        <h3>2. O Governo Eurico Gaspar Dutra (1946-1951)</h3>
+                        <p>
+                            <strong>Eurico Gaspar Dutra</strong> foi o primeiro presidente eleito após a redemocratização. 
+                            Seu governo foi marcado pelo <strong>alinhamento com os EUA</strong> durante a Guerra Fria 
+                            e pelo <strong>nacionalismo moderado</strong>.
+                        </p>
+                        <p>
+                            <strong>Principais ações:</strong>
+                            <ul>
+                                <li><strong>Alinhamento com os EUA</strong> — Dutra adotou uma política externa 
+                                favorável aos EUA.</li>
+                                <li><strong>Plano Salte</strong> — Plano de desenvolvimento econômico focado em 
+                                saúde, alimentação, transporte e energia.</li>
+                                <li><strong>Fim da censura</strong> — Restabelecimento da liberdade de imprensa.</li>
+                                <li><strong>Crescimento da indústria</strong> — Apesar da política liberal, a indústria 
+                                cresceu durante o período.</li>
+                            </ul>
+                        </p>
+                        <div class="enem-dica">
+                            <strong>DICA ENEM:</strong>
+                            <p>O governo Dutra é um exemplo de <strong>democracia liberal</strong> no período pós-Vargas. 
+                            O ENEM cobra a política externa e o desenvolvimento econômico da época.</p>
+                        </div>
+                    </div>
+
+                    <!-- SEÇÃO 3 -->
+                    <div class="explicacao-detalhada">
+                        <h3>3. O Retorno de Vargas (1951-1954)</h3>
+                        <p>
+                            Em 1951, <strong>Getúlio Vargas</strong> retornou ao poder, desta vez eleito pelo voto popular. 
+                            Seu governo foi marcado pelo <strong>nacionalismo</strong> e pela <strong>defesa dos trabalhadores</strong>.
+                        </p>
+                        <p>
+                            <strong>Principais ações do governo Vargas (1951-1954):</strong>
+                            <ul>
+                                <li><strong>Nacionalismo:</strong> Criação da <strong>Petrobras</strong> em 1953, 
+                                com o monopólio do petróleo.</li>
+                                <li><strong>Nacional-desenvolvimentismo:</strong> Incentivo à indústria nacional e 
+                                às reformas estruturais.</li>
+                                <li><strong>Aumento do salário mínimo</strong> e <strong>reformas trabalhistas</strong>.</li>
+                                <li><strong>Crise política:</strong> Oposição de setores conservadores, da imprensa e dos militares.</li>
+                            </ul>
+                        </p>
+                        <p>
+                            <strong>O Suicídio de Vargas (24 de agosto de 1954):</strong>
+                            <ul>
+                                <li>Vargas cometeu <strong>suicídio</strong> com um tiro no peito, no Palácio do Catete.</li>
+                                <li>Deixou uma <strong>carta-testamento</strong> que se tornou um dos documentos mais 
+                                importantes da história do Brasil.</li>
+                                <li>Na carta, Vargas criticava seus opositores e se colocava como "defensor dos trabalhadores".</li>
+                            </ul>
+                        </p>
+                        <div class="revolta-card">
+                            <h4>Carta-Testamento de Getúlio Vargas (1954)</h4>
+                            <p>
+                                <strong>Data:</strong> 24 de agosto de 1954<br>
+                                <strong>Contexto:</strong> Vargas comete suicídio, deixando uma carta ao povo brasileiro.<br>
+                                <strong>Frase célebre:</strong> "Saio da vida para entrar na história."<br>
+                                <strong>Significado:</strong> A carta se tornou um símbolo do trabalhismo e da luta popular.
+                            </p>
+                            <div class="enem-dica" style="margin-top:10px;">
+                                <strong>DICA ENEM:</strong>
+                                <p>O suicídio de Vargas e a carta-testamento são cobrados no ENEM como 
+                                exemplo da <strong>crise política</strong> e do <strong>populismo</strong> no Brasil.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SEÇÃO 4 -->
+                    <div class="explicacao-detalhada">
+                        <h3>4. O Governo JK (1956-1961) - "50 anos em 5"</h3>
+                        <p>
+                            <strong>Juscelino Kubitschek (JK)</strong> foi eleito presidente em 1956 e governou 
+                            com o lema <strong>"50 anos em 5"</strong>, prometendo acelerar o desenvolvimento do país.
+                        </p>
+                        <p>
+                            <strong>Principais ações do governo JK:</strong>
+                            <ul>
+                                <li><strong>Plano de Metas:</strong> Investimentos em energia, transporte, indústria, 
+                                alimentação e educação.</li>
+                                <li><strong>Construção de Brasília:</strong> A nova capital federal, construída em 
+                                apenas 3 anos e inaugurada em 1960.</li>
+                                <li><strong>Expansão da indústria automobilística</strong> com a instalação de 
+                                montadoras como Volkswagen e Ford.</li>
+                                <li><strong>Rodovias:</strong> Construção de estradas para integrar o país.</li>
+                            </ul>
+                        </p>
+                        <p>
+                            <strong>A Política Desenvolvimentista:</strong>
+                            <ul>
+                                <li><strong>Nacional-desenvolvimentismo:</strong> O Estado incentivava a indústria 
+                                e a infraestrutura.</li>
+                                <li><strong>Investimento estrangeiro:</strong> JK atraiu investimentos internacionais 
+                                para o país.</li>
+                                <li><strong>Crescimento do PIB:</strong> O Brasil cresceu a taxas elevadas durante 
+                                o governo de JK.</li>
+                            </ul>
+                        </p>
+                        <div class="enem-dica">
+                            <strong>DICA ENEM:</strong>
+                            <p>O governo JK e a construção de Brasília são temas frequentes no ENEM. 
+                            Relacione o <strong>nacional-desenvolvimentismo</strong> com o <strong>crescimento econômico</strong> 
+                            e a <strong>desigualdade regional</strong>.</p>
+                        </div>
+                    </div>
+
+                    <!-- SEÇÃO 5 -->
+                    <div class="explicacao-detalhada">
+                        <h3>5. O Governo Jânio Quadros (1961) - A Renúncia</h3>
+                        <p>
+                            <strong>Jânio Quadros</strong> foi eleito presidente em 1961, mas renunciou após 
+                            apenas <strong>7 meses</strong> de governo, em 25 de agosto de 1961.
+                        </p>
+                        <p>
+                            <strong>Características do governo de Jânio:</strong>
+                            <ul>
+                                <li><strong>Populismo:</strong> Jânio se apresentava como defensor dos trabalhadores, 
+                                mas sem grandes realizações.</li>
+                                <li><strong>Política externa independente:</strong> Aproximação com Cuba e URSS, 
+                                o que incomodou os EUA e os militares.</li>
+                                <li><strong>Medidas econômicas:</strong> Tentou controlar a inflação e o déficit público, 
+                                mas sem sucesso.</li>
+                                <li><strong>Renúncia:</strong> Jânio renunciou, alegando "forças ocultas" que o impediam 
+                                de governar.</li>
+                            </ul>
+                        </p>
+                        <div class="enem-dica">
+                            <strong>DICA ENEM:</strong>
+                            <p>A renúncia de Jânio Quadros é um dos momentos mais surpreendentes da história do Brasil. 
+                            O ENEM cobra as causas da renúncia e a crise política que se seguiu.</p>
+                        </div>
+                    </div>
+
+                    <!-- SEÇÃO 6 -->
+                    <div class="explicacao-detalhada">
+                        <h3>6. O Governo João Goulart (1961-1964)</h3>
+                        <p>
+                            Com a renúncia de Jânio, assumiu seu vice, <strong>João Goulart (Jango)</strong>. 
+                            Ele governou em um período de <strong>crise política</strong> e <strong>tensões sociais</strong>.
+                        </p>
+                        <p>
+                            <strong>Características do governo Jango:</strong>
+                            <ul>
+                                <li><strong>Reformas de base:</strong> Jango defendia reformas agrária, urbana, 
+                                tributária e educacional.</li>
+                                <li><strong>Nacionalismo:</strong> Defesa dos recursos naturais e das empresas 
+                                estatais.</li>
+                                <li><strong>Comícios e manifestações:</strong> Jango fez grandes comícios, como o 
+                                Comício da Central (RJ), defendendo as reformas.</li>
+                                <li><strong>Crise política:</strong> Oposição de setores conservadores, da imprensa 
+                                e dos militares.</li>
+                            </ul>
+                        </p>
+                        <p>
+                            <strong>Golpe Militar de 1964:</strong>
+                            <ul>
+                                <li>Em <span class="data-destaque">31 de março de 1964</span>, os militares derrubaram 
+                                Jango, iniciando a Ditadura Militar.</li>
+                                <li>Jango exilou-se no Uruguai, onde viveu até 1976.</li>
+                                <li>O golpe teve apoio dos EUA e de setores conservadores da sociedade.</li>
+                            </ul>
+                        </p>
+                        <div class="revolta-card">
+                            <h4>Golpe Militar de 1964</h4>
+                            <p>
+                                <strong>Data:</strong> 31 de março de 1964<br>
+                                <strong>Contexto:</strong> Derrubada do presidente João Goulart (Jango).<br>
+                                <strong>Desfecho:</strong> Início da Ditadura Militar, que durou até 1985.<br>
+                                <strong>Consequência:</strong> Fim do Período Democrático (1945-1964).
+                            </p>
+                            <div class="enem-dica" style="margin-top:10px;">
+                                <strong>DICA ENEM:</strong>
+                                <p>O Golpe de 1964 é um dos temas mais cobrados no ENEM. Entenda as 
+                                <strong>causas</strong> e as <strong>consequências</strong> do golpe para 
+                                a história do Brasil.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- DICA FINAL -->
+                    <div class="dica-saphius">
+                        <h3>Dica Saphius</h3>
+                        <p>
+                            Memorize: <strong>"Período Democrático = 45-64 = Dutra + Vargas + JK + Jânio + Jango"</strong>. 
+                            Entenda a <strong>transição da democracia para a ditadura</strong> e os 
+                            <strong>movimentos populistas</strong> do período.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- ===== EXERCÍCIOS ===== -->
+                <div id="exercicios" class="aba-conteudo">
+                    <h2 style="color:#2e7d32;">Exercícios - Período Democrático</h2>
+                    <p style="color:#666;">15 questões (5 Fáceis, 5 Médias, 5 Difíceis)</p>
+
+                    <!-- ===== 5 FÁCEIS ===== -->
+                    <div class="exercicio-facil">
+                        <span class="badge">FÁCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>1.</strong> Em que ano Getúlio Vargas foi deposto, iniciando a redemocratização?</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q1"> a) 1943</label>
+                            <label><input type="radio" name="q1"> b) 1945</label>
+                            <label><input type="radio" name="q1"> c) 1946</label>
+                            <label><input type="radio" name="q1"> d) 1947</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: B) 1945</strong></p>
+                            <p><strong>Explicação:</strong> Vargas foi deposto em 29 de outubro de 1945, iniciando o processo de redemocratização.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-facil">
+                        <span class="badge">FÁCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>2.</strong> Qual foi o lema do governo Juscelino Kubitschek (JK)?</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q2"> a) "Ordem e Progresso"</label>
+                            <label><input type="radio" name="q2"> b) "50 anos em 5"</label>
+                            <label><input type="radio" name="q2"> c) "Trabalho e Progresso"</label>
+                            <label><input type="radio" name="q2"> d) "Desenvolvimento e Democracia"</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: B) "50 anos em 5"</strong></p>
+                            <p><strong>Explicação:</strong> JK prometeu acelerar o desenvolvimento do Brasil, resumindo em "50 anos em 5" o progresso do país.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-facil">
+                        <span class="badge">FÁCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>3.</strong> Quem foi o presidente que renunciou após 7 meses de governo em 1961?</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q3"> a) Juscelino Kubitschek</label>
+                            <label><input type="radio" name="q3"> b) Jânio Quadros</label>
+                            <label><input type="radio" name="q3"> c) João Goulart</label>
+                            <label><input type="radio" name="q3"> d) Getúlio Vargas</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: B) Jânio Quadros</strong></p>
+                            <p><strong>Explicação:</strong> Jânio Quadros renunciou à presidência em 25 de agosto de 1961, após apenas 7 meses de governo.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-facil">
+                        <span class="badge">FÁCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>4.</strong> Em que ano foi inaugurada a cidade de Brasília?</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q4"> a) 1958</label>
+                            <label><input type="radio" name="q4"> b) 1960</label>
+                            <label><input type="radio" name="q4"> c) 1962</label>
+                            <label><input type="radio" name="q4"> d) 1964</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: B) 1960</strong></p>
+                            <p><strong>Explicação:</strong> Brasília foi inaugurada em 21 de abril de 1960, durante o governo de Juscelino Kubitschek.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-facil">
+                        <span class="badge">FÁCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>5.</strong> Em que ano ocorreu o Golpe Militar que iniciou a Ditadura Militar?</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q5"> a) 1963</label>
+                            <label><input type="radio" name="q5"> b) 1964</label>
+                            <label><input type="radio" name="q5"> c) 1965</label>
+                            <label><input type="radio" name="q5"> d) 1966</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: B) 1964</strong></p>
+                            <p><strong>Explicação:</strong> O Golpe Militar ocorreu em 31 de março de 1964, derrubando o presidente João Goulart.</p>
+                        </div>
+                    </div>
+
+                    <!-- ===== 5 MÉDIAS ===== -->
+                    <div class="exercicio-medio">
+                        <span class="badge">MÉDIO</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>6.</strong> (ENEM) A Constituição de 1946 foi importante porque:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q6"> a) Restabeleceu a democracia no Brasil</label>
+                            <label><input type="radio" name="q6"> b) Criou a CLT</label>
+                            <label><input type="radio" name="q6"> c) Instituiu o voto feminino</label>
+                            <label><input type="radio" name="q6"> d) Estabeleceu o Estado Novo</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: A) Restabeleceu a democracia no Brasil</strong></p>
+                            <p><strong>Explicação:</strong> A Constituição de 1946 restabeleceu o regime democrático após o Estado Novo, com liberdade partidária e direitos trabalhistas.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-medio">
+                        <span class="badge">MÉDIO</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>7.</strong> (ENEM) O governo Juscelino Kubitschek foi marcado pelo:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q7"> a) Nacional-desenvolvimentismo</label>
+                            <label><input type="radio" name="q7"> b) Liberalismo econômico</label>
+                            <label><input type="radio" name="q7"> c) Fechamento do Congresso</label>
+                            <label><input type="radio" name="q7"> d) Austeridade fiscal</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: A) Nacional-desenvolvimentismo</strong></p>
+                            <p><strong>Explicação:</strong> JK adotou o nacional-desenvolvimentismo, com investimentos em infraestrutura, indústria e construção de Brasília.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-medio">
+                        <span class="badge">MÉDIO</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>8.</strong> (ENEM) A carta-testamento de Vargas (1954) é um símbolo do:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q8"> a) Trabalhismo e da luta popular</label>
+                            <label><input type="radio" name="q8"> b) Fim da democracia</label>
+                            <label><input type="radio" name="q8"> c) Início da ditadura</label>
+                            <label><input type="radio" name="q8"> d) Liberalismo econômico</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: A) Trabalhismo e da luta popular</strong></p>
+                            <p><strong>Explicação:</strong> A carta-testamento de Vargas se tornou um símbolo do trabalhismo e da defesa dos direitos dos trabalhadores.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-medio">
+                        <span class="badge">MÉDIO</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>9.</strong> (ENEM) O governo João Goulart (1961-1964) defendeu as chamadas "reformas de base", que incluíam:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q9"> a) Reforma agrária e reforma urbana</label>
+                            <label><input type="radio" name="q9"> b) Reforma política e reforma tributária</label>
+                            <label><input type="radio" name="q9"> c) Reforma educacional e reforma agrária</label>
+                            <label><input type="radio" name="q9"> d) Todas as alternativas estão corretas</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: D) Todas as alternativas estão corretas</strong></p>
+                            <p><strong>Explicação:</strong> As reformas de base de Jango incluíam reforma agrária, urbana, tributária, educacional e política.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-medio">
+                        <span class="badge">MÉDIO</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>10.</strong> (ENEM) A renúncia de Jânio Quadros em 1961 foi justificada por ele como:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q10"> a) Pressão de "forças ocultas"</label>
+                            <label><input type="radio" name="q10"> b) Crise econômica</label>
+                            <label><input type="radio" name="q10"> c) Apoio dos militares</label>
+                            <label><input type="radio" name="q10"> d) Pressão dos EUA</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: A) Pressão de "forças ocultas"</strong></p>
+                            <p><strong>Explicação:</strong> Jânio Quadros alegou "forças ocultas" que o impediam de governar, justificando sua renúncia em 1961.</p>
+                        </div>
+                    </div>
+
+                    <!-- ===== 5 DIFÍCEIS ===== -->
+                    <div class="exercicio-dificil">
+                        <span class="badge">DIFÍCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>11.</strong> (ENEM) O Plano de Metas de JK (1956-1961) priorizou investimentos em:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q11"> a) Energia, transporte e indústria</label>
+                            <label><input type="radio" name="q11"> b) Saúde, educação e alimentação</label>
+                            <label><input type="radio" name="q11"> c) Agricultura e pecuária</label>
+                            <label><input type="radio" name="q11"> d) Setor financeiro</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: A) Energia, transporte e indústria</strong></p>
+                            <p><strong>Explicação:</strong> O Plano de Metas de JK priorizou investimentos em energia, transporte, indústria, alimentação e educação.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-dificil">
+                        <span class="badge">DIFÍCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>12.</strong> (ENEM) A criação da Petrobras em 1953 durante o governo Vargas representou:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q12"> a) O monopólio estatal do petróleo</label>
+                            <label><input type="radio" name="q12"> b) A privatização do petróleo</label>
+                            <label><input type="radio" name="q12"> c) A abertura do mercado para empresas estrangeiras</label>
+                            <label><input type="radio" name="q12"> d) O fim da exploração de petróleo no Brasil</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: A) O monopólio estatal do petróleo</strong></p>
+                            <p><strong>Explicação:</strong> A criação da Petrobras estabeleceu o monopólio estatal do petróleo, sob o lema "O petróleo é nosso".</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-dificil">
+                        <span class="badge">DIFÍCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>13.</strong> (ENEM) O governo Dutra (1946-1951) foi marcado pelo:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q13"> a) Alinhamento com os EUA na Guerra Fria</label>
+                            <label><input type="radio" name="q13"> b) Nacionalismo radical</label>
+                            <label><input type="radio" name="q13"> c) Fechamento do Congresso</label>
+                            <label><input type="radio" name="q13"> d) Criação da CLT</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: A) Alinhamento com os EUA na Guerra Fria</strong></p>
+                            <p><strong>Explicação:</strong> Dutra adotou uma política externa alinhada aos EUA, combatendo o comunismo e a União Soviética.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-dificil">
+                        <span class="badge">DIFÍCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>14.</strong> (ENEM) O governo João Goulart (1961-1964) foi deposto porque:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q14"> a) Defendia reformas de base que ameaçavam as elites</label>
+                            <label><input type="radio" name="q14"> b) Apoiava a ditadura</label>
+                            <label><input type="radio" name="q14"> c) Foi eleito com votos de analfabetos</label>
+                            <label><input type="radio" name="q14"> d) Nacionalizou empresas americanas</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: A) Defendia reformas de base que ameaçavam as elites</strong></p>
+                            <p><strong>Explicação:</strong> Jango defendia reformas agrária, urbana e tributária, que ameaçavam os interesses das elites conservadoras.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-dificil">
+                        <span class="badge">DIFÍCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>15.</strong> (ENEM) O Golpe Militar de 1964 teve apoio dos EUA porque:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q15"> a) O Brasil era visto como uma ameaça comunista</label>
+                            <label><input type="radio" name="q15"> b) Os EUA queriam recursos naturais</label>
+                            <label><input type="radio" name="q15"> c) Os EUA apoiavam a ditadura</label>
+                            <label><input type="radio" name="q15"> d) Os EUA queriam controlar a economia brasileira</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: A) O Brasil era visto como uma ameaça comunista</strong></p>
+                            <p><strong>Explicação:</strong> Os EUA apoiaram o golpe de 1964 porque viam o governo de Jango como uma ameaça comunista na América Latina.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- ===== RESUMO ===== -->
+                <div id="resumo" class="aba-conteudo">
+                    <div class="resumo-principal">
+                        <h2 class="resumo-titulo">Resumo - Período Democrático</h2>
+                        <p class="resumo-subtitulo">Principais pontos para memorizar</p>
+
+                        <div class="resumo-grid">
+                            <div class="resumo-card-item">
+                                <h3>Redemocratização</h3>
+                                <p>1945 - Fim do Estado Novo</p>
+                                <span class="resumo-tag">Democracia</span>
+                            </div>
+
+                            <div class="resumo-card-item">
+                                <h3>Constituição de 1946</h3>
+                                <p>Restabeleceu direitos e liberdades</p>
+                                <span class="resumo-tag">Pluripartidarismo</span>
+                            </div>
+
+                            <div class="resumo-card-item">
+                                <h3>Retorno de Vargas (1951-1954)</h3>
+                                <p>Petrobras e nacionalismo</p>
+                                <span class="resumo-tag">Trabalhismo</span>
+                            </div>
+
+                            <div class="resumo-card-item">
+                                <h3>JK (1956-1961)</h3>
+                                <p>"50 anos em 5" - Brasília</p>
+                                <span class="resumo-tag">Desenvolvimento</span>
+                            </div>
+
+                            <div class="resumo-card-item">
+                                <h3>Jânio Quadros (1961)</h3>
+                                <p>Renúncia após 7 meses</p>
+                                <span class="resumo-tag">Crise Política</span>
+                            </div>
+
+                            <div class="resumo-card-item">
+                                <h3>Jango (1961-1964)</h3>
+                                <p>Reformas de base e golpe</p>
+                                <span class="resumo-tag">Fim da Democracia</span>
+                            </div>
+                        </div>
+
+                        <div class="resumo-dica-final">
+                            <h4>Dica Saphius</h4>
+                            <p>Memorize: <strong>"Período Democrático = Dutra + Vargas + JK + Jânio + Jango"</strong></p>
+                        </div>
+
+                        <div class="resumo-dica-enem">
+                            <h4>Dica ENEM</h4>
+                            <p>Atenção para os termos <strong>"Nacional-desenvolvimentismo"</strong>, 
+                            <strong>"Reformas de Base"</strong> e <strong>"Golpe de 1964"</strong> — eles aparecem com frequência na prova!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ===== SIMULADO ===== -->
+                <div id="simulado" class="aba-conteudo">
+                    <h2 style="color:#2e7d32;">Simulado - Período Democrático</h2>
+                    <p style="color:#666;">Teste seus conhecimentos com questões estilo ENEM</p>
+
+                    <div class="simulado-card">
+                        <div style="display:flex; gap:20px; flex-wrap:wrap; justify-content:center; margin-bottom:15px;">
+                            <span><strong>15 questões</strong></span>
+                            <span><strong>20 minutos</strong></span>
+                            <span><strong>Nível: Fácil a Difícil</strong></span>
+                        </div>
+                        <p style="color:#555; margin-bottom:15px;">As questões são as mesmas da aba "Exercícios" acima. Responda todas com calma!</p>
+                        <button class="btn-principal" onclick="alert('Simulado iniciado! Responda todas as 15 questões acima na aba Exercícios.')">
+                            Iniciar simulado
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+    </div>
+
+    <script>
+function trocarAba(botao, abaId) {
+    document.querySelectorAll('.aba-btn').forEach(b => b.classList.remove('active'));
+    botao.classList.add('active');
+    document.querySelectorAll('.aba-conteudo').forEach(c => c.classList.remove('active'));
+    document.getElementById(abaId).classList.add('active');
+}
+
+function mostrarResposta(botao) {
+    const exercicioDiv = botao.closest('.exercicio-facil, .exercicio-medio, .exercicio-dificil');
+    const respostaDiv = exercicioDiv.querySelector('.resposta-explicada');
+
+    if (respostaDiv.style.display === 'block') {
+        respostaDiv.style.display = 'none';
+        botao.textContent = 'Ver explicação';
+    } else {
+        respostaDiv.style.display = 'block';
+        botao.textContent = 'Ocultar explicação';
+    }
+}
+
+document.querySelectorAll('.exercicio-alternativas input[type="radio"]').forEach(input => {
+    input.addEventListener('change', verificarAtividade);
+});
+
+async function verificarAtividade() {
+    const questoes = document.querySelectorAll('.exercicio-alternativas');
+    const respondidas = document.querySelectorAll('.exercicio-alternativas input[type="radio"]:checked');
+
+    if (respondidas.length === questoes.length) {
+        try {
+            await fetch('/api/trilha/concluir', {
+                method: 'POST',
+                headers: {'Content-Type':'application/json'},
+                body: JSON.stringify({
+                    materia: 'historia',
+                    topico: 'periodo-democratico'
+                })
+            });
+
+            alert('Atividade concluída! Seu progresso na Trilha de Estudos foi atualizado.');
+        } catch (erro) {
+            console.error('Erro ao atualizar progresso:', erro);
+        }
+    }
+}
+</script>
+</body>
+</html>

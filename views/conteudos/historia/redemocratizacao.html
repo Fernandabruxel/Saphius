@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Redemocratização - Saphius</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/views/conteudos/historia/historia.css">
+</head>
+<body>
+    <div class="app-container">
+        <aside class="sidebar">
+            <div class="sidebar-logo"><h2>Saphius</h2></div>
+            <ul class="sidebar-menu">
+                <li><a href="/dashboard"><span class="icon"></span> <span>Dashboard</span></a></li>
+                <li><a href="/conteudos"><span class="icon"></span> <span>Conteúdos</span></a></li>
+                <li><a href="/trilha"><span class="icon"></span> <span>Trilha de estudos</span></a></li>
+                <li><a href="/bemestar"><span class="icon"></span> <span>Bem-estar</span></a></li>
+                <li><a href="/perfil"><span class="icon"></span> <span>Perfil</span></a></li>
+                <li><a href="/configuracoes"><span class="icon"></span> <span>Configurações</span></a></li>
+                <li><a href="/ajuda"><span class="icon"></span> <span>Ajuda</span></a></li>
+                <li><a href="/sair"><span class="icon"></span> <span>Sair</span></a></li>
+            </ul>
+        </aside>
+
+        <main class="main-content">
+            <div class="container">
+                <a href="/historia" class="voltar">Voltar para História</a>
+
+                <h1 style="text-align:center; font-size:2.5em; color:#2e7d32;">Redemocratização (1985-atualidade)</h1>
+                <p style="color:#666; text-align:center; font-size:1.1em;">Fim da ditadura, Constituição de 1988 e Brasil contemporâneo</p>
+
+                <!-- ABAS -->
+                <div class="abas-navegacao" style="margin:25px 0;">
+                    <button class="aba-btn active" onclick="trocarAba(this, 'conteudo')">Conteúdo</button>
+                    <button class="aba-btn" onclick="trocarAba(this, 'exercicios')">Exercícios</button>
+                    <button class="aba-btn" onclick="trocarAba(this, 'resumo')">Resumo</button>
+                    <button class="aba-btn" onclick="trocarAba(this, 'simulado')">Simulado</button>
+                </div>
+
+                <!-- ===== CONTEÚDO ===== -->
+                <div id="conteudo" class="aba-conteudo active">
+
+                    <!-- INTRODUÇÃO -->
+                    <div class="explicacao-detalhada">
+                        <h3>Introdução: O que foi a Redemocratização?</h3>
+                        <p>
+                            A <strong>Redemocratização</strong> é o processo de transição do Brasil do regime militar 
+                            para a democracia, que teve início em <span class="data-destaque">1985</span> com a eleição 
+                            de <strong>Tancredo Neves</strong> e se consolidou com a <strong>Constituição de 1988</strong>.
+                        </p>
+                        <p>
+                            Este período marca o retorno do Brasil ao <strong>estado de direito</strong>, com eleições 
+                            diretas, liberdade de expressão e a garantia de <strong>direitos fundamentais</strong>. 
+                            A redemocratização foi resultado de pressão popular (movimento <strong>Diretas Já</strong>), 
+                            crises econômicas e desgaste do regime militar.
+                        </p>
+                        <div class="enem-dica">
+                            <strong>DICA ENEM:</strong>
+                            <p>A Redemocratização é um tema recorrente no ENEM. Questões sobre a 
+                            <strong>Constituição de 1988</strong>, o <strong>impeachment de Collor</strong> e 
+                            os <strong>governos democráticos</strong> aparecem com frequência.</p>
+                        </div>
+                    </div>
+
+                    <!-- LINHA DO TEMPO -->
+                    <div style="margin:30px 0;">
+                        <h2 style="color:#2e7d32;">Linha do Tempo - Redemocratização</h2>
+                        <div class="linha-tempo-detailed">
+                            <div class="evento">
+                                <span class="ano">1985</span>
+                                <div class="descricao">
+                                    <strong>Eleição de Tancredo Neves</strong> — Primeiro civil eleito após a ditadura. 
+                                    Tancredo falece antes de assumir, e <strong>José Sarney</strong> assume.
+                                </div>
+                            </div>
+                            <div class="evento">
+                                <span class="ano">1988</span>
+                                <div class="descricao">
+                                    <strong>Constituição Cidadã</strong> — Promulgada em 5 de outubro, 
+                                    garantindo direitos sociais e políticos.
+                                </div>
+                            </div>
+                            <div class="evento">
+                                <span class="ano">1989</span>
+                                <div class="descricao">
+                                    <strong>Primeiras eleições diretas</strong> — Fernando Collor de Mello é eleito.
+                                </div>
+                            </div>
+                            <div class="evento">
+                                <span class="ano">1992</span>
+                                <div class="descricao">
+                                    <strong>Impeachment de Collor</strong> — Collor é afastado por corrupção, 
+                                    assumindo <strong>Itamar Franco</strong>.
+                                </div>
+                            </div>
+                            <div class="evento">
+                                <span class="ano">1994</span>
+                                <div class="descricao">
+                                    <strong>Plano Real</strong> — Lançamento do Plano Real, que estabilizou a economia 
+                                    e elegeu <strong>Fernando Henrique Cardoso</strong>.
+                                </div>
+                            </div>
+                            <div class="evento">
+                                <span class="ano">2002</span>
+                                <div class="descricao">
+                                    <strong>Eleição de Lula</strong> — Primeiro presidente operário, do Partido dos 
+                                    Trabalhadores (PT).
+                                </div>
+                            </div>
+                            <div class="evento">
+                                <span class="ano">2016</span>
+                                <div class="descricao">
+                                    <strong>Impeachment de Dilma Rousseff</strong> — Dilma é afastada, assumindo 
+                                    <strong>Michel Temer</strong>.
+                                </div>
+                            </div>
+                            <div class="evento">
+                                <span class="ano">2018</span>
+                                <div class="descricao">
+                                    <strong>Eleição de Jair Bolsonaro</strong> — Presidente de extrema-direita, 
+                                    eleito em 2018.
+                                </div>
+                            </div>
+                            <div class="evento">
+                                <span class="ano">2022</span>
+                                <div class="descricao">
+                                    <strong>Eleição de Lula (3º mandato)</strong> — Lula retorna ao poder, 
+                                    em um cenário de polarização política.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SEÇÃO 1 -->
+                    <div class="explicacao-detalhada">
+                        <h3>1. A Transição para a Democracia (1985)</h3>
+                        <p>
+                            A transição para a democracia começou em <span class="data-destaque">1985</span> com a 
+                            eleição de <strong>Tancredo Neves</strong> pelo Colégio Eleitoral. No entanto, 
+                            Tancredo faleceu antes de assumir, e o vice-presidente <strong>José Sarney</strong> 
+                            tomou posse.
+                        </p>
+                        <p>
+                            <strong>Principais características da transição:</strong>
+                            <ul>
+                                <li><strong>Eleição indireta:</strong> Tancredo foi eleito pelo Colégio Eleitoral, 
+                                não por voto popular.</li>
+                                <li><strong>Sarney assume:</strong> José Sarney, que era do PDS (partido da ditadura), 
+                                tornou-se presidente.</li>
+                                <li><strong>Movimento Diretas Já:</strong> A pressão popular por eleições diretas foi 
+                                fundamental para a transição.</li>
+                            </ul>
+                        </p>
+                        <div class="enem-dica">
+                            <strong>DICA ENEM:</strong>
+                            <p>A transição de 1985 é um marco da redemocratização. O ENEM cobra as 
+                            <strong>eleições indiretas</strong> e a <strong>pressão popular</strong> que levou 
+                            ao fim da ditadura.</p>
+                        </div>
+                    </div>
+
+                    <!-- SEÇÃO 2 -->
+                    <div class="explicacao-detalhada">
+                        <h3>2. O Governo Sarney (1985-1990)</h3>
+                        <p>
+                            <strong>José Sarney</strong> governou em um período de <strong>crise econômica</strong> 
+                            e de <strong>consolidação da democracia</strong>. Seu governo foi marcado por planos 
+                            econômicos que tentavam controlar a inflação, mas não tiveram sucesso.
+                        </p>
+                        <p>
+                            <strong>Principais ações do governo Sarney:</strong>
+                            <ul>
+                                <li><strong>Plano Cruzado (1986):</strong> Tentativa de congelar preços e salários, 
+                                mas que gerou desabastecimento.</li>
+                                <li><strong>Constituição de 1988:</strong> Promulgada em 5 de outubro de 1988, 
+                                garantindo direitos sociais e políticos.</li>
+                                <li><strong>Assembleia Nacional Constituinte:</strong> Reuniu-se para elaborar 
+                                a nova constituição.</li>
+                            </ul>
+                        </p>
+                        <div class="enem-dica">
+                            <strong>DICA ENEM:</strong>
+                            <p>O governo Sarney e a Constituição de 1988 são temas importantes no ENEM. 
+                            Relacione a <strong>crise econômica</strong> com a <strong>consolidação democrática</strong>.</p>
+                        </div>
+                    </div>
+
+                    <!-- SEÇÃO 3 -->
+                    <div class="explicacao-detalhada">
+                        <h3>3. A Constituição de 1988 - "Constituição Cidadã"</h3>
+                        <p>
+                            A <strong>Constituição de 1988</strong>, promulgada em <span class="data-destaque">5 de outubro de 1988</span>, 
+                            é chamada de <strong>"Constituição Cidadã"</strong> por garantir amplos direitos 
+                            sociais, políticos e individuais.
+                        </p>
+                        <p>
+                            <strong>Principais pontos da Constituição de 1988:</strong>
+                            <ul>
+                                <li><strong>Direitos sociais:</strong> Saúde, educação, trabalho, moradia, lazer, 
+                                segurança, previdência social.</li>
+                                <li><strong>Voto universal:</strong> Inclui analfabetos e jovens entre 16 e 18 anos.</li>
+                                <li><strong>Direitos trabalhistas:</strong> FGTS, seguro-desemprego, férias, 
+                                salário mínimo.</li>
+                                <li><strong>Organização do Estado:</strong> Divisão em três poderes: Executivo, 
+                                Legislativo e Judiciário.</li>
+                            </ul>
+                        </p>
+                        <p>
+                            <strong>A Importância da Constituição de 1988:</strong>
+                            <ul>
+                                <li><strong>Marco da redemocratização:</strong> Restabeleceu o estado de direito 
+                                e a democracia.</li>
+                                <li><strong>Garantia de direitos:</strong> A constituição é uma das mais avançadas 
+                                do mundo em direitos sociais.</li>
+                                <li><strong>Defesa da cidadania:</strong> A constituição protege os direitos 
+                                dos cidadãos e combate a discriminação.</li>
+                            </ul>
+                        </p>
+                        <div class="revolta-card">
+                            <h4>Constituição de 1988 - "Constituição Cidadã"</h4>
+                            <p>
+                                <strong>Data:</strong> 5 de outubro de 1988<br>
+                                <strong>Ulysses Guimarães:</strong> Presidente da Assembleia Nacional Constituinte<br>
+                                <strong>Características:</strong> Ampla garantia de direitos sociais e políticos<br>
+                                <strong>Significado:</strong> Marco da redemocratização e da consolidação da democracia.
+                            </p>
+                            <div class="enem-dica" style="margin-top:10px;">
+                                <strong>DICA ENEM:</strong>
+                                <p>A Constituição de 1988 é um dos temas mais cobrados no ENEM. Entenda os 
+                                <strong>direitos garantidos</strong> e a <strong>organização do Estado</strong> 
+                                para responder questões sobre o assunto.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SEÇÃO 4 -->
+                    <div class="explicacao-detalhada">
+                        <h3>4. O Governo Collor (1990-1992) e o Impeachment</h3>
+                        <p>
+                            <strong>Fernando Collor de Mello</strong> foi o primeiro presidente eleito por 
+                            <strong>voto direto</strong> após a ditadura, em 1989. Seu governo foi marcado por 
+                            <strong>corrupção</strong> e levou ao <strong>impeachment</strong> em 1992.
+                        </p>
+                        <p>
+                            <strong>Características do governo Collor:</strong>
+                            <ul>
+                                <li><strong>Plano Collor:</strong> Confisco da poupança e tentativa de controlar 
+                                a inflação.</li>
+                                <li><strong>Corrupção:</strong> Denúncias de corrupção envolvendo o presidente 
+                                e empresários.</li>
+                                <li><strong>CPI:</strong> Comissão Parlamentar de Inquérito que investigou 
+                                as denúncias.</li>
+                            </ul>
+                        </p>
+                        <p>
+                            <strong>O Impeachment de Collor (1992):</strong>
+                            <ul>
+                                <li>Collor foi afastado em <span class="data-destaque">1992</span> por crime de 
+                                responsabilidade.</li>
+                                <li>Assumiu o vice-presidente <strong>Itamar Franco</strong>.</li>
+                                <li>Collor renunciou para evitar a cassação, mas foi condenado.</li>
+                            </ul>
+                        </p>
+                        <div class="enem-dica">
+                            <strong>DICA ENEM:</strong>
+                            <p>O impeachment de Collor é um dos momentos mais importantes da política brasileira. 
+                            O ENEM cobra as causas do impeachment e a transição para o governo Itamar Franco.</p>
+                        </div>
+                    </div>
+
+                    <!-- SEÇÃO 5 -->
+                    <div class="explicacao-detalhada">
+                        <h3>5. O Governo Itamar Franco (1992-1994) e o Plano Real</h3>
+                        <p>
+                            <strong>Itamar Franco</strong> assumiu a presidência após o impeachment de Collor. 
+                            Seu governo foi marcado pela <strong>estabilização econômica</strong> com o 
+                            <strong>Plano Real</strong>.
+                        </p>
+                        <p>
+                            <strong>Características do governo Itamar:</strong>
+                            <ul>
+                                <li><strong>Plano Real (1994):</strong> Plano econômico que estabilizou a 
+                                inflação no Brasil.</li>
+                                <li><strong>Ministro da Fazenda:</strong> Fernando Henrique Cardoso foi o 
+                                responsável pela implementação do Plano Real.</li>
+                                <li><strong>Estabilidade econômica:</strong> O Plano Real controlou a inflação 
+                                e criou o <strong>Real</strong> como nova moeda.</li>
+                            </ul>
+                        </p>
+                        <p>
+                            <strong>A Importância do Plano Real:</strong>
+                            <ul>
+                                <li><strong>Controle da inflação:</strong> O Plano Real reduziu a inflação de 
+                                mais de 2.000% ao ano para níveis controlados.</li>
+                                <li><strong>Estabilidade econômica:</strong> O Brasil entrou em um período de 
+                                crescimento e estabilidade.</li>
+                                <li><strong>Eleição de FHC:</strong> O sucesso do plano elegeu Fernando Henrique 
+                                Cardoso presidente em 1994.</li>
+                            </ul>
+                        </p>
+                        <div class="enem-dica">
+                            <strong>DICA ENEM:</strong>
+                            <p>O Plano Real e a estabilidade econômica são temas frequentes no ENEM. 
+                            Relacione o <strong>Plano Real</strong> com a <strong>estabilidade democrática</strong> 
+                            e o <strong>crescimento econômico</strong>.</p>
+                        </div>
+                    </div>
+
+                    <!-- SEÇÃO 6 -->
+                    <div class="explicacao-detalhada">
+                        <h3>6. O Governo Fernando Henrique Cardoso (1995-2002)</h3>
+                        <p>
+                            <strong>Fernando Henrique Cardoso (FHC)</strong> foi eleito presidente em 1994 e 
+                            reeleito em 1998. Seu governo foi marcado por <strong>reformas neoliberais</strong> 
+                            e pela <strong>estabilidade econômica</strong>.
+                        </p>
+                        <p>
+                            <strong>Principais ações do governo FHC:</strong>
+                            <ul>
+                                <li><strong>Reformas neoliberais:</strong> Privatização de empresas estatais e 
+                                abertura da economia.</li>
+                                <li><strong>Estabilidade econômica:</strong> Continuidade do Plano Real e 
+                                controle da inflação.</li>
+                                <li><strong>Lei de Responsabilidade Fiscal:</strong> Controle das finanças públicas.</li>
+                                <li><strong>Política social:</strong> Programas de transferência de renda, 
+                                como o Bolsa Escola.</li>
+                            </ul>
+                        </p>
+                        <div class="enem-dica">
+                            <strong>DICA ENEM:</strong>
+                            <p>O governo FHC é um exemplo de <strong>neoliberalismo</strong> no Brasil. 
+                            O ENEM cobra as reformas econômicas e a <strong>estabilidade monetária</strong> 
+                            do período.</p>
+                        </div>
+                    </div>
+
+                    <!-- SEÇÃO 7 -->
+                    <div class="explicacao-detalhada">
+                        <h3>7. O Governo Lula (2003-2010)</h3>
+                        <p>
+                            <strong>Luiz Inácio Lula da Silva (Lula)</strong> foi eleito presidente em 2002 e 
+                            reeleito em 2006. Foi o <strong>primeiro presidente operário</strong> do Brasil, 
+                            do Partido dos Trabalhadores (PT).
+                        </p>
+                        <p>
+                            <strong>Principais ações do governo Lula:</strong>
+                            <ul>
+                                <li><strong>Bolsa Família:</strong> Programa de transferência de renda, que 
+                                reduziu a pobreza e a desigualdade social.</li>
+                                <li><strong>Crescimento econômico:</strong> O Brasil cresceu a taxas elevadas, 
+                                com geração de empregos.</li>
+                                <li><strong>Política externa:</strong> Aproximação com países em desenvolvimento, 
+                                como a China.</li>
+                                <li><strong>Combate à fome:</strong> O programa Fome Zero foi uma das principais 
+                                iniciativas do governo.</li>
+                            </ul>
+                        </p>
+                        <div class="enem-dica">
+                            <strong>DICA ENEM:</strong>
+                            <p>O governo Lula é um exemplo de <strong>políticas sociais</strong> e 
+                            <strong>crescimento econômico</strong>. O ENEM cobra os programas sociais 
+                            e a <strong>redução da desigualdade</strong> no período.</p>
+                        </div>
+                    </div>
+
+                    <!-- SEÇÃO 8 -->
+                    <div class="explicacao-detalhada">
+                        <h3>8. O Governo Dilma Rousseff (2011-2016)</h3>
+                        <p>
+                            <strong>Dilma Rousseff</strong> foi a primeira mulher presidente do Brasil, 
+                            eleita em 2010 e reeleita em 2014. Seu governo foi marcado pela <strong>crise 
+                            econômica</strong> e pelo <strong>impeachment</strong> em 2016.
+                        </p>
+                        <p>
+                            <strong>Principais ações do governo Dilma:</strong>
+                            <ul>
+                                <li><strong>Políticas sociais:</strong> Manutenção dos programas sociais, 
+                                como o Bolsa Família.</li>
+                                <li><strong>Crise econômica:</strong> O Brasil entrou em recessão econômica, 
+                                com aumento do desemprego.</li>
+                                <li><strong>Manifestações:</strong> Protestos populares em 2013 e 2015.</li>
+                            </ul>
+                        </p>
+                        <p>
+                            <strong>O Impeachment de Dilma (2016):</strong>
+                            <ul>
+                                <li>Dilma foi afastada por crime de responsabilidade, em um processo 
+                                contestado por muitos.</li>
+                                <li>Assumiu o vice-presidente <strong>Michel Temer</strong>.</li>
+                            </ul>
+                        </p>
+                        <div class="enem-dica">
+                            <strong>DICA ENEM:</strong>
+                            <p>O impeachment de Dilma é um dos eventos mais recentes da história do Brasil. 
+                            O ENEM cobra as <strong>crises políticas</strong> e a <strong>instabilidade 
+                            econômica</strong> do período.</p>
+                        </div>
+                    </div>
+
+                    <!-- SEÇÃO 9 -->
+                    <div class="explicacao-detalhada">
+                        <h3>9. O Governo Bolsonaro (2019-2022)</h3>
+                        <p>
+                            <strong>Jair Bolsonaro</strong> foi eleito em 2018 com um discurso de 
+                            <strong>combate à corrupção</strong> e <strong>defesa de valores conservadores</strong>. 
+                            Seu governo foi marcado por <strong>polêmicas</strong> e pela <strong>crise da 
+                            pandemia de COVID-19</strong>.
+                        </p>
+                        <p>
+                            <strong>Principais ações do governo Bolsonaro:</strong>
+                            <ul>
+                                <li><strong>Pandemia de COVID-19:</strong> Controvérsias sobre a gestão da 
+                                pandemia e a vacinação.</li>
+                                <li><strong>Reformas econômicas:</strong> Reforma da Previdência e reforma 
+                                administrativa.</li>
+                                <li><strong>Política ambiental:</strong> Aumento do desmatamento na Amazônia 
+                                e críticas internacionais.</li>
+                                <li><strong>Polarização política:</strong> O governo foi marcado por um forte 
+                                clima de polarização.</li>
+                            </ul>
+                        </p>
+                        <div class="enem-dica">
+                            <strong>DICA ENEM:</strong>
+                            <p>O governo Bolsonaro é um tema atual que pode ser cobrado no ENEM. 
+                            Relacione a <strong>política ambiental</strong>, a <strong>gestão da pandemia</strong> 
+                            e a <strong>polarização política</strong> para entender o período.</p>
+                        </div>
+                    </div>
+
+                    <!-- SEÇÃO 10 -->
+                    <div class="explicacao-detalhada">
+                        <h3>10. O Governo Lula (2023-atualidade)</h3>
+                        <p>
+                            <strong>Lula</strong> foi eleito novamente em 2022, em um cenário de forte 
+                            polarização política. Seu terceiro mandato tem como foco a <strong>reconstrução</strong> 
+                            do país e a <strong>redução das desigualdades</strong>.
+                        </p>
+                        <p>
+                            <strong>Principais desafios do governo Lula (2023):</strong>
+                            <ul>
+                                <li><strong>Reconstrução econômica:</strong> Retomada do crescimento e controle 
+                                da inflação.</li>
+                                <li><strong>Políticas sociais:</strong> Retomada de programas sociais e combate 
+                                à fome.</li>
+                                <li><strong>Política ambiental:</strong> Combate ao desmatamento e preservação 
+                                da Amazônia.</li>
+                                <li><strong>Unidade nacional:</strong> Busca pela superação da polarização 
+                                política.</li>
+                            </ul>
+                        </p>
+                        <div class="enem-dica">
+                            <strong>DICA ENEM:</strong>
+                            <p>O governo Lula (2023) é um tema atual que pode ser cobrado no ENEM. 
+                            Relacione os <strong>desafios econômicos</strong>, <strong>sociais</strong> e 
+                            <strong>ambientais</strong> para entender o período.</p>
+                        </div>
+                    </div>
+
+                    <!-- DICA FINAL -->
+                    <div class="dica-saphius">
+                        <h3>Dica Saphius</h3>
+                        <p>
+                            Memorize: <strong>"Redemocratização = 1985 + Constituição de 88 + Collor + FHC + Lula + Dilma + Bolsonaro"</strong>. 
+                            Entenda a <strong>evolução democrática</strong> e os <strong>desafios atuais</strong> 
+                            da política brasileira.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- ===== EXERCÍCIOS ===== -->
+                <div id="exercicios" class="aba-conteudo">
+                    <h2 style="color:#2e7d32;">Exercícios - Redemocratização</h2>
+                    <p style="color:#666;">15 questões (5 Fáceis, 5 Médias, 5 Difíceis)</p>
+
+                    <!-- ===== 5 FÁCEIS ===== -->
+                    <div class="exercicio-facil">
+                        <span class="badge">FÁCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>1.</strong> Em que ano foi promulgada a Constituição de 1988?</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q1"> a) 1986</label>
+                            <label><input type="radio" name="q1"> b) 1987</label>
+                            <label><input type="radio" name="q1"> c) 1988</label>
+                            <label><input type="radio" name="q1"> d) 1989</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: C) 1988</strong></p>
+                            <p><strong>Explicação:</strong> A Constituição de 1988 foi promulgada em 5 de outubro, sendo chamada de "Constituição Cidadã".</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-facil">
+                        <span class="badge">FÁCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>2.</strong> Quem foi o primeiro presidente eleito após a ditadura militar?</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q2"> a) Tancredo Neves</label>
+                            <label><input type="radio" name="q2"> b) José Sarney</label>
+                            <label><input type="radio" name="q2"> c) Fernando Collor</label>
+                            <label><input type="radio" name="q2"> d) Lula</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: A) Tancredo Neves</strong></p>
+                            <p><strong>Explicação:</strong> Tancredo Neves foi o primeiro civil eleito em 1985, mas faleceu antes de assumir.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-facil">
+                        <span class="badge">FÁCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>3.</strong> O Plano Real foi implementado em que ano?</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q3"> a) 1992</label>
+                            <label><input type="radio" name="q3"> b) 1993</label>
+                            <label><input type="radio" name="q3"> c) 1994</label>
+                            <label><input type="radio" name="q3"> d) 1995</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: C) 1994</strong></p>
+                            <p><strong>Explicação:</strong> O Plano Real foi implementado em 1994, estabilizando a economia e criando o Real como moeda.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-facil">
+                        <span class="badge">FÁCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>4.</strong> Em que ano ocorreu o impeachment do presidente Fernando Collor?</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q4"> a) 1990</label>
+                            <label><input type="radio" name="q4"> b) 1991</label>
+                            <label><input type="radio" name="q4"> c) 1992</label>
+                            <label><input type="radio" name="q4"> d) 1993</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: C) 1992</strong></p>
+                            <p><strong>Explicação:</strong> Fernando Collor sofreu impeachment em 1992 por corrupção, sendo substituído por Itamar Franco.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-facil">
+                        <span class="badge">FÁCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>5.</strong> Quem foi o primeiro presidente operário do Brasil?</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q5"> a) Getúlio Vargas</label>
+                            <label><input type="radio" name="q5"> b) Fernando Henrique Cardoso</label>
+                            <label><input type="radio" name="q5"> c) Lula</label>
+                            <label><input type="radio" name="q5"> d) Juscelino Kubitschek</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: C) Lula</strong></p>
+                            <p><strong>Explicação:</strong> Lula foi o primeiro presidente operário do Brasil, eleito em 2002.</p>
+                        </div>
+                    </div>
+
+                    <!-- ===== 5 MÉDIAS ===== -->
+                    <div class="exercicio-medio">
+                        <span class="badge">MÉDIO</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>6.</strong> (ENEM) A Constituição de 1988 é chamada de "Constituição Cidadã" porque:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q6"> a) Garantiu amplos direitos sociais e políticos</label>
+                            <label><input type="radio" name="q6"> b) Estabeleceu o voto obrigatório</label>
+                            <label><input type="radio" name="q6"> c) Criou o Plano Real</label>
+                            <label><input type="radio" name="q6"> d) Instituiu a CLT</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: A) Garantiu amplos direitos sociais e políticos</strong></p>
+                            <p><strong>Explicação:</strong> A Constituição de 1988 é chamada de "Constituição Cidadã" por garantir direitos sociais e políticos amplos.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-medio">
+                        <span class="badge">MÉDIO</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>7.</strong> (ENEM) O Plano Real (1994) foi importante porque:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q7"> a) Estabilizou a economia e controlou a inflação</label>
+                            <label><input type="radio" name="q7"> b) Criou o Bolsa Família</label>
+                            <label><input type="radio" name="q7"> c) Reduziu a desigualdade social</label>
+                            <label><input type="radio" name="q7"> d) Aumentou os investimentos em educação</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: A) Estabilizou a economia e controlou a inflação</strong></p>
+                            <p><strong>Explicação:</strong> O Plano Real estabilizou a economia e controlou a inflação, criando o Real como moeda.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-medio">
+                        <span class="badge">MÉDIO</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>8.</strong> (ENEM) O impeachment de Fernando Collor (1992) foi motivado por:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q8"> a) Corrupção e crime de responsabilidade</label>
+                            <label><input type="radio" name="q8"> b) Política econômica</label>
+                            <label><input type="radio" name="q8"> c) Crise militar</label>
+                            <label><input type="radio" name="q8"> d) Reforma agrária</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: A) Corrupção e crime de responsabilidade</strong></p>
+                            <p><strong>Explicação:</strong> Collor foi acusado de corrupção e crime de responsabilidade, levando ao impeachment em 1992.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-medio">
+                        <span class="badge">MÉDIO</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>9.</strong> (ENEM) O programa Bolsa Família, criado no governo Lula, teve como objetivo:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q9"> a) Reduzir a pobreza e a desigualdade social</label>
+                            <label><input type="radio" name="q9"> b) Controlar a inflação</label>
+                            <label><input type="radio" name="q9"> c) Aumentar o crescimento econômico</label>
+                            <label><input type="radio" name="q9"> d) Promover a reforma agrária</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: A) Reduzir a pobreza e a desigualdade social</strong></p>
+                            <p><strong>Explicação:</strong> O Bolsa Família é um programa de transferência de renda que reduz a pobreza e a desigualdade social.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-medio">
+                        <span class="badge">MÉDIO</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>10.</strong> (ENEM) A redemocratização do Brasil foi marcada pela:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q10"> a) Volta das eleições diretas</label>
+                            <label><input type="radio" name="q10"> b) Fim da censura</label>
+                            <label><input type="radio" name="q10"> c) Garantia de direitos fundamentais</label>
+                            <label><input type="radio" name="q10"> d) Todas as alternativas estão corretas</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: D) Todas as alternativas estão corretas</strong></p>
+                            <p><strong>Explicação:</strong> A redemocratização trouxe eleições diretas, fim da censura e garantia de direitos fundamentais.</p>
+                        </div>
+                    </div>
+
+                    <!-- ===== 5 DIFÍCEIS ===== -->
+                    <div class="exercicio-dificil">
+                        <span class="badge">DIFÍCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>11.</strong> (ENEM) O governo Fernando Henrique Cardoso (1995-2002) foi marcado por:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q11"> a) Reformas neoliberais e privatizações</label>
+                            <label><input type="radio" name="q11"> b) Expansão do Bolsa Família</label>
+                            <label><input type="radio" name="q11"> c) Reforma agrária</label>
+                            <label><input type="radio" name="q11"> d) Criação da Petrobras</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: A) Reformas neoliberais e privatizações</strong></p>
+                            <p><strong>Explicação:</strong> O governo FHC foi marcado por reformas neoliberais, com privatizações de empresas estatais e abertura da economia.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-dificil">
+                        <span class="badge">DIFÍCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>12.</strong> (ENEM) O impeachment de Dilma Rousseff (2016) foi motivado por:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q12"> a) Corrupção</label>
+                            <label><input type="radio" name="q12"> b) Crime de responsabilidade</label>
+                            <label><input type="radio" name="q12"> c) Crises econômicas</label>
+                            <label><input type="radio" name="q12"> d) Todas as alternativas estão corretas</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: B) Crime de responsabilidade</strong></p>
+                            <p><strong>Explicação:</strong> Dilma foi afastada por crime de responsabilidade, em um processo que gerou grande controvérsia política.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-dificil">
+                        <span class="badge">DIFÍCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>13.</strong> (ENEM) O Plano Real, implementado no governo Itamar Franco, foi elaborado por:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q13"> a) Fernando Henrique Cardoso</label>
+                            <label><input type="radio" name="q13"> b) José Serra</label>
+                            <label><input type="radio" name="q13"> c) Antônio Palocci</label>
+                            <label><input type="radio" name="q13"> d) Guido Mantega</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: A) Fernando Henrique Cardoso</strong></p>
+                            <p><strong>Explicação:</strong> O Plano Real foi elaborado por Fernando Henrique Cardoso, então Ministro da Fazenda do governo Itamar Franco.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-dificil">
+                        <span class="badge">DIFÍCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>14.</strong> (ENEM) A "Constituição Cidadã" de 1988 é um marco da redemocratização porque:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q14"> a) Restabeleceu o estado de direito</label>
+                            <label><input type="radio" name="q14"> b) Garantiu direitos fundamentais</label>
+                            <label><input type="radio" name="q14"> c) Consolidou a democracia</label>
+                            <label><input type="radio" name="q14"> d) Todas as alternativas estão corretas</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: D) Todas as alternativas estão corretas</strong></p>
+                            <p><strong>Explicação:</strong> A Constituição de 1988 restabeleceu o estado de direito, garantiu direitos fundamentais e consolidou a democracia.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-dificil">
+                        <span class="badge">DIFÍCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>15.</strong> (ENEM) O governo Jair Bolsonaro (2019-2022) foi marcado por:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q15"> a) Políticas neoliberais e reformas econômicas</label>
+                            <label><input type="radio" name="q15"> b) Controvérsias na gestão da pandemia de COVID-19</label>
+                            <label><input type="radio" name="q15"> c) Aumento do desmatamento na Amazônia</label>
+                            <label><input type="radio" name="q15"> d) Todas as alternativas estão corretas</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: D) Todas as alternativas estão corretas</strong></p>
+                            <p><strong>Explicação:</strong> O governo Bolsonaro foi marcado por reformas econômicas, controvérsias na pandemia e aumento do desmatamento.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- ===== RESUMO ===== -->
+                <div id="resumo" class="aba-conteudo">
+                    <div class="resumo-principal">
+                        <h2 class="resumo-titulo">Resumo - Redemocratização</h2>
+                        <p class="resumo-subtitulo">Principais pontos para memorizar</p>
+
+                        <div class="resumo-grid">
+                            <div class="resumo-card-item">
+                                <h3>Transição (1985)</h3>
+                                <p>Tancredo Neves e Sarney</p>
+                                <span class="resumo-tag">Fim da Ditadura</span>
+                            </div>
+
+                            <div class="resumo-card-item">
+                                <h3>Constituição de 1988</h3>
+                                <p>"Constituição Cidadã"</p>
+                                <span class="resumo-tag">Direitos Sociais</span>
+                            </div>
+
+                            <div class="resumo-card-item">
+                                <h3>Impeachment de Collor</h3>
+                                <p>1992 - Corrupção</p>
+                                <span class="resumo-tag">Crise Política</span>
+                            </div>
+
+                            <div class="resumo-card-item">
+                                <h3>Plano Real (1994)</h3>
+                                <p>Estabilização econômica</p>
+                                <span class="resumo-tag">FHC</span>
+                            </div>
+
+                            <div class="resumo-card-item">
+                                <h3>Governo Lula</h3>
+                                <p>Bolsa Família e crescimento</p>
+                                <span class="resumo-tag">Políticas Sociais</span>
+                            </div>
+
+                            <div class="resumo-card-item">
+                                <h3>Brasil Contemporâneo</h3>
+                                <p>Dilma, Bolsonaro, Lula</p>
+                                <span class="resumo-tag">Desafios Atuais</span>
+                            </div>
+                        </div>
+
+                        <div class="resumo-dica-final">
+                            <h4>Dica Saphius</h4>
+                            <p>Memorize: <strong>"Redemocratização = 1985 + 1988 + Collor + FHC + Lula + Dilma + Bolsonaro"</strong></p>
+                        </div>
+
+                        <div class="resumo-dica-enem">
+                            <h4>Dica ENEM</h4>
+                            <p>Atenção para os termos <strong>"Constituição Cidadã"</strong>, 
+                            <strong>"Plano Real"</strong> e <strong>"Bolsa Família"</strong> — eles aparecem com frequência na prova!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ===== SIMULADO ===== -->
+                <div id="simulado" class="aba-conteudo">
+                    <h2 style="color:#2e7d32;">Simulado - Redemocratização</h2>
+                    <p style="color:#666;">Teste seus conhecimentos com questões estilo ENEM</p>
+
+                    <div class="simulado-card">
+                        <div style="display:flex; gap:20px; flex-wrap:wrap; justify-content:center; margin-bottom:15px;">
+                            <span><strong>15 questões</strong></span>
+                            <span><strong>20 minutos</strong></span>
+                            <span><strong>Nível: Fácil a Difícil</strong></span>
+                        </div>
+                        <p style="color:#555; margin-bottom:15px;">As questões são as mesmas da aba "Exercícios" acima. Responda todas com calma!</p>
+                        <button class="btn-principal" onclick="alert('Simulado iniciado! Responda todas as 15 questões acima na aba Exercícios.')">
+                            Iniciar simulado
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+    </div>
+
+    <script>
+function trocarAba(botao, abaId) {
+    document.querySelectorAll('.aba-btn').forEach(b => b.classList.remove('active'));
+    botao.classList.add('active');
+    document.querySelectorAll('.aba-conteudo').forEach(c => c.classList.remove('active'));
+    document.getElementById(abaId).classList.add('active');
+}
+
+function mostrarResposta(botao) {
+    const exercicioDiv = botao.closest('.exercicio-facil, .exercicio-medio, .exercicio-dificil');
+    const respostaDiv = exercicioDiv.querySelector('.resposta-explicada');
+
+    if (respostaDiv.style.display === 'block') {
+        respostaDiv.style.display = 'none';
+        botao.textContent = 'Ver explicação';
+    } else {
+        respostaDiv.style.display = 'block';
+        botao.textContent = 'Ocultar explicação';
+    }
+}
+
+document.querySelectorAll('.exercicio-alternativas input[type="radio"]').forEach(input => {
+    input.addEventListener('change', verificarAtividade);
+});
+
+async function verificarAtividade() {
+    const questoes = document.querySelectorAll('.exercicio-alternativas');
+    const respondidas = document.querySelectorAll('.exercicio-alternativas input[type="radio"]:checked');
+
+    if (respondidas.length === questoes.length) {
+        try {
+            await fetch('/api/trilha/concluir', {
+                method: 'POST',
+                headers: {'Content-Type':'application/json'},
+                body: JSON.stringify({
+                    materia: 'historia',
+                    topico: 'redemocratizacao'
+                })
+            });
+
+            alert('Atividade concluída! Seu progresso na Trilha de Estudos foi atualizado.');
+        } catch (erro) {
+            console.error('Erro ao atualizar progresso:', erro);
+        }
+    }
+}
+</script>
+</body>
+</html>

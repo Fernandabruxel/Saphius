@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Meio Ambiente - Saphius</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/views/conteudos/geografia/geografia.css">
+</head>
+<body>
+    <div class="app-container">
+        <aside class="sidebar">
+            <div class="sidebar-logo"><h2>Saphius</h2></div>
+            <ul class="sidebar-menu">
+                <li><a href="/dashboard"><span class="icon"></span> <span>Dashboard</span></a></li>
+                <li><a href="/conteudos"><span class="icon"></span> <span>Conteúdos</span></a></li>
+                <li><a href="/trilha"><span class="icon"></span> <span>Trilha de estudos</span></a></li>
+                <li><a href="/bemestar"><span class="icon"></span> <span>Bem-estar</span></a></li>
+                <li><a href="/perfil"><span class="icon"></span> <span>Perfil</span></a></li>
+                <li><a href="/configuracoes"><span class="icon"></span> <span>Configurações</span></a></li>
+                <li><a href="/ajuda"><span class="icon"></span> <span>Ajuda</span></a></li>
+                <li><a href="/sair"><span class="icon"></span> <span>Sair</span></a></li>
+            </ul>
+        </aside>
+
+        <main class="main-content">
+            <div class="container">
+                <a href="/geografia" class="voltar">Voltar para Geografia</a>
+
+                <h1 style="text-align:center; font-size:2.5em; color:#2e7d32;">Meio Ambiente</h1>
+                <p style="color:#666; text-align:center; font-size:1.1em;">Desmatamento, Aquecimento global, Sustentabilidade e Recursos naturais</p>
+
+                <!-- ABAS -->
+                <div class="abas-navegacao" style="margin:25px 0;">
+                    <button class="aba-btn active" onclick="trocarAba(this, 'conteudo')">Conteúdo</button>
+                    <button class="aba-btn" onclick="trocarAba(this, 'exercicios')">Exercícios</button>
+                    <button class="aba-btn" onclick="trocarAba(this, 'resumo')">Resumo</button>
+                    <button class="aba-btn" onclick="trocarAba(this, 'simulado')">Simulado</button>
+                </div>
+
+                <!-- ===== CONTEÚDO ===== -->
+                <div id="conteudo" class="aba-conteudo active">
+
+                    <div class="explicacao-detalhada">
+                        <h3>Introdução: O que é Meio Ambiente?</h3>
+                        <p>
+                            O <strong>Meio Ambiente</strong> é o conjunto de elementos naturais, sociais e culturais 
+                            que interagem entre si. No contexto atual, os principais desafios ambientais são o 
+                            <strong>desmatamento</strong>, o <strong>aquecimento global</strong>, a 
+                            <strong>degradação dos recursos naturais</strong> e a busca pela 
+                            <strong>sustentabilidade</strong>.
+                        </p>
+                        <div class="enem-dica">
+                            <strong>DICA ENEM:</strong>
+                            <p>O Meio Ambiente é um dos temas mais cobrados no ENEM. Questões sobre 
+                            <strong>desmatamento</strong>, <strong>aquecimento global</strong> e 
+                            <strong>sustentabilidade</strong> aparecem com frequência.</p>
+                        </div>
+                    </div>
+
+                    <!-- SEÇÃO 1 -->
+                    <div class="explicacao-detalhada">
+                        <h3>1. Desmatamento</h3>
+                        <p>
+                            O <strong>desmatamento</strong> é a remoção da vegetação nativa, especialmente em 
+                            biomas como a <strong>Amazônia</strong>, o <strong>Cerrado</strong> e a 
+                            <strong>Mata Atlântica</strong>. As principais causas são:
+                        </p>
+                        <ul>
+                            <li><strong>Expansão agropecuária:</strong> Abertura de áreas para pastagens e cultivo.</li>
+                            <li><strong>Mineração:</strong> Extração de minérios e metais.</li>
+                            <li><strong>Urbanização:</strong> Crescimento desordenado das cidades.</li>
+                            <li><strong>Infraestrutura:</strong> Construção de estradas e hidrelétricas.</li>
+                        </ul>
+                        <p>
+                            <strong>Consequências do desmatamento:</strong>
+                            <ul>
+                                <li>Perda de <strong>biodiversidade</strong>.</li>
+                                <li>Alteração do <strong>clima</strong>.</li>
+                                <li>Degradação do <strong>solo</strong>.</li>
+                                <li>Impactos sobre as <strong>populações indígenas</strong> e <strong>ribeirinhas</strong>.</li>
+                            </ul>
+                        </p>
+                        <div class="enem-dica">
+                            <strong>DICA ENEM:</strong>
+                            <p>O ENEM cobra o <strong>desmatamento</strong> como um dos maiores problemas ambientais 
+                            do Brasil, especialmente na Amazônia.</p>
+                        </div>
+                    </div>
+
+                    <!-- SEÇÃO 2 -->
+                    <div class="explicacao-detalhada">
+                        <h3>2. Aquecimento Global e Mudanças Climáticas</h3>
+                        <p>
+                            O <strong>aquecimento global</strong> é o aumento da temperatura média da Terra, causado 
+                            principalmente pela emissão de <strong>gases de efeito estufa</strong> (GEE), como o 
+                            <strong>CO₂</strong> (dióxido de carbono) e o <strong>metano</strong>.
+                        </p>
+                        <ul>
+                            <li><strong>Efeito Estufa:</strong> Fenômeno natural que aquece o planeta, mas que foi 
+                            intensificado pela ação humana.</li>
+                            <li><strong>Queima de combustíveis fósseis:</strong> Principal fonte de emissões de CO₂.</li>
+                            <li><strong>Desmatamento:</strong> Reduz a absorção de CO₂ pelas florestas.</li>
+                            <li><strong>Agricultura e pecuária:</strong> Emissões de metano e óxido nitroso.</li>
+                        </ul>
+                        <p>
+                            <strong>Consequências do aquecimento global:</strong>
+                            <ul>
+                                <li><strong>Derretimento de geleiras:</strong> Aumento do nível do mar.</li>
+                                <li><strong>Eventos climáticos extremos:</strong> Secas, enchentes, tempestades.</li>
+                                <li><strong>Perda de biodiversidade:</strong> Espécies ameaçadas de extinção.</li>
+                                <li><strong>Impactos na agricultura:</strong> Redução da produtividade.</li>
+                            </ul>
+                        </p>
+                        <div class="enem-dica">
+                            <strong>DICA ENEM:</strong>
+                            <p>O ENEM cobra o <strong>aquecimento global</strong> e o <strong>efeito estufa</strong> 
+                            como temas centrais da geografia ambiental.</p>
+                        </div>
+                    </div>
+
+                    <!-- SEÇÃO 3 -->
+                    <div class="explicacao-detalhada">
+                        <h3>3. Sustentabilidade</h3>
+                        <p>
+                            A <strong>sustentabilidade</strong> é a capacidade de atender às necessidades do presente 
+                            sem comprometer as gerações futuras. Ela se baseia em três pilares:
+                        </p>
+                        <ul>
+                            <li><strong>Sustentabilidade ambiental:</strong> Preservação dos recursos naturais.</li>
+                            <li><strong>Sustentabilidade social:</strong> Justiça social e equidade.</li>
+                            <li><strong>Sustentabilidade econômica:</strong> Crescimento econômico sustentável.</li>
+                        </ul>
+                        <p>
+                            <strong>Exemplos de práticas sustentáveis:</strong>
+                            <ul>
+                                <li><strong>Energias renováveis:</strong> Solar, eólica, hidráulica.</li>
+                                <li><strong>Reciclagem:</strong> Redução do lixo e reutilização de materiais.</li>
+                                <li><strong>Agricultura orgânica:</strong> Cultivo sem agrotóxicos.</li>
+                                <li><strong>Preservação de áreas verdes:</strong> Unidades de conservação.</li>
+                            </ul>
+                        </p>
+                        <div class="enem-dica">
+                            <strong>DICA ENEM:</strong>
+                            <p>O ENEM cobra a <strong>sustentabilidade</strong> como um conceito fundamental para 
+                            o desenvolvimento econômico e social.</p>
+                        </div>
+                    </div>
+
+                    <!-- SEÇÃO 4 -->
+                    <div class="explicacao-detalhada">
+                        <h3>4. Recursos Naturais</h3>
+                        <p>
+                            Os <strong>recursos naturais</strong> são elementos da natureza utilizados pelo ser humano 
+                            para sobrevivência e desenvolvimento. Eles podem ser:
+                        </p>
+                        <ul>
+                            <li><strong>Renováveis:</strong> Água, energia solar, vento, biomassa.</li>
+                            <li><strong>Não renováveis:</strong> Petróleo, gás natural, carvão mineral.</li>
+                        </ul>
+                        <p>
+                            <strong>Gestão dos recursos naturais:</strong>
+                            <ul>
+                                <li><strong>Exploração racional:</strong> Uso consciente dos recursos.</li>
+                                <li><strong>Preservação:</strong> Proteção dos recursos para as gerações futuras.</li>
+                                <li><strong>Educação ambiental:</strong> Conscientização da população.</li>
+                            </ul>
+                        </p>
+                        <div class="enem-dica">
+                            <strong>DICA ENEM:</strong>
+                            <p>O ENEM cobra a <strong>gestão dos recursos naturais</strong> e a 
+                            <strong>importância da preservação ambiental</strong>.</p>
+                        </div>
+                    </div>
+
+                    <div class="dica-saphius">
+                        <h3>Dica Saphius</h3>
+                        <p>
+                            Memorize: <strong>"Desmatamento + Aquecimento Global + Sustentabilidade + Recursos Naturais"</strong>.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- ===== EXERCÍCIOS ===== -->
+                <div id="exercicios" class="aba-conteudo">
+                    <h2 style="color:#2e7d32;">Exercícios - Meio Ambiente</h2>
+                    <p style="color:#666;">15 questões (5 Fáceis, 5 Médias, 5 Difíceis)</p>
+
+                    <!-- 5 FÁCEIS -->
+                    <div class="exercicio-facil">
+                        <span class="badge">FÁCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>1.</strong> O desmatamento na Amazônia é causado principalmente por:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q1"> a) Expansão agropecuária</label>
+                            <label><input type="radio" name="q1"> b) Turismo</label>
+                            <label><input type="radio" name="q1"> c) Pesca</label>
+                            <label><input type="radio" name="q1"> d) Urbanização</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: A) Expansão agropecuária</strong></p>
+                            <p><strong>Explicação:</strong> O desmatamento na Amazônia é impulsionado principalmente pela expansão da agropecuária.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-facil">
+                        <span class="badge">FÁCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>2.</strong> O principal gás de efeito estufa emitido pela queima de combustíveis fósseis é:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q2"> a) Metano</label>
+                            <label><input type="radio" name="q2"> b) Dióxido de carbono (CO₂)</label>
+                            <label><input type="radio" name="q2"> c) Ozônio</label>
+                            <label><input type="radio" name="q2"> d) Nitrogênio</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: B) Dióxido de carbono (CO₂)</strong></p>
+                            <p><strong>Explicação:</strong> O CO₂ é o principal gás de efeito estufa emitido pela queima de combustíveis fósseis.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-facil">
+                        <span class="badge">FÁCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>3.</strong> A sustentabilidade é baseada em três pilares:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q3"> a) Ambiental, social e econômico</label>
+                            <label><input type="radio" name="q3"> b) Político, cultural e religioso</label>
+                            <label><input type="radio" name="q3"> c) Tecnológico, científico e social</label>
+                            <label><input type="radio" name="q3"> d) Financeiro, industrial e agrícola</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: A) Ambiental, social e econômico</strong></p>
+                            <p><strong>Explicação:</strong> A sustentabilidade se baseia nos pilares ambiental, social e econômico.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-facil">
+                        <span class="badge">FÁCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>4.</strong> Um exemplo de fonte de energia renovável é:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q4"> a) Petróleo</label>
+                            <label><input type="radio" name="q4"> b) Energia solar</label>
+                            <label><input type="radio" name="q4"> c) Carvão mineral</label>
+                            <label><input type="radio" name="q4"> d) Gás natural</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: B) Energia solar</strong></p>
+                            <p><strong>Explicação:</strong> A energia solar é uma fonte renovável e limpa de energia.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-facil">
+                        <span class="badge">FÁCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>5.</strong> A preservação de áreas verdes é importante porque:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q5"> a) Gera empregos</label>
+                            <label><input type="radio" name="q5"> b) Protege a biodiversidade e o clima</label>
+                            <label><input type="radio" name="q5"> c) Aumenta a poluição</label>
+                            <label><input type="radio" name="q5"> d) Reduz a qualidade de vida</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: B) Protege a biodiversidade e o clima</strong></p>
+                            <p><strong>Explicação:</strong> As áreas verdes protegem a biodiversidade e ajudam a regular o clima.</p>
+                        </div>
+                    </div>
+
+                    <!-- 5 MÉDIAS -->
+                    <div class="exercicio-medio">
+                        <span class="badge">MÉDIO</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>6.</strong> (ENEM) O aquecimento global é causado pelo:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q6"> a) Aumento da camada de ozônio</label>
+                            <label><input type="radio" name="q6"> b) Intensificação do efeito estufa</label>
+                            <label><input type="radio" name="q6"> c) Redução das queimadas</label>
+                            <label><input type="radio" name="q6"> d) Diminuição do desmatamento</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: B) Intensificação do efeito estufa</strong></p>
+                            <p><strong>Explicação:</strong> O aquecimento global é causado pela intensificação do efeito estufa devido à emissão de gases poluentes.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-medio">
+                        <span class="badge">MÉDIO</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>7.</strong> (ENEM) O desmatamento da Amazônia contribui para o aquecimento global porque:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q7"> a) Libera gases de efeito estufa</label>
+                            <label><input type="radio" name="q7"> b) Reduz a absorção de CO₂</label>
+                            <label><input type="radio" name="q7"> c) Aumenta a reflexão solar</label>
+                            <label><input type="radio" name="q7"> d) Reduz a umidade do ar</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: B) Reduz a absorção de CO₂</strong></p>
+                            <p><strong>Explicação:</strong> O desmatamento reduz a capacidade das florestas de absorver CO₂, intensificando o aquecimento global.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-medio">
+                        <span class="badge">MÉDIO</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>8.</strong> (ENEM) A sustentabilidade ambiental envolve:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q8"> a) Uso racional dos recursos naturais</label>
+                            <label><input type="radio" name="q8"> b) Aumento do consumo</label>
+                            <label><input type="radio" name="q8"> c) Exploração ilimitada de recursos</label>
+                            <label><input type="radio" name="q8"> d) Redução da biodiversidade</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: A) Uso racional dos recursos naturais</strong></p>
+                            <p><strong>Explicação:</strong> A sustentabilidade ambiental exige o uso racional dos recursos naturais para garantir sua preservação.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-medio">
+                        <span class="badge">MÉDIO</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>9.</strong> (ENEM) A reciclagem é uma prática sustentável porque:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q9"> a) Reduz o lixo e economiza recursos</label>
+                            <label><input type="radio" name="q9"> b) Aumenta a poluição</label>
+                            <label><input type="radio" name="q9"> c) Gera mais resíduos</label>
+                            <label><input type="radio" name="q9"> d) Consome mais energia</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: A) Reduz o lixo e economiza recursos</strong></p>
+                            <p><strong>Explicação:</strong> A reciclagem reduz a quantidade de lixo e economiza recursos naturais, sendo uma prática sustentável.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-medio">
+                        <span class="badge">MÉDIO</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>10.</strong> (ENEM) Os recursos naturais não renováveis são aqueles que:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q10"> a) Se regeneram rapidamente</label>
+                            <label><input type="radio" name="q10"> b) Se esgotam com o uso</label>
+                            <label><input type="radio" name="q10"> c) São ilimitados</label>
+                            <label><input type="radio" name="q10"> d) São inesgotáveis</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: B) Se esgotam com o uso</strong></p>
+                            <p><strong>Explicação:</strong> Os recursos não renováveis, como petróleo e carvão, se esgotam com o uso.</p>
+                        </div>
+                    </div>
+
+                    <!-- 5 DIFÍCEIS -->
+                    <div class="exercicio-dificil">
+                        <span class="badge">DIFÍCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>11.</strong> (ENEM) A Conferência das Nações Unidas sobre Meio Ambiente (Rio-92) foi importante porque:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q11"> a) Criou o protocolo de Kyoto</label>
+                            <label><input type="radio" name="q11"> b) Estabeleceu metas de redução de emissões</label>
+                            <label><input type="radio" name="q11"> c) Consolidou o conceito de desenvolvimento sustentável</label>
+                            <label><input type="radio" name="q11"> d) Proibiu o desmatamento</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: C) Consolidou o conceito de desenvolvimento sustentável</strong></p>
+                            <p><strong>Explicação:</strong> A Rio-92 consolidou o conceito de desenvolvimento sustentável e criou a Agenda 21.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-dificil">
+                        <span class="badge">DIFÍCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>12.</strong> (ENEM) O aquecimento global pode causar:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q12"> a) Derretimento de geleiras</label>
+                            <label><input type="radio" name="q12"> b) Aumento do nível do mar</label>
+                            <label><input type="radio" name="q12"> c) Eventos climáticos extremos</label>
+                            <label><input type="radio" name="q12"> d) Todas as alternativas estão corretas</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: D) Todas as alternativas estão corretas</strong></p>
+                            <p><strong>Explicação:</strong> O aquecimento global causa derretimento de geleiras, aumento do nível do mar e eventos climáticos extremos.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-dificil">
+                        <span class="badge">DIFÍCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>13.</strong> (ENEM) A agricultura orgânica é uma prática sustentável porque:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q13"> a) Utiliza agrotóxicos</label>
+                            <label><input type="radio" name="q13"> b) Preserva o solo e a água</label>
+                            <label><input type="radio" name="q13"> c) Aumenta a poluição</label>
+                            <label><input type="radio" name="q13"> d) Reduz a biodiversidade</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: B) Preserva o solo e a água</strong></p>
+                            <p><strong>Explicação:</strong> A agricultura orgânica preserva o solo e a água, evitando o uso de agrotóxicos.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-dificil">
+                        <span class="badge">DIFÍCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>14.</strong> (ENEM) O Protocolo de Kyoto (1997) estabeleceu metas de redução de emissões para:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q14"> a) Países desenvolvidos</label>
+                            <label><input type="radio" name="q14"> b) Países em desenvolvimento</label>
+                            <label><input type="radio" name="q14"> c) Todos os países</label>
+                            <label><input type="radio" name="q14"> d) Apenas a China</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: A) Países desenvolvidos</strong></p>
+                            <p><strong>Explicação:</strong> O Protocolo de Kyoto estabeleceu metas de redução de emissões para países desenvolvidos.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-dificil">
+                        <span class="badge">DIFÍCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>15.</strong> (ENEM) A preservação da Amazônia é importante para o equilíbrio climático porque:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q15"> a) É a maior floresta tropical do mundo</label>
+                            <label><input type="radio" name="q15"> b) Absorve grandes quantidades de CO₂</label>
+                            <label><input type="radio" name="q15"> c) Regula o clima global</label>
+                            <label><input type="radio" name="q15"> d) Todas as alternativas estão corretas</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: D) Todas as alternativas estão corretas</strong></p>
+                            <p><strong>Explicação:</strong> A Amazônia é a maior floresta tropical, absorve CO₂ e regula o clima global.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- ===== RESUMO ===== -->
+                <div id="resumo" class="aba-conteudo">
+                    <div class="resumo-principal">
+                        <h2 class="resumo-titulo">Resumo - Meio Ambiente</h2>
+                        <p class="resumo-subtitulo">Principais pontos para memorizar</p>
+
+                        <div class="resumo-grid">
+                            <div class="resumo-card-item">
+                                <h3>Desmatamento</h3>
+                                <p>Expansão agropecuária, mineração</p>
+                                <span class="resumo-tag">Amazônia</span>
+                            </div>
+
+                            <div class="resumo-card-item">
+                                <h3>Aquecimento Global</h3>
+                                <p>Efeito estufa, CO₂, metano</p>
+                                <span class="resumo-tag">Mudanças Climáticas</span>
+                            </div>
+
+                            <div class="resumo-card-item">
+                                <h3>Sustentabilidade</h3>
+                                <p>Ambiental, social, econômico</p>
+                                <span class="resumo-tag">Desenvolvimento Sustentável</span>
+                            </div>
+
+                            <div class="resumo-card-item">
+                                <h3>Recursos Naturais</h3>
+                                <p>Renováveis e não renováveis</p>
+                                <span class="resumo-tag">Preservação</span>
+                            </div>
+
+                            <div class="resumo-card-item">
+                                <h3>Energias Renováveis</h3>
+                                <p>Solar, eólica, hidráulica</p>
+                                <span class="resumo-tag">Fontes Limpas</span>
+                            </div>
+
+                            <div class="resumo-card-item">
+                                <h3>Conferências Ambientais</h3>
+                                <p>Rio-92, Protocolo de Kyoto</p>
+                                <span class="resumo-tag">Acordos Globais</span>
+                            </div>
+                        </div>
+
+                        <div class="resumo-dica-final">
+                            <h4>Dica Saphius</h4>
+                            <p>Memorize: <strong>"Desmatamento + Aquecimento + Sustentabilidade + Recursos Naturais"</strong></p>
+                        </div>
+
+                        <div class="resumo-dica-enem">
+                            <h4>Dica ENEM</h4>
+                            <p>Atenção para os termos <strong>"Efeito Estufa"</strong>, <strong>"Desenvolvimento Sustentável"</strong> e <strong>"Protocolo de Kyoto"</strong>.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ===== SIMULADO ===== -->
+                <div id="simulado" class="aba-conteudo">
+                    <h2 style="color:#2e7d32;">Simulado - Meio Ambiente</h2>
+                    <p style="color:#666;">Teste seus conhecimentos com questões estilo ENEM</p>
+
+                    <div class="simulado-card">
+                        <div style="display:flex; gap:20px; flex-wrap:wrap; justify-content:center; margin-bottom:15px;">
+                            <span><strong>15 questões</strong></span>
+                            <span><strong>20 minutos</strong></span>
+                            <span><strong>Nível: Fácil a Difícil</strong></span>
+                        </div>
+                        <p style="color:#555; margin-bottom:15px;">As questões são as mesmas da aba "Exercícios" acima.</p>
+                        <button class="btn-principal" onclick="alert('Simulado iniciado! Responda todas as 15 questões na aba Exercícios.')">
+                            Iniciar simulado
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+    </div>
+
+   <script>
+    function trocarAba(botao, abaId) {
+        document.querySelectorAll('.aba-btn').forEach(b => b.classList.remove('active'));
+        botao.classList.add('active');
+
+        document.querySelectorAll('.aba-conteudo').forEach(c => c.classList.remove('active'));
+        document.getElementById(abaId).classList.add('active');
+    }
+
+    function mostrarResposta(botao) {
+        const exercicioDiv = botao.closest('.exercicio-facil, .exercicio-medio, .exercicio-dificil');
+        const respostaDiv = exercicioDiv.querySelector('.resposta-explicada');
+
+        if (respostaDiv.style.display === 'block') {
+            respostaDiv.style.display = 'none';
+            botao.textContent = 'Ver explicação';
+        } else {
+            respostaDiv.style.display = 'block';
+            botao.textContent = 'Ocultar explicação';
+        }
+    }
+
+    document.querySelectorAll('.exercicio-alternativas input[type="radio"]').forEach(input => {
+        input.addEventListener('change', verificarAtividade);
+    });
+
+    async function verificarAtividade() {
+        const questoes = document.querySelectorAll('.exercicio-alternativas');
+        const respondidas = document.querySelectorAll(
+            '.exercicio-alternativas input[type="radio"]:checked'
+        );
+
+        if (respondidas.length === questoes.length) {
+            try {
+                await fetch('/api/trilha/concluir', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        materia: 'geografia',
+                        topico: 'meio-ambiente'
+                    })
+                });
+
+                alert('Atividade concluída! Seu progresso na Trilha de Estudos foi atualizado.');
+            } catch (erro) {
+                console.error('Erro ao atualizar progresso:', erro);
+            }
+        }
+    }
+</script>
+
+</body>
+</html>

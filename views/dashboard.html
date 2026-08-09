@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Saphius</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Menu Lateral -->
+        <aside class="sidebar">
+            <div class="sidebar-logo">
+                <h2>Saphius</h2>
+            </div>
+            <ul class="sidebar-menu">
+                <li><a href="/dashboard" class="active"><span class="icon"></span> <span>Dashboard</span></a></li>
+                <li><a href="/conteudos"><span class="icon"></span> <span>Conteúdos</span></a></li>
+                <li><a href="/trilha"><span class="icon"></span> <span>Trilha de estudos</span></a></li>
+                <li><a href="/bemestar"><span class="icon"></span> <span>Bem-estar</span></a></li>
+                <li><a href="/perfil"><span class="icon"></span> <span>Perfil</span></a></li>
+                <li><a href="/configuracoes"><span class="icon"></span> <span>Configurações</span></a></li>
+                <li><a href="/ajuda"><span class="icon"></span> <span>Ajuda</span></a></li>
+                <li><a href="/sair"><span class="icon"></span> <span>Sair</span></a></li>
+            </ul>
+        </aside>
+
+        <!-- Conteúdo Principal -->
+        <main class="main-content">
+            <div class="container dashboard-container">
+                <!-- Boas-vindas -->
+                <div class="welcome-section">
+                    <h1>Saphius</h1>
+                    <h2 id="nomeUsuario">Bem-vindo(a)!</h2>
+                    <p>Ciências Humanas e suas Tecnologias – ENEM</p>
+                    <p style="color: #666; font-size: 0.95em; margin-top: 5px;">
+                        Plataforma de Ensino focada em Ciências Humanas e suas Tecnologias, com organização,
+                        trilhas de aprendizagem e IA de Apoio Pedagógico e Emocional.
+                    </p>
+                </div>
+
+                <!-- Matérias -->
+                <div class="section-title">Matérias</div>
+                <div class="cards-grid">
+                    <div class="subject-card">
+                        <h3>História</h3>
+                        <p>Brasil – Geral – História contemporânea – ENEM na prática</p>
+                        <a href="/historia">Acessar conteúdos →</a>
+                    </div>
+                    <div class="subject-card">
+                        <h3>Geografia</h3>
+                        <p>Geografia física – Geopolítica – Meio ambiente – Atualidades</p>
+                        <a href="/geografia">Acessar conteúdos →</a>
+                    </div>
+                    <div class="subject-card">
+                        <h3>Sociologia</h3>
+                        <p>Cidadania – Cultura – Trabalho – Movimentos sociais</p>
+                        <a href="/sociologia">Acessar conteúdos →</a>
+                    </div>
+                    <div class="subject-card">
+                        <h3>Filosofia</h3>
+                        <p>Ética – Política – Filosofia clássica – Pensadores</p>
+                        <a href="/filosofia">Acessar conteúdos →</a>
+                    </div>
+                </div>
+
+                <!-- Recursos especiais -->
+                <div class="section-title">Recursos especiais</div>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <h3>Trilha de estudos</h3>
+                        <p>Estude de forma organizada, seguindo uma sequência pensada para o ENEM</p>
+                        <a href="/trilha">Acessar conteúdos →</a>
+                    </div>
+                    <div class="feature-card">
+                        <h3>Bem-estar e foco</h3>
+                        <p>Dicas para organização, concentração e controle da ansiedade nos estudos</p>
+                        <a href="/bemestar">Acessar conteúdos →</a>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        fetch('/api/usuario')
+            .then(res => res.json())
+            .then(data => {
+                if (data.nome) {
+                    document.getElementById('nomeUsuario').innerHTML = `Bem-vindo(a), ${data.nome}! 🌿`;
+                }
+            })
+            .catch(err => console.log('Erro:', err));
+    </script>
+</body>
+</html>

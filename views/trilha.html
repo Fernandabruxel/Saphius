@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trilha de Estudos - Saphius</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="app-container">
+        <aside class="sidebar">
+            <div class="sidebar-logo"><h2> Saphius</h2></div>
+            <ul class="sidebar-menu">
+                <li><a href="/dashboard"><span class="icon"></span> <span>Dashboard</span></a></li>
+                <li><a href="/conteudos"><span class="icon"></span> <span>Conteúdos</span></a></li>
+                <li><a href="/trilha" class="active"><span class="icon"></span> <span>Trilha de estudos</span></a></li>
+                <li><a href="/bemestar"><span class="icon"></span> <span>Bem-estar</span></a></li>
+                <li><a href="/perfil"><span class="icon"></span> <span>Perfil</span></a></li>
+                <li><a href="/configuracoes"><span class="icon"></span> <span>Configurações</span></a></li>
+                <li><a href="/ajuda"><span class="icon"></span> <span>Ajuda</span></a></li>
+                <li><a href="/sair"><span class="icon"></span> <span>Sair</span></a></li>
+            </ul>
+        </aside>
+
+        <main class="main-content">
+            <div class="container trilha-container">
+
+                <div class="trilha-header">
+                    <h1> Sua Trilha de Estudos</h1>
+                    <p>Siga uma sequência pensada para o ENEM</p>
+                </div>
+
+                <div class="progresso-geral">
+                    <div class="progresso-info">
+                        <span class="progresso-label"> Progresso geral</span>
+                        <span class="progresso-porcentagem" id="progressoGeral">0%</span>
+                    </div>
+                    <div class="progresso-bar-geral">
+                        <div class="progresso-fill-geral" id="barraGeral" style="width:0%"></div>
+                    </div>
+                </div>
+
+                <div class="trilha-grid">
+
+                    <!-- HISTÓRIA -->
+                    <div class="trilha-card" data-materia="historia">
+                        <div class="trilha-card-header">
+                            <h3> História</h3>
+                            <div class="trilha-status pendente" id="status-historia">Pendente</div>
+                        </div>
+                        <p>Estude os 5 tópicos de História para avançar:</p>
+                        <div class="etapas-lista" id="etapas-historia">
+                            <label class="etapa-item">
+                                <input type="checkbox" onchange="marcarEtapa('historia', 0, this)">
+                                Brasil República (1889-1930)
+                            </label>
+                            <label class="etapa-item">
+                                <input type="checkbox" onchange="marcarEtapa('historia', 1, this)">
+                                Era Vargas (1930-1945)
+                            </label>
+                            <label class="etapa-item">
+                                <input type="checkbox" onchange="marcarEtapa('historia', 2, this)">
+                                Período Democrático (1945-1964)
+                            </label>
+                            <label class="etapa-item">
+                                <input type="checkbox" onchange="marcarEtapa('historia', 3, this)">
+                                Ditadura Militar (1964-1985)
+                            </label>
+                            <label class="etapa-item">
+                                <input type="checkbox" onchange="marcarEtapa('historia', 4, this)">
+                                Redemocratização (1985-atualidade)
+                            </label>
+                        </div>
+                        <div class="trilha-progresso">
+                            <div class="trilha-bar"><div class="trilha-fill" id="barra-historia" style="width:0%"></div></div>
+                            <span class="trilha-porcentagem" id="porcentagem-historia">0%</span>
+                        </div>
+                        <a href="/historia" class="btn-continuar" id="botao-historia" target="_blank">📚 Estudar matéria</a>
+                    </div>
+
+                    <!-- GEOGRAFIA -->
+                    <div class="trilha-card" data-materia="geografia">
+                        <div class="trilha-card-header">
+                            <h3> Geografia</h3>
+                            <div class="trilha-status pendente" id="status-geografia">Pendente</div>
+                        </div>
+                        <p>Estude os 6 tópicos de Geografia para avançar:</p>
+                        <div class="etapas-lista" id="etapas-geografia">
+                            <label class="etapa-item">
+                                <input type="checkbox" onchange="marcarEtapa('geografia', 0, this)">
+                                Geografia Física do Brasil
+                            </label>
+                            <label class="etapa-item">
+                                <input type="checkbox" onchange="marcarEtapa('geografia', 1, this)">
+                                Geopolítica Brasileira
+                            </label>
+                            <label class="etapa-item">
+                                <input type="checkbox" onchange="marcarEtapa('geografia', 2, this)">
+                                Geopolítica Mundial
+                            </label>
+                            <label class="etapa-item">
+                                <input type="checkbox" onchange="marcarEtapa('geografia', 3, this)">
+                                Meio Ambiente
+                            </label>
+                            <label class="etapa-item">
+                                <input type="checkbox" onchange="marcarEtapa('geografia', 4, this)">
+                                Atualidades
+                            </label>
+                            <label class="etapa-item">
+                                <input type="checkbox" onchange="marcarEtapa('geografia', 5, this)">
+                                Agropecuária
+                            </label>
+                        </div>
+                        <div class="trilha-progresso">
+                            <div class="trilha-bar"><div class="trilha-fill" id="barra-geografia" style="width:0%"></div></div>
+                            <span class="trilha-porcentagem" id="porcentagem-geografia">0%</span>
+                        </div>
+                        <a href="/geografia" class="btn-continuar" id="botao-geografia" target="_blank">📚 Estudar matéria</a>
+                    </div>
+
+                    <!-- SOCIOLOGIA -->
+                    <div class="trilha-card" data-materia="sociologia">
+                        <div class="trilha-card-header">
+                            <h3> Sociologia</h3>
+                            <div class="trilha-status pendente" id="status-sociologia">Pendente</div>
+                        </div>
+                        <p>Estude os 6 tópicos de Sociologia para avançar:</p>
+                        <div class="etapas-lista" id="etapas-sociologia">
+                            <label class="etapa-item">
+                                <input type="checkbox" onchange="marcarEtapa('sociologia', 0, this)">
+                                Cidadania
+                            </label>
+                            <label class="etapa-item">
+                                <input type="checkbox" onchange="marcarEtapa('sociologia', 1, this)">
+                                Cultura Brasileira
+                            </label>
+                            <label class="etapa-item">
+                                <input type="checkbox" onchange="marcarEtapa('sociologia', 2, this)">
+                                Trabalho
+                            </label>
+                            <label class="etapa-item">
+                                <input type="checkbox" onchange="marcarEtapa('sociologia', 3, this)">
+                                Movimentos Sociais
+                            </label>
+                            <label class="etapa-item">
+                                <input type="checkbox" onchange="marcarEtapa('sociologia', 4, this)">
+                                Desigualdade Social
+                            </label>
+                            <label class="etapa-item">
+                                <input type="checkbox" onchange="marcarEtapa('sociologia', 5, this)">
+                                Violência e Segurança
+                            </label>
+                        </div>
+                        <div class="trilha-progresso">
+                            <div class="trilha-bar"><div class="trilha-fill" id="barra-sociologia" style="width:0%"></div></div>
+                            <span class="trilha-porcentagem" id="porcentagem-sociologia">0%</span>
+                        </div>
+                        <a href="/sociologia" class="btn-continuar" id="botao-sociologia" target="_blank">📚 Estudar matéria</a>
+                    </div>
+
+                    <!-- FILOSOFIA -->
+                    <div class="trilha-card" data-materia="filosofia">
+                        <div class="trilha-card-header">
+                            <h3> Filosofia</h3>
+                            <div class="trilha-status pendente" id="status-filosofia">Pendente</div>
+                        </div>
+                        <p>Estude os 6 tópicos de Filosofia para avançar:</p>
+                        <div class="etapas-lista" id="etapas-filosofia">
+                            <label class="etapa-item">
+                                <input type="checkbox" onchange="marcarEtapa('filosofia', 0, this)">
+                                Ética
+                            </label>
+                            <label class="etapa-item">
+                                <input type="checkbox" onchange="marcarEtapa('filosofia', 1, this)">
+                                Política
+                            </label>
+                            <label class="etapa-item">
+                                <input type="checkbox" onchange="marcarEtapa('filosofia', 2, this)">
+                                Filosofia Clássica
+                            </label>
+                            <label class="etapa-item">
+                                <input type="checkbox" onchange="marcarEtapa('filosofia', 3, this)">
+                                Pensadores Modernos
+                            </label>
+                            <label class="etapa-item">
+                                <input type="checkbox" onchange="marcarEtapa('filosofia', 4, this)">
+                                Filosofia Contemporânea
+                            </label>
+                            <label class="etapa-item">
+                                <input type="checkbox" onchange="marcarEtapa('filosofia', 5, this)">
+                                Filosofia no ENEM
+                            </label>
+                        </div>
+                        <div class="trilha-progresso">
+                            <div class="trilha-bar"><div class="trilha-fill" id="barra-filosofia" style="width:0%"></div></div>
+                            <span class="trilha-porcentagem" id="porcentagem-filosofia">0%</span>
+                        </div>
+                        <a href="/filosofia" class="btn-continuar" id="botao-filosofia" target="_blank">📚 Estudar matéria</a>
+                    </div>
+
+                </div>
+
+                <div class="dica-dia">
+                    <span class="dica-icon"></span>
+                    <div class="dica-conteudo">
+                        <h3>Dica do dia</h3>
+                        <p>"A consistência é mais importante que a intensidade. Estude um pouco todos os dias!"</p>
+                    </div>
+                </div>
+
+                <a href="/dashboard" class="voltar">← Voltar ao início</a>
+
+            </div>
+        </main>
+    </div>
+
+    <style>
+        .etapas-lista {
+            margin: 10px 0 15px 0;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+        .etapa-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.85em;
+            color: #444;
+            cursor: pointer;
+            padding: 4px 0;
+            transition: 0.2s;
+        }
+        .etapa-item:hover {
+            color: #2e7d32;
+        }
+        .etapa-item input[type="checkbox"] {
+            width: 16px;
+            height: 16px;
+            cursor: pointer;
+            accent-color: #4caf50;
+        }
+        .etapa-item.concluida {
+            text-decoration: line-through;
+            color: #888;
+        }
+        .trilha-card .btn-continuar {
+            display: inline-block;
+            width: 100%;
+            text-align: center;
+            padding: 10px;
+            background: #f5f7f5;
+            color: #2e7d32;
+            border: 1px solid #e8f5e9;
+            border-radius: 12px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: 0.3s;
+            text-decoration: none;
+            margin-top: 5px;
+        }
+        .trilha-card .btn-continuar:hover {
+            background: #4caf50;
+            color: #fff;
+            border-color: #4caf50;
+        }
+    </style>
+
+    <script>
+        // Estado do progresso por matéria
+        const progresso = {
+            historia: { concluidas: 0, total: 5 },
+            geografia: { concluidas: 0, total: 6 },
+            sociologia: { concluidas: 0, total: 6 },
+            filosofia: { concluidas: 0, total: 6 }
+        };
+
+        // Carregar progresso salvo no localStorage
+        function carregarProgresso() {
+            try {
+                const salvo = localStorage.getItem('trilhaProgresso');
+                if (salvo) {
+                    const dados = JSON.parse(salvo);
+                    for (const materia in dados) {
+                        if (progresso[materia]) {
+                            progresso[materia].concluidas = dados[materia] || 0;
+                        }
+                    }
+                }
+            } catch (e) {}
+        }
+
+        // Salvar progresso no localStorage
+        function salvarProgresso() {
+            const dados = {};
+            for (const materia in progresso) {
+                dados[materia] = progresso[materia].concluidas;
+            }
+            localStorage.setItem('trilhaProgresso', JSON.stringify(dados));
+        }
+
+        // Marcar/desmarcar etapa
+        function marcarEtapa(materia, index, checkbox) {
+            const etapaItem = checkbox.closest('.etapa-item');
+            
+            if (checkbox.checked) {
+                etapaItem.classList.add('concluida');
+                progresso[materia].concluidas++;
+            } else {
+                etapaItem.classList.remove('concluida');
+                progresso[materia].concluidas--;
+            }
+
+            // Atualizar visual
+            atualizarMateria(materia);
+            salvarProgresso();
+        }
+
+        // Atualizar barra e status de uma matéria
+        function atualizarMateria(materia) {
+            const dados = progresso[materia];
+            const porcentagem = Math.round((dados.concluidas / dados.total) * 100);
+
+            // Barra
+            document.getElementById('barra-' + materia).style.width = porcentagem + '%';
+            document.getElementById('porcentagem-' + materia).textContent = porcentagem + '%';
+
+            // Status
+            const statusEl = document.getElementById('status-' + materia);
+            const botao = document.getElementById('botao-' + materia);
+
+            if (porcentagem >= 100) {
+                statusEl.textContent = ' Concluído';
+                statusEl.className = 'trilha-status concluido';
+                botao.textContent = ' Concluído!';
+            } else if (porcentagem > 0) {
+                statusEl.textContent = ' Em andamento';
+                statusEl.className = 'trilha-status andamento';
+                botao.textContent = ' Continuar estudando';
+            } else {
+                statusEl.textContent = ' Pendente';
+                statusEl.className = 'trilha-status pendente';
+                botao.textContent = ' Iniciar';
+            }
+
+            // Atualizar progresso geral
+            atualizarGeral();
+        }
+
+        // Atualizar barra geral
+        function atualizarGeral() {
+            const materias = Object.values(progresso);
+            const totalConcluidas = materias.reduce((sum, m) => sum + m.concluidas, 0);
+            const totalTotal = materias.reduce((sum, m) => sum + m.total, 0);
+            const geral = Math.round((totalConcluidas / totalTotal) * 100);
+
+            document.getElementById('progressoGeral').textContent = geral + '%';
+            document.getElementById('barraGeral').style.width = geral + '%';
+        }
+
+        // Carregar estado inicial
+        carregarProgresso();
+
+        // Restaurar checkboxes
+        function restaurarCheckboxes() {
+            for (const materia in progresso) {
+                const checkboxes = document.querySelectorAll(`#etapas-${materia} input[type="checkbox"]`);
+                const concluidas = progresso[materia].concluidas;
+                
+                // Resetar todos
+                checkboxes.forEach(cb => {
+                    cb.checked = false;
+                    cb.closest('.etapa-item').classList.remove('concluida');
+                });
+
+                // Marcar os primeiros 'concluidas'
+                for (let i = 0; i < Math.min(concluidas, checkboxes.length); i++) {
+                    checkboxes[i].checked = true;
+                    checkboxes[i].closest('.etapa-item').classList.add('concluida');
+                }
+
+                atualizarMateria(materia);
+            }
+        }
+
+        restaurarCheckboxes();
+
+        // Função para reiniciar progresso (opcional)
+        function reiniciarTrilha() {
+            if (confirm('Tem certeza que quer reiniciar todo o progresso?')) {
+                for (const materia in progresso) {
+                    progresso[materia].concluidas = 0;
+                }
+                salvarProgresso();
+                restaurarCheckboxes();
+            }
+        }
+    </script>
+
+</body>
+</html>

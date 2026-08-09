@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Brasil República - Saphius</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/views/conteudos/historia/historia.css">
+</head>
+<body>
+    <div class="app-container">
+        <aside class="sidebar">
+            <div class="sidebar-logo"><h2>Saphius</h2></div>
+            <ul class="sidebar-menu">
+                <li><a href="/dashboard"><span class="icon"></span> <span>Dashboard</span></a></li>
+                <li><a href="/conteudos"><span class="icon"></span> <span>Conteúdos</span></a></li>
+                <li><a href="/trilha"><span class="icon"></span> <span>Trilha de estudos</span></a></li>
+                <li><a href="/bemestar"><span class="icon"></span> <span>Bem-estar</span></a></li>
+                <li><a href="/perfil"><span class="icon"></span> <span>Perfil</span></a></li>
+                <li><a href="/configuracoes"><span class="icon"></span> <span>Configurações</span></a></li>
+                <li><a href="/ajuda"><span class="icon"></span> <span>Ajuda</span></a></li>
+                <li><a href="/sair"><span class="icon"></span> <span>Sair</span></a></li>
+            </ul>
+        </aside>
+
+        <main class="main-content">
+            <div class="container">
+                <a href="/historia" class="voltar"> Voltar para História</a>
+
+                <h1 style="text-align:center; font-size:2.5em; color:#2e7d32;">Brasil República (1889-1930)</h1>
+                <p style="color:#666; text-align:center; font-size:1.1em;">Proclamação da República, Primeira República, Economia do Café com Leite</p>
+
+                <!-- ABAS -->
+                <div class="abas-navegacao" style="margin:25px 0;">
+                    <button class="aba-btn active" onclick="trocarAba(this, 'conteudo')">Conteúdo</button>
+                    <button class="aba-btn" onclick="trocarAba(this, 'exercicios')">Exercícios</button>
+                    <button class="aba-btn" onclick="trocarAba(this, 'resumo')">Resumo</button>
+                    <button class="aba-btn" onclick="trocarAba(this, 'simulado')">Simulado</button>
+                </div>
+
+                <!-- ===== CONTEÚDO ===== -->
+                <div id="conteudo" class="aba-conteudo active">
+
+                    <!-- INTRODUÇÃO -->
+                    <div class="explicacao-detalhada">
+                        <h3>Introdução: O que foi a República Velha?</h3>
+                        <p>
+                            A <strong>República Velha</strong> (também chamada de <strong>Primeira República</strong> ou 
+                            <strong>República Oligárquica</strong>) foi o período da história do Brasil que se estendeu 
+                            de <span class="data-destaque">15 de novembro de 1889</span> até <span class="data-destaque">24 de outubro de 1930</span>.
+                            Este período começou com a <strong>Proclamação da República</strong>, que derrubou a monarquia 
+                            de Dom Pedro II, e terminou com a <strong>Revolução de 1930</strong>, que levou Getúlio Vargas ao poder.
+                        </p>
+                        <p>
+                            Durante esses 41 anos, o Brasil foi governado por uma <strong>elite agrária</strong> que controlava 
+                            o país através de acordos entre as oligarquias de São Paulo (produtoras de café) e Minas Gerais 
+                            (produtoras de leite) — a famosa <strong>"Política do Café com Leite"</strong>.
+                        </p>
+                        <div class="enem-dica">
+                            <strong>DICA ENEM:</strong>
+                            <p>A República Velha é um dos temas mais recorrentes na prova de História do ENEM. 
+                            Questões sobre coronelismo, voto de cabresto e revoltas populares aparecem com frequência. 
+                            Entender este período é fundamental para compreender a formação política e social do Brasil.</p>
+                        </div>
+                    </div>
+
+                    <!-- LINHA DO TEMPO -->
+                    <div style="margin:30px 0;">
+                        <h2 style="color:#2e7d32;">Linha do Tempo - República Velha</h2>
+                        <div class="linha-tempo-detailed">
+                            <div class="evento">
+                                <span class="ano">1889</span>
+                                <div class="descricao">
+                                    <strong>Proclamação da República</strong> — Marechal Deodoro da Fonseca lidera o golpe que derruba 
+                                    Dom Pedro II. Início do governo provisório.
+                                </div>
+                            </div>
+                            <div class="evento">
+                                <span class="ano">1891</span>
+                                <div class="descricao">
+                                    <strong>Primeira Constituição Republicana</strong> — Promulgada em 24 de fevereiro. 
+                                    Estabeleceu o presidencialismo, o federalismo e o voto masculino (excluindo analfabetos, mulheres e militares).
+                                </div>
+                            </div>
+                            <div class="evento">
+                                <span class="ano">1894</span>
+                                <div class="descricao">
+                                    <strong>Início da Política do Café com Leite</strong> — Prudente de Morais (SP) assume a presidência, 
+                                    iniciando a alternância de poder entre São Paulo e Minas Gerais.
+                                </div>
+                            </div>
+                            <div class="evento">
+                                <span class="ano">1896-1897</span>
+                                <div class="descricao">
+                                    <strong>Guerra de Canudos</strong> — Movimento messiânico liderado por Antônio Conselheiro no sertão da Bahia. 
+                                    Resistiu ao governo republicano e foi massacrado pelo exército.
+                                </div>
+                            </div>
+                            <div class="evento">
+                                <span class="ano">1904</span>
+                                <div class="descricao">
+                                    <strong>Revolta da Vacina</strong> — Movimento popular no Rio de Janeiro contra a vacinação obrigatória 
+                                    imposta pelo governo federal para combater a varíola.
+                                </div>
+                            </div>
+                            <div class="evento">
+                                <span class="ano">1910</span>
+                                <div class="descricao">
+                                    <strong>Revolta da Chibata</strong> — Liderada por João Cândido, marinheiros se revoltaram contra 
+                                    os castigos físicos na Marinha. Conquistaram anistia, mas foram perseguidos depois.
+                                </div>
+                            </div>
+                            <div class="evento">
+                                <span class="ano">1912-1916</span>
+                                <div class="descricao">
+                                    <strong>Guerra do Contestado</strong> — Conflito entre posseiros e o governo na região do Contestado 
+                                    (PR/SC). Movimento messiânico e de resistência à exploração.
+                                </div>
+                            </div>
+                            <div class="evento">
+                                <span class="ano">1922</span>
+                                <div class="descricao">
+                                    <strong>Semana de Arte Moderna</strong> — Movimento cultural que renovou as artes no Brasil, 
+                                    em São Paulo. Marcou a busca por uma identidade nacional.
+                                </div>
+                            </div>
+                            <div class="evento">
+                                <span class="ano">1930</span>
+                                <div class="descricao">
+                                    <strong>Revolução de 1930</strong> — Getúlio Vargas assume o poder, pondo fim à República Velha 
+                                    e iniciando a Era Vargas.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SEÇÃO 1 -->
+                    <div class="explicacao-detalhada">
+                        <h3>1. A Proclamação da República (15 de novembro de 1889)</h3>
+                        <p>
+                            A <strong>Proclamação da República</strong> foi um <span class="conceito-chave">golpe militar</span> 
+                            liderado pelo <strong>Marechal Deodoro da Fonseca</strong>, que destituiu Dom Pedro II e instaurou 
+                            o regime republicano no Brasil. Diferente do que muitos imaginam, <strong>não foi um movimento popular</strong>.
+                        </p>
+                        <p>
+                            <strong>Causas da Proclamação:</strong>
+                            <ul>
+                                <li><strong>Desgaste da monarquia:</strong> Dom Pedro II estava doente e a sucessão para a filha, 
+                                Princesa Isabel, era incerta. A elite agrária e os militares viam a monarquia como um obstáculo.</li>
+                                <li><strong>Influência do positivismo:</strong> O lema "Ordem e Progresso" foi inspirado no positivismo 
+                                de Auguste Comte, defendido pelos militares.</li>
+                                <li><strong>Descontentamento militar:</strong> Os militares queriam maior participação política e 
+                                criticavam a monarquia por não valorizar o Exército.</li>
+                                <li><strong>Questão religiosa:</strong> Conflito entre a Igreja e o Estado, pois a Igreja Católica 
+                                criticava a maçonaria, que era influente no governo.</li>
+                            </ul>
+                        </p>
+                        <p>
+                            <strong>Consequências imediatas:</strong>
+                            <ul>
+                                <li>Instauração do <strong>governo provisório</strong> sob Deodoro da Fonseca.</li>
+                                <li><strong>Separação entre Igreja e Estado</strong> — o Brasil se tornou um estado laico.</li>
+                                <li>Criação do <strong>casamento civil</strong>.</li>
+                                <li>Adoção do <strong>presidencialismo</strong> como sistema de governo.</li>
+                                <li><strong>Federalização</strong> das províncias, que se tornaram estados com mais autonomia.</li>
+                            </ul>
+                        </p>
+                        <div class="enem-dica">
+                            <strong>DICA ENEM:</strong>
+                            <p>A Proclamação da República foi um golpe militar, não popular. 
+                            Questões sobre isso aparecem no ENEM comparando com outros processos de independência na América Latina.</p>
+                        </div>
+                    </div>
+
+                    <!-- SEÇÃO 2 -->
+                    <div class="explicacao-detalhada">
+                        <h3>2. A Primeira República (1889-1894)</h3>
+                        <p>
+                            A Primeira República foi marcada por um período de transição e instabilidade. Após a Proclamação, 
+                            Deodoro da Fonseca governou de forma provisória até a promulgação da <strong>Constituição de 1891</strong>.
+                        </p>
+                        <p>
+                            <strong>Governo Provisório (1889-1891):</strong>
+                            <ul>
+                                <li>Deodoro da Fonseca foi nomeado chefe do governo provisório.</li>
+                                <li>Decretou a <strong>separação entre Igreja e Estado</strong>.</li>
+                                <li>Convocou uma Assembleia Constituinte para elaborar a nova Constituição.</li>
+                            </ul>
+                        </p>
+                        <p>
+                            <strong>Constituição de 1891:</strong>
+                            <ul>
+                                <li>Estabeleceu o <strong>presidencialismo</strong> como forma de governo.</li>
+                                <li>Criou o <strong>federalismo</strong>, dando autonomia aos estados.</li>
+                                <li>Instituiu o <strong>voto masculino</strong>, mas excluiu analfabetos, mulheres e militares (cerca de 90% da população).</li>
+                                <li>Garantiu a <strong>liberdade religiosa</strong> e o <strong>casamento civil</strong>.</li>
+                            </ul>
+                        </p>
+                        <p>
+                            Deodoro foi eleito presidente em 1891, mas enfrentou forte oposição do Congresso e, em novembro do mesmo ano, 
+                            <strong>fechou o Congresso</strong>, causando uma crise política. Ele renunciou em 1892, assumindo 
+                            o vice-presidente <strong>Floriano Peixoto</strong>, que governou com mão de ferro até 1894.
+                        </p>
+                    </div>
+
+                    <!-- SEÇÃO 3 -->
+                    <div class="explicacao-detalhada">
+                        <h3>3. Política do Café com Leite</h3>
+                        <p>
+                            A <strong>"Política do Café com Leite"</strong> foi o acordo entre as oligarquias de São Paulo (café) 
+                            e Minas Gerais (leite) para <strong>alternarem entre si o controle da presidência</strong> da República.
+                        </p>
+                        <p>
+                            <strong>Como funcionava:</strong>
+                            <ul>
+                                <li><strong>Alternância de poder:</strong> Um presidente paulista e depois um mineiro, e assim por diante.</li>
+                                <li><strong>Política dos governadores:</strong> Os presidentes apoiavam os governadores estaduais, 
+                                que por sua vez garantiam a eleição dos presidentes — troca de favores políticos.</li>
+                                <li><strong>Coronelismo:</strong> Os coronéis (chefes políticos locais) controlavam o voto da população 
+                                rural através do <strong>"voto de cabresto"</strong>, ou seja, o voto era manipulado e controlado.</li>
+                                <li><strong>Fraudes eleitorais:</strong> As eleições eram marcadas por fraudes, como o 
+                                <strong>"degola"</strong> (anulação de votos da oposição) e o <strong>"voto de cabresto"</strong>.</li>
+                            </ul>
+                        </p>
+                        <p>
+                            <strong>Consequências:</strong>
+                            <ul>
+                                <li>Manutenção do poder nas mãos das <strong>elites agrárias</strong>.</li>
+                                <li>Exclusão da maior parte da população do processo político.</li>
+                                <li>Descontentamento crescente entre as camadas populares e os militares.</li>
+                                <li>Enfraquecimento do sistema com a crise de 1929 e a Revolução de 1930.</li>
+                            </ul>
+                        </p>
+                        <div class="enem-dica">
+                            <strong>DICA ENEM:</strong>
+                            <p>O ENEM adora questões sobre coronelismo e voto de cabresto. 
+                            Relacione isso com a concentração de poder nas oligarquias e a falta de democracia na República Velha.</p>
+                        </div>
+                    </div>
+
+                    <!-- SEÇÃO 4 - REVOLTAS (VERDE) -->
+                    <div class="explicacao-detalhada">
+                        <h3>4. As Revoltas Populares</h3>
+                        <p>
+                            Durante a República Velha, ocorreram várias revoltas populares que contestaram o poder das oligarquias 
+                            e a falta de direitos da população. As principais foram:
+                        </p>
+
+                        <div class="revolta-card">
+                            <h4>Guerra de Canudos (1896-1897)</h4>
+                            <p>
+                                <strong>Líder:</strong> Antônio Conselheiro<br>
+                                <strong>Local:</strong> Sertão da Bahia<br>
+                                <strong>Contexto:</strong> Movimento messiânico e de resistência à pobreza e à injustiça social. 
+                                Antônio Conselheiro pregava a volta da monarquia e criticava a República.<br>
+                                <strong>Desfecho:</strong> O governo republicano enviou o exército para destruir Canudos. 
+                                Estima-se que 25 mil pessoas morreram.
+                            </p>
+                            <div class="enem-dica" style="margin-top:10px;">
+                                <strong>DICA ENEM:</strong>
+                                <p>Canudos é um dos movimentos mais cobrados. Relacione com a <strong>desigualdade social</strong> e a <strong>opressão do estado republicano</strong>.</p>
+                            </div>
+                        </div>
+
+                        <div class="revolta-card">
+                            <h4>Revolta da Vacina (1904)</h4>
+                            <p>
+                                <strong>Líder:</strong> Movimento popular espontâneo<br>
+                                <strong>Local:</strong> Rio de Janeiro<br>
+                                <strong>Contexto:</strong> O governo federal instituiu a <strong>vacinação obrigatória</strong> 
+                                contra a varíola, em um contexto de reformas urbanas que expulsavam a população pobre.<br>
+                                <strong>Desfecho:</strong> O povo se revoltou contra a imposição, e o governo reprimiu o movimento 
+                                com violência.
+                            </p>
+                            <div class="enem-dica" style="margin-top:10px;">
+                                <strong>DICA ENEM:</strong>
+                                <p>A Revolta da Vacina representa a <strong>tensão entre as reformas urbanas e os direitos da população</strong>.</p>
+                            </div>
+                        </div>
+
+                        <div class="revolta-card">
+                            <h4>Revolta da Chibata (1910)</h4>
+                            <p>
+                                <strong>Líder:</strong> João Cândido (Almirante Negro)<br>
+                                <strong>Local:</strong> Rio de Janeiro (Marinha)<br>
+                                <strong>Contexto:</strong> Os marinheiros se revoltaram contra os <strong>castigos físicos</strong> 
+                                (chibatadas) e as condições precárias de trabalho na Marinha.<br>
+                                <strong>Desfecho:</strong> Conquistaram a <strong>anistia</strong> e a abolição dos castigos, 
+                                mas depois foram perseguidos.
+                            </p>
+                            <div class="enem-dica" style="margin-top:10px;">
+                                <strong>DICA ENEM:</strong>
+                                <p>A Revolta da Chibata é importante para entender a <strong>exclusão social</strong> e o <strong>racismo</strong> na República Velha.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SEÇÃO 5 -->
+                    <div class="explicacao-detalhada">
+                        <h3>5. O Fim da República Velha (1930)</h3>
+                        <p>
+                            A República Velha chegou ao fim com a <strong>Revolução de 1930</strong>, liderada por 
+                            <strong>Getúlio Vargas</strong>, que assumiu o poder e iniciou a <strong>Era Vargas</strong>.
+                        </p>
+                        <p>
+                            <strong>Causas da queda:</strong>
+                            <ul>
+                                <li><strong>Crise econômica de 1929:</strong> A quebra da Bolsa de Nova York afetou a economia 
+                                cafeeira, principal fonte de renda do Brasil.</li>
+                                <li><strong>Crise política:</strong> A política do Café com Leite já estava desgastada.</li>
+                                <li><strong>Inconformismo militar:</strong> Os militares defendiam reformas e criticavam o poder das oligarquias.</li>
+                                <li><strong>Descontentamento popular:</strong> A população estava insatisfeita com a exclusão política.</li>
+                            </ul>
+                        </p>
+                        <p>
+                            <strong>Revolução de 1930:</strong> Getúlio Vargas, candidato derrotado nas eleições de 1930, 
+                            liderou um movimento armado que derrubou o presidente Washington Luís e impediu a posse de 
+                            Júlio Prestes. Vargas assumiu o poder como <strong>chefe do governo provisório</strong>.
+                        </p>
+                        <div class="enem-dica">
+                            <strong>DICA ENEM:</strong>
+                            <p>A Revolução de 1930 é um marco da transição da <strong>República Oligárquica</strong> para a <strong>Era Vargas</strong>.</p>
+                        </div>
+                    </div>
+
+                    <div class="dica-saphius">
+                        <h3>Dica Saphius</h3>
+                        <p>
+                            Relacione a <strong>Política do Café com Leite</strong> com o <strong>Coronelismo</strong> 
+                            para entender como funcionava a política na República Velha. Lembre-se: <strong>"SP + MG = poder"</strong>.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- ===== EXERCÍCIOS ===== -->
+                <div id="exercicios" class="aba-conteudo">
+                    <h2 style="color:#2e7d32;">Exercícios - Brasil República</h2>
+                    <p style="color:#666;">15 questões (5 Fáceis, 5 Médias, 5 Difíceis)</p>
+
+                    <!-- ===== 5 FÁCEIS ===== -->
+                    <div class="exercicio-facil">
+                        <span class="badge">FÁCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>1.</strong> A Proclamação da República ocorreu em qual ano?</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q1"> a) 1888</label>
+                            <label><input type="radio" name="q1"> b) 1889</label>
+                            <label><input type="radio" name="q1"> c) 1890</label>
+                            <label><input type="radio" name="q1"> d) 1891</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: B) 1889</strong></p>
+                            <p><strong>Explicação:</strong> A Proclamação da República ocorreu em 15 de novembro de 1889, liderada pelo Marechal Deodoro da Fonseca.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-facil">
+                        <span class="badge">FÁCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>2.</strong> Quem foi o primeiro presidente do Brasil?</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q2"> a) Floriano Peixoto</label>
+                            <label><input type="radio" name="q2"> b) Deodoro da Fonseca</label>
+                            <label><input type="radio" name="q2"> c) Prudente de Morais</label>
+                            <label><input type="radio" name="q2"> d) Getúlio Vargas</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: B) Deodoro da Fonseca</strong></p>
+                            <p><strong>Explicação:</strong> Deodoro da Fonseca foi o primeiro presidente do Brasil, assumindo após a Proclamação da República.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-facil">
+                        <span class="badge">FÁCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>3.</strong> O que foi a "Política do Café com Leite"?</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q3"> a) Acordo entre SP e MG para alternar na presidência</label>
+                            <label><input type="radio" name="q3"> b) Política de exportação de café</label>
+                            <label><input type="radio" name="q3"> c) Aliança com os EUA</label>
+                            <label><input type="radio" name="q3"> d) Reforma agrária</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: A) Acordo entre SP e MG para alternar na presidência</strong></p>
+                            <p><strong>Explicação:</strong> A "Política do Café com Leite" era um acordo entre as oligarquias de São Paulo (café) e Minas Gerais (leite) para alternar seus representantes na presidência da República.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-facil">
+                        <span class="badge">FÁCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>4.</strong> A Constituição de 1891 estabeleceu qual sistema de governo?</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q4"> a) Parlamentarismo</label>
+                            <label><input type="radio" name="q4"> b) Presidencialismo</label>
+                            <label><input type="radio" name="q4"> c) Monarquia</label>
+                            <label><input type="radio" name="q4"> d) Ditadura</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: B) Presidencialismo</strong></p>
+                            <p><strong>Explicação:</strong> A Constituição de 1891 estabeleceu o presidencialismo como sistema de governo, inspirado no modelo dos Estados Unidos.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-facil">
+                        <span class="badge">FÁCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>5.</strong> Quem liderou a Revolução de 1930?</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q5"> a) Juscelino Kubitschek</label>
+                            <label><input type="radio" name="q5"> b) Getúlio Vargas</label>
+                            <label><input type="radio" name="q5"> c) Dom Pedro II</label>
+                            <label><input type="radio" name="q5"> d) Floriano Peixoto</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: B) Getúlio Vargas</strong></p>
+                            <p><strong>Explicação:</strong> Getúlio Vargas liderou a Revolução de 1930, que pôs fim à República Velha e iniciou a Era Vargas.</p>
+                        </div>
+                    </div>
+
+                    <!-- ===== 5 MÉDIAS ===== -->
+                    <div class="exercicio-medio">
+                        <span class="badge">MÉDIO</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>6.</strong> (ENEM) A Guerra de Canudos (1896-1897) foi um movimento liderado por Antônio Conselheiro que:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q6"> a) Defendia a volta da monarquia e criticava a República</label>
+                            <label><input type="radio" name="q6"> b) Apoiava a política do Café com Leite</label>
+                            <label><input type="radio" name="q6"> c) Liderou a Revolta da Vacina</label>
+                            <label><input type="radio" name="q6"> d) Era um movimento de escravos</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: A) Defendia a volta da monarquia e criticava a República</strong></p>
+                            <p><strong>Explicação:</strong> Antônio Conselheiro pregava a volta da monarquia e criticava a República. Canudos foi massacrado pelo exército.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-medio">
+                        <span class="badge">MÉDIO</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>7.</strong> (ENEM) A Revolta da Vacina (1904) ocorreu no Rio de Janeiro em oposição à:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q7"> a) Vacinação obrigatória contra a varíola</label>
+                            <label><input type="radio" name="q7"> b) Reforma agrária</label>
+                            <label><input type="radio" name="q7"> c) Lei do Ventre Livre</label>
+                            <label><input type="radio" name="q7"> d) Criação da CLT</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: A) Vacinação obrigatória contra a varíola</strong></p>
+                            <p><strong>Explicação:</strong> A população se revoltou contra a vacinação obrigatória imposta pelo governo, que fazia parte de um projeto de modernização.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-medio">
+                        <span class="badge">MÉDIO</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>8.</strong> (ENEM) O coronelismo, característico da República Velha, pode ser definido como:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q8"> a) Controle político dos coronéis sobre os eleitores rurais</label>
+                            <label><input type="radio" name="q8"> b) Poder dos coronéis do exército</label>
+                            <label><input type="radio" name="q8"> c) Liderança dos coronéis na indústria</label>
+                            <label><input type="radio" name="q8"> d) Poder dos coronéis na igreja</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: A) Controle político dos coronéis sobre os eleitores rurais</strong></p>
+                            <p><strong>Explicação:</strong> O coronelismo era o controle político dos coronéis sobre a população rural através do voto de cabresto.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-medio">
+                        <span class="badge">MÉDIO</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>9.</strong> (ENEM) A Revolta da Chibata (1910) foi liderada por João Cândido e reivindicava:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q9"> a) A abolição dos castigos físicos na Marinha</label>
+                            <label><input type="radio" name="q9"> b) A independência do Brasil</label>
+                            <label><input type="radio" name="q9"> c) A volta da monarquia</label>
+                            <label><input type="radio" name="q9"> d) A reforma agrária</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: A) A abolição dos castigos físicos na Marinha</strong></p>
+                            <p><strong>Explicação:</strong> Os marinheiros se revoltaram contra as chibatadas e as condições precárias na Marinha.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-medio">
+                        <span class="badge">MÉDIO</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>10.</strong> (ENEM) A política dos governadores, na República Velha, consistia em:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q10"> a) Apoio recíproco entre presidente e governadores</label>
+                            <label><input type="radio" name="q10"> b) Independência dos governadores</label>
+                            <label><input type="radio" name="q10"> c) Oposição dos governadores ao presidente</label>
+                            <label><input type="radio" name="q10"> d) Eleição direta dos governadores</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: A) Apoio recíproco entre presidente e governadores</strong></p>
+                            <p><strong>Explicação:</strong> A política dos governadores era a troca de favores entre o presidente e os governadores estaduais.</p>
+                        </div>
+                    </div>
+
+                    <!-- ===== 5 DIFÍCEIS ===== -->
+                    <div class="exercicio-dificil">
+                        <span class="badge">DIFÍCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>11.</strong> (ENEM) A "degola", na República Velha, era uma prática que consistia em:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q11"> a) Anular votos da oposição</label>
+                            <label><input type="radio" name="q11"> b) Aumentar os votos do governo</label>
+                            <label><input type="radio" name="q11"> c) Fraude eleitoral para eleger o candidato oficial</label>
+                            <label><input type="radio" name="q11"> d) Todas as alternativas estão corretas</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: D) Todas as alternativas estão corretas</strong></p>
+                            <p><strong>Explicação:</strong> A "degola" era uma prática fraudulenta que eliminava a oposição das eleições através da anulação de votos ou violência.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-dificil">
+                        <span class="badge">DIFÍCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>12.</strong> (ENEM) A Guerra do Contestado (1912-1916) foi um conflito que ocorreu:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q12"> a) Na região Sul, entre posseiros e o governo</label>
+                            <label><input type="radio" name="q12"> b) No Nordeste, liderado por Antônio Conselheiro</label>
+                            <label><input type="radio" name="q12"> c) No Rio de Janeiro, contra a vacina</label>
+                            <label><input type="radio" name="q12"> d) Na Bahia, contra o governo federal</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: A) Na região Sul, entre posseiros e o governo</strong></p>
+                            <p><strong>Explicação:</strong> A Guerra do Contestado ocorreu na região Sul (PR/SC) e envolveu posseiros e o governo federal.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-dificil">
+                        <span class="badge">DIFÍCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>13.</strong> (ENEM) A Semana de Arte Moderna (1922) foi importante porque:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q13"> a) Marcou a renovação das artes no Brasil</label>
+                            <label><input type="radio" name="q13"> b) Defendeu a volta da monarquia</label>
+                            <label><input type="radio" name="q13"> c) Apoiou a política do Café com Leite</label>
+                            <label><input type="radio" name="q13"> d) Foi um movimento político</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: A) Marcou a renovação das artes no Brasil</strong></p>
+                            <p><strong>Explicação:</strong> A Semana de Arte Moderna foi um marco cultural que renovou as artes no Brasil e buscou uma identidade nacional.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-dificil">
+                        <span class="badge">DIFÍCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>14.</strong> (ENEM) A República Velha é caracterizada pela:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q14"> a) Dominação das oligarquias agrárias</label>
+                            <label><input type="radio" name="q14"> b) Participação popular na política</label>
+                            <label><input type="radio" name="q14"> c) Democracia plena</label>
+                            <label><input type="radio" name="q14"> d) Industrialização acelerada</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: A) Dominação das oligarquias agrárias</strong></p>
+                            <p><strong>Explicação:</strong> A República Velha foi marcada pela dominação das oligarquias agrárias (café e leite), que controlavam a política nacional.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-dificil">
+                        <span class="badge">DIFÍCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>15.</strong> (ENEM) O fim da República Velha em 1930 foi causado por:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q15"> a) Crise econômica de 1929</label>
+                            <label><input type="radio" name="q15"> b) Desgaste político da oligarquia</label>
+                            <label><input type="radio" name="q15"> c) Revolução de 1930</label>
+                            <label><input type="radio" name="q15"> d) Todas as alternativas estão corretas</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: D) Todas as alternativas estão corretas</strong></p>
+                            <p><strong>Explicação:</strong> A República Velha entrou em colapso devido a uma combinação de fatores: a crise de 1929, o desgaste político e a Revolução de 1930.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- ===== RESUMO ===== -->
+                <div id="resumo" class="aba-conteudo">
+                    <div class="resumo-principal">
+                        <h2 class="resumo-titulo">Resumo - Brasil República</h2>
+                        <p class="resumo-subtitulo">Principais pontos para memorizar</p>
+
+                        <div class="resumo-grid">
+                            <div class="resumo-card-item">
+                                <h3>Proclamação da República</h3>
+                                <p>1889 - Deodoro da Fonseca</p>
+                                <span class="resumo-tag">Golpe Militar</span>
+                            </div>
+
+                            <div class="resumo-card-item">
+                                <h3>Constituição de 1891</h3>
+                                <p>Presidencialismo e federalismo</p>
+                                <span class="resumo-tag">Voto Restrito</span>
+                            </div>
+
+                            <div class="resumo-card-item">
+                                <h3>Política do Café com Leite</h3>
+                                <p>Alternância SP e MG</p>
+                                <span class="resumo-tag">Oligarquias</span>
+                            </div>
+
+                            <div class="resumo-card-item">
+                                <h3>Coronelismo</h3>
+                                <p>Controle dos coronéis sobre eleitores</p>
+                                <span class="resumo-tag">Voto de Cabresto</span>
+                            </div>
+
+                            <div class="resumo-card-item">
+                                <h3>Revoltas Populares</h3>
+                                <p>Canudos, Vacina, Chibata, Contestado</p>
+                                <span class="resumo-tag">Resistência Popular</span>
+                            </div>
+
+                            <div class="resumo-card-item">
+                                <h3>Fim da República Velha</h3>
+                                <p>1930 - Getúlio Vargas</p>
+                                <span class="resumo-tag">Revolução de 1930</span>
+                            </div>
+                        </div>
+
+                        <div class="resumo-dica-final">
+                            <h4>Dica Saphius</h4>
+                            <p>Memorize: <strong>"República Velha = Deodoro + Café com Leite + Coronelismo + Revoltas + Vargas"</strong></p>
+                        </div>
+
+                        <div class="resumo-dica-enem">
+                            <h4>Dica ENEM</h4>
+                            <p>Atenção para os termos <strong>"Política dos Governadores"</strong>, <strong>"Voto de Cabresto"</strong> e <strong>"Degola"</strong> — eles aparecem com frequência na prova!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ===== SIMULADO ===== -->
+                <div id="simulado" class="aba-conteudo">
+                    <h2 style="color:#2e7d32;">Simulado - Brasil República</h2>
+                    <p style="color:#666;">Teste seus conhecimentos com questões estilo ENEM</p>
+
+                    <div class="simulado-card">
+                        <div style="display:flex; gap:20px; flex-wrap:wrap; justify-content:center; margin-bottom:15px;">
+                            <span><strong>15 questões</strong></span>
+                            <span><strong>20 minutos</strong></span>
+                            <span><strong>Nível: Fácil a Difícil</strong></span>
+                        </div>
+                        <p style="color:#555; margin-bottom:15px;">As questões são as mesmas da aba "Exercícios" acima. Responda todas com calma!</p>
+                        <button class="btn-principal" onclick="alert('Simulado iniciado! Responda todas as 15 questões acima na aba Exercícios.')">
+                            Iniciar simulado
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+    </div>
+
+  <script>
+function trocarAba(botao, abaId) {
+    document.querySelectorAll('.aba-btn').forEach(b => b.classList.remove('active'));
+    botao.classList.add('active');
+    document.querySelectorAll('.aba-conteudo').forEach(c => c.classList.remove('active'));
+    document.getElementById(abaId).classList.add('active');
+}
+
+function mostrarResposta(botao) {
+    const exercicioDiv = botao.closest('.exercicio-facil, .exercicio-medio, .exercicio-dificil');
+    const respostaDiv = exercicioDiv.querySelector('.resposta-explicada');
+
+    if (respostaDiv.style.display === 'block') {
+        respostaDiv.style.display = 'none';
+        botao.textContent = 'Ver explicação';
+    } else {
+        respostaDiv.style.display = 'block';
+        botao.textContent = 'Ocultar explicação';
+    }
+}
+
+document.querySelectorAll('.exercicio-alternativas input[type="radio"]').forEach(input => {
+    input.addEventListener('change', verificarAtividade);
+});
+
+async function verificarAtividade() {
+    const questoes = document.querySelectorAll('.exercicio-alternativas');
+    const respondidas = document.querySelectorAll('.exercicio-alternativas input[type="radio"]:checked');
+
+    if (respondidas.length === questoes.length) {
+        try {
+            await fetch('/api/trilha/concluir', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    materia: 'historia',
+                    topico: 'brasil-republica'
+                })
+            });
+
+            alert('Atividade concluída! Seu progresso na Trilha de Estudos foi atualizado.');
+        } catch (erro) {
+            console.error('Erro ao atualizar progresso:', erro);
+        }
+    }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Filosofia no ENEM - Saphius</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/views/conteudos/filosofia/filosofia.css">
+</head>
+<body>
+    <div class="app-container">
+        <aside class="sidebar">
+            <div class="sidebar-logo"><h2>Saphius</h2></div>
+            <ul class="sidebar-menu">
+                <li><a href="/dashboard"><span class="icon"></span> <span>Dashboard</span></a></li>
+                <li><a href="/conteudos"><span class="icon"></span> <span>Conteúdos</span></a></li>
+                <li><a href="/trilha"><span class="icon"></span> <span>Trilha de estudos</span></a></li>
+                <li><a href="/bemestar"><span class="icon"></span> <span>Bem-estar</span></a></li>
+                <li><a href="/perfil"><span class="icon"></span> <span>Perfil</span></a></li>
+                <li><a href="/configuracoes"><span class="icon"></span> <span>Configurações</span></a></li>
+                <li><a href="/ajuda"><span class="icon"></span> <span>Ajuda</span></a></li>
+                <li><a href="/sair"><span class="icon"></span> <span>Sair</span></a></li>
+            </ul>
+        </aside>
+
+        <main class="main-content">
+            <div class="container">
+                <a href="/filosofia" class="voltar">Voltar para Filosofia</a>
+
+                <h1 style="text-align:center; font-size:2.5em; color:#2e7d32;">Filosofia no ENEM</h1>
+                <p style="color:#666; text-align:center; font-size:1.1em;">Temas e questões filosóficas que aparecem na prova</p>
+
+                <div class="abas-navegacao" style="margin:25px 0;">
+                    <button class="aba-btn active" onclick="trocarAba(this, 'conteudo')">Conteúdo</button>
+                    <button class="aba-btn" onclick="trocarAba(this, 'exercicios')">Exercícios</button>
+                    <button class="aba-btn" onclick="trocarAba(this, 'resumo')">Resumo</button>
+                    <button class="aba-btn" onclick="trocarAba(this, 'simulado')">Simulado</button>
+                </div>
+
+                <div id="conteudo" class="aba-conteudo active">
+
+                    <div class="explicacao-detalhada">
+                        <h3>O que a Filosofia cai no ENEM?</h3>
+                        <p>
+                            A Filosofia no ENEM é cobrada principalmente em questões que envolvem 
+                            <strong>cidadania</strong>, <strong>ética</strong>, <strong>política</strong>, 
+                            <strong>conhecimento</strong> e <strong>cultura</strong>. As questões geralmente 
+                            exigem a interpretação de textos filosóficos e a aplicação de conceitos em situações 
+                            cotidianas.
+                        </p>
+                        <div class="enem-dica">
+                            <strong>DICA ENEM:</strong>
+                            <p>Leia atentamente os textos e relacione os conceitos filosóficos com a 
+                            <strong>realidade social</strong> e <strong>política</strong>.</p>
+                        </div>
+                    </div>
+
+                    <div class="explicacao-detalhada">
+                        <h3>Principais Temas de Filosofia no ENEM</h3>
+                        <ul>
+                            <li><strong>Ética e Moral:</strong> Diferença entre ética e moral, dilemas éticos, teorias éticas (utilitarismo, imperativo categórico, ética das virtudes).</li>
+                            <li><strong>Política:</strong> Democracia, cidadania, participação política, contrato social, divisão dos poderes.</li>
+                            <li><strong>Conhecimento:</strong> Racionalismo (Descartes), empirismo, crítica (Kant).</li>
+                            <li><strong>Filosofia Clássica:</strong> Platão (Mito da Caverna), Aristóteles (ética, política), Sócrates (maiêutica).</li>
+                            <li><strong>Filosofia Moderna:</strong> Descartes (Cogito), Kant (Imperativo Categórico), Rousseau (Contrato Social).</li>
+                            <li><strong>Filosofia Contemporânea:</strong> Existencialismo (Sartre), fenomenologia (Husserl), desconstrução (Derrida).</li>
+                        </ul>
+                        <div class="enem-dica">
+                            <strong>DICA ENEM:</strong>
+                            <p>O ENEM cobra os <strong>principais filósofos</strong> e suas <strong>teorias</strong>, além da <strong>interpretação de textos</strong>.</p>
+                        </div>
+                    </div>
+
+                    <div class="explicacao-detalhada">
+                        <h3>Dicas para as Questões de Filosofia</h3>
+                        <ul>
+                            <li><strong>Interpretação:</strong> Leia o texto com atenção e identifique a tese do autor. Sublinhe as palavras-chave.</li>
+                            <li><strong>Conceitos:</strong> Conheça os principais conceitos filosóficos (ética, política, conhecimento, liberdade).</li>
+                            <li><strong>Contexto:</strong> Relacione a filosofia com a história e a sociedade. Entenda o contexto histórico do filósofo.</li>
+                            <li><strong>Alternativas:</strong> Elimine as alternativas que não condizem com o texto ou com a teoria do filósofo.</li>
+                            <li><strong>Atualidades:</strong> Relacione os conceitos filosóficos com questões atuais (direitos humanos, democracia, meio ambiente).</li>
+                        </ul>
+                        <div class="enem-dica">
+                            <strong>DICA ENEM:</strong>
+                            <p>Pratique com questões de provas anteriores do ENEM para se familiarizar com o estilo das perguntas.</p>
+                        </div>
+                    </div>
+
+                    <div class="explicacao-detalhada">
+                        <h3>Estrutura das Questões de Filosofia no ENEM</h3>
+                        <ul>
+                            <li><strong>Textos de apoio:</strong> As questões geralmente apresentam um texto de um filósofo ou uma citação.</li>
+                            <li><strong>Interpretação:</strong> O candidato deve interpretar o texto e relacioná-lo com um conceito filosófico.</li>
+                            <li><strong>Alternativas:</strong> As alternativas testam a compreensão do texto e a aplicação dos conceitos.</li>
+                            <li><strong>Interdisciplinaridade:</strong> As questões de filosofia podem ser interdisciplinares, relacionando-se com história, sociologia e literatura.</li>
+                        </ul>
+                    </div>
+
+                    <div class="dica-saphius">
+                        <h3>Dica Saphius</h3>
+                        <p>
+                            Pratique com questões de provas anteriores do ENEM para se familiarizar com o estilo das perguntas. Memorize os principais filósofos e suas teorias.
+                        </p>
+                    </div>
+                </div>
+
+                <div id="exercicios" class="aba-conteudo">
+                    <h2 style="color:#2e7d32;">Exercícios - Filosofia no ENEM</h2>
+                    <p style="color:#666;">15 questões (5 Fáceis, 5 Médias, 5 Difíceis)</p>
+
+                    <!-- 5 FÁCEIS -->
+                    <div class="exercicio-facil">
+                        <span class="badge">FÁCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>1.</strong> O que é ética?</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q1"> a) Conjunto de regras de uma sociedade</label>
+                            <label><input type="radio" name="q1"> b) Reflexão sobre princípios morais</label>
+                            <label><input type="radio" name="q1"> c) Lei escrita</label>
+                            <label><input type="radio" name="q1"> d) Costumes tradicionais</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: B) Reflexão sobre princípios morais</strong></p>
+                            <p><strong>Explicação:</strong> Ética é a reflexão teórica sobre os princípios que orientam o comportamento humano.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-facil">
+                        <span class="badge">FÁCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>2.</strong> A democracia é caracterizada pela:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q2"> a) Participação popular</label>
+                            <label><input type="radio" name="q2"> b) Centralização do poder</label>
+                            <label><input type="radio" name="q2"> c) Exclusão social</label>
+                            <label><input type="radio" name="q2"> d) Autoritarismo</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: A) Participação popular</strong></p>
+                            <p><strong>Explicação:</strong> A democracia é caracterizada pela participação popular e pela soberania do povo.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-facil">
+                        <span class="badge">FÁCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>3.</strong> Quem escreveu o Mito da Caverna?</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q3"> a) Sócrates</label>
+                            <label><input type="radio" name="q3"> b) Platão</label>
+                            <label><input type="radio" name="q3"> c) Aristóteles</label>
+                            <label><input type="radio" name="q3"> d) Kant</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: B) Platão</strong></p>
+                            <p><strong>Explicação:</strong> O Mito da Caverna é uma alegoria criada por Platão.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-facil">
+                        <span class="badge">FÁCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>4.</strong> O Existencialismo é uma corrente filosófica que destaca:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q4"> a) A liberdade e a responsabilidade do indivíduo</label>
+                            <label><input type="radio" name="q4"> b) A determinação social</label>
+                            <label><input type="radio" name="q4"> c) A fé religiosa</label>
+                            <label><input type="radio" name="q4"> d) A política</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: A) A liberdade e a responsabilidade do indivíduo</strong></p>
+                            <p><strong>Explicação:</strong> O existencialismo destaca a liberdade e a responsabilidade do indivíduo.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-facil">
+                        <span class="badge">FÁCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>5.</strong> O que é cidadania?</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q5"> a) Conjunto de direitos e deveres</label>
+                            <label><input type="radio" name="q5"> b) Apenas direitos</label>
+                            <label><input type="radio" name="q5"> c) Apenas deveres</label>
+                            <label><input type="radio" name="q5"> d) Participação política</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: A) Conjunto de direitos e deveres</strong></p>
+                            <p><strong>Explicação:</strong> Cidadania é o conjunto de direitos e deveres de um cidadão.</p>
+                        </div>
+                    </div>
+
+                    <!-- 5 MÉDIAS -->
+                    <div class="exercicio-medio">
+                        <span class="badge">MÉDIO</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>6.</strong> (ENEM) A ética de Kant é baseada no:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q6"> a) Dever e na boa vontade</label>
+                            <label><input type="radio" name="q6"> b) Utilitarismo</label>
+                            <label><input type="radio" name="q6"> c) Hedonismo</label>
+                            <label><input type="radio" name="q6"> d) Relativismo</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: A) Dever e na boa vontade</strong></p>
+                            <p><strong>Explicação:</strong> Kant defende uma ética baseada no dever e na boa vontade, independente das consequências.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-medio">
+                        <span class="badge">MÉDIO</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>7.</strong> (ENEM) O Contrato Social de Rousseau influenciou:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q7"> a) A monarquia</label>
+                            <label><input type="radio" name="q7"> b) A democracia</label>
+                            <label><input type="radio" name="q7"> c) A ditadura</label>
+                            <label><input type="radio" name="q7"> d) O feudalismo</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: B) A democracia</strong></p>
+                            <p><strong>Explicação:</strong> O Contrato Social de Rousseau influenciou a democracia e a participação popular.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-medio">
+                        <span class="badge">MÉDIO</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>8.</strong> (ENEM) O Existencialismo de Sartre defende que:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q8"> a) A essência precede a existência</label>
+                            <label><input type="radio" name="q8"> b) A existência precede a essência</label>
+                            <label><input type="radio" name="q8"> c) A essência e a existência são iguais</label>
+                            <label><input type="radio" name="q8"> d) A essência é mais importante que a existência</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: B) A existência precede a essência</strong></p>
+                            <p><strong>Explicação:</strong> Sartre afirmava que a existência precede a essência, ou seja, o ser humano existe primeiro e depois constrói sua essência.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-medio">
+                        <span class="badge">MÉDIO</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>9.</strong> (ENEM) A divisão dos poderes é importante porque:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q9"> a) Concentra o poder</label>
+                            <label><input type="radio" name="q9"> b) Evita o abuso de poder</label>
+                            <label><input type="radio" name="q9"> c) Aumenta a corrupção</label>
+                            <label><input type="radio" name="q9"> d) Diminui a participação popular</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: B) Evita o abuso de poder</strong></p>
+                            <p><strong>Explicação:</strong> A divisão dos poderes impede que um único poder se torne absoluto, evitando o abuso de poder.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-medio">
+                        <span class="badge">MÉDIO</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>10.</strong> (ENEM) O racionalismo de Descartes defende que:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q10"> a) O conhecimento vem da experiência</label>
+                            <label><input type="radio" name="q10"> b) A razão é a base do conhecimento</label>
+                            <label><input type="radio" name="q10"> c) A fé é a base do conhecimento</label>
+                            <label><input type="radio" name="q10"> d) A política é a base do conhecimento</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: B) A razão é a base do conhecimento</strong></p>
+                            <p><strong>Explicação:</strong> O racionalismo de Descartes defende que a razão é a base do conhecimento verdadeiro.</p>
+                        </div>
+                    </div>
+
+                    <!-- 5 DIFÍCEIS -->
+                    <div class="exercicio-dificil">
+                        <span class="badge">DIFÍCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>11.</strong> (ENEM) O Imperativo Categórico de Kant afirma que:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q11"> a) A ação moral é baseada na utilidade</label>
+                            <label><input type="radio" name="q11"> b) Devemos agir de forma que nossa ação possa se tornar uma lei universal</label>
+                            <label><input type="radio" name="q11"> c) A felicidade é o fim último</label>
+                            <label><input type="radio" name="q11"> d) A virtude é o equilíbrio</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: B) Devemos agir de forma que nossa ação possa se tornar uma lei universal</strong></p>
+                            <p><strong>Explicação:</strong> O Imperativo Categórico de Kant exige que ajamos de forma que nossa ação possa se tornar uma lei universal.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-dificil">
+                        <span class="badge">DIFÍCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>12.</strong> (ENEM) A Teoria das Ideias de Platão influenciou a filosofia porque:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q12"> a) Defendeu o materialismo</label>
+                            <label><input type="radio" name="q12"> b) Introduziu a ideia de que o conhecimento verdadeiro é imutável</label>
+                            <label><input type="radio" name="q12"> c) Negou a existência de Deus</label>
+                            <label><input type="radio" name="q12"> d) Defendeu a democracia</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: B) Introduziu a ideia de que o conhecimento verdadeiro é imutável</strong></p>
+                            <p><strong>Explicação:</strong> A Teoria das Ideias de Platão introduziu a ideia de que o conhecimento verdadeiro é imutável e perfeito.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-dificil">
+                        <span class="badge">DIFÍCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>13.</strong> (ENEM) A diferença entre Platão e Aristóteles é que:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q13"> a) Platão era materialista e Aristóteles idealista</label>
+                            <label><input type="radio" name="q13"> b) Platão defendia a política e Aristóteles a ética</label>
+                            <label><input type="radio" name="q13"> c) Platão valorizava o mundo das ideias e Aristóteles o mundo sensível</label>
+                            <label><input type="radio" name="q13"> d) Platão era democrata e Aristóteles monarquista</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: C) Platão valorizava o mundo das ideias e Aristóteles o mundo sensível</strong></p>
+                            <p><strong>Explicação:</strong> Platão valorizava o mundo das ideias (idealismo), enquanto Aristóteles valorizava o mundo sensível (realismo).</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-dificil">
+                        <span class="badge">DIFÍCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>14.</strong> (ENEM) A fenomenologia de Husserl propõe a "volta às coisas mesmas", que significa:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q14"> a) Aceitar as aparências</label>
+                            <label><input type="radio" name="q14"> b) Investigar a experiência pura sem preconceitos</label>
+                            <label><input type="radio" name="q14"> c) Negar a experiência</label>
+                            <label><input type="radio" name="q14"> d) Defender a política</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: B) Investigar a experiência pura sem preconceitos</strong></p>
+                            <p><strong>Explicação:</strong> A "volta às coisas mesmas" propõe investigar a experiência pura sem preconceitos ou juízos prévios.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-dificil">
+                        <span class="badge">DIFÍCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>15.</strong> (ENEM) A Filosofia no ENEM é importante porque:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q15"> a) Cobra apenas conceitos teóricos</label>
+                            <label><input type="radio" name="q15"> b) Desenvolve a capacidade de interpretação e argumentação</label>
+                            <label><input type="radio" name="q15"> c) Não exige interpretação de textos</label>
+                            <label><input type="radio" name="q15"> d) É irrelevante para a prova</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: B) Desenvolve a capacidade de interpretação e argumentação</strong></p>
+                            <p><strong>Explicação:</strong> A Filosofia no ENEM desenvolve a capacidade de interpretação, argumentação e reflexão crítica.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="resumo" class="aba-conteudo">
+                    <div class="resumo-principal">
+                        <h2 class="resumo-titulo">Resumo - Filosofia no ENEM</h2>
+                        <p class="resumo-subtitulo">Principais pontos para memorizar</p>
+
+                        <div class="resumo-grid">
+                            <div class="resumo-card-item">
+                                <h3>Ética</h3>
+                                <p>Kant, Aristóteles, Utilitarismo</p>
+                                <span class="resumo-tag">Moral</span>
+                            </div>
+                            <div class="resumo-card-item">
+                                <h3>Política</h3>
+                                <p>Democracia, Cidadania, Rousseau</p>
+                                <span class="resumo-tag">Participação</span>
+                            </div>
+                            <div class="resumo-card-item">
+                                <h3>Conhecimento</h3>
+                                <p>Descartes, Racionalismo</p>
+                                <span class="resumo-tag">Razão</span>
+                            </div>
+                            <div class="resumo-card-item">
+                                <h3>Filosofia Clássica</h3>
+                                <p>Platão, Aristóteles, Sócrates</p>
+                                <span class="resumo-tag">Antiguidade</span>
+                            </div>
+                            <div class="resumo-card-item">
+                                <h3>Existencialismo</h3>
+                                <p>Sartre, Liberdade</p>
+                                <span class="resumo-tag">Responsabilidade</span>
+                            </div>
+                            <div class="resumo-card-item">
+                                <h3>Dicas ENEM</h3>
+                                <p>Interpretação de textos</p>
+                                <span class="resumo-tag">Argumentação</span>
+                            </div>
+                        </div>
+
+                        <div class="resumo-dica-final">
+                            <h4>Dica Saphius</h4>
+                            <p>Pratique com questões de Filosofia do ENEM e leia textos filosóficos para se preparar.</p>
+                        </div>
+
+                        <div class="resumo-dica-enem">
+                            <h4>Dica ENEM</h4>
+                            <p>Concentre-se na <strong>interpretação de textos</strong> e na <strong>relação entre conceitos e realidade</strong>.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="simulado" class="aba-conteudo">
+                    <h2 style="color:#2e7d32;">Simulado - Filosofia no ENEM</h2>
+                    <p style="color:#666;">Teste seus conhecimentos com questões estilo ENEM</p>
+                    <div class="simulado-card">
+                        <div style="display:flex; gap:20px; flex-wrap:wrap; justify-content:center; margin-bottom:15px;">
+                            <span><strong>15 questões</strong></span>
+                            <span><strong>20 minutos</strong></span>
+                            <span><strong>Nível: Fácil a Difícil</strong></span>
+                        </div>
+                        <p style="color:#555; margin-bottom:15px;">As questões são as mesmas da aba "Exercícios" acima.</p>
+                        <button class="btn-principal" onclick="alert('Simulado iniciado! Responda todas as 15 questões acima na aba Exercícios.')">
+                            Iniciar simulado
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script>
+    function trocarAba(botao, abaId) {
+        document.querySelectorAll('.aba-btn').forEach(b => b.classList.remove('active'));
+        botao.classList.add('active');
+
+        document.querySelectorAll('.aba-conteudo').forEach(c => c.classList.remove('active'));
+        document.getElementById(abaId).classList.add('active');
+    }
+
+    function mostrarResposta(botao) {
+        const exercicioDiv = botao.closest('.exercicio-facil, .exercicio-medio, .exercicio-dificil');
+        const respostaDiv = exercicioDiv.querySelector('.resposta-explicada');
+
+        if (respostaDiv.style.display === 'block') {
+            respostaDiv.style.display = 'none';
+            botao.textContent = 'Ver explicação';
+        } else {
+            respostaDiv.style.display = 'block';
+            botao.textContent = 'Ocultar explicação';
+        }
+    }
+
+    document.querySelectorAll('.exercicio-alternativas input[type="radio"]').forEach(input => {
+        input.addEventListener('change', verificarAtividade);
+    });
+
+    async function verificarAtividade() {
+        const questoes = document.querySelectorAll('.exercicio-alternativas');
+        const respondidas = document.querySelectorAll(
+            '.exercicio-alternativas input[type="radio"]:checked'
+        );
+
+        if (respondidas.length === questoes.length) {
+            try {
+                await fetch('/api/trilha/concluir', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        materia: 'filosofia',
+                        topico: 'enem'
+                    })
+                });
+
+                alert('Atividade concluída! Seu progresso na Trilha de Estudos foi atualizado.');
+            } catch (erro) {
+                console.error('Erro ao atualizar progresso:', erro);
+            }
+        }
+    }
+</script>
+
+</body>
+</html>

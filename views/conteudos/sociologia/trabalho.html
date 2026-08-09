@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Trabalho - Saphius</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/views/conteudos/sociologia/sociologia.css">
+</head>
+<body>
+    <div class="app-container">
+        <aside class="sidebar">
+            <div class="sidebar-logo"><h2>Saphius</h2></div>
+            <ul class="sidebar-menu">
+                <li><a href="/dashboard"><span class="icon"></span> <span>Dashboard</span></a></li>
+                <li><a href="/conteudos"><span class="icon"></span> <span>Conteúdos</span></a></li>
+                <li><a href="/trilha"><span class="icon"></span> <span>Trilha de estudos</span></a></li>
+                <li><a href="/bemestar"><span class="icon"></span> <span>Bem-estar</span></a></li>
+                <li><a href="/perfil"><span class="icon"></span> <span>Perfil</span></a></li>
+                <li><a href="/configuracoes"><span class="icon"></span> <span>Configurações</span></a></li>
+                <li><a href="/ajuda"><span class="icon"></span> <span>Ajuda</span></a></li>
+                <li><a href="/sair"><span class="icon"></span> <span>Sair</span></a></li>
+            </ul>
+        </aside>
+
+        <main class="main-content">
+            <div class="container">
+                <a href="/sociologia" class="voltar">Voltar para Sociologia</a>
+
+                <h1 style="text-align:center; font-size:2.5em; color:#2e7d32;">Trabalho</h1>
+                <p style="color:#666; text-align:center; font-size:1.1em;">Relações de trabalho, Globalização, Novas tecnologias, Impactos sociais</p>
+
+                <div class="abas-navegacao" style="margin:25px 0;">
+                    <button class="aba-btn active" onclick="trocarAba(this, 'conteudo')">Conteúdo</button>
+                    <button class="aba-btn" onclick="trocarAba(this, 'exercicios')">Exercícios</button>
+                    <button class="aba-btn" onclick="trocarAba(this, 'resumo')">Resumo</button>
+                    <button class="aba-btn" onclick="trocarAba(this, 'simulado')">Simulado</button>
+                </div>
+
+                <div id="conteudo" class="aba-conteudo active">
+
+                    <div class="explicacao-detalhada">
+                        <h3>O que é Trabalho?</h3>
+                        <p>
+                            O <strong>trabalho</strong> é uma atividade humana que envolve esforço físico e intelectual 
+                            para produzir bens e serviços. Ele é uma das bases da sociedade e está relacionado com 
+                            a <strong>identidade</strong>, a <strong>renda</strong> e a <strong>organização social</strong>. 
+                            O trabalho também é um direito fundamental garantido pela Constituição.
+                        </p>
+                        <div class="enem-dica">
+                            <strong>DICA ENEM:</strong>
+                            <p>O trabalho é um tema recorrente no ENEM, especialmente em questões sobre 
+                            <strong>relações de trabalho</strong>, <strong>globalização</strong> e 
+                            <strong>impactos sociais</strong>.</p>
+                        </div>
+                    </div>
+
+                    <div class="explicacao-detalhada">
+                        <h3>Relações de Trabalho</h3>
+                        <p>
+                            As relações de trabalho se referem à forma como as pessoas se organizam para produzir bens e serviços. Elas podem ser:
+                        </p>
+                        <ul>
+                            <li><strong>Trabalho formal:</strong> Com carteira assinada, direitos trabalhistas garantidos (CLT) e benefícios como FGTS, férias remuneradas e 13º salário.</li>
+                            <li><strong>Trabalho informal:</strong> Sem vínculo empregatício, sem garantias trabalhistas e sem proteção social.</li>
+                            <li><strong>Trabalho escravo:</strong> Forma de exploração que ainda existe no Brasil, especialmente em áreas rurais, com condições degradantes e privação de liberdade.</li>
+                            <li><strong>Trabalho infantil:</strong> Exploração de crianças em atividades laborais, que priva o desenvolvimento e a educação.</li>
+                            <li><strong>Trabalho autônomo:</strong> Trabalhadores que atuam por conta própria, sem vínculo empregatício.</li>
+                            <li><strong>Cooperativas:</strong> Organizações coletivas de trabalho, com gestão democrática.</li>
+                        </ul>
+                        <div class="enem-dica">
+                            <strong>DICA ENEM:</strong>
+                            <p>O ENEM cobra a diferença entre <strong>trabalho formal</strong> e <strong>informal</strong>, além de questões sobre <strong>trabalho escravo</strong> e <strong>infantil</strong>.</p>
+                        </div>
+                    </div>
+
+                    <div class="explicacao-detalhada">
+                        <h3>Globalização e Trabalho</h3>
+                        <p>
+                            A globalização transformou as relações de trabalho em todo o mundo. Os principais impactos são:
+                        </p>
+                        <ul>
+                            <li><strong>Deslocalização:</strong> Transferência de empresas para países com mão de obra mais barata e menos direitos trabalhistas.</li>
+                            <li><strong>Terceirização:</strong> Contratação de empresas terceirizadas para reduzir custos, o que pode precarizar as condições de trabalho.</li>
+                            <li><strong>Precarização:</strong> Perda de direitos trabalhistas, aumento da informalidade e da instabilidade no emprego.</li>
+                            <li><strong>Desemprego estrutural:</strong> Substituição de trabalhadores por máquinas e tecnologias.</li>
+                            <li><strong>Migração laboral:</strong> Movimento de trabalhadores entre países em busca de melhores condições.</li>
+                        </ul>
+                        <div class="enem-dica">
+                            <strong>DICA ENEM:</strong>
+                            <p>O ENEM cobra a relação entre <strong>globalização</strong> e <strong>precarização do trabalho</strong>.</p>
+                        </div>
+                    </div>
+
+                    <div class="explicacao-detalhada">
+                        <h3>Novas Tecnologias e o Futuro do Trabalho</h3>
+                        <p>
+                            As novas tecnologias estão transformando o mundo do trabalho. Os principais impactos são:
+                        </p>
+                        <ul>
+                            <li><strong>Automação:</strong> Substituição de trabalhadores por máquinas e robôs em atividades repetitivas.</li>
+                            <li><strong>Inteligência Artificial:</strong> Substituição de trabalhadores qualificados em áreas como análise de dados e atendimento ao cliente.</li>
+                            <li><strong>Trabalho remoto:</strong> Crescimento do home office, especialmente após a pandemia de COVID-19.</li>
+                            <li><strong>Economia compartilhada:</strong> Plataformas como Uber, iFood, 99, que criam novas formas de trabalho, mas com pouca proteção social.</li>
+                            <li><strong>Novas habilidades:</strong> Demanda por habilidades digitais e capacidade de adaptação.</li>
+                            <li><strong>Desigualdade tecnológica:</strong> Acesso desigual a tecnologias e habilidades digitais.</li>
+                        </ul>
+                        <div class="enem-dica">
+                            <strong>DICA ENEM:</strong>
+                            <p>O ENEM cobra os impactos das <strong>novas tecnologias</strong> no trabalho, como a <strong>automação</strong> e o <strong>trabalho remoto</strong>.</p>
+                        </div>
+                    </div>
+
+                    <div class="explicacao-detalhada">
+                        <h3>Desafios do Trabalho no Brasil</h3>
+                        <ul>
+                            <li><strong>Desigualdade salarial:</strong> Grandes diferenças de renda entre trabalhadores formais e informais.</li>
+                            <li><strong>Desemprego:</strong> Taxas elevadas de desemprego, especialmente entre jovens.</li>
+                            <li><strong>Trabalho precário:</strong> Condições de trabalho inadequadas, sem direitos e sem proteção.</li>
+                            <li><strong>Discriminação:</strong> Preconceito de raça, gênero e idade no mercado de trabalho.</li>
+                            <li><strong>Falta de qualificação:</strong> Baixa escolaridade e falta de capacitação profissional.</li>
+                        </ul>
+                    </div>
+
+                    <div class="dica-saphius">
+                        <h3>Dica Saphius</h3>
+                        <p>
+                            Entenda a relação entre <strong>globalização</strong> e <strong>precarização do trabalho</strong> para responder questões sobre o tema. Memorize: <strong>"Formal + Informal + Tecnologia = Trabalho"</strong>.
+                        </p>
+                    </div>
+                </div>
+
+                <div id="exercicios" class="aba-conteudo">
+                    <h2 style="color:#2e7d32;">Exercícios - Trabalho</h2>
+                    <p style="color:#666;">15 questões (5 Fáceis, 5 Médias, 5 Difíceis)</p>
+
+                    <!-- 5 FÁCEIS -->
+                    <div class="exercicio-facil">
+                        <span class="badge">FÁCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>1.</strong> O trabalho formal é caracterizado por:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q1"> a) Carteira assinada e direitos trabalhistas</label>
+                            <label><input type="radio" name="q1"> b) Ausência de direitos</label>
+                            <label><input type="radio" name="q1"> c) Trabalho escravo</label>
+                            <label><input type="radio" name="q1"> d) Trabalho infantil</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: A) Carteira assinada e direitos trabalhistas</strong></p>
+                            <p><strong>Explicação:</strong> O trabalho formal é caracterizado pela carteira assinada e direitos trabalhistas garantidos.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-facil">
+                        <span class="badge">FÁCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>2.</strong> A terceirização é um fenômeno relacionado à:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q2"> a) Globalização</label>
+                            <label><input type="radio" name="q2"> b) Agricultura</label>
+                            <label><input type="radio" name="q2"> c) Pecuária</label>
+                            <label><input type="radio" name="q2"> d) Extrativismo</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: A) Globalização</strong></p>
+                            <p><strong>Explicação:</strong> A terceirização é um fenômeno relacionado à globalização e à busca por redução de custos.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-facil">
+                        <span class="badge">FÁCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>3.</strong> A automação tem como consequência:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q3"> a) Substituição de trabalhadores por máquinas</label>
+                            <label><input type="radio" name="q3"> b) Aumento de empregos formais</label>
+                            <label><input type="radio" name="q3"> c) Redução da produtividade</label>
+                            <label><input type="radio" name="q3"> d) Melhora dos direitos trabalhistas</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: A) Substituição de trabalhadores por máquinas</strong></p>
+                            <p><strong>Explicação:</strong> A automação substitui trabalhadores por máquinas, reduzindo a demanda por mão de obra.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-facil">
+                        <span class="badge">FÁCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>4.</strong> O trabalho informal é caracterizado por:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q4"> a) Ausência de vínculo empregatício</label>
+                            <label><input type="radio" name="q4"> b) Carteira assinada</label>
+                            <label><input type="radio" name="q4"> c) Direitos trabalhistas garantidos</label>
+                            <label><input type="radio" name="q4"> d) Trabalho escravo</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: A) Ausência de vínculo empregatício</strong></p>
+                            <p><strong>Explicação:</strong> O trabalho informal é caracterizado pela ausência de vínculo empregatício e direitos.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-facil">
+                        <span class="badge">FÁCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>5.</strong> O trabalho remoto cresceu com:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q5"> a) A pandemia de COVID-19</label>
+                            <label><input type="radio" name="q5"> b) A revolução industrial</label>
+                            <label><input type="radio" name="q5"> c) A escravidão</label>
+                            <label><input type="radio" name="q5"> d) O feudalismo</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: A) A pandemia de COVID-19</strong></p>
+                            <p><strong>Explicação:</strong> O trabalho remoto cresceu significativamente durante a pandemia de COVID-19.</p>
+                        </div>
+                    </div>
+
+                    <!-- 5 MÉDIAS -->
+                    <div class="exercicio-medio">
+                        <span class="badge">MÉDIO</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>6.</strong> (ENEM) A precarização do trabalho é um fenômeno que:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q6"> a) Garante direitos trabalhistas</label>
+                            <label><input type="radio" name="q6"> b) Reduz a informalidade</label>
+                            <label><input type="radio" name="q6"> c) Aumenta a instabilidade e a perda de direitos</label>
+                            <label><input type="radio" name="q6"> d) Melhora as condições de trabalho</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: C) Aumenta a instabilidade e a perda de direitos</strong></p>
+                            <p><strong>Explicação:</strong> A precarização do trabalho aumenta a instabilidade e a perda de direitos trabalhistas.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-medio">
+                        <span class="badge">MÉDIO</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>7.</strong> (ENEM) A globalização impactou o trabalho ao:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q7"> a) Aumentar a formalidade</label>
+                            <label><input type="radio" name="q7"> b) Reduzir a terceirização</label>
+                            <label><input type="radio" name="q7"> c) Promover a deslocalização de empresas</label>
+                            <label><input type="radio" name="q7"> d) Garantir direitos trabalhistas</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: C) Promover a deslocalização de empresas</strong></p>
+                            <p><strong>Explicação:</strong> A globalização promove a deslocalização de empresas para países com mão de obra mais barata.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-medio">
+                        <span class="badge">MÉDIO</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>8.</strong> (ENEM) A inteligência artificial tem impacto sobre o trabalho porque:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q8"> a) Aumenta a demanda por trabalhadores manuais</label>
+                            <label><input type="radio" name="q8"> b) Substitui trabalhadores em atividades repetitivas</label>
+                            <label><input type="radio" name="q8"> c) Cria apenas empregos qualificados</label>
+                            <label><input type="radio" name="q8"> d) Reduz a produtividade</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: B) Substitui trabalhadores em atividades repetitivas</strong></p>
+                            <p><strong>Explicação:</strong> A inteligência artificial substitui trabalhadores em atividades repetitivas e automatizáveis.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-medio">
+                        <span class="badge">MÉDIO</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>9.</strong> (ENEM) O trabalho escravo no Brasil é um problema que:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q9"> a) Já foi erradicado</label>
+                            <label><input type="radio" name="q9"> b) Ainda existe, especialmente em áreas rurais</label>
+                            <label><input type="radio" name="q9"> c) É exclusivo do setor industrial</label>
+                            <label><input type="radio" name="q9"> d) Afeta apenas trabalhadores estrangeiros</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: B) Ainda existe, especialmente em áreas rurais</strong></p>
+                            <p><strong>Explicação:</strong> O trabalho escravo ainda existe no Brasil, especialmente em áreas rurais e na construção civil.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-medio">
+                        <span class="badge">MÉDIO</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>10.</strong> (ENEM) A economia compartilhada é exemplificada por:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q10"> a) Empresas estatais</label>
+                            <label><input type="radio" name="q10"> b) Plataformas como Uber e iFood</label>
+                            <label><input type="radio" name="q10"> c) Sindicatos</label>
+                            <label><input type="radio" name="q10"> d) Cooperativas</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: B) Plataformas como Uber e iFood</strong></p>
+                            <p><strong>Explicação:</strong> A economia compartilhada é exemplificada por plataformas como Uber, iFood e 99.</p>
+                        </div>
+                    </div>
+
+                    <!-- 5 DIFÍCEIS -->
+                    <div class="exercicio-dificil">
+                        <span class="badge">DIFÍCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>11.</strong> (ENEM) A terceirização é criticada porque:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q11"> a) Garante direitos trabalhistas</label>
+                            <label><input type="radio" name="q11"> b) Aumenta a formalidade</label>
+                            <label><input type="radio" name="q11"> c) Pode precarizar as condições de trabalho</label>
+                            <label><input type="radio" name="q11"> d) Reduz a informalidade</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: C) Pode precarizar as condições de trabalho</strong></p>
+                            <p><strong>Explicação:</strong> A terceirização é criticada por precarizar as condições de trabalho e reduzir direitos.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-dificil">
+                        <span class="badge">DIFÍCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>12.</strong> (ENEM) A automação pode gerar desemprego estrutural porque:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q12"> a) Substitui permanentemente a mão de obra humana</label>
+                            <label><input type="radio" name="q12"> b) Cria apenas empregos manuais</label>
+                            <label><input type="radio" name="q12"> c) Aumenta a demanda por trabalhadores</label>
+                            <label><input type="radio" name="q12"> d) Gera empregos em todos os setores</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: A) Substitui permanentemente a mão de obra humana</strong></p>
+                            <p><strong>Explicação:</strong> A automação pode substituir permanentemente a mão de obra humana, gerando desemprego estrutural.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-dificil">
+                        <span class="badge">DIFÍCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>13.</strong> (ENEM) A globalização e a precarização do trabalho estão relacionadas porque:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q13"> a) A globalização aumenta os direitos trabalhistas</label>
+                            <label><input type="radio" name="q13"> b) A globalização incentiva a informalidade</label>
+                            <label><input type="radio" name="q13"> c) A globalização reduz a competitividade</label>
+                            <label><input type="radio" name="q13"> d) A globalização garante empregos formais</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: B) A globalização incentiva a informalidade</strong></p>
+                            <p><strong>Explicação:</strong> A globalização incentiva a precarização e a informalidade do trabalho.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-dificil">
+                        <span class="badge">DIFÍCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>14.</strong> (ENEM) O trabalho infantil é um problema social que:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q14"> a) Não existe no Brasil</label>
+                            <label><input type="radio" name="q14"> b) Afeta principalmente crianças de áreas urbanas</label>
+                            <label><input type="radio" name="q14"> c) Priva crianças de educação e desenvolvimento</label>
+                            <label><input type="radio" name="q14"> d) É permitido pela legislação</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: C) Priva crianças de educação e desenvolvimento</strong></p>
+                            <p><strong>Explicação:</strong> O trabalho infantil priva crianças de educação e desenvolvimento saudável.</p>
+                        </div>
+                    </div>
+
+                    <div class="exercicio-dificil">
+                        <span class="badge">DIFÍCIL</span>
+                        <p style="font-weight:600; margin-top:10px;"><strong>15.</strong> (ENEM) O futuro do trabalho será marcado pela:</p>
+                        <div class="exercicio-alternativas">
+                            <label><input type="radio" name="q15"> a) Manutenção do modelo tradicional</label>
+                            <label><input type="radio" name="q15"> b) Flexibilização e tecnologia</label>
+                            <label><input type="radio" name="q15"> c) Retorno ao trabalho escravo</label>
+                            <label><input type="radio" name="q15"> d) Estagnação econômica</label>
+                        </div>
+                        <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
+                        <div class="resposta-explicada">
+                            <p><strong>Resposta correta: B) Flexibilização e tecnologia</strong></p>
+                            <p><strong>Explicação:</strong> O futuro do trabalho será marcado pela flexibilização e pela tecnologia.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="resumo" class="aba-conteudo">
+                    <div class="resumo-principal">
+                        <h2 class="resumo-titulo">Resumo - Trabalho</h2>
+                        <p class="resumo-subtitulo">Principais pontos para memorizar</p>
+
+                        <div class="resumo-grid">
+                            <div class="resumo-card-item">
+                                <h3>Relações de Trabalho</h3>
+                                <p>Formal, informal, escravo, infantil</p>
+                                <span class="resumo-tag">Tipos</span>
+                            </div>
+                            <div class="resumo-card-item">
+                                <h3>Globalização</h3>
+                                <p>Terceirização, deslocalização</p>
+                                <span class="resumo-tag">Impactos</span>
+                            </div>
+                            <div class="resumo-card-item">
+                                <h3>Tecnologias</h3>
+                                <p>Automação, IA, trabalho remoto</p>
+                                <span class="resumo-tag">Inovação</span>
+                            </div>
+                            <div class="resumo-card-item">
+                                <h3>Precarização</h3>
+                                <p>Perda de direitos, informalidade</p>
+                                <span class="resumo-tag">Crise</span>
+                            </div>
+                            <div class="resumo-card-item">
+                                <h3>Economia Compartilhada</h3>
+                                <p>Uber, iFood, 99</p>
+                                <span class="resumo-tag">Plataformas</span>
+                            </div>
+                            <div class="resumo-card-item">
+                                <h3>Futuro do Trabalho</h3>
+                                <p>Flexibilização e tecnologia</p>
+                                <span class="resumo-tag">Transformação</span>
+                            </div>
+                        </div>
+
+                        <div class="resumo-dica-final">
+                            <h4>Dica Saphius</h4>
+                            <p>Memorize: <strong>"Formal + Informal + Tecnologia = Trabalho"</strong></p>
+                        </div>
+
+                        <div class="resumo-dica-enem">
+                            <h4>Dica ENEM</h4>
+                            <p>Atenção para os termos <strong>"Precarização"</strong>, <strong>"Automação"</strong> e <strong>"Globalização"</strong>.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="simulado" class="aba-conteudo">
+                    <h2 style="color:#2e7d32;">Simulado - Trabalho</h2>
+                    <p style="color:#666;">Teste seus conhecimentos com questões estilo ENEM</p>
+                    <div class="simulado-card">
+                        <div style="display:flex; gap:20px; flex-wrap:wrap; justify-content:center; margin-bottom:15px;">
+                            <span><strong>15 questões</strong></span>
+                            <span><strong>20 minutos</strong></span>
+                            <span><strong>Nível: Fácil a Difícil</strong></span>
+                        </div>
+                        <p style="color:#555; margin-bottom:15px;">As questões são as mesmas da aba "Exercícios" acima.</p>
+                        <button class="btn-principal" onclick="alert(' Simulado iniciado! Responda todas as 15 questões acima na aba Exercícios.')">
+                            Iniciar simulado
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script>
+    function trocarAba(botao, abaId) {
+        document.querySelectorAll('.aba-btn').forEach(b => b.classList.remove('active'));
+        botao.classList.add('active');
+
+        document.querySelectorAll('.aba-conteudo').forEach(c => c.classList.remove('active'));
+        document.getElementById(abaId).classList.add('active');
+    }
+
+    function mostrarResposta(botao) {
+        const exercicioDiv = botao.closest('.exercicio-facil, .exercicio-medio, .exercicio-dificil');
+        const respostaDiv = exercicioDiv.querySelector('.resposta-explicada');
+
+        if (respostaDiv.style.display === 'block') {
+            respostaDiv.style.display = 'none';
+            botao.textContent = 'Ver explicação';
+        } else {
+            respostaDiv.style.display = 'block';
+            botao.textContent = 'Ocultar explicação';
+        }
+    }
+
+    document.querySelectorAll('.exercicio-alternativas input[type="radio"]').forEach(input => {
+        input.addEventListener('change', verificarAtividade);
+    });
+
+    async function verificarAtividade() {
+        const questoes = document.querySelectorAll('.exercicio-alternativas');
+        const respondidas = document.querySelectorAll(
+            '.exercicio-alternativas input[type="radio"]:checked'
+        );
+
+        if (respondidas.length === questoes.length) {
+            try {
+                await fetch('/api/trilha/concluir', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        materia: 'sociologia',
+                        topico: 'trabalho'
+                    })
+                });
+
+                alert('Atividade concluída! Seu progresso na Trilha de Estudos foi atualizado.');
+            } catch (erro) {
+                console.error('Erro ao atualizar progresso:', erro);
+            }
+        }
+    }
+</script>
+
+</body>
+</html>
