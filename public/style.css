@@ -1716,13 +1716,6 @@ textarea:focus {
     height: 350px;
     padding: 12px;
   }
-  .message-user .message-bubble,
-  .message-ia .message-bubble {
-    max-width: 88%;
-    font-size: .75rem;
-    padding: 9px 12px;
-    word-wrap: break-word;
-  }
   .sugestoes {
     padding: 10px;
     gap: 6px;
@@ -1872,4 +1865,64 @@ textarea:focus {
   .ajuda-header h1 {
     font-size: 1.4rem;
   }
+}
+
+//* ===== ESTILO DEFINITIVO DO CHAT ===== */
+
+/* Caixa que contém as mensagens */
+.chat-messages {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 20px;
+}
+
+/* Balão da IA */
+.message-ia {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.message-ia .message-bubble {
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 12px 18px;
+    border-radius: 18px 18px 18px 4px;
+    border: 1px solid #e0e0e0;
+    max-width: 80%;
+    font-size: 15px;
+    line-height: 1.5;
+    word-wrap: break-word;
+}
+
+/* Balão do Usuário */
+.message-user {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.message-user .message-bubble {
+    background-color: #4caf50;
+    color: #ffffff;
+    padding: 12px 18px;
+    border-radius: 18px 18px 4px 18px;
+    max-width: 80%;
+    font-size: 15px;
+    line-height: 1.5;
+    word-wrap: break-word;
+}
+
+/* Balão do "Digitando..." */
+#digitando {
+    background-color: #f9f9f9;
+    color: #666;
+    padding: 10px 16px;
+    border-radius: 18px 18px 18px 4px;
+    border: 1px solid #e0e0e0;
+    display: inline-block;
+    font-style: italic;
+    font-size: 14px;
+    white-space: nowrap; /* Impede de quebrar a palavra */
+    width: auto;
+    margin-bottom: 10px;
 }

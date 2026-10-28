@@ -1,46 +1,128 @@
-require('dotenv').config();
-const { PredictionServiceClient } = require('@google-cloud/aiplatform');
+const { GoogleGenAI } = require("@google/genai");
+const { pipeline } = require("@xenova/transformers");
+const fs = require("fs");
+const path = require("path");
+const dotenv = require("dotenv");
 
-// A chave AQ vai funcionar magicamente graças a essa biblioteca
-const client = new PredictionServiceClient({
-  apiEndpoint: 'us-central1-aiplatform.googleapis.com',
-  projectId: '1036855598187', // Seu ID do projeto que aparece no print
-  location: 'us-central1'
-});
+dotenv.config();
 
-console.log(' Gemini API Key carregada com sucesso!');
+const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
 
-async function responderComContexto(mensagem) {
-    const prompt = `Você é a IA educacional do Saphius. Responda de forma acolhedora: ${mensagem}`;
+let knowledgeBase = [];
+let extractor = null;
 
-    try {
-        const endpoint = `projects/1036855598187/locations/us-central1/publishers/google/models/gemini-1.5-flash-001`;
-
-        const request = {
-            endpoint: endpoint,
-            instances: [{ 
-                context: `Você é uma assistente educacional amigável chamada Saphius.`,
-                messages: [{ author: "user", content: prompt }]
-            }],
-            parameters: {
-                temperature: 0.7,
-                maxOutputTokens: 1000,
-                topP: 0.95
-            }
-        };
-
-        const [response] = await client.predict(request);
-        
-        if (response.predictions && response.predictions[0]) {
-            return response.predictions[0].candidates[0].content;
-        } else {
-            throw new Error('Resposta vazia');
-        }
-
-    } catch (error) {
-        console.error('Erro no Gemini (Cloud):', error);
-        return 'Desculpe, estou com dificuldades. Tente novamente! ';
-    }
+async function getExtractor() {
+  if (!extractor) {
+    console.log('Carregando modelo de embeddings... (pode demorar na primeira vez)');
+    extractor = await pipeline("feature-extraction", "Xenova/all-MiniLM-L6-v2");
+    console.log('Modelo de embeddings carregado!');
+  }
+  return extractor;
 }
 
-module.exports = { responderComContexto };
+async function ingestContent() {
+  const conteudoDir = path.join(__dirname, "conteudo");
+  if (!fs.existsSync(conteudoDir)) {
+    fs.mkdirSync(conteudoDir);
+    console.log("Pasta 'conteudo' criada. Adicione seus arquivos .txt nela.");
+    return;
+  }
+  const files = fs.readdirSync(conteudoDir);
+  const chunks = [];
+  const extractor = await getExtractor();
+
+  for (const file of files) {
+    if (!file.endsWith(".txt") && !file.endsWith(".md")) continue;
+    const content = fs.readFileSync(path.join(conteudoDir, file), "utf-8");
+    const chunkSize = 400;
+    for (let i = 0; i < content.length; i += chunkSize) {
+      const chunk = content.slice(i, i + chunkSize);
+      if (chunk.trim().length > 50) {
+        chunks.push({ texto: chunk.trim(), arquivo: file });
+      }
+    }
+  }
+
+  for (const chunk of chunks) {
+    const embedding = await extractor(chunk.texto, { pooling: "mean", normalize: true });
+    chunk.embedding = Array.from(embedding.data);
+  }
+
+  knowledgeBase = chunks;
+  console.log(` ${chunks.length} chunks carregados.`);
+}
+
+function findRelevantChunks(questionEmbedding, topK = 2) {
+  const similarities = knowledgeBase.map((chunk) => {
+    let dot = 0;
+    for (let i = 0; i < questionEmbedding.length; i++) {
+      dot += questionEmbedding[i] * chunk.embedding[i];
+    }
+    return { ...chunk, score: dot };
+  });
+  similarities.sort((a, b) => b.score - a.score);
+  return similarities.slice(0, topK);
+}
+
+async function responderComContexto(pergunta) {
+  if (knowledgeBase.length === 0) {
+    await ingestContent();
+  }
+
+  const extractor = await getExtractor();
+  const questionEmbedding = await extractor(pergunta, { pooling: "mean", normalize: true });
+  const qEmbeddingArray = Array.from(questionEmbedding.data);
+
+  const relevantChunks = findRelevantChunks(qEmbeddingArray);
+  
+  // Se não achar nada, ainda pode ser um desabafo emocional, então não bloqueia
+  const contexto = relevantChunks.length > 0 
+    ? relevantChunks.map(c => c.texto).join("\n\n").slice(0, 1500) 
+    : "Nenhum conteúdo específico encontrado.";
+
+  // PROMPT REFORÇADO
+  const prompt = `
+Você é a assistente educacional e de bem-estar da plataforma "Saphius".
+
+REGRAS DE COMPORTAMENTO:
+1. Se o aluno estiver perguntando sobre MATÉRIA (História, Geografia, Sociologia, Filosofia), responda APENAS com base no conteúdo abaixo.
+2. Se o aluno estiver expressando SENTIMENTOS (cansado, ansioso, triste, desmotivado), NÃO fale sobre matérias. Apenas dê uma mensagem de conforto, apoio e diga para ele respirar e fazer pausas.
+3. Se ele misturar os dois (ex: "Estou cansado e quero saber da Era Vargas"), responda primeiro sobre a Era Vargas de forma direta, e no final coloque uma frase curta de conforto.
+
+REGRAS DE FORMATAÇÃO (MUITO IMPORTANTE):
+- NUNCA use asteriscos (**), cerquilhas (#) ou colchetes ([]).
+- NUNCA use listas com marcadores (como * ou -).
+- Escreva em parágrafos contínuos, como uma conversa normal de chat.
+- Não use negrito.
+
+--- CONTEÚDO DISPONÍVEL ---
+${contexto}
+--- FIM DO CONTEÚDO ---
+
+Pergunta do aluno: "${pergunta}"
+
+Sua resposta em texto puro:
+`;
+
+  try {
+    const response = await ai.interactions.create({
+      model: "gemini-3.5-flash",
+      input: prompt,
+    });
+
+    return response.output_text;
+  } catch (error) {
+    console.error('Erro na API Gemini:', error.message);
+    try {
+        const fallback = await ai.interactions.create({
+            model: "gemini-2.5-flash",
+            input: prompt,
+        });
+        return fallback.output_text;
+    } catch (e) {
+        return 'Desculpe, estou com dificuldades técnicas. Tente novamente! 💚';
+    }
+  }
+}
+
+module.exports = { responderComContexto, ingestContent };

@@ -3,6 +3,7 @@ const express = require('express');
 const path = require('path');
 const session = require('express-session');
 const db = require('./db');
+const { responderComContexto } = require('./gemini');
 
 const app = express();
 const PORT = 3000;
@@ -13,7 +14,6 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static('public'));
 app.use(express.static('.'));
 
-// Sessão
 app.use(session({
     secret: 'saphius_secret_key',
     resave: false,
@@ -107,7 +107,6 @@ app.post('/login', async (req, res) => {
         );
 
         if (rows.length === 0) {
-            // CORREÇÃO AQUI: Redireciona com o parâmetro de erro, em vez de enviar HTML puro
             return res.redirect('/login?erro=senha_incorreta');
         }
 
@@ -394,121 +393,56 @@ app.post('/api/perfil', async (req, res) => {
     }
 });
 
-// ==================== RESPOSTAS SEM IA (BASEADO EM SENTIMENTOS) ====================
+// ==================== IA COM GEMINI (RAG) ====================
 
-app.post('/api/ia-apoio', (req, res) => {
+app.post('/api/ia-apoio', async (req, res) => {
     const { mensagem } = req.body;
 
     if (!mensagem || mensagem.trim() === '') {
         return res.status(400).json({ erro: 'Digite uma mensagem' });
     }
 
-    let resposta = '';
+    try {
+        // Chama a IA
+        const resposta = await responderComContexto(mensagem);
 
-    // Transforma a mensagem em minúsculas para facilitar a leitura
-    const texto = mensagem.toLowerCase();
+        // AQUI ESTÁ O TRUQUE PARA TIRAR OS ASTERISCOS: 
+        // O replace() procura por asteriscos e cerquilhas e troca por nada (vazio)
+        const respostaLimpa = resposta.replace(/\*\*/g, '').replace(/\*/g, '').replace(/#/g, '');
 
-    // 1. DETECÇÃO DE SENTIMENTOS E MATÉRIAS
-    const estaAnsioso = texto.includes('ansioso') || texto.includes('ansiosa') || texto.includes('preocupado') || texto.includes('preocupada') || texto.includes('medo') || texto.includes('nervoso') || texto.includes('nervosa');
-    const estaSobPressao = texto.includes('pressão') || texto.includes('pressao') || texto.includes('cobrança') || texto.includes('cobranca') || texto.includes('prova') || texto.includes('teste') || texto.includes('nota');
-    const estaCansado = texto.includes('cansado') || texto.includes('cansada') || texto.includes('cansaço') || texto.includes('exausto') || texto.includes('exausta') || texto.includes('dormir');
-    const estaDesmotivado = texto.includes('desmotivado') || texto.includes('desmotivada') || texto.includes('motivação') || texto.includes('motivacao') || texto.includes('vontade') || texto.includes('desânimo') || texto.includes('desanimo');
-
-    // Verifica se perguntou sobre alguma matéria
-    const perguntouHistoria = texto.includes('história') || texto.includes('historia');
-    const perguntouGeografia = texto.includes('geografia');
-    const perguntouFilosofia = texto.includes('filosofia');
-    const perguntouSociologia = texto.includes('sociologia');
-
-    // 2. LÓGICA DE RESPOSTAS
-    if (estaAnsioso || estaSobPressao) {
-        resposta = "Entendo como a pressão dos estudos pode ser pesada.  Lembre-se: o mais importante é o seu bem-estar. Faça pausas curtas, respire fundo e divida seus estudos em pequenas partes. Você é capaz, e o seu esforço já está valendo a pena! Estou aqui para te apoiar.";
-    } 
-    else if (estaCansado) {
-        resposta = "Cansar é humano e faz parte da jornada.  Que tal dar uma pausa de 15 minutos? Pegue um copo d'água, mexa um pouco o corpo ou apenas feche os olhos. Descansar agora vai te fazer render muito mais depois. Cuide de você, ok?";
-    }
-    else if (estaDesmotivado) {
-        resposta = "Todo mundo passa por momentos de desânimo.  Não se cobre tanto hoje. Que tal começar assistindo a um vídeo bem curto sobre o que você gosta, ou ler um resumo simples? A motivação muitas vezes vem depois que a gente começa, com calma. Eu acredito no seu potencial!";
-    }
-    else if (perguntouHistoria) {
-        resposta = "História é fascinante porque conta a trajetória da humanidade!  Se você estiver revisando, que tal focar em entender o contexto e as causas dos eventos, em vez de decorar datas? Entender o 'porquê' faz toda a diferença. Se quiser, me pergunte sobre um período específico que vou te dar uma dica!";
-    }
-    else if (perguntouGeografia) {
-        resposta = "Geografia explica o mundo onde vivemos!  Lembre-se de interligar os temas, como relevo, clima e população. Isso ajuda muito no ENEM. Se tiver alguma dúvida sobre um tópico específico, como urbanização ou globalização, é só falar!";
-    }
-    else if (perguntouFilosofia) {
-        resposta = "Filosofia é o convite para pensar e questionar!  Cada filósofo traz uma perspectiva única. Uma boa dica é relacionar os conceitos com situações do nosso dia a dia. Se quiser, me chame para desenrolar um pensamento filosófico com você!";
-    }
-    else if (perguntouSociologia) {
-        resposta = "Sociologia nos ajuda a entender a sociedade em que vivemos!  Sempre tente ligar as teorias sociais (como as de Durkheim, Marx ou Weber) com as atualidades. Viu uma notícia no jornal? Pense como a sociologia explicaria aquilo. Quer treinar essa reflexão? Me pergunte!";
-    }
-    else {
-        // Resposta geral caso não se encaixe em nenhuma das opções acima
-        resposta = "Olá!  Eu sou o assistente da Saphius. Aqui estamos para cuidar do seu bem-estar e dos seus estudos. Se você estiver se sentindo pressionado(a), ansioso(a) ou quiser uma dica sobre História, Geografia, Filosofia ou Sociologia, pode me falar! Estou aqui para te ouvir e ajudar.";
-    }
-
-    // 3. SALVAR NO BANCO
-    if (req.session.usuario) {
-        try {
-            db.query(
-                'INSERT INTO conversas_ia (id_usuario, mensagem_usuario, resposta_ia, sentimento) VALUES (?, ?, ?, ?)',
-                [req.session.usuario.id, mensagem, resposta, 'educacional']
-            );
-        } catch (error) {
-            console.error('Erro ao salvar conversa:', error);
+        // Salva no banco de dados (se o usuário estiver logado)
+        if (req.session.usuario) {
+            try {
+                await db.query(
+                    'INSERT INTO conversas_ia (id_usuario, mensagem_usuario, resposta_ia, sentimento) VALUES (?, ?, ?, ?)',
+                    [req.session.usuario.id, mensagem, respostaLimpa, 'educacional']
+                );
+            } catch (error) {
+                console.error('Erro ao salvar conversa:', error);
+            }
         }
+
+        // Envia a resposta limpa para o site
+        res.json({ resposta: respostaLimpa });
+
+    } catch (error) {
+        console.error('Erro na IA Gemini:', error);
+        res.json({
+            resposta: 'Desculpe, estou com dificuldades técnicas. Tente novamente! 💚'
+        });
     }
-
-    // 4. ENVIAR A RESPOSTA PARA O SITE
-    res.json({ resposta });
-});
-
-
-// ==================== TRILHA DE ESTUDOS (SALVA NO LOCALSTORAGE DO NAVEGADOR) ====================
-
-app.get('/api/trilha', protegerRota, (req, res) => {
-    // O progresso é salvo no localStorage do navegador
-    // A API apenas confirma que o usuário está logado
-    res.json({
-        geral: 0,
-        progresso: {
-            historia: 0,
-            geografia: 0,
-            sociologia: 0,
-            filosofia: 0
-        },
-        status: {
-            historia: 'pendente',
-            geografia: 'pendente',
-            sociologia: 'pendente',
-            filosofia: 'pendente'
-        }
-    });
-});
-
-app.post('/api/trilha/atualizar', protegerRota, (req, res) => {
-    // Apenas confirma que a requisição foi recebida
-    // O progresso real é salvo no localStorage
-    res.json({ sucesso: true });
-});
-
-app.post('/api/trilha/concluir', protegerRota, (req, res) => {
-    res.json({ sucesso: true });
 });
 
 // ==================== TRILHA DE ESTUDOS ====================
 
-// Inicializar progresso da trilha para um novo usuário
 async function inicializarTrilha(id_usuario) {
     try {
-        // Verificar se já existe progresso
         const [existing] = await db.query(
             'SELECT * FROM progresso_trilha WHERE id_usuario = ?',
             [id_usuario]
         );
         
         if (existing.length === 0) {
-            // Criar progresso inicial para todas as matérias
             const materias = ['historia', 'geografia', 'sociologia', 'filosofia'];
             for (const materia of materias) {
                 await db.query(
@@ -519,9 +453,7 @@ async function inicializarTrilha(id_usuario) {
         }
     } catch (error) {
         console.error('Erro ao inicializar trilha:', error);
-        // Se a tabela não existir, criar
         await criarTabelaTrilha();
-        // Tentar novamente
         const materias = ['historia', 'geografia', 'sociologia', 'filosofia'];
         for (const materia of materias) {
             await db.query(
@@ -532,7 +464,6 @@ async function inicializarTrilha(id_usuario) {
     }
 }
 
-// Criar tabela de progresso da trilha se não existir
 async function criarTabelaTrilha() {
     try {
         await db.query(`
@@ -553,52 +484,31 @@ async function criarTabelaTrilha() {
     }
 }
 
-// API para obter progresso da trilha
 app.get('/api/trilha', protegerRota, async (req, res) => {
     const id_usuario = req.session.usuario.id;
 
     try {
-        // Garantir que a tabela existe
         await criarTabelaTrilha();
-        
-        // Garantir que o usuário tem registros de progresso
         await inicializarTrilha(id_usuario);
 
-        // Buscar progresso do usuário
         const [rows] = await db.query(
             'SELECT materia, progresso, status FROM progresso_trilha WHERE id_usuario = ?',
             [id_usuario]
         );
 
-        // Mapear resultados
-        const progresso = {
-            historia: 0,
-            geografia: 0,
-            sociologia: 0,
-            filosofia: 0
-        };
-        const status = {
-            historia: 'pendente',
-            geografia: 'pendente',
-            sociologia: 'pendente',
-            filosofia: 'pendente'
-        };
+        const progresso = { historia: 0, geografia: 0, sociologia: 0, filosofia: 0 };
+        const status = { historia: 'pendente', geografia: 'pendente', sociologia: 'pendente', filosofia: 'pendente' };
 
         rows.forEach(row => {
             progresso[row.materia] = row.progresso || 0;
             status[row.materia] = row.status || 'pendente';
         });
 
-        // Calcular progresso geral
         const valores = Object.values(progresso);
         const total = valores.reduce((a, b) => a + b, 0);
         const geral = Math.round(total / valores.length);
 
-        res.json({
-            geral: geral,
-            progresso: progresso,
-            status: status
-        });
+        res.json({ geral, progresso, status });
 
     } catch (error) {
         console.error('Erro ao buscar trilha:', error);
@@ -606,7 +516,6 @@ app.get('/api/trilha', protegerRota, async (req, res) => {
     }
 });
 
-// API para atualizar progresso da trilha
 app.post('/api/trilha/atualizar', protegerRota, async (req, res) => {
     const id_usuario = req.session.usuario.id;
     const { materia, progresso } = req.body;
@@ -618,21 +527,14 @@ app.post('/api/trilha/atualizar', protegerRota, async (req, res) => {
     try {
         await criarTabelaTrilha();
 
-        // Determinar status baseado no progresso
         let status = 'pendente';
-        if (progresso >= 100) {
-            status = 'concluido';
-        } else if (progresso > 0) {
-            status = 'em_andamento';
-        }
+        if (progresso >= 100) status = 'concluido';
+        else if (progresso > 0) status = 'em_andamento';
 
-        // Atualizar ou inserir
         await db.query(
             `INSERT INTO progresso_trilha (id_usuario, materia, progresso, status) 
              VALUES (?, ?, ?, ?) 
-             ON DUPLICATE KEY UPDATE 
-             progresso = VALUES(progresso), 
-             status = VALUES(status)`,
+             ON DUPLICATE KEY UPDATE progresso = VALUES(progresso), status = VALUES(status)`,
             [id_usuario, materia, progresso, status]
         );
 
@@ -644,7 +546,6 @@ app.post('/api/trilha/atualizar', protegerRota, async (req, res) => {
     }
 });
 
-// API para marcar matéria como concluída
 app.post('/api/trilha/concluir', protegerRota, async (req, res) => {
     const id_usuario = req.session.usuario.id;
     const { materia } = req.body;
@@ -659,9 +560,7 @@ app.post('/api/trilha/concluir', protegerRota, async (req, res) => {
         await db.query(
             `INSERT INTO progresso_trilha (id_usuario, materia, progresso, status) 
              VALUES (?, ?, ?, ?) 
-             ON DUPLICATE KEY UPDATE 
-             progresso = 100, 
-             status = 'concluido'`,
+             ON DUPLICATE KEY UPDATE progresso = 100, status = 'concluido'`,
             [id_usuario, materia, 100, 'concluido']
         );
 
@@ -672,10 +571,11 @@ app.post('/api/trilha/concluir', protegerRota, async (req, res) => {
         res.status(500).json({ erro: 'Erro ao concluir matéria' });
     }
 });
+
 // ==================== INICIAR SERVIDOR ====================
 
 app.listen(PORT, () => {
     console.log(` Saphius rodando em http://localhost:${PORT}`);
     console.log(' Conectado ao banco saphius_db');
-    console.log(' Modo de respostas offline ativado!');
+    console.log(' 🤖 IA Gemini com RAG ativada e respostas limpas!');
 });
