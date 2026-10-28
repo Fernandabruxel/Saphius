@@ -1867,62 +1867,66 @@ textarea:focus {
   }
 }
 
-//* ===== ESTILO DEFINITIVO DO CHAT ===== */
+/* ===== CORREÇÃO DEFINITIVA DAS BOLHAS ===== */
 
-/* Caixa que contém as mensagens */
+/* Configuração do container de mensagens */
 .chat-messages {
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 15px;
     padding: 20px;
 }
 
-/* Balão da IA */
-.message-ia {
-    display: flex;
-    justify-content: flex-start;
-}
-
-.message-ia .message-bubble {
-    background-color: #f9f9f9;
-    color: #333;
-    padding: 12px 18px;
-    border-radius: 18px 18px 18px 4px;
-    border: 1px solid #e0e0e0;
-    max-width: 80%;
-    font-size: 15px;
-    line-height: 1.5;
-    word-wrap: break-word;
-}
-
-/* Balão do Usuário */
+/* Mensagem do Usuário */
 .message-user {
     display: flex;
     justify-content: flex-end;
+    width: 100%;
 }
 
 .message-user .message-bubble {
     background-color: #4caf50;
     color: #ffffff;
-    padding: 12px 18px;
+    padding: 10px 18px;
     border-radius: 18px 18px 4px 18px;
-    max-width: 80%;
     font-size: 15px;
-    line-height: 1.5;
-    word-wrap: break-word;
+    line-height: 1.4;
+    
+    /* AQUI ESTÁ O SEGREDO PARA NÃO QUEBRAR AS LETRAS */
+    width: auto !important; 
+    max-width: 75%; 
+    min-width: 50px; 
+    
+    /* Impede a quebra letra por letra e força a ficar na mesma linha */
+    word-break: normal !important; 
+    white-space: normal !important;
+    overflow-wrap: break-word !important;
+    
+    display: inline-block;
 }
 
-/* Balão do "Digitando..." */
-#digitando {
-    background-color: #f9f9f9;
-    color: #666;
-    padding: 10px 16px;
+/* Mensagem da IA */
+.message-ia {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.message-ia .message-bubble {
+    background-color: #ffffff;
+    color: #333333;
+    padding: 12px 18px;
     border-radius: 18px 18px 18px 4px;
-    border: 1px solid #e0e0e0;
+    border: 1px solid #e8f5e9;
+    font-size: 15px;
+    line-height: 1.5;
+    
+    width: auto !important;
+    max-width: 80%;
+    
+    word-break: normal !important;
+    white-space: normal !important;
+    overflow-wrap: break-word !important;
+    
     display: inline-block;
-    font-style: italic;
-    font-size: 14px;
-    white-space: nowrap; /* Impede de quebrar a palavra */
-    width: auto;
-    margin-bottom: 10px;
 }

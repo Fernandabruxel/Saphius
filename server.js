@@ -408,7 +408,7 @@ app.post('/api/ia-apoio', async (req, res) => {
 
         // AQUI ESTÁ O TRUQUE PARA TIRAR OS ASTERISCOS: 
         // O replace() procura por asteriscos e cerquilhas e troca por nada (vazio)
-        const respostaLimpa = resposta.replace(/\*\*/g, '').replace(/\*/g, '').replace(/#/g, '');
+        const respostaLimpa = resposta.replace(/[*#_]/g, '').replace(/\s+/g, ' ').trim();
 
         // Salva no banco de dados (se o usuário estiver logado)
         if (req.session.usuario) {

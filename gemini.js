@@ -13,9 +13,9 @@ let extractor = null;
 
 async function getExtractor() {
   if (!extractor) {
-    console.log('Carregando modelo de embeddings... (pode demorar na primeira vez)');
+    console.log('Carregando modelo de embeddings...');
     extractor = await pipeline("feature-extraction", "Xenova/all-MiniLM-L6-v2");
-    console.log('Modelo de embeddings carregado!');
+    console.log('Modelo carregado!');
   }
   return extractor;
 }
@@ -24,7 +24,6 @@ async function ingestContent() {
   const conteudoDir = path.join(__dirname, "conteudo");
   if (!fs.existsSync(conteudoDir)) {
     fs.mkdirSync(conteudoDir);
-    console.log("Pasta 'conteudo' criada. Adicione seus arquivos .txt nela.");
     return;
   }
   const files = fs.readdirSync(conteudoDir);
@@ -49,7 +48,7 @@ async function ingestContent() {
   }
 
   knowledgeBase = chunks;
-  console.log(` ${chunks.length} chunks carregados.`);
+  console.log(`✅ ${chunks.length} chunks carregados.`);
 }
 
 function findRelevantChunks(questionEmbedding, topK = 2) {
@@ -75,33 +74,27 @@ async function responderComContexto(pergunta) {
 
   const relevantChunks = findRelevantChunks(qEmbeddingArray);
   
-  // Se não achar nada, ainda pode ser um desabafo emocional, então não bloqueia
   const contexto = relevantChunks.length > 0 
     ? relevantChunks.map(c => c.texto).join("\n\n").slice(0, 1500) 
     : "Nenhum conteúdo específico encontrado.";
 
-  // PROMPT REFORÇADO
+  // PROMPT REFORÇADO E RÍGIDO
   const prompt = `
-Você é a assistente educacional e de bem-estar da plataforma "Saphius".
+Você é a assistente virtual da plataforma Saphius.
 
-REGRAS DE COMPORTAMENTO:
-1. Se o aluno estiver perguntando sobre MATÉRIA (História, Geografia, Sociologia, Filosofia), responda APENAS com base no conteúdo abaixo.
-2. Se o aluno estiver expressando SENTIMENTOS (cansado, ansioso, triste, desmotivado), NÃO fale sobre matérias. Apenas dê uma mensagem de conforto, apoio e diga para ele respirar e fazer pausas.
-3. Se ele misturar os dois (ex: "Estou cansado e quero saber da Era Vargas"), responda primeiro sobre a Era Vargas de forma direta, e no final coloque uma frase curta de conforto.
+REGRAS DE OURO:
+1. Se o usuário fizer uma pergunta sobre MATÉRIA (História, Geografia, Sociologia, Filosofia), responda DIRETAMENTE com o conteúdo abaixo. NÃO adicione mensagens de apoio emocional, NÃO pergunte como ele está se sentindo, NÃO diga "espero ter ajudado". Apenas responda a dúvida.
+2. Se o usuário disser que está TRISTE, CANSADO, ANSIOSO ou DESMOTIVADO, dê uma resposta de conforto. NÃO fale sobre matérias.
+3. NUNCA use asteriscos (*), cerquilhas (#), ou qualquer tipo de formatação. Use apenas texto corrido.
+4. NUNCA invente informações. Se não estiver no conteúdo, diga: "Essa informação não está nos materiais da plataforma Saphius."
 
-REGRAS DE FORMATAÇÃO (MUITO IMPORTANTE):
-- NUNCA use asteriscos (**), cerquilhas (#) ou colchetes ([]).
-- NUNCA use listas com marcadores (como * ou -).
-- Escreva em parágrafos contínuos, como uma conversa normal de chat.
-- Não use negrito.
-
---- CONTEÚDO DISPONÍVEL ---
+--- CONTEÚDO DA PLATAFORMA ---
 ${contexto}
 --- FIM DO CONTEÚDO ---
 
 Pergunta do aluno: "${pergunta}"
 
-Sua resposta em texto puro:
+Resposta (apenas texto puro, sem asteriscos):
 `;
 
   try {
