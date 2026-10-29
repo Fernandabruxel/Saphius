@@ -8,11 +8,8 @@
 </head>
 <body>
     <div class="app-container">
-        <!-- Menu Lateral -->
         <aside class="sidebar">
-            <div class="sidebar-logo">
-                <h2>Saphius</h2>
-            </div>
+            <div class="sidebar-logo"><h2>Saphius</h2></div>
             <ul class="sidebar-menu">
                 <li><a href="/dashboard" class="active"><span class="icon"></span> <span>Dashboard</span></a></li>
                 <li><a href="/conteudos"><span class="icon"></span> <span>Conteúdos</span></a></li>
@@ -24,22 +21,14 @@
                 <li><a href="/sair"><span class="icon"></span> <span>Sair</span></a></li>
             </ul>
         </aside>
-
-        <!-- Conteúdo Principal -->
         <main class="main-content">
             <div class="container dashboard-container">
-                <!-- Boas-vindas -->
                 <div class="welcome-section">
                     <h1>Saphius</h1>
                     <h2 id="nomeUsuario">Bem-vindo(a)!</h2>
                     <p>Ciências Humanas e suas Tecnologias – ENEM</p>
-                    <p style="color: #666; font-size: 0.95em; margin-top: 5px;">
-                        Plataforma de Ensino focada em Ciências Humanas e suas Tecnologias, com organização,
-                        trilhas de aprendizagem e IA de Apoio Pedagógico e Emocional.
-                    </p>
+                    <p style="color: #666; font-size: 0.95em; margin-top: 5px;">Plataforma de Ensino focada em Ciências Humanas e suas Tecnologias, com organização, trilhas de aprendizagem e IA de Apoio Pedagógico e Emocional.</p>
                 </div>
-
-                <!-- Matérias -->
                 <div class="section-title">Matérias</div>
                 <div class="cards-grid">
                     <div class="subject-card">
@@ -63,8 +52,6 @@
                         <a href="/filosofia">Acessar conteúdos →</a>
                     </div>
                 </div>
-
-                <!-- Recursos especiais -->
                 <div class="section-title">Recursos especiais</div>
                 <div class="features-grid">
                     <div class="feature-card">
@@ -81,14 +68,11 @@
             </div>
         </main>
     </div>
-
     <script>
         fetch('/api/usuario')
             .then(res => res.json())
             .then(data => {
-                if (data.nome) {
-                    document.getElementById('nomeUsuario').innerHTML = `Bem-vindo(a), ${data.nome}! 🌿`;
-                }
+                if (data.nome) { document.getElementById('nomeUsuario').innerHTML = `Bem-vindo(a), ${data.nome}! 🌿`; }
             })
             .catch(err => console.log('Erro:', err));
     </script>

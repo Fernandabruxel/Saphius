@@ -8,84 +8,54 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-
 <div class="login-container">
 <div class="login-box">
-
 <a href="/" class="btn-voltar">Voltar</a>
-
 <div class="login-header">
 <h1>Saphius</h1>
 <p>Crie sua conta gratuita</p>
 </div>
-
 <div id="mensagemErro" style="display:none" class="mensagem-erro">
 <span id="textoErro"></span>
 </div>
-
 <div class="login-tabs">
 <button type="button" class="tab" onclick="location.href='/login'">Entrar</button>
 <button type="button" class="tab active" onclick="location.href='/cadastro'">Inscrever-se</button>
 </div>
-
 <form method="POST" action="/cadastrar">
-
 <div class="input-group">
 <label>Nome completo</label>
 <input type="text" name="nome" placeholder="Digite seu nome" required>
 </div>
-
 <div class="input-group">
 <label>Email</label>
 <input type="email" name="email" placeholder="Digite seu email" required>
 </div>
-
 <div class="input-group">
 <label>Senha</label>
 <input type="password" name="senha" placeholder="Digite sua senha" required>
 </div>
-
 <button type="submit" class="btn-entrar">Cadastrar</button>
-
 </form>
-
-<div class="divider">
-<span>ou</span>
-</div>
-
+<div class="divider"><span>ou</span></div>
 <button type="button" class="btn-google" onclick="alert('Funcionalidade em desenvolvimento')">
 <span class="google-icon">G</span> Entrar com Google
 </button>
-
 </div>
 </div>
-
 <script>
 const urlParams=new URLSearchParams(window.location.search);
 const erro=urlParams.get('erro');
-
 if(erro){
 const mensagemDiv=document.getElementById('mensagemErro');
 const textoErro=document.getElementById('textoErro');
-
-if(erro==='email_existente'){
-textoErro.textContent='Este email já está cadastrado! Faça login ou use outro email.';
-}else if(erro==='campos_vazios'){
-textoErro.textContent='Preencha todos os campos.';
-}else if(erro==='erro_geral'){
-textoErro.textContent='Ocorreu um erro ao cadastrar. Tente novamente!';
-}else{
-textoErro.textContent='Ocorreu um erro. Tente novamente.';
-}
-
+if(erro==='email_existente'){ textoErro.textContent='Este email já está cadastrado! Faça login ou use outro email.'; }
+else if(erro==='campos_vazios'){ textoErro.textContent='Preencha todos os campos.'; }
+else if(erro==='erro_geral'){ textoErro.textContent='Ocorreu um erro ao cadastrar. Tente novamente!'; }
+else{ textoErro.textContent='Ocorreu um erro. Tente novamente.'; }
 mensagemDiv.style.display='block';
-
-setTimeout(()=>{
-mensagemDiv.style.display='none';
-window.history.replaceState({},document.title,window.location.pathname);
-},5000);
+setTimeout(()=>{ mensagemDiv.style.display='none'; window.history.replaceState({},document.title,window.location.pathname); },5000);
 }
 </script>
-
 </body>
 </html>

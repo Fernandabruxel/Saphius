@@ -10,88 +10,55 @@
 <body>
 <div class="login-container">
 <div class="login-box">
-
 <a href="/" class="btn-voltar">Voltar</a>
-
 <div class="login-header">
 <h1>Saphius</h1>
 <p>Plataforma de Ensino em Ciências Humanas<br>com IA de Apoio Pedagógico</p>
 </div>
-
-<!-- DIV DE ERRO ADICIONADA AQUI -->
 <div id="mensagemErro" style="display:none" class="mensagem-erro">
 <span id="textoErro"></span>
 </div>
-
 <div id="mensagemSucesso" style="display:none" class="mensagem-sucesso">
 <span> Cadastro realizado com sucesso! Faça login para continuar.</span>
 </div>
-
 <div class="login-tabs">
 <button type="button" class="tab active" onclick="location.href='/login'">Entrar</button>
 <button type="button" class="tab" onclick="location.href='/cadastro'">Inscrever-se</button>
 </div>
-
 <form method="POST" action="/login">
 <div class="input-group">
 <label>Email</label>
 <input type="email" name="email" placeholder="Digite seu email" required>
 </div>
-
 <div class="input-group">
 <label>Senha</label>
 <input type="password" name="senha" placeholder="Digite sua senha" required>
 </div>
-
 <button type="submit" class="btn-entrar">Entrar</button>
 </form>
-
-<div class="divider">
-<span>ou</span>
-</div>
-
+<div class="divider"><span>ou</span></div>
 <button type="button" class="btn-google" onclick="alert('Funcionalidade em desenvolvimento')">
 <span class="google-icon">G</span> Entrar com Google
 </button>
-
 </div>
 </div>
-
 <script>
 const urlParams = new URLSearchParams(window.location.search);
 const cadastro = urlParams.get('cadastro');
 const erro = urlParams.get('erro');
-
-// Lógica para mensagem de SUCESSO (Cadastro realizado)
 if(cadastro === 'sucesso'){
     const mensagem = document.getElementById('mensagemSucesso');
     mensagem.style.display = 'block';
-
-    setTimeout(()=>{
-        mensagem.style.display = 'none';
-        window.history.replaceState({}, document.title, window.location.pathname);
-    }, 5000);
+    setTimeout(()=>{ mensagem.style.display = 'none'; window.history.replaceState({}, document.title, window.location.pathname); }, 5000);
 }
-
-// Lógica para mensagem de ERRO (Senha incorreta)
 if(erro){
     const mensagemDiv = document.getElementById('mensagemErro');
     const textoErro = document.getElementById('textoErro');
-
-    if(erro === 'senha_incorreta'){
-        textoErro.textContent = 'Email ou senha incorretos! Verifique seus dados.';
-    } else {
-        textoErro.textContent = 'Ocorreu um erro ao fazer login. Tente novamente.';
-    }
-
+    if(erro === 'senha_incorreta'){ textoErro.textContent = 'Email ou senha incorretos! Verifique seus dados.'; }
+    else { textoErro.textContent = 'Ocorreu um erro ao fazer login. Tente novamente.'; }
     mensagemDiv.style.display = 'block';
-
-    setTimeout(()=>{
-        mensagemDiv.style.display = 'none';
-        window.history.replaceState({}, document.title, window.location.pathname);
-    }, 5000);
+    setTimeout(()=>{ mensagemDiv.style.display = 'none'; window.history.replaceState({}, document.title, window.location.pathname); }, 5000);
 }
 </script>
-
 </body>
 </html>

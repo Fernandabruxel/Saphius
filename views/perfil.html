@@ -55,46 +55,30 @@
                 <li><a href="/sair"><span class="icon"></span><span>Sair</span></a></li>
             </ul>
         </aside>
-
         <main class="main-content">
+            <!-- Botão de Voltar Mobile -->
+            <a href="/dashboard" class="btn-voltar-mobile">← Voltar ao Dashboard</a>
             <div class="container perfil-container">
-
                 <div class="perfil-header">
                     <h1> Meu Perfil</h1>
                     <p>Gerencie suas informações pessoais</p>
                 </div>
-
-                <div id="mensagemSucesso" class="mensagem-sucesso">
-                     Perfil atualizado com sucesso!
-                </div>
-
-                <div id="mensagemErro" class="mensagem-erro">
-                     Erro ao atualizar perfil. Tente novamente!
-                </div>
-
-                <div id="erroCarregamento" class="erro-carregamento">
-                     Erro ao carregar perfil. Recarregue a página.
-                </div>
-
+                <div id="mensagemSucesso" class="mensagem-sucesso"> Perfil atualizado com sucesso!</div>
+                <div id="mensagemErro" class="mensagem-erro"> Erro ao atualizar perfil. Tente novamente!</div>
+                <div id="erroCarregamento" class="erro-carregamento"> Erro ao carregar perfil. Recarregue a página.</div>
                 <div class="perfil-card">
                     <span class="avatar-icon"></span>
                     <h3> Informações Pessoais</h3>
-
-                    <!-- NOME - APENAS LEITURA -->
                     <div class="perfil-field" style="opacity:0.8;">
                         <span class="label">Nome:</span>
                         <span class="value" id="nomeValue">Carregando...</span>
                         <span style="font-size:.8em;color:#888;">(não editável)</span>
                     </div>
-
-                    <!-- EMAIL - APENAS LEITURA -->
                     <div class="perfil-field" style="opacity:0.7;">
                         <span class="label">Email:</span>
                         <span class="value" id="emailValue">Carregando...</span>
                         <span style="font-size:.8em;color:#888;">(não editável)</span>
                     </div>
-
-                    <!-- ANO ESCOLAR - EDITÁVEL -->
                     <div class="perfil-field" id="campo-ano_escolar">
                         <span class="label">Ano escolar:</span>
                         <span class="value" id="anoEscolarValue">Não definido</span>
@@ -105,8 +89,6 @@
                             <button type="button" class="cancel-btn" onclick="cancelarEdicao('ano_escolar')"> Cancelar</button>
                         </div>
                     </div>
-
-                    <!-- META DE FACULDADE - EDITÁVEL -->
                     <div class="perfil-field" id="campo-objetivo_estudo">
                         <span class="label">Meta de faculdade:</span>
                         <span class="value" id="objetivoValue">Não definida</span>
@@ -117,70 +99,40 @@
                             <button type="button" class="cancel-btn" onclick="cancelarEdicao('objetivo_estudo')"> Cancelar</button>
                         </div>
                     </div>
-
-                    <!-- DATA DE CADASTRO - APENAS LEITURA -->
                     <div class="perfil-field" style="opacity:0.7;">
                         <span class="label">Data de cadastro:</span>
                         <span class="value" id="dataCadastroValue">Carregando...</span>
                     </div>
-
                 </div>
-
                 <div class="perfil-actions">
                     <button class="btn-action btn-secondary-action" onclick="location.href='/dashboard'">← Voltar</button>
                 </div>
-
             </div>
         </main>
     </div>
-
     <script>
         let campoEditando = null;
         let valorOriginal = '';
-
-        // ===== CARREGAR PERFIL =====
         async function carregarPerfil() {
             try {
-                const response = await fetch('/api/perfil', {
-                    method: 'GET',
-                    credentials: 'same-origin',
-                    headers: { 'Accept': 'application/json' }
-                });
-
-                if (!response.ok) {
-                    throw new Error(`Erro HTTP: ${response.status}`);
-                }
-
+                const response = await fetch('/api/perfil', { method: 'GET', credentials: 'same-origin', headers: { 'Accept': 'application/json' } });
+                if (!response.ok) { throw new Error(`Erro HTTP: ${response.status}`); }
                 const data = await response.json();
-
-                if (data.erro) {
-                    throw new Error(data.erro);
-                }
-
-                // NOME
+                if (data.erro) { throw new Error(data.erro); }
                 document.getElementById('nomeValue').textContent = data.nome || 'Não definido';
-
-                // EMAIL
                 document.getElementById('emailValue').textContent = data.email || 'Não definido';
-
-                // ANO ESCOLAR
                 const ano = data.ano_escolar || '';
                 document.getElementById('anoEscolarValue').textContent = ano || 'Não definido';
                 document.getElementById('anoEscolarInput').value = ano;
-
-                // META DE FACULDADE
                 const objetivo = data.objetivo_estudo || '';
                 document.getElementById('objetivoValue').textContent = objetivo || 'Não definida';
                 document.getElementById('objetivoInput').value = objetivo;
-
-                // DATA DE CADASTRO
                 if (data.data_cadastro) {
                     const dataObj = new Date(data.data_cadastro);
                     document.getElementById('dataCadastroValue').textContent = dataObj.toLocaleDateString('pt-BR');
                 } else {
                     document.getElementById('dataCadastroValue').textContent = 'Não disponível';
                 }
-
             } catch (error) {
                 console.error('Erro no perfil:', error);
                 document.getElementById('nomeValue').textContent = 'Erro ao carregar';
@@ -191,88 +143,45 @@
                 document.getElementById('erroCarregamento').style.display = 'block';
             }
         }
-
-        // ===== EDITAR CAMPO =====
         function editarCampo(campo) {
-            if (campoEditando && campoEditando !== campo) {
-                cancelarEdicao(campoEditando);
-            }
-
+            if (campoEditando && campoEditando !== campo) { cancelarEdicao(campoEditando); }
             const campoDiv = document.getElementById(`campo-${campo}`);
             const input = document.getElementById(campo === 'ano_escolar' ? 'anoEscolarInput' : 'objetivoInput');
             const valueSpan = document.getElementById(campo === 'ano_escolar' ? 'anoEscolarValue' : 'objetivoValue');
-
             valorOriginal = valueSpan.textContent === 'Não definido' || valueSpan.textContent === 'Não definida' ? '' : valueSpan.textContent;
-
             campoDiv.classList.add('editing');
             input.value = valorOriginal;
             input.focus();
             input.select();
-
             campoEditando = campo;
-
             input.onkeydown = function(e) {
-                if (e.key === 'Enter') {
-                    e.preventDefault();
-                    salvarCampo(campo);
-                }
-                if (e.key === 'Escape') {
-                    e.preventDefault();
-                    cancelarEdicao(campo);
-                }
+                if (e.key === 'Enter') { e.preventDefault(); salvarCampo(campo); }
+                if (e.key === 'Escape') { e.preventDefault(); cancelarEdicao(campo); }
             };
         }
-
-        // ===== SALVAR CAMPO =====
         async function salvarCampo(campo) {
             const input = document.getElementById(campo === 'ano_escolar' ? 'anoEscolarInput' : 'objetivoInput');
             const valueSpan = document.getElementById(campo === 'ano_escolar' ? 'anoEscolarValue' : 'objetivoValue');
             const campoDiv = document.getElementById(`campo-${campo}`);
-
             const novoValor = input.value.trim();
-
-            if (!novoValor) {
-                alert('⚠️ Preencha o campo antes de salvar.');
-                return;
-            }
-
-            if (novoValor === valorOriginal) {
-                campoDiv.classList.remove('editing');
-                campoEditando = null;
-                return;
-            }
-
+            if (!novoValor) { alert(' Preencha o campo antes de salvar.'); return; }
+            if (novoValor === valorOriginal) { campoDiv.classList.remove('editing'); campoEditando = null; return; }
             const botoes = campoDiv.querySelectorAll('button');
             botoes.forEach(b => b.disabled = true);
-
             try {
                 const response = await fetch('/api/perfil', {
                     method: 'POST',
                     credentials: 'same-origin',
-                    headers: {
-                        'Content-Type': 'application/json',
-                        'Accept': 'application/json'
-                    },
-                    body: JSON.stringify({
-                        campo: campo,
-                        valor: novoValor
-                    })
+                    headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+                    body: JSON.stringify({ campo: campo, valor: novoValor })
                 });
-
                 const data = await response.json();
-
-                if (!response.ok || data.erro) {
-                    throw new Error(data.erro || 'Erro ao salvar');
-                }
-
+                if (!response.ok || data.erro) { throw new Error(data.erro || 'Erro ao salvar'); }
                 valueSpan.textContent = data.valor || novoValor;
                 input.value = data.valor || novoValor;
-
                 campoDiv.classList.remove('editing');
                 campoEditando = null;
-
                 mostrarSucesso();
-
             } catch (error) {
                 console.error('Erro ao salvar:', error);
                 mostrarErro();
@@ -281,33 +190,16 @@
                 botoes.forEach(b => b.disabled = false);
             }
         }
-
-        // ===== CANCELAR EDIÇÃO =====
         function cancelarEdicao(campo) {
             const campoDiv = document.getElementById(`campo-${campo}`);
             const valueSpan = document.getElementById(campo === 'ano_escolar' ? 'anoEscolarValue' : 'objetivoValue');
-
             valueSpan.textContent = valorOriginal || (campo === 'ano_escolar' ? 'Não definido' : 'Não definida');
             campoDiv.classList.remove('editing');
             campoEditando = null;
         }
-
-        // ===== MENSAGENS =====
-        function mostrarSucesso() {
-            const msg = document.getElementById('mensagemSucesso');
-            msg.style.display = 'flex';
-            setTimeout(() => { msg.style.display = 'none'; }, 3000);
-        }
-
-        function mostrarErro() {
-            const msg = document.getElementById('mensagemErro');
-            msg.style.display = 'flex';
-            setTimeout(() => { msg.style.display = 'none'; }, 4000);
-        }
-
-        // ===== INICIAR =====
+        function mostrarSucesso() { const msg = document.getElementById('mensagemSucesso'); msg.style.display = 'flex'; setTimeout(() => { msg.style.display = 'none'; }, 3000); }
+        function mostrarErro() { const msg = document.getElementById('mensagemErro'); msg.style.display = 'flex'; setTimeout(() => { msg.style.display = 'none'; }, 4000); }
         carregarPerfil();
     </script>
-
 </body>
 </html>

@@ -8,11 +8,8 @@
 </head>
 <body>
     <div class="app-container">
-        <!-- Menu Lateral -->
         <aside class="sidebar">
-            <div class="sidebar-logo">
-                <h2>Saphius</h2>
-            </div>
+            <div class="sidebar-logo"><h2>Saphius</h2></div>
             <ul class="sidebar-menu">
                 <li><a href="/dashboard"><span class="icon"></span> <span>Dashboard</span></a></li>
                 <li><a href="/conteudos"><span class="icon"></span> <span>Conteúdos</span></a></li>
@@ -25,8 +22,9 @@
             </ul>
         </aside>
 
-        <!-- Conteúdo Principal -->
         <main class="main-content">
+            <!-- Botão de Voltar Mobile -->
+            <a href="/dashboard" class="btn-voltar-mobile">← Voltar ao Dashboard</a>
             <div class="container bemestar-container">
                 <div class="bemestar-header">
                     <h1>Bem-estar e Foco</h1>
@@ -46,7 +44,6 @@
                         </div>
                     </div>
 
-                    <!-- Sugestões rápidas -->
                     <div class="sugestoes">
                         <button class="sugestao-btn" onclick="enviarSugestao('Estou ansioso para a prova')">Ansioso para prova</button>
                         <button class="sugestao-btn" onclick="enviarSugestao('Estou cansado de estudar')">Cansado de estudar</button>
@@ -54,14 +51,12 @@
                         <button class="sugestao-btn" onclick="enviarSugestao('Não consigo me concentrar')">Dificuldade de foco</button>
                     </div>
 
-                    <!-- Input area -->
                     <div class="chat-input-area">
                         <input type="text" id="mensagemInput" placeholder="Digite sua mensagem..." onkeypress="if(event.key==='Enter') enviarMensagem()">
                         <button onclick="enviarMensagem()">Enviar</button>
                     </div>
                 </div>
 
-                <!-- Dicas rápidas -->
                 <div class="dicas-card">
                     <h3>Dicas rápidas para seus estudos</h3>
                     <ul>
@@ -79,12 +74,7 @@
 
     <script>
         let mensagemEnviando = false;
-
-        function getCurrentTime() {
-            const now = new Date();
-            return now.toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' });
-        }
-
+        function getCurrentTime() { return new Date().toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' }); }
         document.getElementById('timeNow').innerHTML = getCurrentTime();
 
         function addMessage(text, isUser) {
@@ -92,12 +82,7 @@
             const messageDiv = document.createElement('div');
             messageDiv.className = isUser ? 'message-user' : 'message-ia';
             const time = getCurrentTime();
-            messageDiv.innerHTML = `
-                <div>
-                    <div class="message-bubble">${text}</div>
-                    <div class="message-time">${time}</div>
-                </div>
-            `;
+            messageDiv.innerHTML = `<div><div class="message-bubble">${text}</div><div class="message-time">${time}</div></div>`;
             chatMessages.appendChild(messageDiv);
             chatMessages.scrollTop = chatMessages.scrollHeight;
         }
@@ -107,11 +92,7 @@
             const typingDiv = document.createElement('div');
             typingDiv.className = 'message-ia';
             typingDiv.id = 'typingIndicator';
-            typingDiv.innerHTML = `
-                <div>
-                    <div class="message-bubble">Digitando<span>...</span></div>
-                </div>
-            `;
+            typingDiv.innerHTML = `<div><div class="message-bubble">Digitando<span>...</span></div></div>`;
             chatMessages.appendChild(typingDiv);
             chatMessages.scrollTop = chatMessages.scrollHeight;
         }

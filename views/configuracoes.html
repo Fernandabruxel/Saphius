@@ -8,11 +8,8 @@
 </head>
 <body>
     <div class="app-container">
-        <!-- Menu Lateral -->
         <aside class="sidebar">
-            <div class="sidebar-logo">
-                <h2>Saphius</h2>
-            </div>
+            <div class="sidebar-logo"><h2>Saphius</h2></div>
             <ul class="sidebar-menu">
                 <li><a href="/dashboard"><span class="icon"></span> <span>Dashboard</span></a></li>
                 <li><a href="/conteudos"><span class="icon"></span> <span>Conteúdos</span></a></li>
@@ -24,19 +21,16 @@
                 <li><a href="/sair"><span class="icon"></span> <span>Sair</span></a></li>
             </ul>
         </aside>
-
-        <!-- Conteúdo Principal -->
         <main class="main-content">
+            <!-- Botão de Voltar Mobile -->
+            <a href="/dashboard" class="btn-voltar-mobile">← Voltar ao Dashboard</a>
             <div class="container config-container">
                 <div class="config-header">
                     <h1>Configurações</h1>
                     <p>Personalize sua experiência no Saphius</p>
                 </div>
-
-                <!-- Preferências Gerais -->
                 <div class="config-card">
                     <h3>Preferências gerais</h3>
-                    
                     <div class="config-item">
                         <div class="info">
                             <div class="title">Modo de resposta</div>
@@ -47,7 +41,6 @@
                             <button class="modo-btn" onclick="selecionarModo(this)">Detalhado</button>
                         </div>
                     </div>
-
                     <div class="config-item">
                         <div class="info">
                             <div class="title">Salvar histórico de conversas</div>
@@ -61,8 +54,6 @@
                         </div>
                     </div>
                 </div>
-
-                <!-- Segurança -->
                 <div class="config-card">
                     <h3>Segurança</h3>
                     <div class="config-item">
@@ -72,11 +63,9 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="text-center">
                     <button class="btn-salvar" onclick="alert('Configurações salvas com sucesso!')">Salvar configurações</button>
                 </div>
-
                 <div class="config-footer">
                     <p>Seus dados são protegidos com criptografia de ponta a ponta.</p>
                     <p><a href="/ajuda">Saiba mais →</a></p>
@@ -84,16 +73,12 @@
             </div>
         </main>
     </div>
-
     <script>
         function toggleSwitch(element) {
             element.classList.toggle('active');
             const label = element.parentElement.querySelector('.switch-label');
-            if (label) {
-                label.textContent = element.classList.contains('active') ? 'Sim' : 'Não';
-            }
+            if (label) { label.textContent = element.classList.contains('active') ? 'Sim' : 'Não'; }
         }
-
         function selecionarModo(btn) {
             document.querySelectorAll('.modo-btn').forEach(b => b.classList.remove('active'));
             btn.classList.add('active');

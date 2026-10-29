@@ -244,6 +244,31 @@
             document.querySelectorAll('.aba-conteudo').forEach(c => c.classList.remove('active'));
             document.getElementById(abaId).classList.add('active');
         }
+    
     </script>
+    <script>
+    function mostrarAba(idAba) {
+        // Esconde todos os conteúdos
+        document.querySelectorAll('.aba-conteudo').forEach(conteudo => {
+            conteudo.classList.remove('active');
+        });
+        // Remove o 'active' de todos os botões
+        document.querySelectorAll('.aba-btn').forEach(botao => {
+            botao.classList.remove('active');
+        });
+
+        // Mostra o conteúdo clicado
+        const conteudoAlvo = document.getElementById(idAba);
+        if (conteudoAlvo) {
+            conteudoAlvo.classList.add('active');
+        }
+
+        // Marca o botão clicado como ativo
+        const botaoClicado = document.querySelector(`button[onclick="mostrarAba('${idAba}')"]`);
+        if (botaoClicado) {
+            botaoClicado.classList.add('active');
+        }
+    }
+</script>
 </body>
 </html>

@@ -48,7 +48,7 @@ async function ingestContent() {
   }
 
   knowledgeBase = chunks;
-  console.log(`✅ ${chunks.length} chunks carregados.`);
+  console.log(` ${chunks.length} chunks carregados.`);
 }
 
 function findRelevantChunks(questionEmbedding, topK = 2) {

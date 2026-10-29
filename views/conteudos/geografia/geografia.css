@@ -391,3 +391,77 @@
         text-align: center;
     }
 }
+@media (max-width: 768px) {
+    .main-content {
+        margin-left: 70px !important;
+        width: calc(100% - 70px) !important;
+        padding: 15px 10px !important;
+    }
+    .historia-container, .conteudo-principal {
+        width: 100% !important;
+        padding: 15px !important;
+        box-sizing: border-box !important;
+    }
+    h1 { font-size: 1.8em !important; text-align: center; }
+    p, span, div { 
+        word-wrap: break-word !important; 
+        white-space: normal !important; 
+    }
+    .explicacao-detalhada, .enem-dica, .dica-saphius, 
+    .exercicio-facil, .exercicio-medio, .exercicio-dificil, 
+    .resumo-card-item, .resposta-explicada {
+        text-align: center !important;
+        padding: 15px !important;
+    }
+}
+/* ===== CORREÇÃO PARA CELULAR ===== */
+@media (max-width: 768px) {
+    /* 1. Impede o link azul feio nos tópicos */
+    .topico-info a, .topico-item a {
+        color: #2e7d32 !important;
+        text-decoration: none !important;
+        font-weight: 600;
+    }
+
+    /* 2. Deixa o botão "Estudar" com cara de pílula verde */
+    .btn-estudar, .topico-item a[href*="/"] {
+        background: #e8f5e9 !important;
+        color: #2e7d32 !important;
+        padding: 6px 15px !important;
+        border-radius: 20px !important;
+        display: inline-block !important;
+        font-size: 0.85em !important;
+        border: 1px solid #c8e6c9 !important;
+    }
+
+    /* 3. Arruma a Linha do Tempo (eventos um embaixo do outro) */
+    .linha-tempo-detailed .evento {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        text-align: left !important;
+        gap: 5px !important;
+    }
+    .linha-tempo-detailed .ano {
+        min-width: auto !important;
+    }
+
+    /* 4. Centraliza os cards de exercícios e resumos */
+    .explicacao-detalhada, .enem-dica, .dica-saphius, 
+    .exercicio-facil, .exercicio-medio, .exercicio-dificil, 
+    .resumo-card-item, .resposta-explicada {
+        text-align: center !important;
+        padding: 15px !important;
+    }
+
+    /* 5. Arruma as abas (Conteúdos, Exercícios, etc.) */
+    .abas-navegacao {
+        display: flex !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        gap: 8px !important;
+    }
+    .aba-btn {
+        padding: 8px 15px !important;
+        font-size: 0.85em !important;
+    }
+}
