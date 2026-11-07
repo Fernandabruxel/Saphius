@@ -5,24 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>História - Saphius</title>
     <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/views/conteudos/historia/historia.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <div class="app-container">
         <aside class="sidebar">
             <div class="sidebar-logo"><h2>Saphius</h2></div>
             <ul class="sidebar-menu">
-                <li><a href="/dashboard"><span class="icon"></span> <span>Dashboard</span></a></li>
-                <li><a href="/conteudos"><span class="icon"></span> <span>Conteúdos</span></a></li>
-                <li><a href="/trilha"><span class="icon"></span> <span>Trilha de estudos</span></a></li>
-                <li><a href="/bemestar"><span class="icon"></span> <span>Bem-estar</span></a></li>
-                <li><a href="/perfil"><span class="icon"></span> <span>Perfil</span></a></li>
-                <li><a href="/configuracoes"><span class="icon"></span> <span>Configurações</span></a></li>
-                <li><a href="/ajuda"><span class="icon"></span> <span>Ajuda</span></a></li>
-                <li><a href="/sair"><span class="icon"></span> <span>Sair</span></a></li>
+                <li><a href="/dashboard"><span class="icon"><i class="fas fa-home"></i></span> <span>Dashboard</span></a></li>
+                <li><a href="/conteudos"><span class="icon"><i class="fas fa-book"></i></span> <span>Conteúdos</span></a></li>
+                <li><a href="/trilha"><span class="icon"><i class="fas fa-route"></i></span> <span>Trilha de estudos</span></a></li>
+                <li><a href="/bemestar"><span class="icon"><i class="fas fa-heart"></i></span> <span>Bem-estar</span></a></li>
+                <li><a href="/perfil"><span class="icon"><i class="fas fa-user"></i></span> <span>Perfil</span></a></li>
+                <li><a href="/configuracoes"><span class="icon"><i class="fas fa-cog"></i></span> <span>Configurações</span></a></li>
+                <li><a href="/ajuda"><span class="icon"><i class="fas fa-question-circle"></i></span> <span>Ajuda</span></a></li>
+                <li><a href="/sair"><span class="icon"><i class="fas fa-sign-out-alt"></i></span> <span>Sair</span></a></li>
             </ul>
         </aside>
 
         <main class="main-content">
+            <!-- Seta de voltar mobile -->
+            <a href="/conteudos" class="btn-voltar-mobile">← Voltar para Conteúdos</a>
+            
             <div class="container historia-container">
                 <div class="historia-header">
                     <h1>História</h1>
@@ -34,7 +39,6 @@
                     <button class="aba-btn active" onclick="trocarAba(this, 'conteudos')">Conteúdos</button>
                     <button class="aba-btn" onclick="trocarAba(this, 'exercicios')">Exercícios</button>
                     <button class="aba-btn" onclick="trocarAba(this, 'resumos')">Resumos</button>
-                    <button class="aba-btn" onclick="trocarAba(this, 'simulados')">Simulados</button>
                 </div>
 
                 <!-- ===== ABA CONTEÚDOS ===== -->
@@ -42,46 +46,46 @@
                     <h2>Conteúdos</h2>
                     <p class="aba-subtitle">Selecione um tópico para estudar:</p>
                     <div class="topicos-lista">
-                        <a href="/historia/brasil-republica" class="topico-item">
+                        <div class="topico-item">
                             <div class="topico-numero">1</div>
                             <div class="topico-info">
                                 <h3>Brasil República (1889-1930)</h3>
                                 <p>Proclamação da República, Primeira República, Economia do Café com Leite.</p>
                             </div>
-                            <span class="topico-status">Estudar</span>
-                        </a>
-                        <a href="/historia/era-vargas" class="topico-item">
+                            <a href="/historia/brasil-republica" class="btn-estudar">Estudar</a>
+                        </div>
+                        <div class="topico-item">
                             <div class="topico-numero">2</div>
                             <div class="topico-info">
                                 <h3>Era Vargas (1930-1945)</h3>
                                 <p>Governo Provisório, Estado Novo, trabalhismo e industrialização.</p>
                             </div>
-                            <span class="topico-status">Estudar</span>
-                        </a>
-                        <a href="/historia/periodo-democratico" class="topico-item">
+                            <a href="/historia/era-vargas" class="btn-estudar">Estudar</a>
+                        </div>
+                        <div class="topico-item">
                             <div class="topico-numero">3</div>
                             <div class="topico-info">
                                 <h3>Período Democrático (1945-1964)</h3>
                                 <p>Democratização, Populismo, Desenvolvimento e Golpe Militar.</p>
                             </div>
-                            <span class="topico-status">Estudar</span>
-                        </a>
-                        <a href="/historia/ditadura-militar" class="topico-item">
+                            <a href="/historia/periodo-democratico" class="btn-estudar">Estudar</a>
+                        </div>
+                        <div class="topico-item">
                             <div class="topico-numero">4</div>
                             <div class="topico-info">
                                 <h3>Ditadura Militar (1964-1985)</h3>
                                 <p>Regime militar, AI-5, repressão, economia e movimentos de oposição.</p>
                             </div>
-                            <span class="topico-status">Estudar</span>
-                        </a>
-                        <a href="/historia/redemocratizacao" class="topico-item">
+                            <a href="/historia/ditadura-militar" class="btn-estudar">Estudar</a>
+                        </div>
+                        <div class="topico-item">
                             <div class="topico-numero">5</div>
                             <div class="topico-info">
                                 <h3>Redemocratização (1985-atualidade)</h3>
                                 <p>Fim da ditadura, Constituição de 1988 e Brasil contemporâneo.</p>
                             </div>
-                            <span class="topico-status">Estudar</span>
-                        </a>
+                            <a href="/historia/redemocratizacao" class="btn-estudar">Estudar</a>
+                        </div>
                     </div>
                 </div>
 
@@ -90,46 +94,46 @@
                     <h2>Exercícios</h2>
                     <p class="aba-subtitle">Pratique com exercícios sobre História</p>
                     <div class="topicos-lista">
-                        <a href="/historia/brasil-republica" class="topico-item" onclick="trocarAbaExercicio('exercicios')">
+                        <div class="topico-item">
                             <div class="topico-numero">1</div>
                             <div class="topico-info">
                                 <h3>Exercícios - Brasil República</h3>
                                 <p>Questões sobre a Proclamação da República e Política do Café com Leite.</p>
                             </div>
-                            <span class="topico-status">Praticar</span>
-                        </a>
-                        <a href="/historia/era-vargas" class="topico-item">
+                            <a href="/historia/brasil-republica" class="btn-estudar">Praticar</a>
+                        </div>
+                        <div class="topico-item">
                             <div class="topico-numero">2</div>
                             <div class="topico-info">
                                 <h3>Exercícios - Era Vargas</h3>
                                 <p>Questões sobre o governo Vargas e o Estado Novo.</p>
                             </div>
-                            <span class="topico-status">Praticar</span>
-                        </a>
-                        <a href="/historia/periodo-democratico" class="topico-item">
+                            <a href="/historia/era-vargas" class="btn-estudar">Praticar</a>
+                        </div>
+                        <div class="topico-item">
                             <div class="topico-numero">3</div>
                             <div class="topico-info">
                                 <h3>Exercícios - Período Democrático</h3>
                                 <p>Questões sobre a democratização e o populismo.</p>
                             </div>
-                            <span class="topico-status">Praticar</span>
-                        </a>
-                        <a href="/historia/ditadura-militar" class="topico-item">
+                            <a href="/historia/periodo-democratico" class="btn-estudar">Praticar</a>
+                        </div>
+                        <div class="topico-item">
                             <div class="topico-numero">4</div>
                             <div class="topico-info">
                                 <h3>Exercícios - Ditadura Militar</h3>
                                 <p>Questões sobre o regime militar e a resistência.</p>
                             </div>
-                            <span class="topico-status">Praticar</span>
-                        </a>
-                        <a href="/historia/redemocratizacao" class="topico-item">
+                            <a href="/historia/ditadura-militar" class="btn-estudar">Praticar</a>
+                        </div>
+                        <div class="topico-item">
                             <div class="topico-numero">5</div>
                             <div class="topico-info">
                                 <h3>Exercícios - Redemocratização</h3>
                                 <p>Questões sobre a Constituição de 1988 e o Brasil atual.</p>
                             </div>
-                            <span class="topico-status">Praticar</span>
-                        </a>
+                            <a href="/historia/redemocratizacao" class="btn-estudar">Praticar</a>
+                        </div>
                     </div>
                 </div>
 
@@ -138,94 +142,46 @@
                     <h2>Resumos</h2>
                     <p class="aba-subtitle">Resumos dos principais tópicos de História</p>
                     <div class="topicos-lista">
-                        <a href="/historia/brasil-republica" class="topico-item">
+                        <div class="topico-item">
                             <div class="topico-numero">1</div>
                             <div class="topico-info">
                                 <h3>Resumo - Brasil República</h3>
                                 <p>Principais pontos sobre a República Velha.</p>
                             </div>
-                            <span class="topico-status">Ver resumo</span>
-                        </a>
-                        <a href="/historia/era-vargas" class="topico-item">
+                            <a href="/historia/brasil-republica" class="btn-estudar">Ver resumo</a>
+                        </div>
+                        <div class="topico-item">
                             <div class="topico-numero">2</div>
                             <div class="topico-info">
                                 <h3>Resumo - Era Vargas</h3>
                                 <p>Principais pontos sobre o governo Vargas.</p>
                             </div>
-                            <span class="topico-status">Ver resumo</span>
-                        </a>
-                        <a href="/historia/periodo-democratico" class="topico-item">
+                            <a href="/historia/era-vargas" class="btn-estudar">Ver resumo</a>
+                        </div>
+                        <div class="topico-item">
                             <div class="topico-numero">3</div>
                             <div class="topico-info">
                                 <h3>Resumo - Período Democrático</h3>
                                 <p>Principais pontos sobre 1945-1964.</p>
                             </div>
-                            <span class="topico-status">Ver resumo</span>
-                        </a>
-                        <a href="/historia/ditadura-militar" class="topico-item">
+                            <a href="/historia/periodo-democratico" class="btn-estudar">Ver resumo</a>
+                        </div>
+                        <div class="topico-item">
                             <div class="topico-numero">4</div>
                             <div class="topico-info">
                                 <h3>Resumo - Ditadura Militar</h3>
                                 <p>Principais pontos sobre o regime militar.</p>
                             </div>
-                            <span class="topico-status">Ver resumo</span>
-                        </a>
-                        <a href="/historia/redemocratizacao" class="topico-item">
+                            <a href="/historia/ditadura-militar" class="btn-estudar">Ver resumo</a>
+                        </div>
+                        <div class="topico-item">
                             <div class="topico-numero">5</div>
                             <div class="topico-info">
                                 <h3>Resumo - Redemocratização</h3>
                                 <p>Principais pontos sobre o Brasil atual.</p>
                             </div>
-                            <span class="topico-status">Ver resumo</span>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- ===== ABA SIMULADOS ===== -->
-                <div id="simulados" class="aba-conteudo">
-                    <h2>Simulados</h2>
-                    <p class="aba-subtitle">Teste seus conhecimentos com simulados estilo ENEM</p>
-                    <div class="topicos-lista">
-                        <a href="/historia/brasil-republica" class="topico-item">
-                            <div class="topico-numero">1</div>
-                            <div class="topico-info">
-                                <h3>Simulado - Brasil República</h3>
-                                <p>10 questões estilo ENEM sobre a República Velha.</p>
-                            </div>
-                            <span class="topico-status">Iniciar</span>
-                        </a>
-                        <a href="/historia/era-vargas" class="topico-item">
-                            <div class="topico-numero">2</div>
-                            <div class="topico-info">
-                                <h3>Simulado - Era Vargas</h3>
-                                <p>10 questões estilo ENEM sobre o governo Vargas.</p>
-                            </div>
-                            <span class="topico-status">Iniciar</span>
-                        </a>
-                        <a href="/historia/periodo-democratico" class="topico-item">
-                            <div class="topico-numero">3</div>
-                            <div class="topico-info">
-                                <h3>Simulado - Período Democrático</h3>
-                                <p>10 questões estilo ENEM sobre 1945-1964.</p>
-                            </div>
-                            <span class="topico-status">Iniciar</span>
-                        </a>
-                        <a href="/historia/ditadura-militar" class="topico-item">
-                            <div class="topico-numero">4</div>
-                            <div class="topico-info">
-                                <h3>Simulado - Ditadura Militar</h3>
-                                <p>10 questões estilo ENEM sobre o regime militar.</p>
-                            </div>
-                            <span class="topico-status">Iniciar</span>
-                        </a>
-                        <a href="/historia/redemocratizacao" class="topico-item">
-                            <div class="topico-numero">5</div>
-                            <div class="topico-info">
-                                <h3>Simulado - Redemocratização</h3>
-                                <p>10 questões estilo ENEM sobre o Brasil atual.</p>
-                            </div>
-                            <span class="topico-status">Iniciar</span>
-                        </a>
+                            <a href="/historia/redemocratizacao" class="btn-estudar">Ver resumo</a>
+                        </div>
                     </div>
                 </div>
 
@@ -244,31 +200,6 @@
             document.querySelectorAll('.aba-conteudo').forEach(c => c.classList.remove('active'));
             document.getElementById(abaId).classList.add('active');
         }
-    
     </script>
-    <script>
-    function mostrarAba(idAba) {
-        // Esconde todos os conteúdos
-        document.querySelectorAll('.aba-conteudo').forEach(conteudo => {
-            conteudo.classList.remove('active');
-        });
-        // Remove o 'active' de todos os botões
-        document.querySelectorAll('.aba-btn').forEach(botao => {
-            botao.classList.remove('active');
-        });
-
-        // Mostra o conteúdo clicado
-        const conteudoAlvo = document.getElementById(idAba);
-        if (conteudoAlvo) {
-            conteudoAlvo.classList.add('active');
-        }
-
-        // Marca o botão clicado como ativo
-        const botaoClicado = document.querySelector(`button[onclick="mostrarAba('${idAba}')"]`);
-        if (botaoClicado) {
-            botaoClicado.classList.add('active');
-        }
-    }
-</script>
 </body>
 </html>

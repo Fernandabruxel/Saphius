@@ -497,3 +497,360 @@
         font-size: 0.85em !important;
     }
 }
+/* ===== CORREÇÃO DEFINITIVA (CELULAR) ===== */
+@media (max-width: 768px) {
+    /* 1. Trava a tela para não rolar pro lado */
+    html, body {
+        width: 100% !important;
+        overflow-x: hidden !important;
+    }
+
+    /* 2. Arruma o Menu Lateral (Faixa Verde com Ícones) */
+    .sidebar {
+        width: 75px !important;
+        min-width: 75px !important;
+        padding: 15px 0 !important;
+        background: #d4e6d4 !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        position: fixed !important;
+        height: 100vh !important;
+        left: 0 !important;
+        top: 0 !important;
+        z-index: 1000 !important;
+    }
+    .sidebar-logo { display: none !important; }
+    .sidebar-menu { margin-top: 20px !important; width: 100% !important; display: flex !important; flex-direction: column !important; align-items: center !important; }
+    .sidebar-menu a {
+        justify-content: center !important;
+        padding: 18px 0 !important;
+        margin-bottom: 5px !important;
+        width: 50px !important;
+        height: 50px !important;
+        border-radius: 50% !important;
+    }
+    .sidebar-menu a.active { background-color: #4caf50 !important; color: #fff !important; }
+    .sidebar-menu a .icon i { font-size: 1.4em !important; }
+    .sidebar-menu a span:last-child { display: none !important; }
+
+    /* 3. Conteúdo Principal (Ocupa o resto da tela) */
+    .main-content {
+        margin-left: 75px !important;
+        width: calc(100% - 75px) !important;
+        padding: 15px 10px !important;
+        box-sizing: border-box !important;
+    }
+
+    /* 4. Caixa do Conteúdo (Container) */
+    .container, .historia-container, .brasil-republica {
+        width: 100% !important;
+        max-width: 100% !important;
+        padding: 15px !important;
+        margin: 0 auto !important;
+        box-sizing: border-box !important;
+        border-radius: 15px !important;
+        box-shadow: none !important;
+    }
+
+    /* 5. Textos e Títulos */
+    h1 { font-size: 1.8em !important; text-align: center; }
+    h2 { font-size: 1.4em !important; text-align: center; }
+    p, span, div { word-wrap: break-word !important; overflow-wrap: break-word !important; white-space: normal !important; }
+
+    /* 6. Linha do Tempo (Fica um embaixo do outro) */
+    .linha-tempo-detailed .evento {
+        flex-direction: column !important;
+        align-items: center !important;
+        text-align: center !important;
+        gap: 5px !important;
+    }
+
+    /* 7. Caixas de Dicas e Exercícios */
+    .explicacao-detalhada, .enem-dica, .dica-saphius, 
+    .exercicio-facil, .exercicio-medio, .exercicio-dificil, 
+    .resumo-card-item, .resposta-explicada {
+        text-align: center !important;
+        padding: 15px !important;
+    }
+
+    /* 8. Abas (Conteúdos, Exercícios, etc.) */
+    .abas-navegacao {
+        display: flex !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        gap: 8px !important;
+    }
+    .aba-btn {
+        padding: 8px 15px !important;
+        font-size: 0.85em !important;
+    }
+}
+/* ===== CORREÇÃO DEFINITIVA PARA CELULAR (HISTÓRIA) ===== */
+@media (max-width: 768px) {
+    /* 1. Trava a tela para não rolar pro lado */
+    html, body {
+        width: 100% !important;
+        overflow-x: hidden !important;
+    }
+
+    /* 2. Arruma o Menu Lateral (Faixa Verde com Ícones) */
+    .sidebar {
+        width: 75px !important;
+        min-width: 75px !important;
+        padding: 15px 0 !important;
+        background: #d4e6d4 !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        position: fixed !important;
+        height: 100vh !important;
+        left: 0 !important;
+        top: 0 !important;
+        z-index: 1000 !important;
+    }
+    .sidebar-logo { display: none !important; }
+    .sidebar-menu { margin-top: 20px !important; width: 100% !important; display: flex !important; flex-direction: column !important; align-items: center !important; }
+    .sidebar-menu a {
+        justify-content: center !important;
+        padding: 18px 0 !important;
+        margin-bottom: 5px !important;
+        width: 50px !important;
+        height: 50px !important;
+        border-radius: 50% !important;
+    }
+    .sidebar-menu a.active { background-color: #4caf50 !important; color: #fff !important; }
+    .sidebar-menu a .icon i { font-size: 1.4em !important; }
+    .sidebar-menu a span:last-child { display: none !important; }
+
+    /* 3. Conteúdo Principal (Ocupa o resto da tela) */
+    .main-content {
+        margin-left: 75px !important;
+        width: calc(100% - 75px) !important;
+        padding: 15px 10px !important;
+        box-sizing: border-box !important;
+    }
+
+    /* 4. Caixa do Conteúdo (Container) */
+    .container {
+        width: 100% !important;
+        max-width: 100% !important;
+        padding: 15px !important;
+        margin: 0 auto !important;
+        box-sizing: border-box !important;
+        border-radius: 15px !important;
+        box-shadow: none !important;
+    }
+
+    /* 5. Textos e Títulos */
+    h1 { font-size: 1.8em !important; text-align: center; }
+    h2 { font-size: 1.4em !important; text-align: center; }
+    p, span, div { word-wrap: break-word !important; overflow-wrap: break-word !important; white-space: normal !important; }
+
+    /* 6. Linha do Tempo (Fica um embaixo do outro) */
+    .linha-tempo-detailed .evento {
+        flex-direction: column !important;
+        align-items: center !important;
+        text-align: center !important;
+        gap: 5px !important;
+    }
+
+    /* 7. Caixas de Dicas e Exercícios */
+    .explicacao-detalhada, .enem-dica, .dica-saphius, 
+    .exercicio-facil, .exercicio-medio, .exercicio-dificil, 
+    .resumo-card-item, .resposta-explicada {
+        text-align: center !important;
+        padding: 15px !important;
+    }
+
+    /* 8. Abas (Conteúdos, Exercícios, etc.) */
+    .abas-navegacao {
+        display: flex !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        gap: 8px !important;
+    }
+    .aba-btn {
+        padding: 8px 15px !important;
+        font-size: 0.85em !important;
+    }
+}
+/* ===== CORREÇÃO DO DESIGN DAS PERGUNTAS (CELULAR) ===== */
+@media (max-width: 768px) {
+    
+    /* Arruma a caixa do exercício */
+    .exercicio-facil, .exercicio-medio, .exercicio-dificil {
+        text-align: left !important;
+        padding: 15px !important;
+        border-radius: 15px;
+    }
+
+    /* Arruma o título da pergunta */
+    .exercicio-facil p, .exercicio-medio p, .exercicio-dificil p {
+        text-align: left !important;
+        margin-bottom: 15px;
+        font-size: 1em;
+        line-height: 1.4;
+    }
+
+    /* Arruma as alternativas (o segredo está aqui) */
+    .exercicio-alternativas {
+        text-align: left !important;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 15px;
+    }
+
+    .exercicio-alternativas label {
+        display: flex !important;
+        align-items: flex-start !important; /* Alinha o radio com a primeira linha de texto */
+        justify-content: flex-start !important;
+        text-align: left !important;
+        gap: 10px;
+        background: #fff;
+        padding: 12px;
+        border-radius: 10px;
+        border: 1px solid #e0e0e0;
+        cursor: pointer;
+        font-size: 0.95em;
+        line-height: 1.4;
+    }
+
+    /* Deixa o quadradinho do radio maior e mais fácil de clicar */
+    .exercicio-alternativas input[type="radio"] {
+        margin-top: 3px; /* Alinha com o texto */
+        width: 18px;
+        height: 18px;
+        flex-shrink: 0;
+        accent-color: #4caf50;
+    }
+
+    /* Botão de ver explicação */
+    .btn-explicar {
+        width: 100%;
+        text-align: center;
+        padding: 12px;
+        font-size: 0.95em;
+        border-radius: 10px;
+        margin-top: 5px;
+    }
+
+    /* Arruma a caixa da explicação */
+    .resposta-explicada {
+        text-align: left !important;
+        padding: 15px !important;
+        margin-top: 15px;
+        font-size: 0.95em;
+        line-height: 1.5;
+        border-radius: 10px;
+    }
+}
+/* ===== CORREÇÃO FINAL PARA CELULAR (HISTÓRIA) ===== */
+@media (max-width: 768px) {
+    /* 1. Arruma o container principal */
+    .historia-container {
+        width: 100% !important;
+        padding: 15px !important;
+        box-sizing: border-box !important;
+    }
+
+    /* 2. Arruma o card do tópico (Fica um embaixo do outro) */
+    .topico-item {
+        display: flex !important;
+        flex-direction: column !important; /* Empilha o conteúdo */
+        align-items: flex-start !important; /* Alinha à esquerda */
+        text-align: left !important;
+        padding: 15px !important;
+        gap: 10px !important;
+    }
+
+    /* 3. Arruma o número */
+    .topico-numero {
+        margin-bottom: 5px !important;
+    }
+
+    /* 4. Arruma o texto (MUITO IMPORTANTE: proíbe quebra de palavra) */
+    .topico-info {
+        width: 100% !important;
+    }
+    .topico-info h3 {
+        font-size: 1.1em !important;
+        margin-bottom: 5px !important;
+        word-break: normal !important; /* NÃO quebra palavras no meio */
+        overflow-wrap: break-word !important;
+    }
+    .topico-info p {
+        font-size: 0.9em !important;
+        line-height: 1.4 !important;
+        word-break: normal !important;
+        overflow-wrap: break-word !important;
+    }
+
+    /* 5. Arruma o botão "Estudar" */
+    .topico-item a.btn-estudar {
+        align-self: flex-start !important; /* Botão à esquerda */
+        margin-left: 0 !important;
+        margin-top: 5px !important;
+        display: inline-block !important;
+        background: #e8f5e9 !important;
+        color: #2e7d32 !important;
+        padding: 8px 20px !important;
+        border-radius: 20px !important;
+        border: 1px solid #c8e6c9 !important;
+        font-weight: 600 !important;
+        text-decoration: none !important;
+    }
+
+    /* 6. Esconde o botão "Voltar" duplicado no topo (mantém só o mobile) */
+    .voltar {
+        display: none !important;
+    }
+    .btn-voltar-mobile {
+        display: inline-flex !important;
+        align-items: center;
+        background: #fff !important;
+        color: #2e7d32 !important;
+        padding: 10px 18px !important;
+        border-radius: 25px !important;
+        text-decoration: none !important;
+        font-weight: 600 !important;
+        margin-bottom: 15px !important;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.08) !important;
+        font-size: 0.9em !important;
+    }
+}
+/* ===== ARRUMANDO O ESPAÇAMENTO DAS ABAS NO CELULAR ===== */
+@media (max-width: 768px) {
+    /* 1. Arruma a caixa que segura os botões */
+    .abas-navegacao {
+        display: flex !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        gap: 12px !important; /* Dá espaço entre um botão e outro */
+        margin: 20px 0 !important;
+        padding-bottom: 15px !important;
+    }
+
+    /* 2. Arruma cada botão individualmente */
+    .aba-btn {
+        padding: 10px 20px !important;
+        font-size: 0.9em !important;
+        border-radius: 20px !important;
+        background: #f8f9fa !important; /* Fundo cinza claro para os inativos */
+        color: #555 !important;
+        border: 1px solid #e0e0e0 !important;
+    }
+
+    /* 3. Destaca o botão que está ativo */
+    .aba-btn.active {
+        background: #4caf50 !important;
+        color: #fff !important;
+        border-color: #4caf50 !important;
+    }
+
+    /* 4. Dá um respiro entre o título/subtítulo e as abas */
+    .historia-header {
+        margin-bottom: 20px !important;
+    }
+}
