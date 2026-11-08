@@ -1,41 +1,46 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cidadania - Saphius</title>
     <link rel="stylesheet" href="/style.css">
     <link rel="stylesheet" href="/views/conteudos/sociologia/sociologia.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <div class="app-container">
         <aside class="sidebar">
             <div class="sidebar-logo"><h2>Saphius</h2></div>
             <ul class="sidebar-menu">
-                <li><a href="/dashboard"><span class="icon"></span> <span>Dashboard</span></a></li>
-                <li><a href="/conteudos"><span class="icon"></span> <span>Conteúdos</span></a></li>
-                <li><a href="/trilha"><span class="icon"></span> <span>Trilha de estudos</span></a></li>
-                <li><a href="/bemestar"><span class="icon"></span> <span>Bem-estar</span></a></li>
-                <li><a href="/perfil"><span class="icon"></span> <span>Perfil</span></a></li>
-                <li><a href="/configuracoes"><span class="icon"></span> <span>Configurações</span></a></li>
-                <li><a href="/ajuda"><span class="icon"></span> <span>Ajuda</span></a></li>
-                <li><a href="/sair"><span class="icon"></span> <span>Sair</span></a></li>
+                <li><a href="/dashboard"><span class="icon"><i class="fas fa-home"></i></span> <span>Dashboard</span></a></li>
+                <li><a href="/conteudos"><span class="icon"><i class="fas fa-book"></i></span> <span>Conteúdos</span></a></li>
+                <li><a href="/trilha"><span class="icon"><i class="fas fa-route"></i></span> <span>Trilha de estudos</span></a></li>
+                <li><a href="/bemestar"><span class="icon"><i class="fas fa-heart"></i></span> <span>Bem-estar</span></a></li>
+                <li><a href="/perfil"><span class="icon"><i class="fas fa-user"></i></span> <span>Perfil</span></a></li>
+                <li><a href="/configuracoes"><span class="icon"><i class="fas fa-cog"></i></span> <span>Configurações</span></a></li>
+                <li><a href="/ajuda"><span class="icon"><i class="fas fa-question-circle"></i></span> <span>Ajuda</span></a></li>
+                <li><a href="/sair"><span class="icon"><i class="fas fa-sign-out-alt"></i></span> <span>Sair</span></a></li>
             </ul>
         </aside>
 
         <main class="main-content">
+            <a href="/sociologia" class="btn-voltar-mobile">← Voltar para Sociologia</a>
+
             <div class="container">
-                <a href="/sociologia" class="voltar">Voltar para Sociologia</a>
+                <a href="/sociologia" class="voltar">← Voltar para Sociologia</a>
 
                 <h1 style="text-align:center; font-size:2.5em; color:#2e7d32;">Cidadania</h1>
                 <p style="color:#666; text-align:center; font-size:1.1em;">Direitos e deveres, Participação política, Democracia e cidadania no Brasil</p>
 
+                <!-- ABAS (Simulado Removido) -->
                 <div class="abas-navegacao" style="margin:25px 0;">
                     <button class="aba-btn active" onclick="trocarAba(this, 'conteudo')">Conteúdo</button>
                     <button class="aba-btn" onclick="trocarAba(this, 'exercicios')">Exercícios</button>
                     <button class="aba-btn" onclick="trocarAba(this, 'resumo')">Resumo</button>
-                    <button class="aba-btn" onclick="trocarAba(this, 'simulado')">Simulado</button>
                 </div>
 
+                <!-- ===== CONTEÚDO ===== -->
                 <div id="conteudo" class="aba-conteudo active">
 
                     <div class="explicacao-detalhada">
@@ -61,21 +66,17 @@
                             <li><strong>Direitos Políticos:</strong> Direito de votar e ser votado, participação em partidos políticos, organização de movimentos sociais.</li>
                             <li><strong>Direitos Sociais:</strong> Saúde, educação, trabalho, moradia, lazer, previdência social, assistência aos necessitados.</li>
                         </ul>
-                        <p>
-                            <strong>Evolução dos direitos:</strong>
-                            <ul>
-                                <li><strong>1ª geração:</strong> Direitos civis e políticos (século XVIII).</li>
-                                <li><strong>2ª geração:</strong> Direitos sociais, econômicos e culturais (século XX).</li>
-                                <li><strong>3ª geração:</strong> Direitos difusos (meio ambiente, paz, desenvolvimento).</li>
-                            </ul>
-                        </p>
+                        <p><strong>Evolução dos direitos:</strong></p>
+                        <ul>
+                            <li><strong>1ª geração:</strong> Direitos civis e políticos (século XVIII).</li>
+                            <li><strong>2ª geração:</strong> Direitos sociais, econômicos e culturais (século XX).</li>
+                            <li><strong>3ª geração:</strong> Direitos difusos (meio ambiente, paz, desenvolvimento).</li>
+                        </ul>
                     </div>
 
                     <div class="explicacao-detalhada">
                         <h3>Cidadania no Brasil</h3>
-                        <p>
-                            A cidadania no Brasil tem uma trajetória marcada por avanços e retrocessos:
-                        </p>
+                        <p>A cidadania no Brasil tem uma trajetória marcada por avanços e retrocessos:</p>
                         <ul>
                             <li><strong>Período Colonial (1500-1822):</strong> Ausência de cidadania, com exclusão de indígenas, negros e mulheres.</li>
                             <li><strong>Império (1822-1889):</strong> Cidadania restrita a homens livres e proprietários.</li>
@@ -91,9 +92,7 @@
 
                     <div class="explicacao-detalhada">
                         <h3>Participação Política e Democracia</h3>
-                        <p>
-                            A participação política é um dos pilares da cidadania e da democracia. Ela pode ocorrer de várias formas:
-                        </p>
+                        <p>A participação política é um dos pilares da cidadania e da democracia. Ela pode ocorrer de várias formas:</p>
                         <ul>
                             <li><strong>Voto:</strong> Principal forma de participação política, garantindo a representação popular.</li>
                             <li><strong>Conselhos municipais:</strong> Espaços de participação popular na gestão pública.</li>
@@ -120,14 +119,12 @@
 
                     <div class="dica-saphius">
                         <h3>Dica Saphius</h3>
-                        <p>
-                            Relacione os <strong>direitos civis, políticos e sociais</strong> com a <strong>cidadania plena</strong>.
-                            Lembre-se: <strong>"Cidadania = Direitos + Deveres + Participação"</strong>.
-                        </p>
+                        <p>Relacione os <strong>direitos civis, políticos e sociais</strong> com a <strong>cidadania plena</strong>.
+                        Lembre-se: <strong>"Cidadania = Direitos + Deveres + Participação"</strong>.</p>
                     </div>
                 </div>
 
-                <!-- ===== EXERCÍCIOS (15 QUESTÕES) ===== -->
+                <!-- ===== EXERCÍCIOS ===== -->
                 <div id="exercicios" class="aba-conteudo">
                     <h2 style="color:#2e7d32;"> Exercícios - Cidadania</h2>
                     <p style="color:#666;">15 questões (5 Fáceis, 5 Médias, 5 Difíceis)</p>
@@ -427,78 +424,53 @@
                     </div>
                 </div>
 
-                <div id="simulado" class="aba-conteudo">
-                    <h2 style="color:#2e7d32;">Simulado - Cidadania</h2>
-                    <p style="color:#666;">Teste seus conhecimentos com questões estilo ENEM</p>
-                    <div class="simulado-card">
-                        <div style="display:flex; gap:20px; flex-wrap:wrap; justify-content:center; margin-bottom:15px;">
-                            <span><strong>15 questões</strong></span>
-                            <span><strong>20 minutos</strong></span>
-                            <span><strong>Nível: Fácil a Difícil</strong></span>
-                        </div>
-                        <p style="color:#555; margin-bottom:15px;">As questões são as mesmas da aba "Exercícios" acima.</p>
-                        <button class="btn-principal" onclick="alert(' Simulado iniciado! Responda todas as 15 questões acima na aba Exercícios.')">
-                            Iniciar simulado
-                        </button>
-                    </div>
-                </div>
-
             </div>
         </main>
     </div>
 
     <script>
-    function trocarAba(botao, abaId) {
-        document.querySelectorAll('.aba-btn').forEach(b => b.classList.remove('active'));
-        botao.classList.add('active');
-
-        document.querySelectorAll('.aba-conteudo').forEach(c => c.classList.remove('active'));
-        document.getElementById(abaId).classList.add('active');
-    }
-
-    function mostrarResposta(botao) {
-        const exercicioDiv = botao.closest('.exercicio-facil, .exercicio-medio, .exercicio-dificil');
-        const respostaDiv = exercicioDiv.querySelector('.resposta-explicada');
-
-        if (respostaDiv.style.display === 'block') {
-            respostaDiv.style.display = 'none';
-            botao.textContent = 'Ver explicação';
-        } else {
-            respostaDiv.style.display = 'block';
-            botao.textContent = 'Ocultar explicação';
+        function trocarAba(botao, abaId) {
+            document.querySelectorAll('.aba-btn').forEach(b => b.classList.remove('active'));
+            botao.classList.add('active');
+            document.querySelectorAll('.aba-conteudo').forEach(c => c.classList.remove('active'));
+            const alvo = document.getElementById(abaId);
+            if (alvo) { alvo.classList.add('active'); }
         }
-    }
 
-    document.querySelectorAll('.exercicio-alternativas input[type="radio"]').forEach(input => {
-        input.addEventListener('change', verificarAtividade);
-    });
+        function mostrarResposta(botao) {
+            const exercicioDiv = botao.closest('.exercicio-facil, .exercicio-medio, .exercicio-dificil');
+            const respostaDiv = exercicioDiv.querySelector('.resposta-explicada');
 
-    async function verificarAtividade() {
-        const questoes = document.querySelectorAll('.exercicio-alternativas');
-        const respondidas = document.querySelectorAll(
-            '.exercicio-alternativas input[type="radio"]:checked'
-        );
-
-        if (respondidas.length === questoes.length) {
-            try {
-                await fetch('/api/trilha/concluir', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json'
-                    },
-                    body: JSON.stringify({
-                        materia: 'sociologia',
-                        topico: 'cidadania'
-                    })
-                });
-
-                alert('Atividade concluída! Seu progresso na Trilha de Estudos foi atualizado.');
-            } catch (erro) {
-                console.error('Erro ao atualizar progresso:', erro);
+            if (respostaDiv.style.display === 'block') {
+                respostaDiv.style.display = 'none';
+                botao.textContent = 'Ver explicação';
+            } else {
+                respostaDiv.style.display = 'block';
+                botao.textContent = 'Ocultar explicação';
             }
         }
-    }
-</script>
 
+        document.querySelectorAll('.exercicio-alternativas input[type="radio"]').forEach(input => {
+            input.addEventListener('change', verificarAtividade);
+        });
+
+        async function verificarAtividade() {
+            const questoes = document.querySelectorAll('.exercicio-alternativas');
+            const respondidas = document.querySelectorAll('.exercicio-alternativas input[type="radio"]:checked');
+
+            if (respondidas.length === questoes.length) {
+                try {
+                    await fetch('/api/trilha/concluir', {
+                        method: 'POST',
+                        headers: {'Content-Type':'application/json'},
+                        body: JSON.stringify({ materia: 'sociologia', topico: 'cidadania' })
+                    });
+                    alert('Atividade concluída! Seu progresso na Trilha de Estudos foi atualizado.');
+                } catch (erro) {
+                    console.error('Erro ao atualizar progresso:', erro);
+                }
+            }
+        }
+    </script>
 </body>
 </html>

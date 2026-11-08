@@ -2,29 +2,66 @@
 <html>
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trabalho - Saphius</title>
     <link rel="stylesheet" href="/style.css">
     <link rel="stylesheet" href="/views/conteudos/sociologia/sociologia.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- CSS DE CORREÇÃO PARA RESPONSIVIDADE -->
+    <style>
+        /* Esconde o botão mobile no desktop */
+        .btn-voltar-mobile { display: none !important; }
+        
+        /* Mostra apenas o botão correto dependendo da tela */
+        @media (max-width: 768px) {
+            .btn-voltar-mobile { 
+                display: inline-block !important; 
+                margin-bottom: 15px; 
+                color: #2e7d32; 
+                text-decoration: none; 
+                font-weight: bold; 
+                font-size: 1.1em;
+            }
+            .voltar { display: none !important; }
+            
+            /* Ajuste das alternativas para celular (alinha a bolinha e o texto) */
+            .exercicio-alternativas label {
+                display: flex !important;
+                align-items: flex-start !important;
+                gap: 10px !important;
+                margin-bottom: 10px !important;
+                cursor: pointer;
+            }
+            .exercicio-alternativas label input[type="radio"] {
+                margin-top: 4px !important;
+                flex-shrink: 0 !important;
+            }
+        }
+    </style>
 </head>
 <body>
     <div class="app-container">
         <aside class="sidebar">
             <div class="sidebar-logo"><h2>Saphius</h2></div>
             <ul class="sidebar-menu">
-                <li><a href="/dashboard"><span class="icon"></span> <span>Dashboard</span></a></li>
-                <li><a href="/conteudos"><span class="icon"></span> <span>Conteúdos</span></a></li>
-                <li><a href="/trilha"><span class="icon"></span> <span>Trilha de estudos</span></a></li>
-                <li><a href="/bemestar"><span class="icon"></span> <span>Bem-estar</span></a></li>
-                <li><a href="/perfil"><span class="icon"></span> <span>Perfil</span></a></li>
-                <li><a href="/configuracoes"><span class="icon"></span> <span>Configurações</span></a></li>
-                <li><a href="/ajuda"><span class="icon"></span> <span>Ajuda</span></a></li>
-                <li><a href="/sair"><span class="icon"></span> <span>Sair</span></a></li>
+                <li><a href="/dashboard"><span class="icon"><i class="fas fa-home"></i></span> <span>Dashboard</span></a></li>
+                <li><a href="/conteudos"><span class="icon"><i class="fas fa-book"></i></span> <span>Conteúdos</span></a></li>
+                <li><a href="/trilha"><span class="icon"><i class="fas fa-route"></i></span> <span>Trilha de estudos</span></a></li>
+                <li><a href="/bemestar"><span class="icon"><i class="fas fa-heart"></i></span> <span>Bem-estar</span></a></li>
+                <li><a href="/perfil"><span class="icon"><i class="fas fa-user"></i></span> <span>Perfil</span></a></li>
+                <li><a href="/configuracoes"><span class="icon"><i class="fas fa-cog"></i></span> <span>Configurações</span></a></li>
+                <li><a href="/ajuda"><span class="icon"><i class="fas fa-question-circle"></i></span> <span>Ajuda</span></a></li>
+                <li><a href="/sair"><span class="icon"><i class="fas fa-sign-out-alt"></i></span> <span>Sair</span></a></li>
             </ul>
         </aside>
 
         <main class="main-content">
             <div class="container">
-                <a href="/sociologia" class="voltar">Voltar para Sociologia</a>
+                
+                <!-- Botão voltar Desktop e Mobile separados -->
+                <a href="/sociologia" class="voltar"><i class="fas fa-arrow-left"></i> Voltar para Sociologia</a>
+                <a href="/sociologia" class="btn-voltar-mobile">← Voltar para Sociologia</a>
 
                 <h1 style="text-align:center; font-size:2.5em; color:#2e7d32;">Trabalho</h1>
                 <p style="color:#666; text-align:center; font-size:1.1em;">Relações de trabalho, Globalização, Novas tecnologias, Impactos sociais</p>
@@ -33,7 +70,6 @@
                     <button class="aba-btn active" onclick="trocarAba(this, 'conteudo')">Conteúdo</button>
                     <button class="aba-btn" onclick="trocarAba(this, 'exercicios')">Exercícios</button>
                     <button class="aba-btn" onclick="trocarAba(this, 'resumo')">Resumo</button>
-                    <button class="aba-btn" onclick="trocarAba(this, 'simulado')">Simulado</button>
                 </div>
 
                 <div id="conteudo" class="aba-conteudo active">
@@ -426,22 +462,6 @@
                         </div>
                     </div>
                 </div>
-
-                <div id="simulado" class="aba-conteudo">
-                    <h2 style="color:#2e7d32;">Simulado - Trabalho</h2>
-                    <p style="color:#666;">Teste seus conhecimentos com questões estilo ENEM</p>
-                    <div class="simulado-card">
-                        <div style="display:flex; gap:20px; flex-wrap:wrap; justify-content:center; margin-bottom:15px;">
-                            <span><strong>15 questões</strong></span>
-                            <span><strong>20 minutos</strong></span>
-                            <span><strong>Nível: Fácil a Difícil</strong></span>
-                        </div>
-                        <p style="color:#555; margin-bottom:15px;">As questões são as mesmas da aba "Exercícios" acima.</p>
-                        <button class="btn-principal" onclick="alert(' Simulado iniciado! Responda todas as 15 questões acima na aba Exercícios.')">
-                            Iniciar simulado
-                        </button>
-                    </div>
-                </div>
             </div>
         </main>
     </div>
@@ -467,37 +487,7 @@
             botao.textContent = 'Ocultar explicação';
         }
     }
-
-    document.querySelectorAll('.exercicio-alternativas input[type="radio"]').forEach(input => {
-        input.addEventListener('change', verificarAtividade);
-    });
-
-    async function verificarAtividade() {
-        const questoes = document.querySelectorAll('.exercicio-alternativas');
-        const respondidas = document.querySelectorAll(
-            '.exercicio-alternativas input[type="radio"]:checked'
-        );
-
-        if (respondidas.length === questoes.length) {
-            try {
-                await fetch('/api/trilha/concluir', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json'
-                    },
-                    body: JSON.stringify({
-                        materia: 'sociologia',
-                        topico: 'trabalho'
-                    })
-                });
-
-                alert('Atividade concluída! Seu progresso na Trilha de Estudos foi atualizado.');
-            } catch (erro) {
-                console.error('Erro ao atualizar progresso:', erro);
-            }
-        }
-    }
-</script>
+    </script>
 
 </body>
 </html>

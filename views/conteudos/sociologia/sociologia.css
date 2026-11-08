@@ -1,427 +1,117 @@
 /* ===== CONTEÚDO DETALHADO ===== */
-.explicacao-detalhada {
-    background: #f8f9fa;
-    border-radius: 16px;
-    padding: 25px;
-    margin: 20px 0;
-    border-left: 5px solid #4caf50;
-}
-.explicacao-detalhada h3 {
-    color: #2e7d32;
-    margin-bottom: 10px;
-}
-.explicacao-detalhada p {
-    color: #444;
-    line-height: 1.8;
-    margin-bottom: 10px;
-}
-.explicacao-detalhada ul {
-    margin-left: 20px;
-    color: #555;
-    line-height: 1.8;
-}
-
+.explicacao-detalhada { background: #f8f9fa; border-radius: 16px; padding: 25px; margin: 20px 0; border-left: 5px solid #4caf50; }
+.explicacao-detalhada h3 { color: #2e7d32; margin-bottom: 10px; }
+.explicacao-detalhada p { color: #444; line-height: 1.8; margin-bottom: 10px; }
+.explicacao-detalhada ul { margin-left: 20px; color: #555; line-height: 1.8; }
 
 /* ===== DESTAQUES ===== */
-.data-destaque {
-    background: #e8f5e9;
-    padding: 2px 10px;
-    border-radius: 12px;
-    font-weight: 600;
-    color: #2e7d32;
-}
-.conceito-chave {
-    background: #fff3e0;
-    padding: 2px 10px;
-    border-radius: 12px;
-    font-weight: 600;
-    color: #e65100;
-}
-
+.data-destaque { background: #e8f5e9; padding: 2px 10px; border-radius: 12px; font-weight: 600; color: #2e7d32; }
+.conceito-chave { background: #fff3e0; padding: 2px 10px; border-radius: 12px; font-weight: 600; color: #e65100; }
 
 /* ===== DICAS ===== */
-.enem-dica {
-    background: #e8f5e9;
-    padding: 15px 20px;
-    border-radius: 12px;
-    border-left: 4px solid #1b5e20;
-    margin: 15px 0;
-}
-.enem-dica strong {
-    color: #1b5e20;
-}
-.enem-dica p {
-    color: #2e7d32;
-}
-.dica-saphius {
-    background: #e8f5e9;
-    padding: 20px 25px;
-    border-radius: 15px;
-    margin: 30px 0 20px;
-    border-left: 4px solid #4caf50;
-}
-.dica-saphius h3 {
-    color: #2e7d32;
-    margin-bottom: 5px;
-}
-.dica-saphius p {
-    color: #555;
-}
-
+.enem-dica { background: #e8f5e9; padding: 15px 20px; border-radius: 12px; border-left: 4px solid #1b5e20; margin: 15px 0; }
+.enem-dica strong { color: #1b5e20; }
+.enem-dica p { color: #2e7d32; }
+.dica-saphius { background: #e8f5e9; padding: 20px 25px; border-radius: 15px; margin: 30px 0 20px; border-left: 4px solid #4caf50; }
+.dica-saphius h3 { color: #2e7d32; margin-bottom: 5px; }
+.dica-saphius p { color: #555; }
 
 /* ===== EXERCÍCIOS ===== */
-.exercicio-facil {
-    background: #f5f5f5;
-    border: 2px solid #81c784;
-    padding: 20px;
-    border-radius: 12px;
-    margin: 15px 0;
-}
-.exercicio-facil .badge {
-    background: #81c784;
-    color: #fff;
-    padding: 2px 12px;
-    border-radius: 12px;
-    font-weight: 600;
-    font-size: 0.75em;
-}
-.exercicio-medio {
-    background: #fff8e1;
-    border: 2px solid #ffb300;
-    padding: 20px;
-    border-radius: 12px;
-    margin: 15px 0;
-}
-.exercicio-medio .badge {
-    background: #ffb300;
-    color: #333;
-    padding: 2px 12px;
-    border-radius: 12px;
-    font-weight: 600;
-    font-size: 0.75em;
-}
-.exercicio-dificil {
-    background: #fce4ec;
-    border: 2px solid #e57373;
-    padding: 20px;
-    border-radius: 12px;
-    margin: 15px 0;
-}
-.exercicio-dificil .badge {
-    background: #e57373;
-    color: #fff;
-    padding: 2px 12px;
-    border-radius: 12px;
-    font-weight: 600;
-    font-size: 0.75em;
-}
-.exercicio-alternativas {
-    margin: 10px 0 5px 0;
-}
-.exercicio-alternativas label {
-    display: block;
-    padding: 5px 0;
-    color: #333;
-    cursor: pointer;
-}
-.exercicio-alternativas label:hover {
-    color: #2e7d32;
-}
-.exercicio-alternativas input[type="radio"] {
-    margin-right: 8px;
-}
-.resposta-explicada {
-    background: #e8f5e9;
-    padding: 15px 20px;
-    border-radius: 12px;
-    margin-top: 10px;
-    border-left: 4px solid #4caf50;
-    display: none;
-}
-.resposta-explicada p {
-    color: #333;
-    line-height: 1.6;
-    margin-bottom: 5px;
-}
-.resposta-explicada strong {
-    color: #1b5e20;
-}
-
+.exercicio-facil { background: #f5f5f5; border: 2px solid #81c784; padding: 20px; border-radius: 12px; margin: 15px 0; }
+.exercicio-facil .badge { background: #81c784; color: #fff; padding: 2px 12px; border-radius: 12px; font-weight: 600; font-size: 0.75em; }
+.exercicio-medio { background: #fff8e1; border: 2px solid #ffb300; padding: 20px; border-radius: 12px; margin: 15px 0; }
+.exercicio-medio .badge { background: #ffb300; color: #333; padding: 2px 12px; border-radius: 12px; font-weight: 600; font-size: 0.75em; }
+.exercicio-dificil { background: #fce4ec; border: 2px solid #e57373; padding: 20px; border-radius: 12px; margin: 15px 0; }
+.exercicio-dificil .badge { background: #e57373; color: #fff; padding: 2px 12px; border-radius: 12px; font-weight: 600; font-size: 0.75em; }
+.exercicio-alternativas { margin: 10px 0 5px 0; }
+.exercicio-alternativas label { display: block; padding: 5px 0; color: #333; cursor: pointer; }
+.exercicio-alternativas label:hover { color: #2e7d32; }
+.exercicio-alternativas input[type="radio"] { margin-right: 8px; }
+.resposta-explicada { background: #e8f5e9; padding: 15px 20px; border-radius: 12px; margin-top: 10px; border-left: 4px solid #4caf50; display: none; }
+.resposta-explicada p { color: #333; line-height: 1.6; margin-bottom: 5px; }
+.resposta-explicada strong { color: #1b5e20; }
 
 /* ===== BOTÕES ===== */
-.btn-explicar {
-    background: #4caf50;
-    color: #fff;
-    border: none;
-    padding: 8px 20px;
-    border-radius: 20px;
-    cursor: pointer;
-    font-weight: 600;
-    margin-top: 10px;
-    transition: 0.3s;
-}
-.btn-explicar:hover {
-    background: #388e3c;
-    transform: scale(1.02);
-}
-.btn-principal {
-    background: #4caf50;
-    color: #fff;
-    padding: 12px 35px;
-    border: none;
-    border-radius: 25px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: 0.3s;
-}
-.btn-principal:hover {
-    background: #388e3c;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(76,175,80,0.3);
-}
-
+.btn-explicar { background: #4caf50; color: #fff; border: none; padding: 8px 20px; border-radius: 20px; cursor: pointer; font-weight: 600; margin-top: 10px; transition: 0.3s; }
+.btn-explicar:hover { background: #388e3c; transform: scale(1.02); }
+.btn-principal { background: #4caf50; color: #fff; padding: 12px 35px; border: none; border-radius: 25px; font-weight: 600; cursor: pointer; transition: 0.3s; }
+.btn-principal:hover { background: #388e3c; transform: translateY(-2px); box-shadow: 0 4px 12px rgba(76,175,80,0.3); }
 
 /* ===== RESUMO ===== */
-.resumo-principal {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 10px 0;
-}
-.resumo-titulo {
-    font-size: 1.8em;
-    font-weight: 700;
-    color: #1b5e20;
-    text-align: center;
-    margin-bottom: 8px;
-    letter-spacing: -0.5px;
-}
-.resumo-subtitulo {
-    text-align: center;
-    color: #555;
-    font-size: 1em;
-    margin-bottom: 30px;
-}
-.resumo-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 20px;
-    margin-bottom: 30px;
-}
-.resumo-card-item {
-    background: #f8f9fa;
-    border-radius: 16px;
-    padding: 20px 22px;
-    border: 1px solid #e8f5e9;
-    transition: 0.3s;
-}
-.resumo-card-item:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.06);
-    border-color: #4caf50;
-}
-.resumo-card-item h3 {
-    color: #1b5e20;
-    font-size: 1.05em;
-    margin-bottom: 6px;
-    font-weight: 600;
-}
-.resumo-card-item p {
-    color: #555;
-    font-size: 0.92em;
-    line-height: 1.5;
-    margin-bottom: 8px;
-}
-.resumo-tag {
-    display: inline-block;
-    background: #e8f5e9;
-    color: #2e7d32;
-    font-size: 0.75em;
-    font-weight: 600;
-    padding: 3px 14px;
-    border-radius: 20px;
-    letter-spacing: 0.3px;
-}
-.resumo-dica-final {
-    background: #e8f5e9;
-    border-radius: 16px;
-    padding: 25px 30px;
-    margin: 25px 0 10px;
-    border-left: 5px solid #1b5e20;
-}
-.resumo-dica-final h4 {
-    color: #1b5e20;
-    font-size: 1.1em;
-    margin-bottom: 6px;
-    font-weight: 700;
-}
-.resumo-dica-final p {
-    color: #2e7d32;
-    line-height: 1.7;
-    font-size: 0.95em;
-}
-.resumo-dica-final strong {
-    color: #1b5e20;
-}
-.resumo-dica-enem {
-    background: #e8f5e9;
-    border-radius: 16px;
-    padding: 25px 30px;
-    margin: 20px 0 10px;
-    border-left: 5px solid #1b5e20;
-}
-.resumo-dica-enem h4 {
-    color: #1b5e20;
-    font-size: 1.1em;
-    margin-bottom: 6px;
-    font-weight: 700;
-}
-.resumo-dica-enem p {
-    color: #2e7d32;
-    line-height: 1.7;
-    font-size: 0.95em;
-}
-.resumo-dica-enem strong {
-    color: #1b5e20;
-}
-
+.resumo-principal { max-width: 900px; margin: 0 auto; padding: 10px 0; }
+.resumo-titulo { font-size: 1.8em; font-weight: 700; color: #1b5e20; text-align: center; margin-bottom: 8px; letter-spacing: -0.5px; }
+.resumo-subtitulo { text-align: center; color: #555; font-size: 1em; margin-bottom: 30px; }
+.resumo-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; margin-bottom: 30px; }
+.resumo-card-item { background: #f8f9fa; border-radius: 16px; padding: 20px 22px; border: 1px solid #e8f5e9; transition: 0.3s; }
+.resumo-card-item:hover { transform: translateY(-4px); box-shadow: 0 8px 20px rgba(0,0,0,0.06); border-color: #4caf50; }
+.resumo-card-item h3 { color: #1b5e20; font-size: 1.05em; margin-bottom: 6px; font-weight: 600; }
+.resumo-card-item p { color: #555; font-size: 0.92em; line-height: 1.5; margin-bottom: 8px; }
+.resumo-tag { display: inline-block; background: #e8f5e9; color: #2e7d32; font-size: 0.75em; font-weight: 600; padding: 3px 14px; border-radius: 20px; letter-spacing: 0.3px; }
+.resumo-dica-final { background: #e8f5e9; border-radius: 16px; padding: 25px 30px; margin: 25px 0 10px; border-left: 5px solid #1b5e20; }
+.resumo-dica-final h4 { color: #1b5e20; font-size: 1.1em; margin-bottom: 6px; font-weight: 700; }
+.resumo-dica-final p { color: #2e7d32; line-height: 1.7; font-size: 0.95em; }
+.resumo-dica-enem { background: #e8f5e9; border-radius: 16px; padding: 25px 30px; margin: 20px 0 10px; border-left: 5px solid #1b5e20; }
+.resumo-dica-enem h4 { color: #1b5e20; font-size: 1.1em; margin-bottom: 6px; font-weight: 700; }
+.resumo-dica-enem p { color: #2e7d32; line-height: 1.7; font-size: 0.95em; }
 
 /* ===== SIMULADO ===== */
-.simulado-card {
-    background: #f8f9fa;
-    border-radius: 16px;
-    padding: 25px 30px;
-    border: 1px solid #e8f5e9;
-    text-align: center;
-}
-.simulado-card p {
-    color: #555;
-}
+.simulado-card { background: #f8f9fa; border-radius: 16px; padding: 25px 30px; border: 1px solid #e8f5e9; text-align: center; }
+.simulado-card p { color: #555; }
 
-
-/* ===== RESPONSIVO ===== */
+/* ================================================================= */
+/* ===== CORREÇÃO FINAL PARA CELULAR (SOCIOLOGIA) ================= */
+/* ================================================================= */
 @media (max-width: 768px) {
-    .resumo-grid {
-        grid-template-columns: 1fr;
-    }
-    .exercicio-facil,
-    .exercicio-medio,
-    .exercicio-dificil {
-        padding: 15px;
-    }
+    /* 1. Trava a tela para não rolar pro lado */
+    html, body { width: 100% !important; overflow-x: hidden !important; }
 
-    /* ----- Centralização no mobile ----- */
-    .explicacao-detalhada,
-    .enem-dica,
-    .dica-saphius,
-    .exercicio-facil,
-    .exercicio-medio,
-    .exercicio-dificil,
-    .resposta-explicada,
-    .resumo-card-item,
-    .resumo-dica-final,
-    .resumo-dica-enem,
-    .simulado-card,
-    .btn-explicar,
-    .btn-principal {
-        text-align: center;
+    /* 2. Arruma o Menu Lateral (Faixa Verde com Ícones) */
+    .sidebar {
+        width: 75px !important; min-width: 75px !important; padding: 15px 0 !important;
+        background: #d4e6d4 !important; display: flex !important; flex-direction: column !important; align-items: center !important;
+        position: fixed !important; height: 100vh !important; left: 0 !important; top: 0 !important; z-index: 1000 !important;
     }
-    .explicacao-detalhada ul {
-        list-style-position: inside;
-        margin-left: 0;
-        text-align: center;
-    }
-    .exercicio-alternativas {
-        text-align: center;
-    }
-    .exercicio-alternativas label {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 8px;
-    }
-    .btn-explicar,
-    .btn-principal {
-        display: inline-block;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .resumo-tag,
-    .data-destaque,
-    .conceito-chave {
-        display: inline-block;
-    }
-}
-@media (max-width: 768px) {
-    .main-content {
-        margin-left: 70px !important;
-        width: calc(100% - 70px) !important;
-        padding: 15px 10px !important;
-    }
-    .historia-container, .conteudo-principal {
-        width: 100% !important;
-        padding: 15px !important;
-        box-sizing: border-box !important;
-    }
+    .sidebar-logo { display: none !important; }
+    .sidebar-menu { margin-top: 20px !important; width: 100% !important; display: flex !important; flex-direction: column !important; align-items: center !important; }
+    .sidebar-menu a { justify-content: center !important; padding: 18px 0 !important; margin-bottom: 5px !important; width: 50px !important; height: 50px !important; border-radius: 50% !important; }
+    .sidebar-menu a.active { background-color: #4caf50 !important; color: #fff !important; }
+    .sidebar-menu a .icon i { font-size: 1.4em !important; }
+    .sidebar-menu a span:last-child { display: none !important; }
+
+    /* 3. Conteúdo Principal */
+    .main-content { margin-left: 75px !important; width: calc(100% - 75px) !important; padding: 15px 10px !important; box-sizing: border-box !important; }
+
+    /* 4. Container */
+    .container { width: 100% !important; max-width: 100% !important; padding: 15px !important; margin: 0 auto !important; box-sizing: border-box !important; border-radius: 15px !important; box-shadow: none !important; }
+
+    /* 5. Textos e Títulos */
     h1 { font-size: 1.8em !important; text-align: center; }
-    p, span, div { 
-        word-wrap: break-word !important; 
-        white-space: normal !important; 
-    }
-    .explicacao-detalhada, .enem-dica, .dica-saphius, 
-    .exercicio-facil, .exercicio-medio, .exercicio-dificil, 
-    .resumo-card-item, .resposta-explicada {
-        text-align: center !important;
-        padding: 15px !important;
-    }
-}
-/* ===== CORREÇÃO PARA CELULAR ===== */
-@media (max-width: 768px) {
-    /* 1. Impede o link azul feio nos tópicos */
-    .topico-info a, .topico-item a {
-        color: #2e7d32 !important;
-        text-decoration: none !important;
-        font-weight: 600;
-    }
+    h2 { font-size: 1.4em !important; text-align: center; }
+    p, span, div { word-wrap: break-word !important; overflow-wrap: break-word !important; white-space: normal !important; }
 
-    /* 2. Deixa o botão "Estudar" com cara de pílula verde */
-    .btn-estudar, .topico-item a[href*="/"] {
-        background: #e8f5e9 !important;
-        color: #2e7d32 !important;
-        padding: 6px 15px !important;
-        border-radius: 20px !important;
-        display: inline-block !important;
-        font-size: 0.85em !important;
-        border: 1px solid #c8e6c9 !important;
-    }
+    /* 6. Cards de Tópicos (Lista de conteúdos) */
+    .topico-item { display: flex !important; flex-direction: column !important; align-items: flex-start !important; text-align: left !important; padding: 15px !important; gap: 10px !important; }
+    .topico-numero { margin-bottom: 5px !important; }
+    .topico-info { width: 100% !important; }
+    .topico-info h3 { font-size: 1.1em !important; margin-bottom: 5px !important; word-break: normal !important; overflow-wrap: break-word !important; }
+    .topico-info p { font-size: 0.9em !important; line-height: 1.4 !important; word-break: normal !important; overflow-wrap: break-word !important; }
+    .topico-item a.btn-estudar { align-self: flex-start !important; margin-left: 0 !important; margin-top: 5px !important; display: inline-block !important; background: #e8f5e9 !important; color: #2e7d32 !important; padding: 8px 20px !important; border-radius: 20px !important; border: 1px solid #c8e6c9 !important; font-weight: 600 !important; text-decoration: none !important; }
 
-    /* 3. Arruma a Linha do Tempo (eventos um embaixo do outro) */
-    .linha-tempo-detailed .evento {
-        flex-direction: column !important;
-        align-items: flex-start !important;
-        text-align: left !important;
-        gap: 5px !important;
-    }
-    .linha-tempo-detailed .ano {
-        min-width: auto !important;
-    }
+    /* 7. Arruma o Design das Perguntas (Igual outras matérias) */
+    .exercicio-facil, .exercicio-medio, .exercicio-dificil { text-align: left !important; padding: 15px !important; border-radius: 15px; }
+    .exercicio-facil p, .exercicio-medio p, .exercicio-dificil p { text-align: left !important; margin-bottom: 15px; font-size: 1em; line-height: 1.4; }
+    .exercicio-alternativas { text-align: left !important; display: flex; flex-direction: column; gap: 10px; margin-bottom: 15px; }
+    .exercicio-alternativas label { display: flex !important; align-items: flex-start !important; justify-content: flex-start !important; text-align: left !important; gap: 10px; background: #fff; padding: 12px; border-radius: 10px; border: 1px solid #e0e0e0; cursor: pointer; font-size: 0.95em; line-height: 1.4; }
+    .exercicio-alternativas input[type="radio"] { margin-top: 3px; width: 18px; height: 18px; flex-shrink: 0; accent-color: #4caf50; }
+    .btn-explicar { width: 100%; text-align: center; padding: 12px; font-size: 0.95em; border-radius: 10px; margin-top: 5px; }
+    .resposta-explicada { text-align: left !important; padding: 15px !important; margin-top: 15px; font-size: 0.95em; line-height: 1.5; border-radius: 10px; }
 
-    /* 4. Centraliza os cards de exercícios e resumos */
-    .explicacao-detalhada, .enem-dica, .dica-saphius, 
-    .exercicio-facil, .exercicio-medio, .exercicio-dificil, 
-    .resumo-card-item, .resposta-explicada {
-        text-align: center !important;
-        padding: 15px !important;
-    }
+    /* 8. Abas (Conteúdos, Exercícios, Resumos) */
+    .abas-navegacao { display: flex !important; flex-wrap: wrap !important; justify-content: center !important; gap: 12px !important; margin: 20px 0 !important; padding-bottom: 15px !important; }
+    .aba-btn { padding: 10px 20px !important; font-size: 0.9em !important; border-radius: 20px !important; background: #f8f9fa !important; color: #555 !important; border: 1px solid #e0e0e0 !important; }
+    .aba-btn.active { background: #4caf50 !important; color: #fff !important; border-color: #4caf50 !important; }
 
-    /* 5. Arruma as abas (Conteúdos, Exercícios, etc.) */
-    .abas-navegacao {
-        display: flex !important;
-        flex-wrap: wrap !important;
-        justify-content: center !important;
-        gap: 8px !important;
-    }
-    .aba-btn {
-        padding: 8px 15px !important;
-        font-size: 0.85em !important;
-    }
+    /* 9. Esconde o "Voltar" duplicado */
+    .voltar { display: none !important; }
+    .btn-voltar-mobile { display: inline-flex !important; align-items: center; background: #fff !important; color: #2e7d32 !important; padding: 10px 18px !important; border-radius: 25px !important; text-decoration: none !important; font-weight: 600 !important; margin-bottom: 15px !important; box-shadow: 0 2px 8px rgba(0,0,0,0.08) !important; font-size: 0.9em !important; }
 }
