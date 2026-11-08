@@ -19,7 +19,7 @@ input:focus { border-color: #4caf50; outline: none; }
 .btn-principal, .btn-entrar { width: 100%; padding: 12px; background: #4caf50; color: #fff; border: none; border-radius: 10px; cursor: pointer; }
 .btn-principal:hover, .btn-entrar:hover { background: #388e3c; }
 .btn-google { width: 100%; padding: 12px; background: #f5f5f5; border: 2px solid #ddd; border-radius: 10px; cursor: pointer; }
-.voltar { color: #4caf50; text-decoration: none; }
+.voltar { color: #4caf50; text-decoration: none; display: flex; align-items: center; gap: 8px; font-weight: 600; }
 
 /* ================================================================= */
 /* ===== 3. MENU LATERAL (DESKTOP) ================================ */
@@ -42,37 +42,66 @@ input:focus { border-color: #4caf50; outline: none; }
 .welcome-section h2 { color: #4caf50; }
 .section-title { color: #2e7d32; font-size: 1.5em; border-left: 4px solid #4caf50; padding-left: 15px; margin: 30px 0 20px; }
 .cards-grid, .features-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 25px; margin-bottom: 40px; }
-.subject-card, .feature-card, .card-materia { background: #f8f9fa; padding: 20px; margin: 15px 0; border-radius: 15px; transition: .3s; }
+.subject-card, .feature-card, .card-materia { background: #f8f9fa; padding: 20px; margin: 15px 0; border-radius: 15px; transition: .3s; border: 1px solid #e8f5e9; }
 .subject-card:hover, .feature-card:hover, .card-materia:hover { transform: translateY(-5px); box-shadow: 0 5px 15px rgba(0, 0, 0, .1); }
-.card-materia a, .subject-card a, .feature-card a { color: #4caf50; text-decoration: none; font-weight: 600; }
+.card-materia a, .subject-card a, .feature-card a { color: #4caf50; text-decoration: none; font-weight: 600; display: inline-block; margin-top: 10px; }
 .card-materia a:hover, .subject-card a:hover, .feature-card a:hover { color: #388e3c; text-decoration: underline; }
 
 /* ================================================================= */
 /* ===== 5. CHAT (BEM-ESTAR) ======================================= */
 /* ================================================================= */
-.chat-container { width: 100%; background: #f8f9fa; border-radius: 20px; margin-bottom: 30px; overflow: hidden; }
+.chat-container { width: 100%; background: #f8f9fa; border-radius: 20px; margin-bottom: 30px; overflow: hidden; border: 1px solid #e8f5e9; }
 .chat-messages { padding: 20px; height: 400px; overflow-y: auto; display: flex; flex-direction: column; gap: 15px; }
 .message-user { display: flex; justify-content: flex-end; width: 100%; }
-.message-user .message-bubble { background-color: #4caf50; color: #ffffff; padding: 12px 18px; border-radius: 18px 18px 4px 18px; font-size: 15px; line-height: 1.5; max-width: 75%; display: inline-block; }
+.message-user .message-bubble { background-color: #4caf50; color: #ffffff; padding: 12px 18px; border-radius: 18px 18px 4px 18px; font-size: 15px; line-height: 1.5; max-width: 75%; }
 .message-ia { display: flex; justify-content: flex-start; width: 100%; }
-.message-ia .message-bubble { background-color: #ffffff; color: #333333; padding: 12px 18px; border-radius: 18px 18px 18px 4px; border: 1px solid #e8f5e9; font-size: 15px; line-height: 1.6; max-width: 80%; display: inline-block; }
-.sugestoes { padding: 15px 20px; background: #fff; display: flex; flex-wrap: wrap; gap: 10px; }
-.sugestao-btn { background: #e8f5e9; padding: 8px 16px; border: none; border-radius: 20px; color: #2e7d32; cursor: pointer; }
-.chat-input-area { padding: 15px 20px; background: #fff; display: flex; gap: 10px; }
-.chat-input-area input { flex: 1; min-width: 0; margin: 0; padding: 12px; border: 1px solid #ddd; border-radius: 25px; }
-.chat-input-area button { background: #4caf50; color: #fff; padding: 12px 25px; border: none; border-radius: 25px; cursor: pointer; }
+.message-ia .message-bubble { background-color: #ffffff; color: #333333; padding: 12px 18px; border-radius: 18px 18px 18px 4px; border: 1px solid #e8f5e9; font-size: 15px; line-height: 1.6; max-width: 80%; }
+.message-time { font-size: 0.75em; color: #888; margin-top: 5px; text-align: right; }
+.message-ia .message-time { text-align: left; }
+
+/* SUGESTÕES DO CHAT */
+.sugestoes { padding: 15px 20px; background: #fff; display: flex; flex-wrap: wrap; gap: 10px; border-top: 1px solid #e8f5e9; }
+.sugestao-btn { background: #e8f5e9; padding: 10px 18px; border: none; border-radius: 20px; color: #2e7d32; cursor: pointer; font-weight: 500; transition: 0.3s; font-size: 0.9em; }
+.sugestao-btn:hover { background: #4caf50; color: #fff; }
+
+.chat-input-area { padding: 15px 20px; background: #fff; display: flex; gap: 10px; border-top: 1px solid #e8f5e9; }
+.chat-input-area input { flex: 1; min-width: 0; margin: 0; padding: 12px 20px; border: 1px solid #ddd; border-radius: 25px; }
+.chat-input-area button { background: #4caf50; color: #fff; padding: 12px 25px; border: none; border-radius: 25px; cursor: pointer; font-weight: bold; }
+.chat-input-area button:hover { background: #388e3c; }
+
+.dicas-card { background: #fff; padding: 20px; border-radius: 15px; margin-top: 20px; }
+.dicas-card ul { padding-left: 20px; margin-top: 10px; }
+.dicas-card li { margin-bottom: 8px; color: #555; }
 
 /* ================================================================= */
 /* ===== 6. TRILHA DE ESTUDOS ====================================== */
 /* ================================================================= */
+.trilha-header { text-align: center; margin-bottom: 25px; }
+.trilha-header p { color: #666; }
 .trilha-container { background: #fff !important; border-radius: 20px !important; padding: 30px !important; box-shadow: 0 10px 30px rgba(0,0,0,0.05) !important; }
-.trilha-grid { display: grid !important; grid-template-columns: repeat(2, minmax(0, 1fr)) !important; gap: 25px !important; }
-.trilha-card { background: #f8f9fa !important; border: 1px solid #e8f5e9 !important; border-radius: 20px !important; padding: 25px 20px !important; box-shadow: 0 4px 12px rgba(0,0,0,0.03) !important; }
-.trilha-card h3 { color: #2e7d32 !important; font-size: 1.3em !important; margin-bottom: 5px !important; }
-.trilha-progresso { background: #e8e8e8 !important; height: 8px !important; border-radius: 10px !important; margin: 15px 0 !important; overflow: hidden !important; }
-.trilha-fill { background: #4caf50 !important; height: 100% !important; }
-.btn-continuar { background: #4caf50 !important; color: #fff !important; border: none !important; border-radius: 12px !important; padding: 12px !important; font-weight: 600 !important; display: block !important; text-align: center !important; text-decoration: none !important; margin-top: 10px !important; transition: 0.3s !important; }
+.trilha-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 25px; }
+.trilha-card { background: #f8f9fa !important; border: 1px solid #e8f5e9 !important; border-radius: 20px !important; padding: 25px 20px !important; box-shadow: 0 4px 12px rgba(0,0,0,0.03) !important; display: flex; flex-direction: column; }
+.trilha-card-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 10px; }
+.trilha-card h3 { color: #2e7d32 !important; font-size: 1.3em !important; margin-bottom: 0 !important; }
+.trilha-status { font-size: 0.8em; font-weight: bold; padding: 5px 12px; border-radius: 15px; display: inline-block; }
+.trilha-status.pendente { background: #fff3cd; color: #856404; }
+.trilha-status.andamento { background: #cce5ff; color: #004085; }
+.trilha-status.concluido { background: #d4edda; color: #155724; }
+
+.etapas-lista { margin: 15px 0; display: flex; flex-direction: column; gap: 8px; }
+.etapa-item { display: flex; align-items: center; gap: 10px; font-size: 0.9em; color: #444; cursor: pointer; padding: 10px 12px; border-radius: 10px; transition: 0.2s; background: #fff; border: 1px solid #eee; }
+.etapa-item:hover { border-color: #4caf50; color: #2e7d32; }
+.etapa-item input[type="checkbox"] { width: 18px; height: 18px; cursor: pointer; accent-color: #4caf50; flex-shrink: 0; }
+.etapa-item.concluida { text-decoration: line-through; color: #888; background: #f0fdf4; border-color: #86efac; }
+
+.trilha-progresso { margin-top: auto; }
+.trilha-progresso .trilha-bar { background: #e8e8e8 !important; height: 8px !important; border-radius: 10px !important; margin: 10px 0 !important; overflow: hidden !important; width: 100%; }
+.trilha-progresso .trilha-fill { background: #4caf50 !important; height: 100% !important; transition: width 0.3s; }
+.trilha-porcentagem { font-size: 0.85em; font-weight: bold; color: #2e7d32; }
+
+.btn-continuar { background: #4caf50 !important; color: #fff !important; border: none !important; border-radius: 12px !important; padding: 12px !important; font-weight: 600 !important; display: block !important; text-align: center !important; text-decoration: none !important; margin-top: 15px !important; transition: 0.3s !important; cursor: pointer; width: 100%; }
 .btn-continuar:hover { background: #388e3c !important; }
+
 .progresso-geral { background: #f8f9fa; border-radius: 16px; padding: 20px 25px; margin-bottom: 35px; border: 1px solid #e8f5e9; width: 100%; box-sizing: border-box; }
 .progresso-info { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; font-weight: 600; color: #333; }
 .progresso-bar-geral { width: 100%; height: 12px; background: #e8e8e8; border-radius: 10px; overflow: hidden; }
@@ -98,7 +127,7 @@ input:focus { border-color: #4caf50; outline: none; }
 .aba-btn.active { background: #4caf50; color: #fff; }
 
 /* ================================================================= */
-/* ===== 8. MOBILE (RESPONSIVIDADE) ================================ */
+/* ===== 8. TELAS ESPECÍFICAS E RESPONSIVIDADE ==================== */
 /* ================================================================= */
 .btn-voltar-mobile { display: none; }
 
@@ -118,55 +147,479 @@ input:focus { border-color: #4caf50; outline: none; }
     .main-content { margin-left: 75px !important; width: calc(100% - 75px) !important; padding: 15px 10px !important; box-sizing: border-box !important; }
 
     /* CONTAINERS E TEXTOS */
-    .container, .dashboard-container, .bemestar-container, .perfil-container, .config-container, .ajuda-container, .historia-container, .trilha-container { width: 100% !important; max-width: 100% !important; padding: 15px !important; margin: 0 auto !important; box-sizing: border-box !important; border-radius: 15px !important; box-shadow: none !important; }
+    .container, .dashboard-container, .bemestar-container, .perfil-container, .config-container, .ajuda-container, .historia-container, .trilha-container { width: 100% !important; max-width: 100% !important; padding: 20px 15px !important; margin: 0 auto !important; box-sizing: border-box !important; border-radius: 15px !important; box-shadow: none !important; }
     h1 { font-size: 1.8em !important; text-align: center; }
     h2 { font-size: 1.4em !important; text-align: center; }
     h3 { font-size: 1.2em !important; }
     p, span, div { word-wrap: break-word !important; overflow-wrap: break-word !important; white-space: normal !important; }
 
     /* GRIDS EM 1 COLUNA */
-    .cards-grid, .features-grid, .trilha-grid, .categorias-grid { display: grid !important; grid-template-columns: 1fr !important; gap: 15px !important; }
-
-    /* ESCONDE O BOTÃO VOLTAR MOBILE (você pediu) */
-    .btn-voltar-mobile { display: none !important; }
+    .cards-grid, .features-grid, .trilha-grid, .categorias-grid { display: grid !important; grid-template-columns: 1fr !important; gap: 20px !important; }
 
     /* CHAT MOBILE */
-    .chat-messages { height: 350px !important; padding: 10px !important; }
+    .chat-messages { height: 350px !important; padding: 15px !important; }
     .message-user .message-bubble { max-width: 85% !important; }
     .message-ia .message-bubble { max-width: 85% !important; }
     .chat-input-area { flex-direction: column !important; gap: 10px !important; }
     .chat-input-area input, .chat-input-area button { width: 100% !important; }
+    
+    /* BOTÕES DE SUGESTÃO MAIS BONITOS NO MOBILE */
+    .sugestoes { padding: 15px !important; justify-content: center !important; }
+    .sugestao-btn { flex: 1 1 45% !important; text-align: center !important; padding: 12px 10px !important; font-size: 0.85em !important; }
 
-    /* PERFIL E CONFIGURAÇÕES */
+    /* CONFIGURAÇÕES */
+    .config-item { flex-direction: column !important; align-items: flex-start !important; gap: 15px !important; }
+    .config-item .control { width: 100% !important; justify-content: flex-start !important; }
+    .modo-btn { flex: 1 !important; text-align: center !important; padding: 10px !important; font-size: 0.9em !important; }
+
+    /* PERFIL */
     .perfil-field { flex-direction: column !important; align-items: flex-start !important; gap: 5px !important; }
     .perfil-field .label, .perfil-field .value { width: 100% !important; text-align: left !important; }
-    .config-item { flex-direction: column !important; align-items: flex-start !important; gap: 10px !important; }
-    .config-item .control { width: 100% !important; justify-content: space-between !important; flex-wrap: wrap !important; }
-    .modo-btn { flex: 1 !important; text-align: center !important; padding: 8px !important; font-size: 0.9em !important; }
 
-    /* ESCONDE AS DICAS DO CHAT MOBILE (você pediu) */
-    .dicas-card { display: none !important; }
-}
-/* Regra para esconder as abas que não estão ativas */
-.aba-conteudo {
-    display: none;
-}
-
-/* Regra para mostrar apenas a aba ativa */
-.aba-conteudo.active {
-    display: block;
-}
-/* ===== CORREÇÃO GERAL PARA CELULAR ===== */
-@media (max-width: 768px) {
-    /* Impede que o texto dos tópicos quebre no meio das palavras */
-    .topico-info h3, 
-    .topico-info p {
-        word-break: normal !important; 
-        overflow-wrap: break-word !important;
-    }
+    /* TRILHA MOBILE */
+    .trilha-card { padding: 20px 15px !important; }
+    .etapa-item { padding: 12px 10px !important; font-size: 0.9em !important; }
+    .trilha-card-header { flex-direction: column; gap: 8px; }
     
-    /* Arruma os cards de matérias */
-    .subject-card, .feature-card, .card-materia {
-        word-wrap: break-word !important;
+    /* ESCONDE BOTÃO VOLTAR MOBILE PADRÃO (se houver) */
+    .btn-voltar-mobile { display: none !important; }
+}
+
+/* REGRAS DE ABAS (MANTIDAS) */
+.aba-conteudo { display: none; }
+.aba-conteudo.active { display: block; }
+
+/* ================================================================= */
+/* ===== 10. LOGIN E CADASTRO (DEFINITIVO) ========================= */
+/* ================================================================= */
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    background-color: #e8f5e9; /* Fundo verde claro do site */
+}
+
+.login-box {
+    background: #ffffff;
+    width: 100%;
+    max-width: 420px; /* Um pouco mais fino para ficar elegante */
+    padding: 40px 35px;
+    border-radius: 24px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+    border: 2px solid rgba(76, 175, 80, 0.15); /* Borda verde transparente */
+    position: relative;
+}
+
+/* Botão de voltar no canto */
+.btn-voltar {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    color: #4caf50;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9em;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.btn-voltar:hover { text-decoration: underline; }
+
+/* Título e Subtítulo */
+.login-header {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.login-header h1 {
+    color: #2e7d32;
+    font-size: 2.4em;
+    margin-bottom: 5px;
+    font-weight: 800;
+    letter-spacing: -1px;
+}
+
+.login-header p {
+    color: #666;
+    font-size: 0.95em;
+    line-height: 1.4;
+}
+
+/* Abas (Entrar / Inscrever-se) */
+.login-tabs {
+    display: flex;
+    margin-bottom: 30px;
+    background: #f1f8e9; /* Fundo verde bem clarinho nas abas */
+    border-radius: 12px;
+    padding: 5px;
+}
+
+.login-tabs .tab {
+    flex: 1;
+    background: none;
+    border: none;
+    padding: 10px;
+    font-size: 0.95em;
+    font-weight: 600;
+    color: #666;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.login-tabs .tab.active {
+    background: #ffffff;
+    color: #2e7d32;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+/* Campos de input */
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+    font-weight: 600;
+    font-size: 0.9em;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 14px 16px;
+    border: 2px solid #e2e8f0;
+    border-radius: 12px;
+    font-size: 1em;
+    transition: 0.3s;
+    margin: 0;
+    background: #fafafa;
+    color: #333;
+}
+
+.input-group input:focus {
+    border-color: #4caf50;
+    background: #ffffff;
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(76, 175, 80, 0.1);
+}
+
+/* Botão de Entrar/Cadastrar */
+.btn-entrar {
+    width: 100%;
+    margin-top: 10px;
+    font-size: 1.1em;
+    font-weight: bold;
+    padding: 16px;
+    background: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-entrar:hover {
+    background: #388e3c;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(76, 175, 80, 0.3);
+}
+
+/* Responsividade para Celular */
+@media (max-width: 768px) {
+    .login-box {
+        padding: 30px 20px;
+        border-radius: 20px;
     }
+    .login-header h1 {
+        font-size: 2em;
+    }
+}
+/* Mensagens de Alerta (Erro e Sucesso) */
+.mensagem-erro, .mensagem-sucesso {
+    padding: 15px 20px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    text-align: center;
+    font-size: 0.95em;
+    font-weight: 600;
+    display: none; /* O JavaScript vai mudar para block */
+    animation: slideDown 0.3s ease-out;
+}
+
+/* Balão verde escuro (Para erros - fica elegante e chama atenção sem quebrar o design) */
+.mensagem-erro {
+    background-color: #d32f2f; /* Vermelho elegante para erro */
+    color: #ffffff;
+    box-shadow: 0 4px 15px rgba(211, 47, 47, 0.3);
+    border: none;
+}
+
+/* Opção se preferir o erro em verde escuro (como você pediu) */
+/* Descomente o bloco abaixo se quiser o erro em verde escuro em vez de vermelho */
+/*
+.mensagem-erro {
+    background-color: #1b5e20; 
+    color: #ffffff;
+    box-shadow: 0 4px 15px rgba(27, 94, 32, 0.3);
+    border: none;
+}
+*/
+
+.mensagem-sucesso {
+    background-color: #2e7d32; 
+    color: #ffffff;
+    box-shadow: 0 4px 15px rgba(46, 125, 50, 0.3);
+    border: none;
+}
+
+/* Animação para o balão aparecer deslizando suavemente */
+@keyframes slideDown {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+/* ================================================================= */
+/* ===== TELA INICIAL (LANDING PAGE) =============================== */
+/* ================================================================= */
+
+.landing-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    background-color: #e8f5e9; /* Fundo do site verde bem clarinho */
+}
+
+.landing-card {
+    background: rgba(255, 255, 255, 0.6); /* Branco translúcido */
+    border: 2px solid rgba(76, 175, 80, 0.2); /* A borda verde clara que você amou */
+    max-width: 650px;
+    width: 100%;
+    padding: 40px 20px;
+    text-align: center;
+    border-radius: 30px; /* Bordas bem arredondadas */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03); /* Sombra suave */
+}
+
+.landing-logo-icon {
+    font-size: 3em;
+    color: #2e7d32;
+    margin-bottom: 15px;
+    display: inline-block;
+}
+
+.landing-card h1 {
+    font-size: 3.5em;
+    color: #111111;
+    font-weight: 800;
+    margin-bottom: 15px;
+    letter-spacing: -1.5px;
+}
+
+.landing-card .subtitle {
+    font-size: 1.15em;
+    color: #2e7d32;
+    font-weight: 700;
+    margin-bottom: 25px;
+    line-height: 1.4;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.landing-card .description {
+    font-size: 1.05em;
+    color: #555555;
+    line-height: 1.6;
+    margin-bottom: 40px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.landing-actions {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-landing-primary {
+    background: #38b28d; /* Verde teal do botão */
+    color: white !important;
+    padding: 16px 40px;
+    border-radius: 8px;
+    text-decoration: none !important;
+    font-weight: 600;
+    font-size: 1.1em;
+    transition: 0.3s;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(56, 178, 141, 0.3);
+    display: inline-block;
+}
+
+.btn-landing-primary:hover {
+    background: #2f9877;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(56, 178, 141, 0.4);
+}
+
+/* Responsividade para Celular */
+@media (max-width: 768px) {
+    .landing-wrapper { padding: 15px; }
+    .landing-card { padding: 30px 15px; border-radius: 20px; }
+    .landing-card h1 { font-size: 3em; }
+    .landing-card .subtitle { font-size: 1.05em; }
+    .landing-card .description { font-size: 0.95em; padding: 0 10px; }
+    .btn-landing-primary { width: 100%; padding: 16px; }
+}
+/* ================================================================= */
+/* ===== 11. TELAS DE CONFIGURAÇÕES E AJUDA ======================== */
+/* ================================================================= */
+
+/* --- CONFIGURAÇÕES --- */
+.config-header { text-align: center; margin-bottom: 30px; }
+.config-header h1 { color: #2e7d32; font-size: 2.2em; margin-bottom: 5px; }
+.config-header p { color: #666; font-size: 1em; }
+
+.config-card {
+    background: #f8f9fa;
+    border: 1px solid #e8f5e9;
+    border-radius: 16px;
+    padding: 25px;
+    margin-bottom: 25px;
+}
+.config-card h3 { color: #2e7d32; margin-bottom: 20px; font-size: 1.2em; border-bottom: 2px solid #e8f5e9; padding-bottom: 10px; }
+
+.config-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px dashed #e0e0e0;
+}
+.config-item:last-child { border-bottom: none; padding-bottom: 0; }
+
+.config-item .info .title { font-weight: 600; color: #333; font-size: 1em; margin-bottom: 4px; }
+.config-item .info .desc { color: #777; font-size: 0.85em; }
+
+.config-item .control { display: flex; align-items: center; gap: 10px; }
+
+/* Botões de modo (Equilibrado / Detalhado) */
+.modo-btn {
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    color: #555;
+    font-weight: 500;
+    transition: 0.3s;
+}
+.modo-btn.active {
+    background: #4caf50;
+    color: #fff;
+    border-color: #4caf50;
+}
+
+/* Interruptor (Switch) */
+.switch {
+    width: 50px;
+    height: 26px;
+    background: #ccc;
+    border-radius: 15px;
+    position: relative;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.switch.active { background: #4caf50; }
+.switch .slider {
+    width: 22px;
+    height: 22px;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    transition: 0.3s;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+.switch.active .slider { transform: translateX(24px); }
+.switch-label { font-size: 0.9em; font-weight: 600; color: #555; }
+
+.btn-salvar {
+    background: #4caf50;
+    color: #fff;
+    border: none;
+    padding: 14px 30px;
+    border-radius: 12px;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 100%;
+    max-width: 300px;
+}
+.btn-salvar:hover { background: #388e3c; transform: translateY(-2px); }
+
+.config-footer { text-align: center; margin-top: 30px; color: #888; font-size: 0.9em; }
+.config-footer a { color: #4caf50; text-decoration: none; font-weight: 600; }
+
+/* --- AJUDA --- */
+.ajuda-header { text-align: center; margin-bottom: 30px; }
+.ajuda-header h1 { color: #2e7d32; font-size: 2.2em; margin-bottom: 10px; }
+.ajuda-header .subtitle { color: #666; font-size: 1em; }
+
+.quem-somos { margin-bottom: 30px; }
+.quem-somos h2 { color: #2e7d32; font-size: 1.4em; margin-bottom: 15px; border-left: 4px solid #4caf50; padding-left: 10px; }
+.quem-somos p { color: #444; line-height: 1.6; margin-bottom: 15px; font-size: 0.95em; }
+.quem-somos ul { padding-left: 20px; color: #444; line-height: 1.6; margin-bottom: 15px; font-size: 0.95em; }
+.quem-somos li { margin-bottom: 8px; }
+
+.contato-card {
+    background: #f8f9fa;
+    border: 1px solid #e8f5e9;
+    border-radius: 16px;
+    padding: 25px;
+    margin-bottom: 30px;
+}
+.contato-card h2 { color: #2e7d32; font-size: 1.3em; margin-bottom: 20px; }
+.contato-item { display: flex; align-items: center; gap: 15px; margin-bottom: 15px; }
+.contato-item:last-child { margin-bottom: 0; }
+.contato-item .info .label { font-size: 0.85em; color: #888; font-weight: 600; text-transform: uppercase; }
+.contato-item .info .value { color: #333; font-size: 1em; font-weight: 500; }
+.contato-item .info .value a { color: #4caf50; text-decoration: none; }
+.contato-item .info .value a:hover { text-decoration: underline; }
+
+.btn-voltar-ajuda {
+    display: inline-block;
+    background: #4caf50;
+    color: #fff;
+    padding: 12px 30px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+.btn-voltar-ajuda:hover { background: #388e3c; }
+.text-center { text-align: center; }
+
+/* --- RESPONSIVIDADE ESPECÍFICA (CELULAR) --- */
+@media (max-width: 768px) {
+    /* Configurações no celular */
+    .config-item { flex-direction: column; align-items: flex-start; gap: 15px; }
+    .config-item .control { width: 100%; justify-content: flex-start; }
+    .modo-btn { flex: 1; text-align: center; padding: 12px; }
+    .btn-salvar { max-width: 100%; }
+
+    /* Ajuda no celular */
+    .ajuda-header h1 { font-size: 1.8em; }
+    .quem-somos h2 { font-size: 1.3em; }
+    .contato-card { padding: 20px 15px; }
 }
