@@ -1,43 +1,48 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agropecuária - Saphius</title>
     <link rel="stylesheet" href="/style.css">
     <link rel="stylesheet" href="/views/conteudos/geografia/geografia.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <div class="app-container">
         <aside class="sidebar">
             <div class="sidebar-logo"><h2>Saphius</h2></div>
             <ul class="sidebar-menu">
-                <li><a href="/dashboard"><span class="icon"></span> <span>Dashboard</span></a></li>
-                <li><a href="/conteudos"><span class="icon"></span> <span>Conteúdos</span></a></li>
-                <li><a href="/trilha"><span class="icon"></span> <span>Trilha de estudos</span></a></li>
-                <li><a href="/bemestar"><span class="icon"></span> <span>Bem-estar</span></a></li>
-                <li><a href="/perfil"><span class="icon"></span> <span>Perfil</span></a></li>
-                <li><a href="/configuracoes"><span class="icon"></span> <span>Configurações</span></a></li>
-                <li><a href="/ajuda"><span class="icon"></span> <span>Ajuda</span></a></li>
-                <li><a href="/sair"><span class="icon"></span> <span>Sair</span></a></li>
+                <li><a href="/dashboard"><span class="icon"><i class="fas fa-home"></i></span> <span>Dashboard</span></a></li>
+                <li><a href="/conteudos"><span class="icon"><i class="fas fa-book"></i></span> <span>Conteúdos</span></a></li>
+                <li><a href="/trilha"><span class="icon"><i class="fas fa-route"></i></span> <span>Trilha de estudos</span></a></li>
+                <li><a href="/bemestar"><span class="icon"><i class="fas fa-heart"></i></span> <span>Bem-estar</span></a></li>
+                <li><a href="/perfil"><span class="icon"><i class="fas fa-user"></i></span> <span>Perfil</span></a></li>
+                <li><a href="/configuracoes"><span class="icon"><i class="fas fa-cog"></i></span> <span>Configurações</span></a></li>
+                <li><a href="/ajuda"><span class="icon"><i class="fas fa-question-circle"></i></span> <span>Ajuda</span></a></li>
+                <li><a href="/sair"><span class="icon"><i class="fas fa-sign-out-alt"></i></span> <span>Sair</span></a></li>
             </ul>
         </aside>
 
         <main class="main-content">
+            <!-- Seta de voltar mobile -->
+            <a href="/geografia" class="btn-voltar-mobile">← Voltar para Geografia</a>
+
             <div class="container">
-                <a href="/geografia" class="voltar"> Voltar para Geografia</a>
+                <a href="/geografia" class="voltar">← Voltar para Geografia</a>
 
                 <h1 style="text-align:center; font-size:2.5em; color:#2e7d32;">Agropecuária</h1>
                 <p style="color:#666; text-align:center; font-size:1.1em;">Produção agrícola no Brasil, Reforma agrária, Desmatamento e impactos</p>
 
+                <!-- ABAS (Simulado Removido) -->
                 <div class="abas-navegacao" style="margin:25px 0;">
                     <button class="aba-btn active" onclick="trocarAba(this, 'conteudo')">Conteúdo</button>
                     <button class="aba-btn" onclick="trocarAba(this, 'exercicios')">Exercícios</button>
                     <button class="aba-btn" onclick="trocarAba(this, 'resumo')">Resumo</button>
-                    <button class="aba-btn" onclick="trocarAba(this, 'simulado')">Simulado</button>
                 </div>
 
+                <!-- ===== CONTEÚDO ===== -->
                 <div id="conteudo" class="aba-conteudo active">
-
                     <div class="explicacao-detalhada">
                         <h3>O que é Agropecuária?</h3>
                         <p>
@@ -56,9 +61,7 @@
 
                     <div class="explicacao-detalhada">
                         <h3>1. Produção Agrícola no Brasil</h3>
-                        <p>
-                            O Brasil é um dos maiores produtores agrícolas do mundo. Os principais produtos são:
-                        </p>
+                        <p>O Brasil é um dos maiores produtores agrícolas do mundo. Os principais produtos são:</p>
                         <ul>
                             <li><strong>Soja:</strong> Principal produto de exportação, cultivado no Centro-Oeste e Sul. O Brasil é o maior produtor mundial de soja.</li>
                             <li><strong>Milho:</strong> Cultivado em várias regiões, principalmente no Sul e Sudeste.</li>
@@ -67,14 +70,12 @@
                             <li><strong>Laranja:</strong> Principal produtor mundial, com destaque para o estado de São Paulo.</li>
                             <li><strong>Arroz e feijão:</strong> Cultivados em várias regiões, importantes para a alimentação básica.</li>
                         </ul>
-                        <p>
-                            <strong>Características da agricultura brasileira:</strong>
-                            <ul>
-                                <li><strong>Agricultura moderna:</strong> Uso de tecnologia, mecanização e insumos.</li>
-                                <li><strong>Agricultura familiar:</strong> Responsável por grande parte da produção de alimentos.</li>
-                                <li><strong>Exportação:</strong> Grande parte da produção é destinada à exportação.</li>
-                            </ul>
-                        </p>
+                        <p><strong>Características da agricultura brasileira:</strong></p>
+                        <ul>
+                            <li><strong>Agricultura moderna:</strong> Uso de tecnologia, mecanização e insumos.</li>
+                            <li><strong>Agricultura familiar:</strong> Responsável por grande parte da produção de alimentos.</li>
+                            <li><strong>Exportação:</strong> Grande parte da produção é destinada à exportação.</li>
+                        </ul>
                         <div class="enem-dica">
                             <strong>DICA ENEM:</strong>
                             <p>O ENEM cobra a <strong>produção agrícola</strong> brasileira, relacionando com a 
@@ -84,9 +85,7 @@
 
                     <div class="explicacao-detalhada">
                         <h3>2. Pecuária Brasileira</h3>
-                        <p>
-                            A pecuária é uma atividade importante no Brasil, com destaque para:
-                        </p>
+                        <p>A pecuária é uma atividade importante no Brasil, com destaque para:</p>
                         <ul>
                             <li><strong>Bovinocultura:</strong> Criação de gado para carne e leite, concentrada no Centro-Oeste e Sul. O Brasil é o maior exportador de carne bovina do mundo.</li>
                             <li><strong>Suinocultura:</strong> Criação de porcos, no Sul e Sudeste.</li>
@@ -94,14 +93,12 @@
                             <li><strong>Pecuária extensiva:</strong> Criação de gado em grandes áreas de pastagem, com baixa produtividade.</li>
                             <li><strong>Pecuária intensiva:</strong> Criação confinada, com alta produtividade e tecnologia.</li>
                         </ul>
-                        <p>
-                            <strong>Impactos da pecuária:</strong>
-                            <ul>
-                                <li><strong>Desmatamento:</strong> Abertura de pastagens, especialmente na Amazônia.</li>
-                                <li><strong>Emissões de gases:</strong> Metano produzido pelo gado.</li>
-                                <li><strong>Uso de água:</strong> Consumo elevado de água na produção animal.</li>
-                            </ul>
-                        </p>
+                        <p><strong>Impactos da pecuária:</strong></p>
+                        <ul>
+                            <li><strong>Desmatamento:</strong> Abertura de pastagens, especialmente na Amazônia.</li>
+                            <li><strong>Emissões de gases:</strong> Metano produzido pelo gado.</li>
+                            <li><strong>Uso de água:</strong> Consumo elevado de água na produção animal.</li>
+                        </ul>
                         <div class="enem-dica">
                             <strong>DICA ENEM:</strong>
                             <p>O ENEM cobra a <strong>pecuária</strong> como uma atividade econômica que impacta 
@@ -122,14 +119,12 @@
                             <li><strong>Movimento dos Sem Terra (MST):</strong> Movimento social que luta pela reforma agrária e pela distribuição de terras.</li>
                             <li><strong>Assentamentos:</strong> Áreas destinadas à reforma agrária, onde famílias recebem terras para cultivar.</li>
                         </ul>
-                        <p>
-                            <strong>Desafios da reforma agrária:</strong>
-                            <ul>
-                                <li><strong>Conflitos no campo:</strong> Disputas por terra entre fazendeiros, indígenas e quilombolas.</li>
-                                <li><strong>Violência no campo:</strong> Assassinatos de líderes e ativistas.</li>
-                                <li><strong>Falta de infraestrutura:</strong> Assistência técnica, crédito e transporte.</li>
-                            </ul>
-                        </p>
+                        <p><strong>Desafios da reforma agrária:</strong></p>
+                        <ul>
+                            <li><strong>Conflitos no campo:</strong> Disputas por terra entre fazendeiros, indígenas e quilombolas.</li>
+                            <li><strong>Violência no campo:</strong> Assassinatos de líderes e ativistas.</li>
+                            <li><strong>Falta de infraestrutura:</strong> Assistência técnica, crédito e transporte.</li>
+                        </ul>
                         <div class="enem-dica">
                             <strong>DICA ENEM:</strong>
                             <p>O ENEM cobra a <strong>reforma agrária</strong> como um tema social e político, 
@@ -149,14 +144,12 @@
                             <li><strong>Conflitos:</strong> Disputas por terra entre fazendeiros, indígenas e quilombolas.</li>
                             <li><strong>Preservação:</strong> Código Florestal e áreas de preservação permanente (APP).</li>
                         </ul>
-                        <p>
-                            <strong>Medidas para reduzir o impacto:</strong>
-                            <ul>
-                                <li><strong>Agricultura sustentável:</strong> Integração lavoura-pecuária-floresta (ILPF).</li>
-                                <li><strong>Preservação de áreas verdes:</strong> Criação de unidades de conservação.</li>
-                                <li><strong>Combate ao desmatamento:</strong> Fiscalização e monitoramento por satélite.</li>
-                            </ul>
-                        </p>
+                        <p><strong>Medidas para reduzir o impacto:</strong></p>
+                        <ul>
+                            <li><strong>Agricultura sustentável:</strong> Integração lavoura-pecuária-floresta (ILPF).</li>
+                            <li><strong>Preservação de áreas verdes:</strong> Criação de unidades de conservação.</li>
+                            <li><strong>Combate ao desmatamento:</strong> Fiscalização e monitoramento por satélite.</li>
+                        </ul>
                         <div class="enem-dica">
                             <strong>DICA ENEM:</strong>
                             <p>O ENEM cobra os <strong>impactos ambientais</strong> da agropecuária, relacionando 
@@ -166,13 +159,11 @@
 
                     <div class="dica-saphius">
                         <h3>Dica Saphius</h3>
-                        <p>
-                            Memorize: <strong>"Agricultura + Pecuária + Reforma Agrária + Desmatamento = Agropecuária"</strong>.
-                        </p>
+                        <p>Memorize: <strong>"Agricultura + Pecuária + Reforma Agrária + Desmatamento = Agropecuária"</strong>.</p>
                     </div>
                 </div>
 
-                <!-- ===== EXERCÍCIOS (15 QUESTÕES) ===== -->
+                <!-- ===== EXERCÍCIOS ===== -->
                 <div id="exercicios" class="aba-conteudo">
                     <h2 style="color:#2e7d32;"> Exercícios - Agropecuária</h2>
                     <p style="color:#666;">15 questões (5 Fáceis, 5 Médias, 5 Difíceis)</p>
@@ -433,31 +424,26 @@
                                 <p>Soja, milho, cana-de-açúcar, café</p>
                                 <span class="resumo-tag">Exportação</span>
                             </div>
-
                             <div class="resumo-card-item">
                                 <h3>Pecuária</h3>
                                 <p>Bovinocultura, suinocultura, avicultura</p>
                                 <span class="resumo-tag">Carne e Leite</span>
                             </div>
-
                             <div class="resumo-card-item">
                                 <h3>Reforma Agrária</h3>
                                 <p>Distribuição de terras, MST</p>
                                 <span class="resumo-tag">Justiça Social</span>
                             </div>
-
                             <div class="resumo-card-item">
                                 <h3>Desmatamento</h3>
                                 <p>Amazônia, Cerrado, impactos ambientais</p>
                                 <span class="resumo-tag">Sustentabilidade</span>
                             </div>
-
                             <div class="resumo-card-item">
                                 <h3>Agronegócio</h3>
                                 <p>Exportações, empregos, tecnologia</p>
                                 <span class="resumo-tag">Economia</span>
                             </div>
-
                             <div class="resumo-card-item">
                                 <h3>Agricultura Familiar</h3>
                                 <p>Produção de alimentos, sustentabilidade</p>
@@ -477,78 +463,53 @@
                     </div>
                 </div>
 
-                <div id="simulado" class="aba-conteudo">
-                    <h2 style="color:#2e7d32;">Simulado - Agropecuária</h2>
-                    <p style="color:#666;">Teste seus conhecimentos com questões estilo ENEM</p>
-
-                    <div class="simulado-card">
-                        <div style="display:flex; gap:20px; flex-wrap:wrap; justify-content:center; margin-bottom:15px;">
-                            <span><strong>15 questões</strong></span>
-                            <span><strong>20 minutos</strong></span>
-                            <span><strong>Nível: Fácil a Difícil</strong></span>
-                        </div>
-                        <p style="color:#555; margin-bottom:15px;">As questões são as mesmas da aba "Exercícios" acima.</p>
-                        <button class="btn-principal" onclick="alert(' Simulado iniciado! Responda todas as 15 questões acima na aba Exercícios.')">
-                            Iniciar simulado
-                        </button>
-                    </div>
-                </div>
-
             </div>
         </main>
     </div>
 
     <script>
-    function trocarAba(botao, abaId) {
-        document.querySelectorAll('.aba-btn').forEach(b => b.classList.remove('active'));
-        botao.classList.add('active');
-
-        document.querySelectorAll('.aba-conteudo').forEach(c => c.classList.remove('active'));
-        document.getElementById(abaId).classList.add('active');
-    }
-
-    function mostrarResposta(botao) {
-        const exercicioDiv = botao.closest('.exercicio-facil, .exercicio-medio, .exercicio-dificil');
-        const respostaDiv = exercicioDiv.querySelector('.resposta-explicada');
-
-        if (respostaDiv.style.display === 'block') {
-            respostaDiv.style.display = 'none';
-            botao.textContent = 'Ver explicação';
-        } else {
-            respostaDiv.style.display = 'block';
-            botao.textContent = 'Ocultar explicação';
+        function trocarAba(botao, abaId) {
+            document.querySelectorAll('.aba-btn').forEach(b => b.classList.remove('active'));
+            botao.classList.add('active');
+            document.querySelectorAll('.aba-conteudo').forEach(c => c.classList.remove('active'));
+            const alvo = document.getElementById(abaId);
+            if (alvo) { alvo.classList.add('active'); }
         }
-    }
 
-    document.querySelectorAll('.exercicio-alternativas input[type="radio"]').forEach(input => {
-        input.addEventListener('change', verificarAtividade);
-    });
+        function mostrarResposta(botao) {
+            const exercicioDiv = botao.closest('.exercicio-facil, .exercicio-medio, .exercicio-dificil');
+            const respostaDiv = exercicioDiv.querySelector('.resposta-explicada');
 
-    async function verificarAtividade() {
-        const questoes = document.querySelectorAll('.exercicio-alternativas');
-        const respondidas = document.querySelectorAll(
-            '.exercicio-alternativas input[type="radio"]:checked'
-        );
-
-        if (respondidas.length === questoes.length) {
-            try {
-                await fetch('/api/trilha/concluir', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json'
-                    },
-                    body: JSON.stringify({
-                        materia: 'geografia',
-                        topico: 'agropecuaria'
-                    })
-                });
-
-                alert('Atividade concluída! Seu progresso na Trilha de Estudos foi atualizado.');
-            } catch (erro) {
-                console.error('Erro ao atualizar progresso:', erro);
+            if (respostaDiv.style.display === 'block') {
+                respostaDiv.style.display = 'none';
+                botao.textContent = 'Ver explicação';
+            } else {
+                respostaDiv.style.display = 'block';
+                botao.textContent = 'Ocultar explicação';
             }
         }
-    }
-</script>
+
+        document.querySelectorAll('.exercicio-alternativas input[type="radio"]').forEach(input => {
+            input.addEventListener('change', verificarAtividade);
+        });
+
+        async function verificarAtividade() {
+            const questoes = document.querySelectorAll('.exercicio-alternativas');
+            const respondidas = document.querySelectorAll('.exercicio-alternativas input[type="radio"]:checked');
+
+            if (respondidas.length === questoes.length) {
+                try {
+                    await fetch('/api/trilha/concluir', {
+                        method: 'POST',
+                        headers: {'Content-Type':'application/json'},
+                        body: JSON.stringify({ materia: 'geografia', topico: 'agropecuaria' })
+                    });
+                    alert('Atividade concluída! Seu progresso na Trilha de Estudos foi atualizado.');
+                } catch (erro) {
+                    console.error('Erro ao atualizar progresso:', erro);
+                }
+            }
+        }
+    </script>
 </body>
 </html>

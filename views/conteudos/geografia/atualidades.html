@@ -1,41 +1,46 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atualidades - Saphius</title>
     <link rel="stylesheet" href="/style.css">
     <link rel="stylesheet" href="/views/conteudos/geografia/geografia.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <div class="app-container">
         <aside class="sidebar">
             <div class="sidebar-logo"><h2>Saphius</h2></div>
             <ul class="sidebar-menu">
-                <li><a href="/dashboard"><span class="icon"></span> <span>Dashboard</span></a></li>
-                <li><a href="/conteudos"><span class="icon"></span> <span>Conteúdos</span></a></li>
-                <li><a href="/trilha"><span class="icon"></span> <span>Trilha de estudos</span></a></li>
-                <li><a href="/bemestar"><span class="icon"></span> <span>Bem-estar</span></a></li>
-                <li><a href="/perfil"><span class="icon"></span> <span>Perfil</span></a></li>
-                <li><a href="/configuracoes"><span class="icon"></span> <span>Configurações</span></a></li>
-                <li><a href="/ajuda"><span class="icon"></span> <span>Ajuda</span></a></li>
-                <li><a href="/sair"><span class="icon"></span> <span>Sair</span></a></li>
+                <li><a href="/dashboard"><span class="icon"><i class="fas fa-home"></i></span> <span>Dashboard</span></a></li>
+                <li><a href="/conteudos"><span class="icon"><i class="fas fa-book"></i></span> <span>Conteúdos</span></a></li>
+                <li><a href="/trilha"><span class="icon"><i class="fas fa-route"></i></span> <span>Trilha de estudos</span></a></li>
+                <li><a href="/bemestar"><span class="icon"><i class="fas fa-heart"></i></span> <span>Bem-estar</span></a></li>
+                <li><a href="/perfil"><span class="icon"><i class="fas fa-user"></i></span> <span>Perfil</span></a></li>
+                <li><a href="/configuracoes"><span class="icon"><i class="fas fa-cog"></i></span> <span>Configurações</span></a></li>
+                <li><a href="/ajuda"><span class="icon"><i class="fas fa-question-circle"></i></span> <span>Ajuda</span></a></li>
+                <li><a href="/sair"><span class="icon"><i class="fas fa-sign-out-alt"></i></span> <span>Sair</span></a></li>
             </ul>
         </aside>
 
         <main class="main-content">
+            <a href="/geografia" class="btn-voltar-mobile">← Voltar para Geografia</a>
+
             <div class="container">
-                <a href="/geografia" class="voltar"> Voltar para Geografia</a>
+                <a href="/geografia" class="voltar">← Voltar para Geografia</a>
 
                 <h1 style="text-align:center; font-size:2.5em; color:#2e7d32;">Atualidades</h1>
                 <p style="color:#666; text-align:center; font-size:1.1em;">Questões ambientais, Migrações, Fome, Energia, Fronteiras e crises</p>
 
+                <!-- ABAS (Simulado Removido) -->
                 <div class="abas-navegacao" style="margin:25px 0;">
                     <button class="aba-btn active" onclick="trocarAba(this, 'conteudo')">Conteúdo</button>
                     <button class="aba-btn" onclick="trocarAba(this, 'exercicios')">Exercícios</button>
                     <button class="aba-btn" onclick="trocarAba(this, 'resumo')">Resumo</button>
-                    <button class="aba-btn" onclick="trocarAba(this, 'simulado')">Simulado</button>
                 </div>
 
+                <!-- ===== CONTEÚDO ===== -->
                 <div id="conteudo" class="aba-conteudo active">
 
                     <div class="explicacao-detalhada">
@@ -56,9 +61,7 @@
 
                     <div class="explicacao-detalhada">
                         <h3>1. Questões Ambientais</h3>
-                        <p>
-                            As <strong>questões ambientais</strong> são temas urgentes que afetam o planeta. Os principais são:
-                        </p>
+                        <p>As <strong>questões ambientais</strong> são temas urgentes que afetam o planeta. Os principais são:</p>
                         <ul>
                             <li><strong>Desmatamento:</strong> Destruição de florestas tropicais, especialmente na Amazônia e no Sudeste Asiático.</li>
                             <li><strong>Queimadas:</strong> Incêndios florestais, especialmente na Amazônia, no Cerrado e na Austrália.</li>
@@ -67,14 +70,12 @@
                             <li><strong>Perda de biodiversidade:</strong> Extinção de espécies e degradação de ecossistemas.</li>
                             <li><strong>Escassez de água:</strong> Disponibilidade limitada de água doce em diversas regiões do mundo.</li>
                         </ul>
-                        <p>
-                            <strong>Impactos das questões ambientais:</strong>
-                            <ul>
-                                <li><strong>Econômicos:</strong> Perda de produtividade agrícola, aumento de custos com desastres.</li>
-                                <li><strong>Sociais:</strong> Migrações ambientais, conflitos por recursos, aumento da pobreza.</li>
-                                <li><strong>Políticos:</strong> Tensões internacionais, acordos ambientais (Acordo de Paris).</li>
-                            </ul>
-                        </p>
+                        <p><strong>Impactos das questões ambientais:</strong></p>
+                        <ul>
+                            <li><strong>Econômicos:</strong> Perda de produtividade agrícola, aumento de custos com desastres.</li>
+                            <li><strong>Sociais:</strong> Migrações ambientais, conflitos por recursos, aumento da pobreza.</li>
+                            <li><strong>Políticos:</strong> Tensões internacionais, acordos ambientais (Acordo de Paris).</li>
+                        </ul>
                         <div class="enem-dica">
                             <strong>DICA ENEM:</strong>
                             <p>O ENEM cobra as <strong>questões ambientais</strong> como um dos temas mais atuais, 
@@ -84,24 +85,20 @@
 
                     <div class="explicacao-detalhada">
                         <h3>2. Migrações e Refugiados</h3>
-                        <p>
-                            As <strong>migrações</strong> são movimentos populacionais que ocorrem por diversos motivos:
-                        </p>
+                        <p>As <strong>migrações</strong> são movimentos populacionais que ocorrem por diversos motivos:</p>
                         <ul>
                             <li><strong>Migrações econômicas:</strong> Busca por melhores condições de vida, empregos e salários.</li>
                             <li><strong>Migrações forçadas:</strong> Conflitos, guerras e perseguições (refugiados).</li>
                             <li><strong>Migrações ambientais:</strong> Causadas por desastres naturais e mudanças climáticas.</li>
                             <li><strong>Migrações internas:</strong> Movimentos dentro do próprio país (ex: Nordeste-Sudeste no Brasil).</li>
                         </ul>
-                        <p>
-                            <strong>Crises de refugiados atuais:</strong>
-                            <ul>
-                                <li><strong>Síria:</strong> Guerra civil (2011-presente) gerou milhões de refugiados para Europa e países vizinhos.</li>
-                                <li><strong>Afeganistão:</strong> Tomada do poder pelo Taleban (2021) gerou fluxo de refugiados.</li>
-                                <li><strong>Venezuela:</strong> Crise econômica e política gerou migração em massa para países vizinhos, como Brasil e Colômbia.</li>
-                                <li><strong>Ucrânia:</strong> Guerra com a Rússia (2022) gerou milhões de refugiados para a Europa.</li>
-                            </ul>
-                        </p>
+                        <p><strong>Crises de refugiados atuais:</strong></p>
+                        <ul>
+                            <li><strong>Síria:</strong> Guerra civil (2011-presente) gerou milhões de refugiados para Europa e países vizinhos.</li>
+                            <li><strong>Afeganistão:</strong> Tomada do poder pelo Taleban (2021) gerou fluxo de refugiados.</li>
+                            <li><strong>Venezuela:</strong> Crise econômica e política gerou migração em massa para países vizinhos, como Brasil e Colômbia.</li>
+                            <li><strong>Ucrânia:</strong> Guerra com a Rússia (2022) gerou milhões de refugiados para a Europa.</li>
+                        </ul>
                         <div class="enem-dica">
                             <strong>DICA ENEM:</strong>
                             <p>O ENEM cobra as <strong>migrações</strong> como um tema geopolítico e social, 
@@ -111,10 +108,8 @@
 
                     <div class="explicacao-detalhada">
                         <h3>3. Fome e Insegurança Alimentar</h3>
-                        <p>
-                            A <strong>fome</strong> e a <strong>insegurança alimentar</strong> são problemas graves 
-                            que afetam milhões de pessoas no mundo. As principais causas são:
-                        </p>
+                        <p>A <strong>fome</strong> e a <strong>insegurança alimentar</strong> são problemas graves 
+                        que afetam milhões de pessoas no mundo. As principais causas são:</p>
                         <ul>
                             <li><strong>Desigualdade social:</strong> Concentração de renda e falta de acesso a alimentos.</li>
                             <li><strong>Conflitos:</strong> Guerras que interrompem a produção e distribuição de alimentos.</li>
@@ -122,15 +117,13 @@
                             <li><strong>Especulação financeira:</strong> Aumento do preço dos alimentos no mercado internacional.</li>
                             <li><strong>Desperdício de alimentos:</strong> Grande parte da produção é descartada.</li>
                         </ul>
-                        <p>
-                            <strong>Regiões mais afetadas pela fome:</strong>
-                            <ul>
-                                <li><strong>África Subsaariana:</strong> Países como Somália, Sudão do Sul, Etiópia.</li>
-                                <li><strong>Iêmen:</strong> Guerra civil e bloqueio de alimentos.</li>
-                                <li><strong>Afeganistão:</strong> Crise econômica e seca.</li>
-                                <li><strong>América Latina:</strong> Venezuela, Haiti e partes do Brasil (Nordeste).</li>
-                            </ul>
-                        </p>
+                        <p><strong>Regiões mais afetadas pela fome:</strong></p>
+                        <ul>
+                            <li><strong>África Subsaariana:</strong> Países como Somália, Sudão do Sul, Etiópia.</li>
+                            <li><strong>Iêmen:</strong> Guerra civil e bloqueio de alimentos.</li>
+                            <li><strong>Afeganistão:</strong> Crise econômica e seca.</li>
+                            <li><strong>América Latina:</strong> Venezuela, Haiti e partes do Brasil (Nordeste).</li>
+                        </ul>
                         <div class="enem-dica">
                             <strong>DICA ENEM:</strong>
                             <p>O ENEM cobra a <strong>fome</strong> como um tema social e econômico, relacionando 
@@ -140,10 +133,8 @@
 
                     <div class="explicacao-detalhada">
                         <h3>4. Energia e Transição Energética</h3>
-                        <p>
-                            A <strong>energia</strong> é um tema central no mundo atual. A transição energética 
-                            busca substituir fontes poluentes por fontes limpas:
-                        </p>
+                        <p>A <strong>energia</strong> é um tema central no mundo atual. A transição energética 
+                        busca substituir fontes poluentes por fontes limpas:</p>
                         <ul>
                             <li><strong>Fontes renováveis:</strong> Energia solar, eólica, hidráulica, biomassa, geotérmica.</li>
                             <li><strong>Fontes não renováveis:</strong> Petróleo, carvão, gás natural, energia nuclear.</li>
@@ -151,14 +142,12 @@
                             <li><strong>Matriz energética brasileira:</strong> Predominância de hidrelétricas e biocombustíveis (etanol, biodiesel).</li>
                             <li><strong>Desafios:</strong> Dependência de fontes não renováveis, infraestrutura para energias renováveis.</li>
                         </ul>
-                        <p>
-                            <strong>Exemplos de transição energética:</strong>
-                            <ul>
-                                <li><strong>União Europeia:</strong> Metas de redução de emissões e incentivo a energias renováveis.</li>
-                                <li><strong>China:</strong> Maior investidor em energia solar e eólica do mundo.</li>
-                                <li><strong>Brasil:</strong> Expansão da energia eólica e solar, além dos biocombustíveis.</li>
-                            </ul>
-                        </p>
+                        <p><strong>Exemplos de transição energética:</strong></p>
+                        <ul>
+                            <li><strong>União Europeia:</strong> Metas de redução de emissões e incentivo a energias renováveis.</li>
+                            <li><strong>China:</strong> Maior investidor em energia solar e eólica do mundo.</li>
+                            <li><strong>Brasil:</strong> Expansão da energia eólica e solar, além dos biocombustíveis.</li>
+                        </ul>
                         <div class="enem-dica">
                             <strong>DICA ENEM:</strong>
                             <p>O ENEM cobra a <strong>matriz energética</strong> e a <strong>transição energética</strong> 
@@ -168,9 +157,7 @@
 
                     <div class="explicacao-detalhada">
                         <h3>5. Fronteiras e Crises</h3>
-                        <p>
-                            As <strong>fronteiras</strong> e as <strong>crises</strong> são temas geopolíticos atuais:
-                        </p>
+                        <p>As <strong>fronteiras</strong> e as <strong>crises</strong> são temas geopolíticos atuais:</p>
                         <ul>
                             <li><strong>Fronteiras em disputa:</strong> Israel-Palestina, Rússia-Ucrânia, Caxemira (Índia-Paquistão).</li>
                             <li><strong>Crises humanitárias:</strong> Venezuela, Síria, Afeganistão, Iêmen, Sudão do Sul.</li>
@@ -187,13 +174,11 @@
 
                     <div class="dica-saphius">
                         <h3>Dica Saphius</h3>
-                        <p>
-                            Memorize: <strong>"Ambientais + Migrações + Fome + Energia + Fronteiras + Crises = Atualidades"</strong>.
-                        </p>
+                        <p>Memorize: <strong>"Ambientais + Migrações + Fome + Energia + Fronteiras + Crises = Atualidades"</strong>.</p>
                     </div>
                 </div>
 
-                <!-- ===== EXERCÍCIOS (15 QUESTÕES) ===== -->
+                <!-- ===== EXERCÍCIOS ===== -->
                 <div id="exercicios" class="aba-conteudo">
                     <h2 style="color:#2e7d32;"> Exercícios - Atualidades</h2>
                     <p style="color:#666;">15 questões (5 Fáceis, 5 Médias, 5 Difíceis)</p>
@@ -454,31 +439,26 @@
                                 <p>Desmatamento, queimadas, poluição</p>
                                 <span class="resumo-tag">Sustentabilidade</span>
                             </div>
-
                             <div class="resumo-card-item">
                                 <h3>Migrações</h3>
                                 <p>Econômicas, forçadas, ambientais</p>
                                 <span class="resumo-tag">Refugiados</span>
                             </div>
-
                             <div class="resumo-card-item">
                                 <h3>Fome</h3>
                                 <p>Desigualdade, conflitos, climáticas</p>
                                 <span class="resumo-tag">Segurança Alimentar</span>
                             </div>
-
                             <div class="resumo-card-item">
                                 <h3>Energia</h3>
                                 <p>Renováveis, não renováveis, transição</p>
                                 <span class="resumo-tag">Matriz Energética</span>
                             </div>
-
                             <div class="resumo-card-item">
                                 <h3>Fronteiras</h3>
                                 <p>Disputas territoriais, crises</p>
                                 <span class="resumo-tag">Geopolítica</span>
                             </div>
-
                             <div class="resumo-card-item">
                                 <h3>Crises</h3>
                                 <p>Humanitárias, migratórias, políticas</p>
@@ -498,78 +478,53 @@
                     </div>
                 </div>
 
-                <div id="simulado" class="aba-conteudo">
-                    <h2 style="color:#2e7d32;">Simulado - Atualidades</h2>
-                    <p style="color:#666;">Teste seus conhecimentos com questões estilo ENEM</p>
-
-                    <div class="simulado-card">
-                        <div style="display:flex; gap:20px; flex-wrap:wrap; justify-content:center; margin-bottom:15px;">
-                            <span><strong>15 questões</strong></span>
-                            <span><strong>20 minutos</strong></span>
-                            <span><strong>Nível: Fácil a Difícil</strong></span>
-                        </div>
-                        <p style="color:#555; margin-bottom:15px;">As questões são as mesmas da aba "Exercícios" acima.</p>
-                        <button class="btn-principal" onclick="alert(' Simulado iniciado! Responda todas as 15 questões acima na aba Exercícios.')">
-                            Iniciar simulado
-                        </button>
-                    </div>
-                </div>
-
             </div>
         </main>
     </div>
 
-   <script>
-    function trocarAba(botao, abaId) {
-        document.querySelectorAll('.aba-btn').forEach(b => b.classList.remove('active'));
-        botao.classList.add('active');
-
-        document.querySelectorAll('.aba-conteudo').forEach(c => c.classList.remove('active'));
-        document.getElementById(abaId).classList.add('active');
-    }
-
-    function mostrarResposta(botao) {
-        const exercicioDiv = botao.closest('.exercicio-facil, .exercicio-medio, .exercicio-dificil');
-        const respostaDiv = exercicioDiv.querySelector('.resposta-explicada');
-
-        if (respostaDiv.style.display === 'block') {
-            respostaDiv.style.display = 'none';
-            botao.textContent = 'Ver explicação';
-        } else {
-            respostaDiv.style.display = 'block';
-            botao.textContent = 'Ocultar explicação';
+    <script>
+        function trocarAba(botao, abaId) {
+            document.querySelectorAll('.aba-btn').forEach(b => b.classList.remove('active'));
+            botao.classList.add('active');
+            document.querySelectorAll('.aba-conteudo').forEach(c => c.classList.remove('active'));
+            const alvo = document.getElementById(abaId);
+            if (alvo) { alvo.classList.add('active'); }
         }
-    }
 
-    document.querySelectorAll('.exercicio-alternativas input[type="radio"]').forEach(input => {
-        input.addEventListener('change', verificarAtividade);
-    });
+        function mostrarResposta(botao) {
+            const exercicioDiv = botao.closest('.exercicio-facil, .exercicio-medio, .exercicio-dificil');
+            const respostaDiv = exercicioDiv.querySelector('.resposta-explicada');
 
-    async function verificarAtividade() {
-        const questoes = document.querySelectorAll('.exercicio-alternativas');
-        const respondidas = document.querySelectorAll(
-            '.exercicio-alternativas input[type="radio"]:checked'
-        );
-
-        if (respondidas.length === questoes.length) {
-            try {
-                await fetch('/api/trilha/concluir', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json'
-                    },
-                    body: JSON.stringify({
-                        materia: 'geografia',
-                        topico: 'atualidades'
-                    })
-                });
-
-                alert('Atividade concluída! Seu progresso na Trilha de Estudos foi atualizado.');
-            } catch (erro) {
-                console.error('Erro ao atualizar progresso:', erro);
+            if (respostaDiv.style.display === 'block') {
+                respostaDiv.style.display = 'none';
+                botao.textContent = 'Ver explicação';
+            } else {
+                respostaDiv.style.display = 'block';
+                botao.textContent = 'Ocultar explicação';
             }
         }
-    }
-</script>
+
+        document.querySelectorAll('.exercicio-alternativas input[type="radio"]').forEach(input => {
+            input.addEventListener('change', verificarAtividade);
+        });
+
+        async function verificarAtividade() {
+            const questoes = document.querySelectorAll('.exercicio-alternativas');
+            const respondidas = document.querySelectorAll('.exercicio-alternativas input[type="radio"]:checked');
+
+            if (respondidas.length === questoes.length) {
+                try {
+                    await fetch('/api/trilha/concluir', {
+                        method: 'POST',
+                        headers: {'Content-Type':'application/json'},
+                        body: JSON.stringify({ materia: 'geografia', topico: 'atualidades' })
+                    });
+                    alert('Atividade concluída! Seu progresso na Trilha de Estudos foi atualizado.');
+                } catch (erro) {
+                    console.error('Erro ao atualizar progresso:', erro);
+                }
+            }
+        }
+    </script>
 </body>
 </html>

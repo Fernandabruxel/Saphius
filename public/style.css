@@ -156,3 +156,17 @@ input:focus { border-color: #4caf50; outline: none; }
 .aba-conteudo.active {
     display: block;
 }
+/* ===== CORREÇÃO GERAL PARA CELULAR ===== */
+@media (max-width: 768px) {
+    /* Impede que o texto dos tópicos quebre no meio das palavras */
+    .topico-info h3, 
+    .topico-info p {
+        word-break: normal !important; 
+        overflow-wrap: break-word !important;
+    }
+    
+    /* Arruma os cards de matérias */
+    .subject-card, .feature-card, .card-materia {
+        word-wrap: break-word !important;
+    }
+}

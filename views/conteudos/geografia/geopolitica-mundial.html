@@ -1,41 +1,46 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Geopolítica Mundial - Saphius</title>
     <link rel="stylesheet" href="/style.css">
     <link rel="stylesheet" href="/views/conteudos/geografia/geografia.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <div class="app-container">
         <aside class="sidebar">
             <div class="sidebar-logo"><h2>Saphius</h2></div>
             <ul class="sidebar-menu">
-                <li><a href="/dashboard"><span class="icon"></span> <span>Dashboard</span></a></li>
-                <li><a href="/conteudos"><span class="icon"></span> <span>Conteúdos</span></a></li>
-                <li><a href="/trilha"><span class="icon"></span> <span>Trilha de estudos</span></a></li>
-                <li><a href="/bemestar"><span class="icon"></span> <span>Bem-estar</span></a></li>
-                <li><a href="/perfil"><span class="icon"></span> <span>Perfil</span></a></li>
-                <li><a href="/configuracoes"><span class="icon"></span> <span>Configurações</span></a></li>
-                <li><a href="/ajuda"><span class="icon"></span> <span>Ajuda</span></a></li>
-                <li><a href="/sair"><span class="icon"></span> <span>Sair</span></a></li>
+                <li><a href="/dashboard"><span class="icon"><i class="fas fa-home"></i></span> <span>Dashboard</span></a></li>
+                <li><a href="/conteudos"><span class="icon"><i class="fas fa-book"></i></span> <span>Conteúdos</span></a></li>
+                <li><a href="/trilha"><span class="icon"><i class="fas fa-route"></i></span> <span>Trilha de estudos</span></a></li>
+                <li><a href="/bemestar"><span class="icon"><i class="fas fa-heart"></i></span> <span>Bem-estar</span></a></li>
+                <li><a href="/perfil"><span class="icon"><i class="fas fa-user"></i></span> <span>Perfil</span></a></li>
+                <li><a href="/configuracoes"><span class="icon"><i class="fas fa-cog"></i></span> <span>Configurações</span></a></li>
+                <li><a href="/ajuda"><span class="icon"><i class="fas fa-question-circle"></i></span> <span>Ajuda</span></a></li>
+                <li><a href="/sair"><span class="icon"><i class="fas fa-sign-out-alt"></i></span> <span>Sair</span></a></li>
             </ul>
         </aside>
 
         <main class="main-content">
+            <a href="/geografia" class="btn-voltar-mobile">← Voltar para Geografia</a>
+
             <div class="container">
-                <a href="/geografia" class="voltar"> Voltar para Geografia</a>
+                <a href="/geografia" class="voltar">← Voltar para Geografia</a>
 
                 <h1 style="text-align:center; font-size:2.5em; color:#2e7d32;">Geopolítica Mundial</h1>
                 <p style="color:#666; text-align:center; font-size:1.1em;">Blocos econômicos, Conflitos, Nova ordem mundial, Globalização</p>
 
+                <!-- ABAS (Simulado Removido) -->
                 <div class="abas-navegacao" style="margin:25px 0;">
                     <button class="aba-btn active" onclick="trocarAba(this, 'conteudo')">Conteúdo</button>
                     <button class="aba-btn" onclick="trocarAba(this, 'exercicios')">Exercícios</button>
                     <button class="aba-btn" onclick="trocarAba(this, 'resumo')">Resumo</button>
-                    <button class="aba-btn" onclick="trocarAba(this, 'simulado')">Simulado</button>
                 </div>
 
+                <!-- ===== CONTEÚDO ===== -->
                 <div id="conteudo" class="aba-conteudo active">
 
                     <div class="explicacao-detalhada">
@@ -56,26 +61,22 @@
 
                     <div class="explicacao-detalhada">
                         <h3>1. Blocos Econômicos</h3>
-                        <p>
-                            Os <strong>blocos econômicos</strong> são acordos entre países para facilitar o comércio 
-                            e a integração econômica. Eles podem ser:
-                        </p>
+                        <p>Os <strong>blocos econômicos</strong> são acordos entre países para facilitar o comércio 
+                        e a integração econômica. Eles podem ser:</p>
                         <ul>
                             <li><strong>Zona de livre comércio:</strong> Redução ou eliminação de tarifas alfandegárias entre os países membros.</li>
                             <li><strong>União aduaneira:</strong> Zona de livre comércio com tarifa externa comum para países não membros.</li>
                             <li><strong>Mercado comum:</strong> Livre circulação de mercadorias, serviços, capitais e pessoas.</li>
                             <li><strong>União econômica e monetária:</strong> Mercado comum com moeda única e políticas econômicas integradas.</li>
                         </ul>
-                        <p>
-                            <strong>Principais blocos econômicos:</strong>
-                            <ul>
-                                <li><strong>União Europeia (UE):</strong> Bloco mais integrado, com moeda única (Euro) e livre circulação de pessoas. Possui 27 países membros.</li>
-                                <li><strong>Mercosul:</strong> Bloco sul-americano, com Brasil, Argentina, Uruguai, Paraguai e Venezuela (suspensa).</li>
-                                <li><strong>USMCA (ex-NAFTA):</strong> Acordo entre EUA, México e Canadá.</li>
-                                <li><strong>APEC:</strong> Cooperação econômica na Ásia-Pacífico, com 21 membros.</li>
-                                <li><strong>BRICS:</strong> Grupo de países emergentes (Brasil, Rússia, Índia, China e África do Sul).</li>
-                            </ul>
-                        </p>
+                        <p><strong>Principais blocos econômicos:</strong></p>
+                        <ul>
+                            <li><strong>União Europeia (UE):</strong> Bloco mais integrado, com moeda única (Euro) e livre circulação de pessoas. Possui 27 países membros.</li>
+                            <li><strong>Mercosul:</strong> Bloco sul-americano, com Brasil, Argentina, Uruguai, Paraguai e Venezuela (suspensa).</li>
+                            <li><strong>USMCA (ex-NAFTA):</strong> Acordo entre EUA, México e Canadá.</li>
+                            <li><strong>APEC:</strong> Cooperação econômica na Ásia-Pacífico, com 21 membros.</li>
+                            <li><strong>BRICS:</strong> Grupo de países emergentes (Brasil, Rússia, Índia, China e África do Sul).</li>
+                        </ul>
                         <div class="enem-dica">
                             <strong>DICA ENEM:</strong>
                             <p>O ENEM cobra a diferença entre <strong>zonas de livre comércio</strong>, 
@@ -85,11 +86,9 @@
 
                     <div class="explicacao-detalhada">
                         <h3>2. Conflitos Internacionais</h3>
-                        <p>
-                            Os conflitos internacionais são disputas entre países ou grupos por questões 
-                            <strong>territoriais</strong>, <strong>políticas</strong>, <strong>econômicas</strong> 
-                            ou <strong>religiosas</strong>. Os principais conflitos atuais e históricos são:
-                        </p>
+                        <p>Os conflitos internacionais são disputas entre países ou grupos por questões 
+                        <strong>territoriais</strong>, <strong>políticas</strong>, <strong>econômicas</strong> 
+                        ou <strong>religiosas</strong>. Os principais conflitos atuais e históricos são:</p>
                         <ul>
                             <li><strong>Guerra na Ucrânia (2022-presente):</strong> Conflito entre Rússia e Ucrânia, com implicações geopolíticas globais.</li>
                             <li><strong>Guerra Civil na Síria (2011-presente):</strong> Conflito entre governo e rebeldes, com intervenção internacional.</li>
@@ -107,11 +106,9 @@
 
                     <div class="explicacao-detalhada">
                         <h3>3. Nova Ordem Mundial</h3>
-                        <p>
-                            A <strong>Nova Ordem Mundial</strong> refere-se ao período pós-Guerra Fria (1991), 
-                            com a predominância dos <strong>Estados Unidos</strong> como única superpotência e 
-                            a ascensão de novos atores como a <strong>China</strong> e a <strong>Rússia</strong>.
-                        </p>
+                        <p>A <strong>Nova Ordem Mundial</strong> refere-se ao período pós-Guerra Fria (1991), 
+                        com a predominância dos <strong>Estados Unidos</strong> como única superpotência e 
+                        a ascensão de novos atores como a <strong>China</strong> e a <strong>Rússia</strong>.</p>
                         <ul>
                             <li><strong>Unipolaridade (1991-2000):</strong> EUA como potência dominante.</li>
                             <li><strong>Multipolaridade (2000-presente):</strong> Ascensão de novas potências (China, Índia, Brasil).</li>
@@ -128,10 +125,8 @@
 
                     <div class="explicacao-detalhada">
                         <h3>4. Globalização e seus Impactos</h3>
-                        <p>
-                            A <strong>globalização</strong> é o processo de integração econômica, cultural e política 
-                            entre os países. Seus principais impactos são:
-                        </p>
+                        <p>A <strong>globalização</strong> é o processo de integração econômica, cultural e política 
+                        entre os países. Seus principais impactos são:</p>
                         <ul>
                             <li><strong>Econômicos:</strong> Aumento do comércio internacional, investimentos estrangeiros, formação de cadeias globais de produção.</li>
                             <li><strong>Culturais:</strong> Difusão de hábitos, valores e produtos culturais (cinema, música, culinária).</li>
@@ -148,13 +143,11 @@
 
                     <div class="dica-saphius">
                         <h3>Dica Saphius</h3>
-                        <p>
-                            Memorize: <strong>"Blocos Econômicos + Conflitos + Nova Ordem Mundial + Globalização = Geopolítica Mundial"</strong>.
-                        </p>
+                        <p>Memorize: <strong>"Blocos Econômicos + Conflitos + Nova Ordem Mundial + Globalização = Geopolítica Mundial"</strong>.</p>
                     </div>
                 </div>
 
-                <!-- ===== EXERCÍCIOS (15 QUESTÕES) ===== -->
+                <!-- ===== EXERCÍCIOS ===== -->
                 <div id="exercicios" class="aba-conteudo">
                     <h2 style="color:#2e7d32;"> Exercícios - Geopolítica Mundial</h2>
                     <p style="color:#666;">15 questões (5 Fáceis, 5 Médias, 5 Difíceis)</p>
@@ -172,7 +165,7 @@
                         <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
                         <div class="resposta-explicada">
                             <p><strong>Resposta correta: B) Mercosul</strong></p>
-                            <p><strong>Explicação:</strong> O Mercosul é o bloco econômico da América do Sul, formado por Brasil, Argentina, Uruguai e Paraguai. Foi criado em 1991 com o Tratado de Assunção.</p>
+                            <p><strong>Explicação:</strong> O Mercosul é o bloco econômico da América do Sul, formado por Brasil, Argentina, Uruguai e Paraguai.</p>
                         </div>
                     </div>
 
@@ -188,7 +181,7 @@
                         <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
                         <div class="resposta-explicada">
                             <p><strong>Resposta correta: B) Euro</strong></p>
-                            <p><strong>Explicação:</strong> O Euro é a moeda utilizada por 19 dos 27 países da União Europeia, sendo uma das moedas mais importantes do mundo.</p>
+                            <p><strong>Explicação:</strong> O Euro é a moeda utilizada por 19 dos 27 países da União Europeia.</p>
                         </div>
                     </div>
 
@@ -204,7 +197,7 @@
                         <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
                         <div class="resposta-explicada">
                             <p><strong>Resposta correta: B) 1991</strong></p>
-                            <p><strong>Explicação:</strong> A Guerra Fria terminou em 1991, com a dissolução da União Soviética, encerrando o período de bipolaridade entre EUA e URSS.</p>
+                            <p><strong>Explicação:</strong> A Guerra Fria terminou em 1991, com a dissolução da União Soviética.</p>
                         </div>
                     </div>
 
@@ -220,7 +213,7 @@
                         <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
                         <div class="resposta-explicada">
                             <p><strong>Resposta correta: B) Emergentes</strong></p>
-                            <p><strong>Explicação:</strong> O BRICS é formado por países emergentes: Brasil, Rússia, Índia, China e África do Sul, que buscam maior influência global.</p>
+                            <p><strong>Explicação:</strong> O BRICS é formado por países emergentes: Brasil, Rússia, Índia, China e África do Sul.</p>
                         </div>
                     </div>
 
@@ -236,7 +229,7 @@
                         <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
                         <div class="resposta-explicada">
                             <p><strong>Resposta correta: B) Integração econômica e cultural</strong></p>
-                            <p><strong>Explicação:</strong> A globalização é o processo de integração econômica, cultural e política entre os países, facilitada pelos avanços tecnológicos.</p>
+                            <p><strong>Explicação:</strong> A globalização é o processo de integração econômica, cultural e política entre os países.</p>
                         </div>
                     </div>
 
@@ -253,7 +246,7 @@
                         <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
                         <div class="resposta-explicada">
                             <p><strong>Resposta correta: D) União econômica e monetária</strong></p>
-                            <p><strong>Explicação:</strong> A UE é o bloco mais integrado, com moeda única (Euro), livre circulação de pessoas, mercadorias, serviços e capitais, além de políticas econômicas integradas.</p>
+                            <p><strong>Explicação:</strong> A UE é o bloco mais integrado, com moeda única (Euro), livre circulação de pessoas e políticas econômicas integradas.</p>
                         </div>
                     </div>
 
@@ -269,7 +262,7 @@
                         <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
                         <div class="resposta-explicada">
                             <p><strong>Resposta correta: A) Territoriais e religiosas</strong></p>
-                            <p><strong>Explicação:</strong> O conflito entre Israel e Palestina envolve questões territoriais (Cisjordânia, Faixa de Gaza) e religiosas (judaísmo, islamismo e cristianismo).</p>
+                            <p><strong>Explicação:</strong> O conflito entre Israel e Palestina envolve questões territoriais (Cisjordânia, Faixa de Gaza) e religiosas.</p>
                         </div>
                     </div>
 
@@ -285,7 +278,7 @@
                         <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
                         <div class="resposta-explicada">
                             <p><strong>Resposta correta: B) Multipolaridade</strong></p>
-                            <p><strong>Explicação:</strong> A nova ordem mundial é caracterizada pela multipolaridade, com várias potências emergentes (China, Rússia, Índia, Brasil) que disputam influência global.</p>
+                            <p><strong>Explicação:</strong> A nova ordem mundial é caracterizada pela multipolaridade, com várias potências emergentes (China, Rússia, Índia, Brasil).</p>
                         </div>
                     </div>
 
@@ -301,7 +294,7 @@
                         <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
                         <div class="resposta-explicada">
                             <p><strong>Resposta correta: B) Difusão cultural e aumento do comércio</strong></p>
-                            <p><strong>Explicação:</strong> A globalização difunde culturas e aumenta o comércio internacional, mas também gera desigualdades e dependência econômica.</p>
+                            <p><strong>Explicação:</strong> A globalização difunde culturas e aumenta o comércio internacional, mas também gera desigualdades.</p>
                         </div>
                     </div>
 
@@ -317,7 +310,7 @@
                         <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
                         <div class="resposta-explicada">
                             <p><strong>Resposta correta: D) Todas as alternativas estão corretas</strong></p>
-                            <p><strong>Explicação:</strong> A guerra na Ucrânia envolve potências nucleares (Rússia e OTAN), afeta o fornecimento de energia (gás, petróleo) e altera a ordem mundial com novas alianças.</p>
+                            <p><strong>Explicação:</strong> A guerra na Ucrânia envolve potências nucleares, afeta o fornecimento de energia e altera a ordem mundial.</p>
                         </div>
                     </div>
 
@@ -334,7 +327,7 @@
                         <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
                         <div class="resposta-explicada">
                             <p><strong>Resposta correta: B) EUA, Canadá e México</strong></p>
-                            <p><strong>Explicação:</strong> O USMCA (anteriormente NAFTA) é o bloco econômico formado por EUA, Canadá e México, que elimina barreiras comerciais entre os três países.</p>
+                            <p><strong>Explicação:</strong> O USMCA (anteriormente NAFTA) é o bloco econômico formado por EUA, Canadá e México.</p>
                         </div>
                     </div>
 
@@ -350,7 +343,7 @@
                         <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
                         <div class="resposta-explicada">
                             <p><strong>Resposta correta: B) Industrialização e tecnologia</strong></p>
-                            <p><strong>Explicação:</strong> A China se tornou uma potência global devido à industrialização acelerada, ao avanço tecnológico (inteligência artificial, 5G) e ao investimento em infraestrutura.</p>
+                            <p><strong>Explicação:</strong> A China se tornou uma potência global devido à industrialização acelerada e ao avanço tecnológico.</p>
                         </div>
                     </div>
 
@@ -366,7 +359,7 @@
                         <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
                         <div class="resposta-explicada">
                             <p><strong>Resposta correta: D) Todas as alternativas estão corretas</strong></p>
-                            <p><strong>Explicação:</strong> A UE enfrenta a crise migratória (refugiados da Síria e África), a crise econômica (dívida pública) e o Brexit (saída do Reino Unido em 2020).</p>
+                            <p><strong>Explicação:</strong> A UE enfrenta a crise migratória, a crise econômica e o Brexit.</p>
                         </div>
                     </div>
 
@@ -382,7 +375,7 @@
                         <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
                         <div class="resposta-explicada">
                             <p><strong>Resposta correta: B) Disputa ideológica entre capitalismo e socialismo</strong></p>
-                            <p><strong>Explicação:</strong> A Guerra Fria foi uma disputa ideológica e geopolítica entre EUA (capitalismo) e URSS (socialismo), sem confronto militar direto.</p>
+                            <p><strong>Explicação:</strong> A Guerra Fria foi uma disputa ideológica e geopolítica entre EUA (capitalismo) e URSS (socialismo).</p>
                         </div>
                     </div>
 
@@ -398,7 +391,7 @@
                         <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
                         <div class="resposta-explicada">
                             <p><strong>Resposta correta: D) Todas as alternativas estão corretas</strong></p>
-                            <p><strong>Explicação:</strong> A crise na Síria envolve conflito étnico (curdos, árabes), guerra civil (governo vs rebeldes) e intervenção de potências internacionais (Rússia, EUA, Turquia).</p>
+                            <p><strong>Explicação:</strong> A crise na Síria envolve conflito étnico, guerra civil e intervenção de potências internacionais.</p>
                         </div>
                     </div>
                 </div>
@@ -415,31 +408,26 @@
                                 <p>UE, Mercosul, USMCA, APEC, BRICS</p>
                                 <span class="resumo-tag">Integração</span>
                             </div>
-
                             <div class="resumo-card-item">
                                 <h3>Conflitos</h3>
                                 <p>Ucrânia, Síria, Israel-Palestina</p>
                                 <span class="resumo-tag">Geopolítica</span>
                             </div>
-
                             <div class="resumo-card-item">
                                 <h3>Nova Ordem Mundial</h3>
                                 <p>Multipolaridade pós-Guerra Fria</p>
                                 <span class="resumo-tag">Potências Emergentes</span>
                             </div>
-
                             <div class="resumo-card-item">
                                 <h3>Globalização</h3>
                                 <p>Integração econômica e cultural</p>
                                 <span class="resumo-tag">Interdependência</span>
                             </div>
-
                             <div class="resumo-card-item">
                                 <h3>BRICS</h3>
                                 <p>Brasil, Rússia, Índia, China, África do Sul</p>
                                 <span class="resumo-tag">Emergentes</span>
                             </div>
-
                             <div class="resumo-card-item">
                                 <h3>Organizações</h3>
                                 <p>ONU, OMC, FMI, Banco Mundial</p>
@@ -459,79 +447,53 @@
                     </div>
                 </div>
 
-                <div id="simulado" class="aba-conteudo">
-                    <h2 style="color:#2e7d32;">Simulado - Geopolítica Mundial</h2>
-                    <p style="color:#666;">Teste seus conhecimentos com questões estilo ENEM</p>
-
-                    <div class="simulado-card">
-                        <div style="display:flex; gap:20px; flex-wrap:wrap; justify-content:center; margin-bottom:15px;">
-                            <span><strong>15 questões</strong></span>
-                            <span><strong>20 minutos</strong></span>
-                            <span><strong>Nível: Fácil a Difícil</strong></span>
-                        </div>
-                        <p style="color:#555; margin-bottom:15px;">As questões são as mesmas da aba "Exercícios" acima.</p>
-                        <button class="btn-principal" onclick="alert(' Simulado iniciado! Responda todas as 15 questões acima na aba Exercícios.')">
-                            Iniciar simulado
-                        </button>
-                    </div>
-                </div>
-
             </div>
         </main>
     </div>
 
     <script>
-    function trocarAba(botao, abaId) {
-        document.querySelectorAll('.aba-btn').forEach(b => b.classList.remove('active'));
-        botao.classList.add('active');
-
-        document.querySelectorAll('.aba-conteudo').forEach(c => c.classList.remove('active'));
-        document.getElementById(abaId).classList.add('active');
-    }
-
-    function mostrarResposta(botao) {
-        const exercicioDiv = botao.closest('.exercicio-facil, .exercicio-medio, .exercicio-dificil');
-        const respostaDiv = exercicioDiv.querySelector('.resposta-explicada');
-
-        if (respostaDiv.style.display === 'block') {
-            respostaDiv.style.display = 'none';
-            botao.textContent = 'Ver explicação';
-        } else {
-            respostaDiv.style.display = 'block';
-            botao.textContent = 'Ocultar explicação';
+        function trocarAba(botao, abaId) {
+            document.querySelectorAll('.aba-btn').forEach(b => b.classList.remove('active'));
+            botao.classList.add('active');
+            document.querySelectorAll('.aba-conteudo').forEach(c => c.classList.remove('active'));
+            const alvo = document.getElementById(abaId);
+            if (alvo) { alvo.classList.add('active'); }
         }
-    }
 
-    document.querySelectorAll('.exercicio-alternativas input[type="radio"]').forEach(input => {
-        input.addEventListener('change', verificarAtividade);
-    });
+        function mostrarResposta(botao) {
+            const exercicioDiv = botao.closest('.exercicio-facil, .exercicio-medio, .exercicio-dificil');
+            const respostaDiv = exercicioDiv.querySelector('.resposta-explicada');
 
-    async function verificarAtividade() {
-        const questoes = document.querySelectorAll('.exercicio-alternativas');
-        const respondidas = document.querySelectorAll(
-            '.exercicio-alternativas input[type="radio"]:checked'
-        );
-
-        if (respondidas.length === questoes.length) {
-            try {
-                await fetch('/api/trilha/concluir', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json'
-                    },
-                    body: JSON.stringify({
-                        materia: 'geografia',
-                        topico: 'geopolitica-mundial'
-                    })
-                });
-
-                alert('Atividade concluída! Seu progresso na Trilha de Estudos foi atualizado.');
-            } catch (erro) {
-                console.error('Erro ao atualizar progresso:', erro);
+            if (respostaDiv.style.display === 'block') {
+                respostaDiv.style.display = 'none';
+                botao.textContent = 'Ver explicação';
+            } else {
+                respostaDiv.style.display = 'block';
+                botao.textContent = 'Ocultar explicação';
             }
         }
-    }
-</script>
 
+        document.querySelectorAll('.exercicio-alternativas input[type="radio"]').forEach(input => {
+            input.addEventListener('change', verificarAtividade);
+        });
+
+        async function verificarAtividade() {
+            const questoes = document.querySelectorAll('.exercicio-alternativas');
+            const respondidas = document.querySelectorAll('.exercicio-alternativas input[type="radio"]:checked');
+
+            if (respondidas.length === questoes.length) {
+                try {
+                    await fetch('/api/trilha/concluir', {
+                        method: 'POST',
+                        headers: {'Content-Type':'application/json'},
+                        body: JSON.stringify({ materia: 'geografia', topico: 'geopolitica-mundial' })
+                    });
+                    alert('Atividade concluída! Seu progresso na Trilha de Estudos foi atualizado.');
+                } catch (erro) {
+                    console.error('Erro ao atualizar progresso:', erro);
+                }
+            }
+        }
+    </script>
 </body>
 </html>

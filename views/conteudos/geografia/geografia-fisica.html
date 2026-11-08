@@ -1,44 +1,48 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Geografia Física do Brasil - Saphius</title>
     <link rel="stylesheet" href="/style.css">
     <link rel="stylesheet" href="/views/conteudos/geografia/geografia.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <div class="app-container">
         <aside class="sidebar">
             <div class="sidebar-logo"><h2>Saphius</h2></div>
             <ul class="sidebar-menu">
-                <li><a href="/dashboard"><span class="icon"></span> <span>Dashboard</span></a></li>
-                <li><a href="/conteudos"><span class="icon"></span> <span>Conteúdos</span></a></li>
-                <li><a href="/trilha"><span class="icon"></span> <span>Trilha de estudos</span></a></li>
-                <li><a href="/bemestar"><span class="icon"></span> <span>Bem-estar</span></a></li>
-                <li><a href="/perfil"><span class="icon"></span> <span>Perfil</span></a></li>
-                <li><a href="/configuracoes"><span class="icon"></span> <span>Configurações</span></a></li>
-                <li><a href="/ajuda"><span class="icon"></span> <span>Ajuda</span></a></li>
-                <li><a href="/sair"><span class="icon"></span> <span>Sair</span></a></li>
+                <li><a href="/dashboard"><span class="icon"><i class="fas fa-home"></i></span> <span>Dashboard</span></a></li>
+                <li><a href="/conteudos"><span class="icon"><i class="fas fa-book"></i></span> <span>Conteúdos</span></a></li>
+                <li><a href="/trilha"><span class="icon"><i class="fas fa-route"></i></span> <span>Trilha de estudos</span></a></li>
+                <li><a href="/bemestar"><span class="icon"><i class="fas fa-heart"></i></span> <span>Bem-estar</span></a></li>
+                <li><a href="/perfil"><span class="icon"><i class="fas fa-user"></i></span> <span>Perfil</span></a></li>
+                <li><a href="/configuracoes"><span class="icon"><i class="fas fa-cog"></i></span> <span>Configurações</span></a></li>
+                <li><a href="/ajuda"><span class="icon"><i class="fas fa-question-circle"></i></span> <span>Ajuda</span></a></li>
+                <li><a href="/sair"><span class="icon"><i class="fas fa-sign-out-alt"></i></span> <span>Sair</span></a></li>
             </ul>
         </aside>
 
         <main class="main-content">
+            <a href="/geografia" class="btn-voltar-mobile">← Voltar para Geografia</a>
+
             <div class="container">
-                <a href="/geografia" class="voltar"> Voltar para Geografia</a>
+                <a href="/geografia" class="voltar">← Voltar para Geografia</a>
 
                 <h1 style="text-align:center; font-size:2.5em; color:#2e7d32;">Geografia Física do Brasil</h1>
                 <p style="color:#666; text-align:center; font-size:1.1em;">Relevo, Clima, Hidrografia, Vegetação e Biomas brasileiros</p>
 
+                <!-- ABAS (Simulado Removido) -->
                 <div class="abas-navegacao" style="margin:25px 0;">
                     <button class="aba-btn active" onclick="trocarAba(this, 'conteudo')">Conteúdo</button>
                     <button class="aba-btn" onclick="trocarAba(this, 'exercicios')">Exercícios</button>
                     <button class="aba-btn" onclick="trocarAba(this, 'resumo')">Resumo</button>
-                    <button class="aba-btn" onclick="trocarAba(this, 'simulado')">Simulado</button>
                 </div>
 
+                <!-- ===== CONTEÚDO ===== -->
                 <div id="conteudo" class="aba-conteudo active">
 
-                    <!-- INTRODUÇÃO -->
                     <div class="explicacao-detalhada">
                         <h3>O que é a Geografia Física do Brasil?</h3>
                         <p>
@@ -56,26 +60,21 @@
                         </div>
                     </div>
 
-                    <!-- SEÇÃO 1: RELEVO -->
                     <div class="explicacao-detalhada">
                         <h3>1. Relevo Brasileiro</h3>
-                        <p>
-                            O relevo do Brasil é caracterizado por <strong>planaltos, planícies e depressões</strong>, 
-                            formando um território de altitudes modestas. As principais unidades de relevo são:
-                        </p>
+                        <p>O relevo do Brasil é caracterizado por <strong>planaltos, planícies e depressões</strong>, 
+                        formando um território de altitudes modestas. As principais unidades de relevo são:</p>
                         <ul>
                             <li><strong>Planaltos:</strong> Áreas elevadas, como o Planalto Central, o Planalto Atlântico e o Planalto da Borborema.</li>
                             <li><strong>Planícies:</strong> Áreas baixas, como a Planície Amazônica, a Planície do Pantanal e a Planície Costeira.</li>
                             <li><strong>Depressões:</strong> Áreas rebaixadas entre planaltos, como a Depressão Sertaneja e a Depressão Periférica.</li>
                         </ul>
-                        <p>
-                            <strong>Características do relevo brasileiro:</strong>
-                            <ul>
-                                <li>O Brasil não possui grandes cadeias montanhosas (como os Andes).</li>
-                                <li>A altitude máxima é o Pico da Neblina (2.995 m), na Amazônia.</li>
-                                <li>O relevo influencia a ocupação humana, a agricultura e a urbanização.</li>
-                            </ul>
-                        </p>
+                        <p><strong>Características do relevo brasileiro:</strong></p>
+                        <ul>
+                            <li>O Brasil não possui grandes cadeias montanhosas (como os Andes).</li>
+                            <li>A altitude máxima é o Pico da Neblina (2.995 m), na Amazônia.</li>
+                            <li>O relevo influencia a ocupação humana, a agricultura e a urbanização.</li>
+                        </ul>
                         <div class="enem-dica">
                             <strong>DICA ENEM:</strong>
                             <p>O ENEM costuma cobrar a <strong>classificação do relevo</strong> e sua relação com a 
@@ -83,14 +82,11 @@
                         </div>
                     </div>
 
-                    <!-- SEÇÃO 2: CLIMA -->
                     <div class="explicacao-detalhada">
                         <h3>2. Clima Brasileiro</h3>
-                        <p>
-                            O Brasil possui uma grande diversidade climática, influenciada pela <strong>latitude</strong>, 
-                            <strong>altitude</strong>, <strong>massas de ar</strong> e <strong>correntes marítimas</strong>. 
-                            Os principais climas são:
-                        </p>
+                        <p>O Brasil possui uma grande diversidade climática, influenciada pela <strong>latitude</strong>, 
+                        <strong>altitude</strong>, <strong>massas de ar</strong> e <strong>correntes marítimas</strong>. 
+                        Os principais climas são:</p>
                         <ul>
                             <li><strong>Clima Equatorial:</strong> Quente e úmido, na região Norte (Amazônia).</li>
                             <li><strong>Clima Tropical:</strong> Quente, com estações seca e chuvosa, no Centro-Oeste e Sudeste.</li>
@@ -98,14 +94,12 @@
                             <li><strong>Clima Subtropical:</strong> Com estações bem definidas, no Sul do país.</li>
                             <li><strong>Clima Tropical de Altitude:</strong> Em áreas elevadas, como a Serra da Mantiqueira.</li>
                         </ul>
-                        <p>
-                            <strong>Fatores que influenciam o clima:</strong>
-                            <ul>
-                                <li><strong>Latitude:</strong> O Brasil está localizado na Zona Intertropical, com clima predominantemente quente.</li>
-                                <li><strong>Altitude:</strong> Áreas elevadas têm temperaturas mais amenas.</li>
-                                <li><strong>Massas de ar:</strong> A influência de massas de ar como a Equatorial e a Tropical.</li>
-                            </ul>
-                        </p>
+                        <p><strong>Fatores que influenciam o clima:</strong></p>
+                        <ul>
+                            <li><strong>Latitude:</strong> O Brasil está localizado na Zona Intertropical, com clima predominantemente quente.</li>
+                            <li><strong>Altitude:</strong> Áreas elevadas têm temperaturas mais amenas.</li>
+                            <li><strong>Massas de ar:</strong> A influência de massas de ar como a Equatorial e a Tropical.</li>
+                        </ul>
                         <div class="enem-dica">
                             <strong>DICA ENEM:</strong>
                             <p>Entenda a relação entre <strong>clima</strong> e <strong>vegetação</strong> para 
@@ -113,13 +107,10 @@
                         </div>
                     </div>
 
-                    <!-- SEÇÃO 3: HIDROGRAFIA -->
                     <div class="explicacao-detalhada">
                         <h3>3. Hidrografia Brasileira</h3>
-                        <p>
-                            O Brasil possui uma das maiores redes hidrográficas do mundo, com <strong>12 bacias hidrográficas</strong>. 
-                            As principais são:
-                        </p>
+                        <p>O Brasil possui uma das maiores redes hidrográficas do mundo, com <strong>12 bacias hidrográficas</strong>. 
+                        As principais são:</p>
                         <ul>
                             <li><strong>Bacia Amazônica:</strong> A maior do mundo, com o rio Amazonas, responsável por 20% da água doce do planeta.</li>
                             <li><strong>Bacia do São Francisco:</strong> Importante para o Nordeste, com uso para irrigação e geração de energia.</li>
@@ -127,15 +118,13 @@
                             <li><strong>Bacia do Tocantins-Araguaia:</strong> No Centro-Oeste, com grande potencial hidrelétrico.</li>
                             <li><strong>Bacia do Uruguai:</strong> No Sul do país.</li>
                         </ul>
-                        <p>
-                            <strong>Importância das bacias hidrográficas:</strong>
-                            <ul>
-                                <li>Abastecimento de água para a população.</li>
-                                <li>Geração de energia hidrelétrica (cerca de 65% da energia do Brasil).</li>
-                                <li>Irrigação para a agricultura.</li>
-                                <li>Transporte fluvial.</li>
-                            </ul>
-                        </p>
+                        <p><strong>Importância das bacias hidrográficas:</strong></p>
+                        <ul>
+                            <li>Abastecimento de água para a população.</li>
+                            <li>Geração de energia hidrelétrica (cerca de 65% da energia do Brasil).</li>
+                            <li>Irrigação para a agricultura.</li>
+                            <li>Transporte fluvial.</li>
+                        </ul>
                         <div class="enem-dica">
                             <strong>DICA ENEM:</strong>
                             <p>O ENEM cobra a <strong>importância das bacias hidrográficas</strong> para a 
@@ -143,13 +132,10 @@
                         </div>
                     </div>
 
-                    <!-- SEÇÃO 4: VEGETAÇÃO E BIOMAS -->
                     <div class="explicacao-detalhada">
                         <h3>4. Vegetação e Biomas Brasileiros</h3>
-                        <p>
-                            O Brasil abriga <strong>6 biomas principais</strong>, que são formações vegetais com 
-                            características climáticas e ecológicas específicas:
-                        </p>
+                        <p>O Brasil abriga <strong>6 biomas principais</strong>, que são formações vegetais com 
+                        características climáticas e ecológicas específicas:</p>
                         <ul>
                             <li><strong>Amazônia:</strong> A maior floresta tropical do mundo, com a maior biodiversidade do planeta.</li>
                             <li><strong>Cerrado:</strong> Savana brasileira, com grande biodiversidade e vegetação rasteira.</li>
@@ -158,17 +144,15 @@
                             <li><strong>Pantanal:</strong> Uma das maiores áreas úmidas do mundo, com grande diversidade de fauna e flora.</li>
                             <li><strong>Pampa:</strong> Vegetação campestre no Sul do Brasil, com campos e pastagens.</li>
                         </ul>
-                        <p>
-                            <strong>Características dos biomas:</strong>
-                            <ul>
-                                <li><strong>Amazônia:</strong> Clima equatorial, floresta densa, maior biodiversidade.</li>
-                                <li><strong>Cerrado:</strong> Clima tropical, árvores retorcidas, savana.</li>
-                                <li><strong>Mata Atlântica:</strong> Clima tropical úmido, floresta densa.</li>
-                                <li><strong>Caatinga:</strong> Clima semiárido, vegetação espinhosa.</li>
-                                <li><strong>Pantanal:</strong> Clima tropical, área alagável.</li>
-                                <li><strong>Pampa:</strong> Clima subtropical, campos.</li>
-                            </ul>
-                        </p>
+                        <p><strong>Características dos biomas:</strong></p>
+                        <ul>
+                            <li><strong>Amazônia:</strong> Clima equatorial, floresta densa, maior biodiversidade.</li>
+                            <li><strong>Cerrado:</strong> Clima tropical, árvores retorcidas, savana.</li>
+                            <li><strong>Mata Atlântica:</strong> Clima tropical úmido, floresta densa.</li>
+                            <li><strong>Caatinga:</strong> Clima semiárido, vegetação espinhosa.</li>
+                            <li><strong>Pantanal:</strong> Clima tropical, área alagável.</li>
+                            <li><strong>Pampa:</strong> Clima subtropical, campos.</li>
+                        </ul>
                         <div class="enem-dica">
                             <strong>DICA ENEM:</strong>
                             <p>O ENEM adora questões sobre <strong>biomas brasileiros</strong>, suas 
@@ -176,20 +160,17 @@
                         </div>
                     </div>
 
-                    <!-- DICA FINAL -->
                     <div class="dica-saphius">
                         <h3>Dica Saphius</h3>
-                        <p>
-                            Memorize: <strong>"Relevo + Clima + Hidrografia + Vegetação = Geografia Física"</strong>. 
-                            Relacione os <strong>biomas</strong> com os <strong>climas</strong> para entender 
-                            as características do Brasil.
-                        </p>
+                        <p>Memorize: <strong>"Relevo + Clima + Hidrografia + Vegetação = Geografia Física"</strong>. 
+                        Relacione os <strong>biomas</strong> com os <strong>climas</strong> para entender 
+                        as características do Brasil.</p>
                     </div>
                 </div>
 
-                <!-- ===== EXERCÍCIOS (15 QUESTÕES) ===== -->
+                <!-- ===== EXERCÍCIOS ===== -->
                 <div id="exercicios" class="aba-conteudo">
-                    <h2 style="color:#2e7d32;">✏️ Exercícios - Geografia Física</h2>
+                    <h2 style="color:#2e7d32;"> Exercícios - Geografia Física</h2>
                     <p style="color:#666;">15 questões (5 Fáceis, 5 Médias, 5 Difíceis)</p>
 
                     <!-- 5 FÁCEIS -->
@@ -205,7 +186,7 @@
                         <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
                         <div class="resposta-explicada">
                             <p><strong>Resposta correta: B) Amazônia</strong></p>
-                            <p><strong>Explicação:</strong> A Amazônia é o maior bioma brasileiro, cobrindo cerca de 49% do território nacional. Ela é a maior floresta tropical do mundo e abriga a maior biodiversidade do planeta.</p>
+                            <p><strong>Explicação:</strong> A Amazônia é o maior bioma brasileiro, cobrindo cerca de 49% do território nacional.</p>
                         </div>
                     </div>
 
@@ -221,7 +202,7 @@
                         <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
                         <div class="resposta-explicada">
                             <p><strong>Resposta correta: C) Equatorial</strong></p>
-                            <p><strong>Explicação:</strong> A região Norte tem clima equatorial, quente e úmido durante todo o ano. É influenciado pela massa de ar equatorial continental.</p>
+                            <p><strong>Explicação:</strong> A região Norte tem clima equatorial, quente e úmido durante todo o ano.</p>
                         </div>
                     </div>
 
@@ -237,7 +218,7 @@
                         <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
                         <div class="resposta-explicada">
                             <p><strong>Resposta correta: B) Rio Amazonas</strong></p>
-                            <p><strong>Explicação:</strong> O Rio Amazonas é o principal rio da Bacia Amazônica e o maior do mundo em volume de água, com cerca de 6.400 km de extensão.</p>
+                            <p><strong>Explicação:</strong> O Rio Amazonas é o principal rio da Bacia Amazônica e o maior do mundo em volume de água.</p>
                         </div>
                     </div>
 
@@ -253,7 +234,7 @@
                         <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
                         <div class="resposta-explicada">
                             <p><strong>Resposta correta: C) Caatinga</strong></p>
-                            <p><strong>Explicação:</strong> A Caatinga é o bioma típico do semiárido nordestino, com vegetação adaptada à seca (xerófila), incluindo cactos e plantas espinhosas.</p>
+                            <p><strong>Explicação:</strong> A Caatinga é o bioma típico do semiárido nordestino, com vegetação adaptada à seca.</p>
                         </div>
                     </div>
 
@@ -269,7 +250,7 @@
                         <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
                         <div class="resposta-explicada">
                             <p><strong>Resposta correta: B) Amazônia</strong></p>
-                            <p><strong>Explicação:</strong> A Amazônia é considerada o bioma com a maior biodiversidade do planeta, abrigando milhões de espécies de plantas, animais e microrganismos.</p>
+                            <p><strong>Explicação:</strong> A Amazônia é considerada o bioma com a maior biodiversidade do planeta.</p>
                         </div>
                     </div>
 
@@ -286,7 +267,7 @@
                         <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
                         <div class="resposta-explicada">
                             <p><strong>Resposta correta: B) Planaltos, planícies e depressões</strong></p>
-                            <p><strong>Explicação:</strong> O relevo brasileiro é composto por planaltos, planícies e depressões, com altitudes modestas (a maioria abaixo de 1.000 metros).</p>
+                            <p><strong>Explicação:</strong> O relevo brasileiro é composto por planaltos, planícies e depressões, com altitudes modestas.</p>
                         </div>
                     </div>
 
@@ -302,7 +283,7 @@
                         <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
                         <div class="resposta-explicada">
                             <p><strong>Resposta correta: B) Nordeste (Sertão)</strong></p>
-                            <p><strong>Explicação:</strong> O clima semiárido predomina no Sertão nordestino, com longos períodos de seca e chuvas irregulares.</p>
+                            <p><strong>Explicação:</strong> O clima semiárido predomina no Sertão nordestino, com longos períodos de seca.</p>
                         </div>
                     </div>
 
@@ -334,7 +315,7 @@
                         <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
                         <div class="resposta-explicada">
                             <p><strong>Resposta correta: B) Vegetação rasteira e árvores retorcidas</strong></p>
-                            <p><strong>Explicação:</strong> O Cerrado é uma savana com vegetação rasteira, árvores retorcidas e casca grossa, adaptada ao fogo e à seca.</p>
+                            <p><strong>Explicação:</strong> O Cerrado é uma savana com vegetação rasteira, árvores retorcidas e casca grossa.</p>
                         </div>
                     </div>
 
@@ -399,7 +380,7 @@
                         <button class="btn-explicar" onclick="mostrarResposta(this)">Ver explicação</button>
                         <div class="resposta-explicada">
                             <p><strong>Resposta correta: B) Estações bem definidas e temperaturas amenas</strong></p>
-                            <p><strong>Explicação:</strong> O clima subtropical tem estações bem definidas, com invernos frios e verões amenos, influenciado pela massa de ar polar.</p>
+                            <p><strong>Explicação:</strong> O clima subtropical tem estações bem definidas, com invernos frios e verões amenos.</p>
                         </div>
                     </div>
 
@@ -448,31 +429,26 @@
                                 <p>Planaltos, planícies e depressões</p>
                                 <span class="resumo-tag">Altitude Modesta</span>
                             </div>
-
                             <div class="resumo-card-item">
                                 <h3>Clima</h3>
                                 <p>Equatorial, Tropical, Semiárido, Subtropical</p>
                                 <span class="resumo-tag">Diversidade Climática</span>
                             </div>
-
                             <div class="resumo-card-item">
                                 <h3>Hidrografia</h3>
                                 <p>Bacia Amazônica, São Francisco, Paraná</p>
                                 <span class="resumo-tag">Recursos Hídricos</span>
                             </div>
-
                             <div class="resumo-card-item">
                                 <h3>Biomas</h3>
                                 <p>Amazônia, Cerrado, Caatinga, Pantanal, Mata Atlântica, Pampa</p>
                                 <span class="resumo-tag">6 Biomas</span>
                             </div>
-
                             <div class="resumo-card-item">
                                 <h3>Vegetação</h3>
                                 <p>Florestas, savanas, campos, caatinga</p>
                                 <span class="resumo-tag">Biodiversidade</span>
                             </div>
-
                             <div class="resumo-card-item">
                                 <h3>Importância</h3>
                                 <p>Equilíbrio ambiental e economia</p>
@@ -492,80 +468,53 @@
                     </div>
                 </div>
 
-                <!-- ===== SIMULADO ===== -->
-                <div id="simulado" class="aba-conteudo">
-                    <h2 style="color:#2e7d32;">Simulado - Geografia Física</h2>
-                    <p style="color:#666;">Teste seus conhecimentos com questões estilo ENEM</p>
-
-                    <div class="simulado-card">
-                        <div style="display:flex; gap:20px; flex-wrap:wrap; justify-content:center; margin-bottom:15px;">
-                            <span><strong>15 questões</strong></span>
-                            <span><strong>20 minutos</strong></span>
-                            <span><strong>Nível: Fácil a Difícil</strong></span>
-                        </div>
-                        <p style="color:#555; margin-bottom:15px;">As questões são as mesmas da aba "Exercícios" acima.</p>
-                        <button class="btn-principal" onclick="alert(' Simulado iniciado! Responda todas as 15 questões acima na aba Exercícios.')">
-                            Iniciar simulado
-                        </button>
-                    </div>
-                </div>
-
             </div>
         </main>
     </div>
 
     <script>
-    function trocarAba(botao, abaId) {
-        document.querySelectorAll('.aba-btn').forEach(b => b.classList.remove('active'));
-        botao.classList.add('active');
-
-        document.querySelectorAll('.aba-conteudo').forEach(c => c.classList.remove('active'));
-        document.getElementById(abaId).classList.add('active');
-    }
-
-    function mostrarResposta(botao) {
-        const exercicioDiv = botao.closest('.exercicio-facil, .exercicio-medio, .exercicio-dificil');
-        const respostaDiv = exercicioDiv.querySelector('.resposta-explicada');
-
-        if (respostaDiv.style.display === 'block') {
-            respostaDiv.style.display = 'none';
-            botao.textContent = 'Ver explicação';
-        } else {
-            respostaDiv.style.display = 'block';
-            botao.textContent = 'Ocultar explicação';
+        function trocarAba(botao, abaId) {
+            document.querySelectorAll('.aba-btn').forEach(b => b.classList.remove('active'));
+            botao.classList.add('active');
+            document.querySelectorAll('.aba-conteudo').forEach(c => c.classList.remove('active'));
+            const alvo = document.getElementById(abaId);
+            if (alvo) { alvo.classList.add('active'); }
         }
-    }
 
-    document.querySelectorAll('.exercicio-alternativas input[type="radio"]').forEach(input => {
-        input.addEventListener('change', verificarAtividade);
-    });
+        function mostrarResposta(botao) {
+            const exercicioDiv = botao.closest('.exercicio-facil, .exercicio-medio, .exercicio-dificil');
+            const respostaDiv = exercicioDiv.querySelector('.resposta-explicada');
 
-    async function verificarAtividade() {
-        const questoes = document.querySelectorAll('.exercicio-alternativas');
-        const respondidas = document.querySelectorAll(
-            '.exercicio-alternativas input[type="radio"]:checked'
-        );
-
-        if (respondidas.length === questoes.length) {
-            try {
-                await fetch('/api/trilha/concluir', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json'
-                    },
-                    body: JSON.stringify({
-                        materia: 'geografia',
-                        topico: 'geografia-fisica'
-                    })
-                });
-
-                alert('Atividade concluída! Seu progresso na Trilha de Estudos foi atualizado.');
-            } catch (erro) {
-                console.error('Erro ao atualizar progresso:', erro);
+            if (respostaDiv.style.display === 'block') {
+                respostaDiv.style.display = 'none';
+                botao.textContent = 'Ver explicação';
+            } else {
+                respostaDiv.style.display = 'block';
+                botao.textContent = 'Ocultar explicação';
             }
         }
-    }
-</script>
 
+        document.querySelectorAll('.exercicio-alternativas input[type="radio"]').forEach(input => {
+            input.addEventListener('change', verificarAtividade);
+        });
+
+        async function verificarAtividade() {
+            const questoes = document.querySelectorAll('.exercicio-alternativas');
+            const respondidas = document.querySelectorAll('.exercicio-alternativas input[type="radio"]:checked');
+
+            if (respondidas.length === questoes.length) {
+                try {
+                    await fetch('/api/trilha/concluir', {
+                        method: 'POST',
+                        headers: {'Content-Type':'application/json'},
+                        body: JSON.stringify({ materia: 'geografia', topico: 'geografia-fisica' })
+                    });
+                    alert('Atividade concluída! Seu progresso na Trilha de Estudos foi atualizado.');
+                } catch (erro) {
+                    console.error('Erro ao atualizar progresso:', erro);
+                }
+            }
+        }
+    </script>
 </body>
 </html>
