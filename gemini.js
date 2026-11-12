@@ -97,9 +97,9 @@ Pergunta do aluno: "${pergunta}"
 Resposta (apenas texto puro, sem asteriscos):
 `;
 
-  try {
+    try {
     const response = await ai.interactions.create({
-      model: "gemini-3.5-flash",
+      model: "gemini-1.5-flash", 
       input: prompt,
     });
 
@@ -107,12 +107,14 @@ Resposta (apenas texto puro, sem asteriscos):
   } catch (error) {
     console.error('Erro na API Gemini:', error.message);
     try {
-        const fallback = await ai.interactions.create({
-            model: "gemini-2.5-flash",
+
+      const fallback = await ai.interactions.create({
+            model: "gemini-1.5-flash-8b", 
             input: prompt,
         });
         return fallback.output_text;
     } catch (e) {
+        console.error('Erro na API Gemini (Fallback):', e.message);
         return 'Desculpe, estou com dificuldades técnicas. Tente novamente! 💚';
     }
   }
