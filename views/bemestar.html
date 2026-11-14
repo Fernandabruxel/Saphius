@@ -75,64 +75,85 @@
     </div>
 
     <script>
-        let mensagemEnviando = false;
-        function getCurrentTime() { return new Date().toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' }); }
-        document.getElementById('timeNow').innerHTML = getCurrentTime();
+    let mensagemEnviando = false;
+    function getCurrentTime() { 
+        return new Date().toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' }); 
+    }
+    
+    document.getElementById('timeNow').innerHTML = getCurrentTime();
+    function scrollToBottom() {
+        const chatMessages = document.getElementById('chatMessages');
+        setTimeout(() => {
+            chatMessages.scrollTo({
+                top: chatMessages.scrollHeight,
+                behavior: 'smooth'
+            });
+        }, 100);
+    }
 
-        function addMessage(text, isUser) {
-            const chatMessages = document.getElementById('chatMessages');
-            const messageDiv = document.createElement('div');
-            messageDiv.className = isUser ? 'message-user' : 'message-ia';
-            const time = getCurrentTime();
-            messageDiv.innerHTML = `<div><div class="message-bubble">${text}</div><div class="message-time">${time}</div></div>`;
-            chatMessages.appendChild(messageDiv);
-            chatMessages.scrollTop = chatMessages.scrollHeight;
-        }
+    function addMessage(text, isUser) {
+        const chatMessages = document.getElementById('chatMessages');
+        const messageDiv = document.createElement('div');
+        messageDiv.className = isUser ? 'message-user' : 'message-ia';
+        const time = getCurrentTime();
+        messageDiv.innerHTML = `<div><div class="message-bubble">${text}</div><div class="message-time">${time}</div></div>`;
+        chatMessages.appendChild(messageDiv);
+        scrollToBottom();
+    }
 
-        function showTypingIndicator() {
-            const chatMessages = document.getElementById('chatMessages');
-            const typingDiv = document.createElement('div');
-            typingDiv.className = 'message-ia';
-            typingDiv.id = 'typingIndicator';
-            typingDiv.innerHTML = `<div><div class="message-bubble">Digitando<span>...</span></div></div>`;
-            chatMessages.appendChild(typingDiv);
-            chatMessages.scrollTop = chatMessages.scrollHeight;
-        }
+    function showTypingIndicator() {
+        const chatMessages = document.getElementById('chatMessages');
+        const typingDiv = document.createElement('div');
+        typingDiv.className = 'message-ia';
+        typingDiv.id = 'typingIndicator';
+        typingDiv.innerHTML = `<div><div class="message-bubble">Digitando<span>...</span></div></div>`;
+        chatMessages.appendChild(typingDiv);
+        scrollToBottom();
+    }
 
-        function removeTypingIndicator() {
-            const indicator = document.getElementById('typingIndicator');
-            if (indicator) indicator.remove();
-        }
+    function removeTypingIndicator() {
+        const indicator = document.getElementById('typingIndicator');
+        if (indicator) indicator.remove();
+    }
 
-        async function enviarMensagem() {
-            if (mensagemEnviando) return;
-            const input = document.getElementById('mensagemInput');
-            const mensagem = input.value.trim();
-            if (!mensagem) return;
-            mensagemEnviando = true;
-            addMessage(mensagem, true);
-            input.value = '';
-            showTypingIndicator();
-            try {
-                const response = await fetch('/api/ia-apoio', {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({ mensagem: mensagem })
-                });
-                const data = await response.json();
-                removeTypingIndicator();
-                addMessage(data.resposta, false);
-            } catch (error) {
-                removeTypingIndicator();
-                addMessage('Desculpe, estou com dificuldades técnicas. Tente novamente!', false);
-            }
-            mensagemEnviando = false;
-        }
+    async function enviarMensagem() {
+        if (mensagemEnviando) return;
+        
+        const input = document.getElementById('mensagemInput');
+        const mensagem = input.value.trim();
+        if (!mensagem) return;
+        
+        mensagemEnviando = true;
+        addMessage(mensagem, true);
+        input.value = '';
+        showTypingIndicator();
+        
+        input.blur(); 
 
-        function enviarSugestao(texto) {
-            document.getElementById('mensagemInput').value = texto;
-            enviarMensagem();
+        try {
+            const response = await fetch('/api/ia-apoio', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ mensagem: mensagem })
+            });
+            const data = await response.json();
+            
+            removeTypingIndicator();
+            addMessage(data.resposta, false);
+            
+        } catch (error) {
+            removeTypingIndicator();
+            addMessage('Desculpe, estou com dificuldades técnicas. Tente novamente!', false);
         }
-    </script>
+        
+        mensagemEnviando = false;
+    }
+
+    function enviarSugestao(texto) {
+        document.getElementById('mensagemInput').value = texto;
+        enviarMensagem();
+    }
+</script>
+
 </body>
 </html>
