@@ -10,10 +10,8 @@
     
     <!-- CSS DE CORREÇÃO RÁPIDA PARA RESPONSIVIDADE -->
     <style>
-        /* Esconde o botão mobile no desktop */
         .btn-voltar-mobile { display: none !important; }
         
-        /* Mostra apenas o botão correto dependendo da tela */
         @media (max-width: 768px) {
             .btn-voltar-mobile { 
                 display: inline-block !important; 
@@ -25,7 +23,6 @@
             }
             .voltar { display: none !important; }
             
-            /* Ajuste das alternativas para celular (alinha a bolinha e o texto) */
             .exercicio-alternativas label {
                 display: flex !important;
                 align-items: flex-start !important;
@@ -43,7 +40,9 @@
 <body>
     <div class="app-container">
         <aside class="sidebar">
-            <div class="sidebar-logo"><h2>Saphius</h2></div>
+            <div class="sidebar-logo">
+    <img src="/img/logo-removebg-preview.png" alt="Saphius">
+</div>
             <ul class="sidebar-menu">
                 <li><a href="/dashboard"><span class="icon"><i class="fas fa-home"></i></span> <span>Dashboard</span></a></li>
                 <li><a href="/conteudos"><span class="icon"><i class="fas fa-book"></i></span> <span>Conteúdos</span></a></li>
