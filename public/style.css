@@ -26,8 +26,25 @@ input:focus { border-color: #4caf50; outline: none; }
 /* ================================================================= */
 .app-container { display: flex; width: 100%; min-height: 100vh; }
 .sidebar { width: 260px; min-width: 260px; background: #d4e6d4; padding: 30px 20px; position: fixed; top: 0; left: 0; height: 100vh; overflow-y: auto; z-index: 100; }
-.sidebar-logo { text-align: center; padding-bottom: 20px; border-bottom: 2px solid #b8d4b8; }
-.sidebar-logo h2 { color: #2e7d32; }
+.sidebar-logo {
+    text-align: center;
+    padding-bottom: 10px; /* Reduzi o espaço de baixo */
+    margin-bottom: 20px;
+    border-bottom: 2px solid #b8d4b8;
+    height: 50px; /* Força uma altura compacta */
+    overflow: hidden; /* Esconde as bordas brancas da imagem */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Mágica para a imagem da logo no menu */
+.sidebar-logo img {
+    transform: scale(1.8); /* Dá o zoom para ignorar o fundo branco */
+    max-width: 140px;
+    width: 100%;
+    height: auto;
+} 
 .sidebar-menu { list-style: none; margin-top: 10px; }
 .sidebar-menu a { display: flex; align-items: center; gap: 12px; padding: 12px 15px; color: #2e7d32; text-decoration: none; border-radius: 12px; transition: 0.2s; }
 .sidebar-menu a:hover, .sidebar-menu a.active { background-color: #4caf50 !important; color: #ffffff !important; font-weight: bold; }
@@ -622,4 +639,28 @@ input:focus { border-color: #4caf50; outline: none; }
     .ajuda-header h1 { font-size: 1.8em; }
     .quem-somos h2 { font-size: 1.3em; }
     .contato-card { padding: 20px 15px; }
+}
+/*AJUSTE EXCLUSIVO PARA A LOGO DO DASHBOARD */
+
+.dashboard-logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: -30px;   /* Puxa tudo para cima */
+    margin-bottom: -20px; /* Puxa o texto de baixo para cima, ignorando a margem branca */
+    height: 100px;       /* Força uma altura fixa para a caixa da logo */
+    overflow: hidden;    /* Esconde o que passar do limite */
+}
+
+.dashboard-logo-img {
+    width: 280px; 
+    height: auto;
+    transform: scale(1.8); /* Dá um zoom de 180% na imagem, "engolindo" o fundo branco */
+    object-fit: contain;
+}
+
+@media (max-width: 768px) {
+    .dashboard-logo-container { height: 80px; margin-bottom: -10px; }
+    .dashboard-logo-img { width: 200px; transform: scale(1.6); }
 }
